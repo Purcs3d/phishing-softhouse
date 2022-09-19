@@ -2,7 +2,9 @@
 
 This will act as a short intro to how we function, rather than what the program *is* and *will* do.
 
-## Docstrings and Code Hints##
+## Docstrings and Code Hints ##
+
+Following is a code example of so called "python code hints" and docstring formatting
 
 ```py
 def func(param1: type, param2: (int)) -> str:
