@@ -1,5 +1,8 @@
 # Welcome gamers to phishing-softhouse #
 
+**DO NOT EVER COMMIT DIRECTLY TO MAIN!!!**
+If you commit to main I will commit arson on your house and sleep with your mother!!
+
 This will act as a short intro to how we function, rather than what the program *is* and *will* do.
 
 ## Docstrings and Code Hints ##
