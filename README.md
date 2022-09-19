@@ -8,7 +8,7 @@ Following is a code example of so called "python code hints" and docstring forma
 
 ```py
 def func(param1: type, param2: (int)) -> str:
-
+"""
 Description: [followed by two spaces]  
   [Indentation] This should be a short summary of what the function does and how to use it. 
   Do **NOT** describe how it works. 
@@ -31,7 +31,8 @@ Intput: (followed by two spaces)
          match the start of the previous paragraph.
          In this example the function will already has a "hint" ("-> str") in the function 
          call (standardized in Python3), and therefore is not needed in the "return" docstring
-         
+"""
+
   [Code goes here and stuff]
   print("docstring example")
 ```
