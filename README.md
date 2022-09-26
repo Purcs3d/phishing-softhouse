@@ -10,7 +10,7 @@
 ### Add and Commit ###
 
 In your terminal, while standing inside the repo on your local computer, perform:
-1. ´git add <file/dir>´ - Adds the files and directory you want to add to a commit (use `.` as file to add all files in your current standing directory)
+1. `git add <file/dir>` - Adds the files and directory you want to add to a commit (use `.` as file to add all files in your current standing directory)
 2. `git commit -m <commit message>` - Commits (does *not* push) and adds a message that will describe this commit in the git-tree
 3. `git push` - Pushes your local files to the Github cloud repository. Now anyone within the team can see your files and commits
 
