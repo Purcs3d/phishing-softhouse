@@ -7,6 +7,11 @@
 
 ## Our Git Conventions ##
 
+### Issues ###
+
+- Avoid having the *first character* in an issue be a number (0-9). This interferes with issue-ID fast tabbing when checking out a branch connected to the issue
+- Regard *milestones* as *sprints*. Milestone 1 is sprint 1, and issues should be added accordingly
+
 ### Add and Commit ###
 
 In your terminal, while standing inside the repo on your local computer, perform:
