@@ -23,9 +23,9 @@ If and error message of `HEAD is behind`, the files on Github is newer than your
 In case of this perform a "rebase" or "hard reset" (will try and keep your code, but updating unmodified code with the new code on the cloud). If you are unsure which one to use, ask a project teammate.
 
 Or you can perform a force fetch, **overwriting local code** (*this will remove any changes you have not yet pushed*) with the one on the Github. To perform such, use:
-1. git fetch --all
-2. git reset --hard
-3. git pull
+1. `git fetch --all`
+2. `git reset --hard`
+3. `git pull`
 
 ### Merges ###
 
