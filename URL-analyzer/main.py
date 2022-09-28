@@ -1,19 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# import "src/algorithmManager.py"
 import src.algorithmManager as am
 
 
 def main():
     #Website
-    URLstring = "info.cern.ch"
+    URLstring = "https://cloud.timeedit.net/bth/web/sched1/ri1f6X615XZZYYQv6X0661Z0yQY5554531QQ255Q6Y7Y7375ul03x55332YY15X5X643563.html"
 
     #URL-analyzing
     ex = am.algorithmManager(URLstring) #create object
-    print(ex.runEvalAlgo())
-    #am.getURLinfo() #create the URL
-
-
+    ex.printMsg()
+    print("Is website fishy?",ex.run())
 
 
 if __name__ == '__main__':

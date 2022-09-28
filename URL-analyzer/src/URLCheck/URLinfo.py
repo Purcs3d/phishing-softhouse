@@ -1,57 +1,57 @@
-from dataclasses import dataclass
-from urllib.parse import urlparse
-import socket
-import requests
-
-'''
-The URLinfo dataclass works like a struct in C-like languegues.
-It stroes and holds the given data.
-
-The Parser Class has one function in it
-It's job is to parse the url and resolve infomration from it
-'''
-
-@dataclass
-class URLinfo:
-    protocol: str
-    urlName: str
-    path: str
-    params: str
-    query: str
-    fragment: str
-    ip: str
-    city: str
-    country: str
-    region: str
-
-class Parser:
-    def __init__(self) -> None:
-        self.infoList = []
-
-    def UrlResolver(self, url):
-        parse = urlparse(url)
-        #print(parse)
-        urlName = parse.netloc # t ex www.google.com
-        protocol = parse.scheme # HTTP eller HTTPS
-        path = parse.path # t ex /auth/login
-        params = parse.params # No longer used, always empty
-        query = parse.query # everything after ? in the url before the #
-        fragment = parse.fragment # evrything after # in the back of the url
-        try:
-            ip = socket.gethostbyname(urlName)
-        except socket.error:
-            print('Ip address could not be found from hostname')
-            return False
-        data = requests.get(f"https://geolocation-db.com/json/{ip}&position=true").json()
-        #print(data)
-        country = data['country_name']
-        city = data['city']
-        region = data['state']
-        info = URLinfo(protocol, urlName, path, params, query, fragment, ip, city, country, region)
-
-        self.infoList.append(info)
+import src.URLCheck.DNSresolver as DNSresolver
+import src.URLCheck.HTMLparser as HTMLparser
+import src.URLCheck.stringParser as stringParser
 
 
+class URLinfo():
+    """
+        This class acts as a struct and holds all information we have about the URL
+    """
+    def __init__(self, url):
+        self.url = url
+        self.protocol : str  = None
+        self.urlName: str = None
+        self.path: str = None
+        self.params: str = None
+        self.query: str = None
+        self.fragment: str = None
+        self.ip: str = None
+        self.city: str = None
+        self.country: str = None
+        self.region: str = None
 
-#p = Parser()
-#p.UrlParser(input("Inpute the url here:"))
+    def getDNSinfo(self):
+        # DNSresolver = DNSresolver(self)
+        pass
+
+    def getURLstringInfo(self):
+        URLstringParser = stringParser.stringParser(self)
+        self = URLstringParser.UrlResolver()
+        self.printInfo()
+
+    def collectInfo(self):
+        self.getURLstringInfo()
+        #self.getDNSinfo()
+        #self.getHTMLinfo()
+
+    def printInfo(self):
+        print("url:",self.url)
+        print("protocol:",self.protocol)
+        print("urlName:",self.urlName)
+        print("path:",self.path)
+        print("params:",self.params)
+        print("query:",self.query)
+        print("fragment:",self.fragment)
+        print("ip:",self.ip)
+        print("city:",self.city)
+        print("country:",self.country)
+        print("region:",self.region)
+
+
+    '''
+    The URLinfo dataclass works like a struct in C-like languegues.
+    It stroes and holds the given data.
+
+    The Parser Class has one function in it
+    It's job is to parse the url and resolve infomration from it
+    '''
