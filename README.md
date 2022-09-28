@@ -88,3 +88,11 @@ Intput: (followed by two spaces)
 
 - CamelCase will be used in functions and classes (e.g. `ThisIsAFunction`)
 - Try to adhere to [PEP8](https://peps.python.org/pep-0008/) standards
+
+***
+
+## Requirements ##
+
+- Python3.10+
+- PIP
+
