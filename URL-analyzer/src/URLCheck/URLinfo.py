@@ -8,7 +8,7 @@ The URLinfo dataclass works like a struct in C-like languegues.
 It stroes and holds the given data.
 
 The Parser Class has one function in it
-It's job is to parse the url and resolve infomration from it 
+It's job is to parse the url and resolve infomration from it
 '''
 
 @dataclass
@@ -27,10 +27,10 @@ class URLinfo:
 class Parser:
     def __init__(self) -> None:
         self.infoList = []
-        
+
     def UrlResolver(self, url):
         parse = urlparse(url)
-        print(parse) 
+        #print(parse)
         urlName = parse.netloc # t ex www.google.com
         protocol = parse.scheme # HTTP eller HTTPS
         path = parse.path # t ex /auth/login
@@ -43,15 +43,15 @@ class Parser:
             print('Ip address could not be found from hostname')
             return False
         data = requests.get(f"https://geolocation-db.com/json/{ip}&position=true").json()
-        print(data)
+        #print(data)
         country = data['country_name']
         city = data['city']
         region = data['state']
         info = URLinfo(protocol, urlName, path, params, query, fragment, ip, city, country, region)
-        
+
         self.infoList.append(info)
 
-        
-        
-p = Parser()
-p.UrlParser(input("Inpute the url here:"))
+
+
+#p = Parser()
+#p.UrlParser(input("Inpute the url here:"))

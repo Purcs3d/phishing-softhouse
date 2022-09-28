@@ -6,11 +6,11 @@ import src.algorithmManager as am
 
 def main():
     #Website
-    URLstring = "svt.se"
+    URLstring = "info.cern.ch"
 
     #URL-analyzing
     ex = am.algorithmManager(URLstring) #create object
-    ex.printMsg()
+    print(ex.runEvalAlgo())
     #am.getURLinfo() #create the URL
 
 
