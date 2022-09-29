@@ -4,7 +4,7 @@ class URLstringCL():
         ex:
         1.
         def protocolCheck(self):
-             if self.URLinfo.protocl == "HTTP":
+             if self.URLinfo.protocol == "HTTP":
                      self.points += 30
                      #self.rapportGeneration.append("The website is using HTTP")
         2. add call to function in runEvaluation
@@ -12,6 +12,7 @@ class URLstringCL():
 
     def __init__(self, URLinfo = None):
         self.points = 0
+        self.rapport = []
         self.URLinfo = URLinfo
 
     def runEvaluation(self):
@@ -19,9 +20,15 @@ class URLstringCL():
             Run through all checks
         """
         self.protocolCheck()
+        self.isdomaininrrussia()
         return self.points
+
+    def isdomaininrrussia(self):
+        if self.URLinfo.urlName == ".ru":
+            self.points += 10
 
     def protocolCheck(self): #emils function
         if self.URLinfo.protocol == "http":
             self.points += 30
+            self.rapport.append("The website is using HTTP")
             #self.rapportGeneration.append("The website is using HTTP") kan fixa senare
