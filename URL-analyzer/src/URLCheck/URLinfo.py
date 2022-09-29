@@ -21,18 +21,22 @@ class URLinfo():
         self.region: str = None
 
     def getDNSinfo(self):
-        # DNSresolver = DNSresolver(self)
-        pass
+        urlDNSresolver = DNSresolver.DNSresolver(self)
+        self = urlDNSresolver.resolve()
 
     def getURLstringInfo(self):
         URLstringParser = stringParser.stringParser(self)
         self = URLstringParser.UrlResolver()
-        self.printInfo()
+
+    def getHTMLinfo(self):
+        urlHTMLparser = HTMLparser.HTMLparser(self)
+        self = urlHTMLparser.parse()
 
     def collectInfo(self):
         self.getURLstringInfo()
-        #self.getDNSinfo()
-        #self.getHTMLinfo()
+        self.getDNSinfo()
+        self.getHTMLinfo()
+        self.printInfo()
 
     def printInfo(self):
         print("url:",self.url)
@@ -46,12 +50,3 @@ class URLinfo():
         print("city:",self.city)
         print("country:",self.country)
         print("region:",self.region)
-
-
-    '''
-    The URLinfo dataclass works like a struct in C-like languegues.
-    It stroes and holds the given data.
-
-    The Parser Class has one function in it
-    It's job is to parse the url and resolve infomration from it
-    '''

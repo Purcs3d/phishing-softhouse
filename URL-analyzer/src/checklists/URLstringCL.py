@@ -2,9 +2,12 @@ class URLstringCL():
     """
         This checklist will evalute the values that have been fetched from the URL string input
         ex:
-        input("pizzaslice.45:93")
-        runEvaluation("pizzaslice.45:93")
-        output(50 points to gryffindor) #very fishy
+        1.
+        def protocolCheck(self):
+             if self.URLinfo.protocl == "HTTP":
+                     self.points += 30
+                     #self.rapportGeneration.append("The website is using HTTP")
+        2. add call to function in runEvaluation
     """
 
     def __init__(self, URLinfo = None):
@@ -12,4 +15,13 @@ class URLstringCL():
         self.URLinfo = URLinfo
 
     def runEvaluation(self):
+        """
+            Run through all checks
+        """
+        self.protocolCheck()
         return self.points
+
+    def protocolCheck(self): #emils function
+        if self.URLinfo.protocol == "http":
+            self.points += 30
+            #self.rapportGeneration.append("The website is using HTTP") kan fixa senare

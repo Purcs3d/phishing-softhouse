@@ -1,7 +1,10 @@
 from urllib.parse import urlparse
 
 class stringParser():
-    """docstring for stringParser."""
+    """
+        The stringParser Class has one function in it
+        It's job is to parse the url and resolve infomration from it
+    """
 
     def __init__(self, URLinfo):
         self.URLinfo = URLinfo
