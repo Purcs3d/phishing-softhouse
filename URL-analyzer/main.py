@@ -8,8 +8,7 @@ def main():
     URLstring = "https://www.sweclockers.com/nyhetsbrev"
 
     #URL-analyzing
-    ex = am.algorithmManager(URLstring) #create object
-    ex.printMsg()
+    ex = am.algorithmManager(URLstring)
     print("Is website fishy?",ex.run())
 
 
