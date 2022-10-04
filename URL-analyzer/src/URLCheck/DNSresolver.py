@@ -4,11 +4,9 @@ import requests
 class DNSresolver():
     """
         This class will resolve information about
-        ip
-        country
-        city
-        region
-        maybe port etc
+        ip, country, city, region, maybe port etc
+        ex:
+        self.URLinfo.dnsdate = dnsDate["date"]
     """
 
     def __init__(self, URLinfo):
@@ -17,7 +15,7 @@ class DNSresolver():
 
     def resolve(self):
         try:
-            ip = socket.gethostbyname(self.URLinfo.url)#"svt.se")
+            ip = socket.gethostbyname(self.URLinfo.url)
         except socket.error:
             # print('Ip address could not be found from hostname')
             self.URLinfo.country = "Sweden"

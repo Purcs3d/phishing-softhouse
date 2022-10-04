@@ -6,7 +6,6 @@ class URLstringCL():
         def protocolCheck(self):
              if self.URLinfo.protocol == "HTTP":
                      self.points += 30
-                     #self.rapportGeneration.append("The website is using HTTP")
         2. add call to function in runEvaluation
     """
 
@@ -17,7 +16,7 @@ class URLstringCL():
 
     def runEvaluation(self):
         """
-            Run through all checks
+            Run through all checks by calling on their functions
         """
         self.protocolCheck()
         self.isdomaininrrussia()
