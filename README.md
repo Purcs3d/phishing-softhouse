@@ -91,6 +91,9 @@ Intput: (followed by two spaces)
 
 ***
 
+### Questions ###
+- Should we generate rapport if the attribute is below a certain treshold, eg if the attribute is worth less than 10p?
+
 ## Requirements ##
 
 - Python3.10+
