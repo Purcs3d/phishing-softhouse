@@ -1,6 +1,6 @@
 # Welcome gamers to phishing-softhouse #
 
-**DO NOT EVER COMMIT DIRECTLY TO MAIN!!!**
+**DO NOT EVER COMMIT DIRECTLY TO REAL-MAIN!!!**
 
 ***
 ***
