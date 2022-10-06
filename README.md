@@ -93,6 +93,7 @@ Intput: (followed by two spaces)
 
 ### Questions ###
 - Should we generate rapport if the attribute is below a certain treshold, eg if the attribute is worth less than 10p?
+- Could we split up the urlName more beacuse the "www." part will never be used and you dont always need the extention ".se" either.
 
 ## Requirements ##
 
