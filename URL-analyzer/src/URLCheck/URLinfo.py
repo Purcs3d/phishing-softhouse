@@ -28,6 +28,7 @@ class URLinfo():
         self.city: str = None
         self.country: str = None
         self.region: str = None
+        self.XXS_protection = None 
 
     def getDNSinfo(self):
         """ update URLinfo object with DNS information"""
