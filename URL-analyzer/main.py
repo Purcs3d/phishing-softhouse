@@ -1,19 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# import "src/algorithmManager.py"
 import src.algorithmManager as am
 
 
 def main():
     #Website
-    URLstring = "svt.se"
+    URLstring = "https://www.sweclockers.com/nyhetsbrev"
 
     #URL-analyzing
-    ex = am.algorithmManager(URLstring) #create object
-    ex.printMsg()
-    #am.getURLinfo() #create the URL
-
-
+    ex = am.algorithmManager(URLstring)
+    print("Is website fishy?",ex.run())
 
 
 if __name__ == '__main__':

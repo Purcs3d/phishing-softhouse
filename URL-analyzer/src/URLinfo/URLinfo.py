@@ -1,1 +1,0 @@
-#This is a struct that holds all information that checklists will then use

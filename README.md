@@ -1,6 +1,6 @@
 # Welcome gamers to phishing-softhouse #
 
-**DO NOT EVER COMMIT DIRECTLY TO MAIN!!!**
+**DO NOT EVER COMMIT DIRECTLY TO REAL-MAIN!!!**
 
 ***
 ***
@@ -90,6 +90,11 @@ Intput: (followed by two spaces)
 - Try to adhere to [PEP8](https://peps.python.org/pep-0008/) standards
 
 ***
+
+### Questions ###
+- Should we generate rapport if the attribute is below a certain treshold, eg if the attribute is worth less than 10p?
+- Could we split up the urlName more beacuse the "www." part will never be used and you dont always need the extention ".se" either.
+- Is the data from the URLinfo object always lowercase?
 
 ## Requirements ##
 
