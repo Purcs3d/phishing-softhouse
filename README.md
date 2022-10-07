@@ -54,7 +54,7 @@ Pull requests are therefore done (using UI) by:
 Following is a code example of so called "python code hints" and docstring formatting
 
 ```py
-def func(param1: type, param2: (int)) -> str:
+def func(param1: type, param2: (int)) -> str: #add author of code here
 """
 Description: [followed by two spaces]  
   [Indentation] This should be a short summary of what the function does and how to use it. 
