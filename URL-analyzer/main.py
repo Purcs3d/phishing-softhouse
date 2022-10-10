@@ -5,7 +5,7 @@ import src.algorithmManager as am
 
 def main():
     #Website
-    URLstring = "https://www.sweclockers.com/nyhetsbrev"
+    URLstring = "https://www.cert.se/"#https://stackoverflow.com/users"#"https://www.sweclockers.com/nyhetsbrev"
 
     #URL-analyzing
     ex = am.algorithmManager(URLstring)

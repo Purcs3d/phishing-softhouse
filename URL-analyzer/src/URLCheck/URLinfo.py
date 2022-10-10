@@ -28,7 +28,8 @@ class URLinfo():
         self.city: str = None
         self.country: str = None
         self.region: str = None
-        self.XXS_protection = None 
+        self.favicon : Boolean = None
+        self.errors : List = [] # the error messages collected during information gathering
 
     def getDNSinfo(self):
         """ update URLinfo object with DNS information"""
@@ -50,21 +51,6 @@ class URLinfo():
         self.getDNSinfo()
         self.getURLstringInfo()
         self.getHTMLinfo()
-        self.printInfo()
-
-    def printInfo(self):
-        """ temporary print function"""
-        print("url:",self.url)
-        print("protocol:",self.protocol)
-        print("urlName:",self.urlName)
-        print("path:",self.path)
-        print("params:",self.params)
-        print("query:",self.query)
-        print("fragment:",self.fragment)
-        print("ip:",self.ip)
-        print("city:",self.city)
-        print("country:",self.country)
-        print("region:",self.region)
 
     def generateReport(self):
         """
