@@ -19,7 +19,7 @@ class HTMLparser():
         """
         session = HTMLSession()
         request = session.get(self.URLinfo.url)
-        print(dir(request.html))
+        # print(dir(request.html))
         # print(request.html.raw_html)
         links = request.html.find("link")
         # print(dir(request.html.element("link")))
