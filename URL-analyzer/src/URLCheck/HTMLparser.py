@@ -6,7 +6,7 @@ class HTMLparser():
         HTML attributes that the website has
         ex add to the parse function:
         if websiteData["favicon"] != None:
-            self.URLinfo.favicon = websiteData["favicon"]
+            self.URLinfo.favicon = True
     """
     def __init__(self, URLinfo):
         self.URLinfo = URLinfo
@@ -22,7 +22,7 @@ class HTMLparser():
             response = session.get(self.URLinfo.url)
             self.fetchFaviconInfo(response)
         except Exception as e:
-            self.URLinfo.errors.append(f"Error during HTML info collecting:{e}")
+            self.URLinfo.errors.append(f"Error during HTML info collecting: {e}")
             return self.URLinfo
         return self.URLinfo
 
@@ -35,6 +35,9 @@ class HTMLparser():
         self.URLinfo.favicon = False # default is False, if function find information about favicon -> True
         extDocs = responseInfo.html.find("link") #find all HTML tags called "link" -> results into a dictionary
         for doc in extDocs:
+            if "rel" in doc.attrs.keys():
+                if "icon" in doc.attrs["rel"]:
+                    self.URLinfo.favicon = True
             if "href" in doc.attrs.keys():
                 if "favicon" in doc.attrs["href"] or ".ico" in doc.attrs["href"]:
                     self.URLinfo.favicon = True

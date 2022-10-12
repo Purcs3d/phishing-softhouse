@@ -16,8 +16,8 @@ class DNSresolver():
     def resolve(self):
         try:
             ip = socket.gethostbyname(self.URLinfo.url)
-        except socket.error:
-            # print('Ip address could not be found from hostname')
+        except Exception as e:
+            self.URLinfo.errors.append(f"Error during DNS resolving: {e}")
             self.URLinfo.country = "Sweden"
             self.URLinfo.city = "Karlskrona"
             self.URLinfo.region = "Blekinge"
