@@ -28,8 +28,8 @@ class URLinfo():
         self.city: str = None
         self.country: str = None
         self.region: str = None
-        self.favicon : Boolean = None
-        self.errors : List = [] # the error messages collected during information gathering
+        self.favicon: Boolean = None
+        self.errors: List = [] # the error messages collected during information gathering
 
     def getDNSinfo(self):
         """ update URLinfo object with DNS information"""

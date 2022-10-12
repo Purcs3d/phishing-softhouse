@@ -18,20 +18,31 @@ class HTMLparser():
             input: URLinfo object, output: updated URLinfo object
         """
         session = HTMLSession()
-        request = session.get(self.URLinfo.url)
-        # print(dir(request.html))
-        # print(request.html.raw_html)
-        links = request.html.find("link")
-        # print(dir(request.html.element("link")))
-        # print(request.html.element("link").show)
-        for link in links:
-            if "favicon.ico" in link.attrs["href"]: #might be buggy on some website
-                self.URLinfo.favicon = True
+        try: #kolla om vi kan få HTML info från websida
+            response = session.get(self.URLinfo.url)
+            self.fetchFaviconInfo(response)
+        except Exception as e:
+            self.URLinfo.errors.append(f"Error during HTML info collecting:{e}")
+            return self.URLinfo
         return self.URLinfo
 
+    def fetchFaviconInfo(self, responseInfo): #Lukas Funktion
+        """
+            Collects info about websites favicon, to my knowledge, favicon info exist in in html tags: link and meta
 
-        # try:
-        #     requestInfo = http.request('GET', self.URLinfo.url) # fetch http data
-        # except Exception as e:
-        #     self.URLinfo.errors.append(e)
-        #     return self.URLinfo
+            input: response info from HTML request, output:
+        """
+        self.URLinfo.favicon = False # default is False, if function find information about favicon -> True
+        extDocs = responseInfo.html.find("link") #find all HTML tags called "link" -> results into a dictionary
+        for doc in extDocs:
+            if "href" in doc.attrs.keys():
+                if "favicon" in doc.attrs["href"] or ".ico" in doc.attrs["href"]:
+                    self.URLinfo.favicon = True
+            if "id" in doc.attrs.keys():
+                if "favicon" in doc.attrs["id"] or ".ico" in doc.attrs["id"]:
+                    self.URLinfo.favicon = True
+        extDocs = responseInfo.html.find("meta") #find all HTML tags called "meta" -> results into a dictionary
+        for doc in extDocs:
+            if "content" in doc.attrs.keys():
+                if ".ico" in doc.attrs["content"] or "favicon" in doc.attrs["content"]:
+                    self.URLinfo.favicon = True
