@@ -23,7 +23,8 @@ class algorithmManager:
         """
         self.runEvaluations() # collect total points
         report = self.URLinfoObj.generateReport() #generate report on ULR
-        print("report:", report)
+        for info in report: # print all information gathered from URL
+            print(info)
         if self.points > self.pointPhishingLimit:
             return True
         else:
