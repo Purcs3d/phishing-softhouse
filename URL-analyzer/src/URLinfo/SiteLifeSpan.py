@@ -1,17 +1,12 @@
 import whois
+import datetime as dt
 
-class DomainAge():
-    def __init__(self, urlname, ) -> None:
-        self.url = urlname
-        self.domain
-        self.ip
-        self.expires
-        self.registed
-        self.update
-
-    def fetchAge(self):
-        w = whois.whois(self.domain)
-        self.expires = w.expiration_date
-        self.registed = w.creation_date
-        self.update = w.updated_date
-        print(self.registed, self.expires, self.update )
+def fetchAge(url):
+    w = whois.whois(url)
+    expires = w.expiration_date
+    registed = w.creation_date
+    update = w.updated_date
+    dateNow = dt.datetime.now()
+    print(dateNow)
+    active =  dateNow -registed
+    print(f"This site have been active for {active} \n was created {registed} \n was updated {update} \n will expire in {expires}")

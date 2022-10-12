@@ -2,17 +2,17 @@
 # -*- coding: utf-8 -*-
 # import "src/algorithmManager.py"
 import src.algorithmManager as am
-
+import src.URLinfo.SiteLifeSpan as sl
 
 def main():
     #Website
-    URLstring = "svt.se"
+    URLstring = "https://www.svt.se"
 
     #URL-analyzing
-    ex = am.algorithmManager(URLstring) #create object
-    ex.printMsg()
+    #ex = am.algorithmManager(URLstring) #create object
+    #ex.printMsg()
     #am.getURLinfo() #create the URL
-
+    z = sl.fetchAge(URLstring)
 
 
 
