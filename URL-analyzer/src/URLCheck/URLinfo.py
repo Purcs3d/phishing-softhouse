@@ -18,12 +18,16 @@ class URLinfo():
     """
     def __init__(self, url):
         self.url = url
+        self.www: str = None
         self.protocol : str  = None
-        self.urlName: str = None
+        self.subDomain: str = None
+        self.domain: str = None
+        self.topDomain:str = None
+        self.dir: str = None
+        self.file: str = None
         self.path: str = None
-        self.params: str = None
-        self.query: str = None
         self.fragment: str = None
+        self.query:str = None
         self.ip: str = None
         self.city: str = None
         self.country: str = None

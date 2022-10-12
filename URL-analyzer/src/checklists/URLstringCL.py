@@ -19,14 +19,9 @@ class URLstringCL():
             Run through all checks by calling on their functions
         """
         self.protocolCheck()
-        self.isdomaininrrussia()
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         return self.points
-
-    def isdomaininrrussia(self):
-        if self.URLinfo.urlName == ".ru":
-            self.points += 10
 
     def protocolCheck(self): #Emils function
         if self.URLinfo.protocol == "http":
