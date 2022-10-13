@@ -4,6 +4,7 @@ Handles TSL/SSL related tasks, such as fethcing, checking, and testing of URLs
 
 import socket
 import ssl
+from urllib import request
 from requests import get as r_get
 
 #! debug libs
@@ -68,4 +69,7 @@ class SSLChecker(): # @auth: Totte Hansen
 sslObj  = SSLChecker("http://ninjaflex.com/")
 print(sslObj.fetchSSL())
 
+
+r = r_get("http://google.com")
+print(r.url)
 # print(dumps(ssl.__dict__, indent=2))
