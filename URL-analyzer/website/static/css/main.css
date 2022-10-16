@@ -1,0 +1,65 @@
+body 
+{
+    text-align: center;
+    background-color:rgb(129, 234, 255);
+}
+
+p.Title 
+{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family:shanti;
+    font-size: 2.5em;
+    display: inline-block;
+    margin:  10px;
+}
+
+p 
+{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family:shanti;
+    font-size: 1.5em;
+    display: inline-block;
+    margin:  10px;
+}
+
+img 
+{
+    margin: 30px 0 40px 0;
+    width: 600px;
+    border-radius: 10px;
+}
+
+input 
+{
+  width: 600px;
+  margin: 10px 10px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-family: Shanti;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+input:focus 
+{
+    outline: none;
+    border: solid 5px #ff1e00;
+}
+
+#btn 
+{
+    font-weight: bold;
+    background-color: rgb(199, 33, 21);
+    border:  none;
+    width:  100px;
+    margin: 20px 20px;
+    color: white;
+}
+
+#btn:hover 
+{
+    background-color: rgb(125, 17, 9);
+}
