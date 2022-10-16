@@ -2,11 +2,10 @@
 Handles TSL/SSL related tasks, such as fethcing, checking, and testing of URLs
 """
 
-import errno
 import socket
 import ssl
-from urllib import request
-from requests import get as r_get
+import requests
+import urllib3
 
 #! debug libs
 from json import dumps
@@ -15,9 +14,9 @@ __author__  = "Totte Hansen, DVADS20h"
 __version__ = "init"
 __license__ = "None"
 
-class SSLChecker(): # @auth: Totte Hansen
+class SSLParse: #* @auth: Totte Hansen
 
-    def fetchDomain():
+    def fetchDomain(): #* @auth: Totte Hansen
         """
         Takes implied domain URLs and returns it as the full domain requested 
         by server
@@ -25,7 +24,7 @@ class SSLChecker(): # @auth: Totte Hansen
         ...
     
 
-    def fetchSSL(self):
+    def fetchSSL(self) -> str: #* @auth: Totte Hansen
         """ 
         Fetches socket encryption version, if one is present.
         If socket is encrypted is determined by URL scheme.
@@ -54,21 +53,24 @@ class SSLChecker(): # @auth: Totte Hansen
         except:
             print("not ssl error")
 
-    def updateSSL():
+    def updateSSL() -> None: #* @auth: Totte Hansen
         ...
-    def runSSLTests():
+    def runSSLTests() -> int: #* @auth: Totte Hansen
         ...
 
 
-    def pPrint(self, indent = 2):
+    def pPrint(self, indent = 2) -> str: #* @auth: Totte Hansen
         return(dumps(self.__dict__, indent=indent))
         # print(self.__dict__)
 
-    def __init__(self, url : str) -> None:
+    def __init__(self, url : str) -> None: #* @auth: Totte Hansen
         self.url = url
 
+
 #* ===-==-=== *#
-def checkExist(addr:str):
+
+
+def checkExist(addr:str) -> bool:
     # check if domain exists
         exists = True
         
@@ -80,6 +82,8 @@ def checkExist(addr:str):
             # if socket is unreachable (`[Errno -2] Name or service not known`)
             if err.errno == -2:
                 exists = False
+            else:
+                raise err
         
         # raise undefiend error
         except Exception as err:
@@ -88,11 +92,33 @@ def checkExist(addr:str):
         return exists
 
 
+def getRedir(addr:str) -> str:
+    #TODO does not fetch json redirects correctly (such as http://google.com -> https://consent.google.com/ml?continue=https://www.google.com/&gl=SE&m=0&pc=shp&uxe=none&hl=sv&src=1)
+    """ 
+    Fetches URL after server redirects.
+    Appends scheme, domain prefix, and subdomain to the input address
+    """
+    connection = requests.get(addr)
+    return connection.url
+
+
 # sslObj  = SSLChecker("google.com")
 # sslObj  = SSLChecker("http://ninjaflex.com/")
 # print(sslObj.fetchSSL())
 
-
 # r = r_get("http://google.com")
 # print(r.url)
 # # print(dumps(ssl.__dict__, indent=2))
+
+addr = "https://google.com"
+
+# print(checkExist(addr))
+
+# redict = getRedir(addr)
+# print(checkExist(redict))
+
+
+http = urllib3.PoolManager()
+
+req = http.request("GET", addr)
+print(dumps(req.__dict__))
