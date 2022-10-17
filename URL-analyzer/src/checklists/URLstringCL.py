@@ -19,14 +19,9 @@ class URLstringCL():
             Run through all checks by calling on their functions
         """
         self.protocolCheck()
-        self.isdomaininrrussia()
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         return self.points
-
-    def isdomaininrrussia(self):
-        if self.URLinfo.urlName == ".ru":
-            self.points += 10
 
     def protocolCheck(self): #Emils function
         if self.URLinfo.protocol == "http":
@@ -42,7 +37,7 @@ class URLstringCL():
         violatedSpecialChar = False
         charViolated = []
         url = self.URLinfo.url
-        badCharacters = [ "$", "#", "£", "0", "3", "8", "1", "_", "=", "!" ] #Add badCharacters to this list
+        badCharacters = [ "$", "#", "£", "0", "3", "8", "1", "_", "=", "!", "@" ] #Add badCharacters to this list
         for char in badCharacters:
             if char in url:
                 violatedSpecialChar = True
@@ -55,18 +50,35 @@ class URLstringCL():
 
     def checkSpecialKeywords(self): #Emils function
         """
-        Questions:
-        Should the function also search the path?
-
-        TODO:
-        fix so 1 character in badKeywords can be misspelled and it still matches it
+        This function works by using a badKeywords list, the keywords in the list is often used in the URL of phishing sites and
+        checking if the entered URL contains these bad keywords or any permutations of them, ex adm1n, fr33 or l0gin.
         """
         violatedSpecialKeyword = False
         keywordViolated = []
+
         badKeywords = ["admin", "login", "free", "update", "security", "billing", "check"] #Add badKeywords to this list
-        #Is url always lower case?
-        url = self.URLinfo.url.split(".")[1]
+        replacmentCharacters = {"e": "3", "o": "0", "i": "1", "a": "@", "l": "1"} # This dict generates decides the bad permutations from badKeywords
+
+        #Creates all of the permutations of bad keywords
+        permutationsOfBadKeywords = []
         for keyword in badKeywords:
+            keywords = []
+            keywords.append(keyword)
+
+            i = 0
+            while i < len(keyword):
+                for currentKeyword in keywords:
+                    chr = currentKeyword[i]
+                    if chr in replacmentCharacters:
+                        newKeyword = currentKeyword[0:i] + replacmentCharacters[chr] + currentKeyword[i+1:]
+                        keywords.append(newKeyword)
+
+                i += 1
+
+            permutationsOfBadKeywords.extend(keywords)
+
+        url = self.URLinfo.url.split(".")[1]
+        for keyword in permutationsOfBadKeywords:
             if url.find(keyword) != -1:
                 violatedSpecialKeyword = True
                 keywordViolated.append(keyword)
@@ -74,4 +86,3 @@ class URLstringCL():
         if violatedSpecialKeyword:
             self.points += 80
             self.rapport.append(f"The URL contained the following bad keywords: {keywordViolated}")
-            

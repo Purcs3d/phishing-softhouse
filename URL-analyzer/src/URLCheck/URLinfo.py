@@ -18,16 +18,22 @@ class URLinfo():
     """
     def __init__(self, url):
         self.url = url
+        self.www: str = None
         self.protocol : str  = None
-        self.urlName: str = None
+        self.subDomain: str = None
+        self.domain: str = None
+        self.topDomain:str = None
+        self.dir: str = None
+        self.file: str = None
         self.path: str = None
-        self.params: str = None
-        self.query: str = None
         self.fragment: str = None
+        self.query:str = None
         self.ip: str = None
         self.city: str = None
         self.country: str = None
         self.region: str = None
+        self.favicon: Boolean = None
+        self.errors: List = [] # the error messages collected during information gathering
 
     def getDNSinfo(self):
         """ update URLinfo object with DNS information"""
@@ -49,21 +55,6 @@ class URLinfo():
         self.getDNSinfo()
         self.getURLstringInfo()
         self.getHTMLinfo()
-        self.printInfo()
-
-    def printInfo(self):
-        """ temporary print function"""
-        print("url:",self.url)
-        print("protocol:",self.protocol)
-        print("urlName:",self.urlName)
-        print("path:",self.path)
-        print("params:",self.params)
-        print("query:",self.query)
-        print("fragment:",self.fragment)
-        print("ip:",self.ip)
-        print("city:",self.city)
-        print("country:",self.country)
-        print("region:",self.region)
 
     def generateReport(self):
         """
