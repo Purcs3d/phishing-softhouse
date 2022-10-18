@@ -4,15 +4,20 @@ Handles TSL/SSL related tasks, such as fethcing, checking, and testing of URLs
 
 import socket
 import ssl
+from termios import ECHOE
 import requests
 import urllib3
 
 #! debug libs
-from json import dumps
+from pprint import pprint
 
 __author__  = "Totte Hansen, DVADS20h"
 __version__ = "init"
 __license__ = "None"
+
+
+# checks connection and status of URL server
+url_con = urllib3.PoolManager()
 
 class SSLParse: #* @auth: Totte Hansen
 
@@ -53,43 +58,49 @@ class SSLParse: #* @auth: Totte Hansen
         except:
             print("not ssl error")
 
+
+    def checkOpen(addr:str) -> dict:
+        """ 
+        Check if a URL site is open.
+
+        return:
+            - dict        - `{"reachable": bool, "status": <in>}`  
+            - "reachable" - if site is reachable given the URl
+            - "status"    - Exit code, follows HTTP standard. `-2` indicate site could not be reached
+        """
+        # check if domain exists
+        out = {"reachable": True, "status": None}
+
+        # url_stats = None
+        # try:
+        #     url_stats = url_con.request("GET", addr)
+        #     print(url_con.status)
+
+        # # server side error codes
+        # except socket.gaierror as err:
+        #     # if socket is unreachable (`[Errno -2] Name or service not known`)
+        #     if err.errno:
+        #         out[] = 
+        
+        # # raise undefiend error
+        # except Exception as err:
+        #     raise err
+
+        # return out
+
+
     def updateSSL() -> None: #* @auth: Totte Hansen
         ...
     def runSSLTests() -> int: #* @auth: Totte Hansen
         ...
 
-
-    def pPrint(self, indent = 2) -> str: #* @auth: Totte Hansen
-        return(dumps(self.__dict__, indent=indent))
-        # print(self.__dict__)
-
-    def __init__(self, url : str) -> None: #* @auth: Totte Hansen
+    def __init__(self, url : str, redirectURL:bool = True) -> None: #* @auth: Totte Hansen
         self.url = url
+
+        
 
 
 #* ===-==-=== *#
-
-
-def checkExist(addr:str) -> bool:
-    # check if domain exists
-        exists = True
-        
-        try:
-            addr = socket.gethostbyname(addr)
-
-        # probe for errorno -2
-        except socket.gaierror as err:
-            # if socket is unreachable (`[Errno -2] Name or service not known`)
-            if err.errno == -2:
-                exists = False
-            else:
-                raise err
-        
-        # raise undefiend error
-        except Exception as err:
-            raise err
-    
-        return exists
 
 
 def getRedir(addr:str) -> str:
@@ -110,15 +121,25 @@ def getRedir(addr:str) -> str:
 # print(r.url)
 # # print(dumps(ssl.__dict__, indent=2))
 
-addr = "https://google.com"
 
-# print(checkExist(addr))
+addr = "g.com"
 
-# redict = getRedir(addr)
-# print(checkExist(redict))
+# print(socket.gethostbyname(addr))
 
+url_stats = None
 
-http = urllib3.PoolManager()
+try:
+    url_stats = url_con.request("GET", addr)
+    print(url_stats.status)
 
-req = http.request("GET", addr)
-print(dumps(req.__dict__))
+# server side error codes
+except Exception as err:
+    # if socket is unreachable (`[Errno -2] Name or service not known`)
+    if "errno" in err.__dict__:
+        print("yes :D")
+
+    else:
+        print("no :(")
+
+    print(err.reason)
+
