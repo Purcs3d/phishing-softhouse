@@ -100,3 +100,7 @@ Intput: (followed by two spaces)
 
 - Python3.10+
 - PIP
+  - Flask
+  - whois
+  - requests_html
+  - url_parser
