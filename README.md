@@ -1,3 +1,8 @@
+[//]: # (Title: Phishing - [company redacted])  
+[//]: # (Author: Purcs3d)  
+[//]: # (Attendees: @Purcs3d, @Itggot-lukas-einlerlarsson. @LettuceLizard, @Rasmus Andersen, @mdzwzw) 
+[//]: # (Group: BDE - Group 4)
+
 # Welcome gamers to phishing-softhouse #
 
 **DO NOT EVER COMMIT DIRECTLY TO REAL-MAIN!!!**
