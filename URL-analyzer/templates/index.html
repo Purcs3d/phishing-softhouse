@@ -11,13 +11,18 @@
     <img src="{{url_for('static', filename='img/antiphishing.jpg')}}" />
     <br>
     <form action="check" method="post">
-        {% for message in get_flashed_messages() %}
-             <p>{{ message }}</p>
-         {% endfor %}
+        <p>Enter The URL:</p>
         <br>
         <input type="text" name="URL_input">
         <br>
         <input type="submit" value="Check" id="btn">
+        <br>
+        {% for message in get_flashed_messages() %}
+            {% autoescape false %}
+            <p>{{ message }}</p>
+            {% endautoescape %}
+        {% endfor %}
+
     </form>
 </body>
 </html>
