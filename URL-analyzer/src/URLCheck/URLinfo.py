@@ -52,8 +52,8 @@ class URLinfo():
 
     def collectInfo(self):
         """Extract all kind of information we can get from the URL """
-        self.getDNSinfo()
         self.getURLstringInfo()
+        self.getDNSinfo()
         self.getHTMLinfo()
 
     def generateReport(self):
