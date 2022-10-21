@@ -24,10 +24,10 @@ class algorithmManager:
         self.runEvaluations() # collect total points
         report = self.URLinfoObj.generateReport() #generate report on ULR
         for info in report: # print all information gathered from URL
-            # if "error" in info:
-            #     continue
-            # else:
-            print(info)
+            if "error" in info:
+                continue
+            else:
+                print(info)
         if self.points > self.pointPhishingLimit:
             return True
         else:
