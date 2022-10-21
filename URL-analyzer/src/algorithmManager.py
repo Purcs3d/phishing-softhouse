@@ -25,6 +25,7 @@ class algorithmManager:
         report = self.URLinfoObj.generateReport() #generate report on ULR
         for info in report: # print all information gathered from URL
             print(info)
+        print("Evaluation points:",self.points)
         if self.points > self.pointPhishingLimit:
             return True
         else:
