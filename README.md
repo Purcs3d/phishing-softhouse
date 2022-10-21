@@ -3,7 +3,6 @@
 **DO NOT EVER COMMIT DIRECTLY TO REAL-MAIN!!!**
 
 ***
-***
 
 ## Our Git Conventions ##
 
