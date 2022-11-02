@@ -1,4 +1,5 @@
-import whois 
+
+import whois
 import datetime as dt
 
 def fetchAge(url):
