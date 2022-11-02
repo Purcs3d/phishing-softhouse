@@ -1,6 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import src.algorithmManager as am
+import io
+import sys
+from flask import Flask, flash, render_template, request
+
+
+
+def func(input):
+    val = am.algorithmManager(input)
+    old_stdout = sys.stdout
+    new_stdout = io.StringIO()
+    sys.stdout = new_stdout
+    print(val.run())
+    output = new_stdout.getvalue()
+    sys.stdout = old_stdout
+    output = output.replace('\n', '<br>')
+    return output
 
 
 def main():
@@ -23,12 +39,12 @@ def main():
 
 
     #Website
-    URLstring = "svt.se"
-
-    #URL-analyzing
-    ex = am.algorithmManager(URLstring) #create object
-    ex.printMsg()
-    #am.getURLinfo() #create the URL
+    # if len(sys.argv)<2 or len(sys.argv)>2: #2 arguments only.
+    #     print("Fatal: argument amount invalid.")
+    #     print(f"Usage:  py {sys.argv[0]} URLinput.ex")
+    #     sys.exit(1)
+    # else:
+    #     URLstring = sys.argv[1]
 
 
     # #URL-analyzing
