@@ -19,7 +19,10 @@ class HTMLparser():
         """
         session = HTMLSession()
         try: #kolla om vi kan få HTML info från websida
-            response = session.get(self.URLinfo.url)
+            if self.URLinfo.protocol == None:
+                response = session.get("http://" + self.URLinfo.url) #temporär lösning
+            else:
+                response = session.get(self.URLinfo.url)
             self.fetchFaviconInfo(response)
         except Exception as e:
             self.URLinfo.errors.append(f"Error during HTML info collecting: {e}")

@@ -15,15 +15,16 @@ class DNSresolver():
 
     def resolve(self):
         try:
-            ip = socket.gethostbyname(self.URLinfo.url)
+            ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain) #temporär lösning
         except Exception as e:
             self.URLinfo.errors.append(f"Error during DNS resolving: {e}")
-            self.URLinfo.country = "Sweden"
-            self.URLinfo.city = "Karlskrona"
-            self.URLinfo.region = "Blekinge"
             return self.URLinfo
         data = requests.get(f"https://geolocation-db.com/json/{ip}&position=true").json()
         self.URLinfo.data = requests.get(f"https://geolocation-db.com/json/{ip}&position=true").json()
+        if "IPv4" in data.keys():
+            self.URLinfo.ip = data["IPv4"]
+        if "IPv6" in data.keys():
+            self.URLinfo.ip = data["IPv6"]
         self.URLinfo.country = data['country_name']
         self.URLinfo.city = data['city']
         self.URLinfo.region = data['state']
