@@ -1,19 +1,41 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# import "src/algorithmManager.py"
 import src.algorithmManager as am
-import src.URLinfo.SiteLifeSpan as sl
+
 
 def main():
+
+    app = Flask(__name__)
+    app.config['SECRET_KEY'] = 'asdsdgtrbfgbrdfsdf'
+
+    @app.route("/")
+    def index():
+        return render_template("index.html")
+
+    @app.route("/check", methods=['GET', 'POST'])
+    def CheckURL():
+        URLinput = str(request.form['URL_input'])
+        flash(func(URLinput))
+        return render_template("index.html")
+    app.run(debug=True)
+
+
+
+
     #Website
-    URLstring = "https://www.svt.se"
+    URLstring = "svt.se"
 
     #URL-analyzing
-    #ex = am.algorithmManager(URLstring) #create object
-    #ex.printMsg()
+    ex = am.algorithmManager(URLstring) #create object
+    ex.printMsg()
     #am.getURLinfo() #create the URL
-    z = sl.fetchAge(URLstring)
 
+
+    # #URL-analyzing
+    # print("_"*20)
+    # print("Information fetched:\n")
+    # ex = am.algorithmManager(URLstring)
+    # print("\n" + "_"*20,"\n" + "Is website fishy?",ex.run())
 
 
 if __name__ == '__main__':

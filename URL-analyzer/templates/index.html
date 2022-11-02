@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>URL-Phishing Analysis Online Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <p class="Title"> URL-Phishing Analysis Online Tool </p>
+    <br>
+    <img src="{{url_for('static', filename='img/antiphishing.jpg')}}" />
+    <br>
+    <form action="check" method="post">
+        <p>Enter The URL:</p>
+        <br>
+        <input type="text" name="URL_input">
+        <br>
+        <input type="submit" value="Check" id="btn">
+        <br>
+        {% for message in get_flashed_messages() %}
+            {% autoescape false %}
+            <p>{{ message }}</p>
+            {% endautoescape %}
+        {% endfor %}
+
+    </form>
+</body>
+</html>
+
+

@@ -8,5 +8,5 @@ def fetchAge(url):
     update = w.updated_date
     dateNow = dt.datetime.now()
     active =  dateNow - registed
-    print(f"This site have been active for {active} \n Was created {registed} \n Was updated {update} \n Will expire in {expires}")
+    print("This site have been active for {active} \n Was created {registed} \n Was updated {update} \n Will expire in {expires}")
     
