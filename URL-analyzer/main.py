@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import src.algorithmManager as am
-import src.URLinfo.SiteLifeSpan as sl
 import io
 import sys
 from flask import Flask, flash, render_template, request
@@ -9,8 +8,6 @@ from flask import Flask, flash, render_template, request
 
 
 def func(input):
-    age = sl.fetchAge(input) 
-    sl.evaluate(age)
     val = am.algorithmManager(input)
     old_stdout = sys.stdout
     new_stdout = io.StringIO()
@@ -38,7 +35,7 @@ def main():
         return render_template("index.html")
     app.run(debug=True)
 
-     
+
 
 
     #Website

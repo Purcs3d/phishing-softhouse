@@ -1,5 +1,7 @@
 import socket
 import requests
+import whois
+import datetime as dt
 
 class DNSresolver():
     """
@@ -16,11 +18,11 @@ class DNSresolver():
     def resolve(self):
         try:
             ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain) #temporär lösning
+            self.fetchAge(self.URLinfo.url)
+            data = requests.get(f"https://geolocation-db.com/json/{ip}&position=true").json()
         except Exception as e:
             self.URLinfo.errors.append(f"Error during DNS resolving: {e}")
             return self.URLinfo
-        data = requests.get(f"https://geolocation-db.com/json/{ip}&position=true").json()
-        self.URLinfo.data = requests.get(f"https://geolocation-db.com/json/{ip}&position=true").json()
         if "IPv4" in data.keys():
             self.URLinfo.ip = data["IPv4"]
         if "IPv6" in data.keys():
@@ -28,4 +30,14 @@ class DNSresolver():
         self.URLinfo.country = data['country_name']
         self.URLinfo.city = data['city']
         self.URLinfo.region = data['state']
+
         return self.URLinfo
+
+
+    def fetchAge(self, url):
+        w = whois.whois(url)
+        self.URLinfo.expires = w.expiration_date
+        self.URLinfo.registed = w.creation_date
+        self.URLinfo.update = w.updated_date
+        self.URLinfo.dateNow = dt.datetime.now()
+        self.URLinfo.active =  self.URLinfo.dateNow - self.URLinfo.registed
