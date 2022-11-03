@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import src.algorithmManager as am
-import src.URLinfo.SiteLifeSpan as sl
 import io
 import sys
 from flask import Flask, flash, render_template, request
@@ -36,7 +35,7 @@ def main():
         return render_template("index.html")
     app.run(debug=True)
 
-     
+
 
 
     #Website

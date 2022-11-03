@@ -1,3 +1,4 @@
+import src.config as config
 class URLstringCL():
     """
         This checklist will evalute the values that have been fetched from the URL string input
@@ -37,7 +38,7 @@ class URLstringCL():
         violatedSpecialChar = False
         charViolated = []
         url = self.URLinfo.url
-        badCharacters = [ "$", "#", "£", "0", "3", "8", "1", "_", "=", "!", "@" ] #Add badCharacters to this list
+        badCharacters = config.BAD_CHARACTERS
         for char in badCharacters:
             if char in url:
                 violatedSpecialChar = True
@@ -56,8 +57,8 @@ class URLstringCL():
         violatedSpecialKeyword = False
         keywordViolated = []
 
-        badKeywords = ["admin", "login", "free", "update", "security", "billing", "check"] #Add badKeywords to this list
-        replacmentCharacters = {"e": "3", "o": "0", "i": "1", "a": "@", "l": "1"} # This dict generates decides the bad permutations from badKeywords
+        badKeywords = config.BAD_KEYWORDS
+        replacmentCharacters = config.REPLACEMENT_CHARACTERS
 
         #Creates all of the permutations of bad keywords
         permutationsOfBadKeywords = []
