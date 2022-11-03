@@ -9,8 +9,6 @@ from flask import Flask, flash, render_template, request
 
 
 def func(input):
-    age = sl.fetchAge(input) 
-    sl.evaluate(age)
     val = am.algorithmManager(input)
     old_stdout = sys.stdout
     new_stdout = io.StringIO()
