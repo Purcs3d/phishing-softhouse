@@ -17,3 +17,6 @@ BAD_CHARACTERS = [ "$", "#", "£", "0", "3", "8", "1", "_", "=", "!", "@" ]
 # https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-links/output/domains/INACTIVE/list
 # https://www.statista.com/statistics/1256788/phishing-sites-tlds/
 BAD_TOPDOMAINS = ["ru", "cn", "ml", "su", "xyz", "icu", "top"]
+
+#Too long URL!
+BAD_URL_LENGTH = 25 #length does not regard pathlength. only subdomain+domain+topdomain.
