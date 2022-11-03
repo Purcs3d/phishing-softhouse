@@ -104,7 +104,10 @@ class URLstringCL():
             Check if the subdomain + domain + topdomain length is considered phishy
             In other words, it does not check the length of the url path
         """
-        urlLength = len(str(self.URLinfo.subDomain or "") + self.URLinfo.domain + self.URLinfo.topDomain)
+        if self.URLinfo.subDomain == None:
+            urlLength = len(self.URLinfo.domain + self.URLinfo.topDomain)
+        else:
+            urlLength = len(str(self.URLinfo.subDomain or "") + self.URLinfo.domain + self.URLinfo.topDomain)
         if  urlLength > config.BAD_URL_LENGTH:
             self.points += 20
             self.report.append(f"The URL had a phishy length with {urlLength} letters")
