@@ -22,6 +22,7 @@ class URLstringCL():
         self.protocolCheck()
         self.checkSpecialChar()
         self.checkSpecialKeywords()
+        self.checkTopDomain()
         return self.points
 
     def protocolCheck(self): #Emils function
@@ -87,3 +88,7 @@ class URLstringCL():
         if violatedSpecialKeyword:
             self.points += 80
             self.rapport.append(f"The URL contained the following bad keywords: {keywordViolated}")
+
+    def checkTopDomain(self):
+        if self.URLinfo.topDomain in config.BAD_TOPDOMAINS:
+            self.points += 15
