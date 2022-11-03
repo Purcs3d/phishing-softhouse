@@ -3,6 +3,7 @@ class DNSChecklist():
 
     def __init__(self,URLinfo ) -> None:
         self.URLinfo = URLinfo
+        self.report = []
 
     def evaluate(self):
         if self.URLinfo.active == None: # om hemsidan inte existerar.
@@ -15,10 +16,11 @@ class DNSChecklist():
             else:
                 self.URLinfo.daysActive+=i
         if(int(self.URLinfo.daysActive) < 2):
-            print("This domain is younger then two days")
+            self.report.append("This domain is younger then two days")
             return 50
         elif(int(self.URLinfo.daysActive) < 10):
+            self.report.append("This domain is younger then ten days")
             return 20
         elif(int(self.URLinfo.daysActive) > 365):
-            print("This site is over a year old")
+            self.report.append("This site is over a year old")
             return 1

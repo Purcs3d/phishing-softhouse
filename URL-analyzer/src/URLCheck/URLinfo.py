@@ -68,5 +68,7 @@ class URLinfo():
         """
         report = []
         for a, v in self.__dict__.items():
+            if a == "errors":
+                continue
             report.append(a + ": " + str(v))
         return report

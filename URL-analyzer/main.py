@@ -12,7 +12,7 @@ def func(input):
     old_stdout = sys.stdout
     new_stdout = io.StringIO()
     sys.stdout = new_stdout
-    print(val.run())
+    print("Conclusion, fishy?",val.run())
     output = new_stdout.getvalue()
     sys.stdout = old_stdout
     output = output.replace('\n', '<br>')
