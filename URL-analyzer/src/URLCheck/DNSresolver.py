@@ -1,5 +1,7 @@
 import socket
 import requests
+import whois
+import datetime as dt
 
 class DNSresolver():
     """
@@ -28,4 +30,15 @@ class DNSresolver():
         self.URLinfo.country = data['country_name']
         self.URLinfo.city = data['city']
         self.URLinfo.region = data['state']
+        self.fetchAge(self.URLinfo.url)
+
         return self.URLinfo
+
+
+    def fetchAge(self, url):
+        w = whois.whois(url)
+        self.URLinfo.expires = w.expiration_date
+        self.URLinfo.registed = w.creation_date
+        self.URLinfo.update = w.updated_date
+        self.URLinfo.dateNow = dt.datetime.now()
+        self.URLinfo.active =  self.URLinfo.dateNow - self.URLinfo.registed
