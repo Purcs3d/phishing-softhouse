@@ -12,7 +12,7 @@ class URLstringCL():
 
     def __init__(self, URLinfo = None):
         self.points = 0
-        self.rapport = []
+        self.report = []
         self.URLinfo = URLinfo
 
     def runEvaluation(self):
@@ -23,13 +23,14 @@ class URLstringCL():
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         self.checkTopDomain()
+        self.checkUrlLength()
         return self.points
 
     def protocolCheck(self): #Emils function
         if self.URLinfo.protocol == "http":
             self.points += 20
-            self.rapport.append("The website is using HTTP")
-            #self.rapportGeneration.append("The website is using HTTP") kan fixa senare
+            self.report.append("The website is using HTTP")
+            #self.reportGeneration.append("The website is using HTTP") kan fixa senare
 
     def checkSpecialChar(self): #Emils function
         """
@@ -47,7 +48,7 @@ class URLstringCL():
 
         if violatedSpecialChar:
             self.points += 30
-            self.rapport.append(f"The URL violated the following special characters: {charViolated}")
+            self.report.append(f"The URL violated the following special characters: {charViolated}")
 
 
     def checkSpecialKeywords(self): #Emils function
@@ -87,8 +88,23 @@ class URLstringCL():
 
         if violatedSpecialKeyword:
             self.points += 80
-            self.rapport.append(f"The URL contained the following bad keywords: {keywordViolated}")
+            self.report.append(f"The URL contained the following bad keywords: {keywordViolated}")
 
     def checkTopDomain(self):
+        """
+            Checks if top domain is considered phishy
+        """
         if self.URLinfo.topDomain in config.BAD_TOPDOMAINS:
             self.points += 15
+            self.report.append(f"The URL contained the following bad topdomain: {self.URLinfo.topDomain}")
+
+
+    def checkUrlLength(self):
+        """
+            Check if the subdomain + domain + topdomain length is considered phishy
+            In other words, it does not check the length of the url path
+        """
+        urlLength = len(str(self.URLinfo.subDomain or "") + self.URLinfo.domain + self.URLinfo.topDomain)
+        if  urlLength > config.BAD_URL_LENGTH:
+            self.points += 20
+            self.report.append(f"The URL had a phishy length with {urlLength} letters")
