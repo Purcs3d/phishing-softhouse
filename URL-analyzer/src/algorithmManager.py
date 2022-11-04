@@ -24,7 +24,9 @@ class algorithmManager:
             input: self, output: boolean
         """
         self.runEvaluations() # collect total points and gather reports
-        self.printFormat() # print reports, URL info and errors
+        self.report["URLreport"] = self.URLinfoObj.generateReport() #information on URL
+        self.report["errors"] = self.URLinfoObj.errors #errors during information gathering
+        self.printFormat() # print evaluation reports, URL info and errors
         if self.points > self.pointPhishingLimit:
             return True
         else:
@@ -66,6 +68,7 @@ class algorithmManager:
                 • checklist reports
                 • URL info
                 • errors
+            This function prints the dictionary items.
         """
         # print checklist info and evaluation
         print("-" * 20,"\nReport and output:")
@@ -81,13 +84,11 @@ class algorithmManager:
 
         # print info gathered
         print("\n\n", "-" * 20,"\nInfo gathered from URL:")
-        self.report["URLreport"] = self.URLinfoObj.generateReport() #generate report on URL info
         for info in self.report["URLreport"]: # print all information gathered from URL
             print(info)
         #print(f"This site have been active for {self.URLinfoObj.active} \n Was created {self.URLinfoObj.registed} \n Was updated {self.URLinfoObj.update} \n Will expire in {self.URLinfoObj.expires}")
 
         #print errors
         print("\n", "-" * 20,"\nErrors:")
-        self.report["errors"] = self.URLinfoObj.errors
         for error in self.report["errors"]:
             print(error)
