@@ -24,22 +24,24 @@ class URLstringCL():
         self.checkSpecialKeywords()
         self.checkTopDomain()
         self.checkUrlLength()
+        self.checkNumberOfSubdomains()
         return self.points
 
-    def protocolCheck(self): #Emils function
+    def protocolCheck(self):
         if self.URLinfo.protocol == "http":
             self.points += 20
             self.report.append("The website is using HTTP")
             #self.reportGeneration.append("The website is using HTTP") kan fixa senare
 
-    def checkSpecialChar(self): #Emils function
+    def checkSpecialChar(self):
         """
         Questions:
         Should the function punish a url more if it has multiple special character violations?
         """
         violatedSpecialChar = False
         charViolated = []
-        url = self.URLinfo.url
+        print(type(self.URLinfo.subDomain))
+        url = str(self.URLinfo.subDomain) + str(self.URLinfo.domain)
         badCharacters = config.BAD_CHARACTERS
         for char in badCharacters:
             if char in url:
@@ -51,7 +53,7 @@ class URLstringCL():
             self.report.append(f"The URL violated the following special characters: {charViolated}")
 
 
-    def checkSpecialKeywords(self): #Emils function
+    def checkSpecialKeywords(self):
         """
         This function works by using a badKeywords list, the keywords in the list is often used in the URL of phishing sites and
         checking if the entered URL contains these bad keywords or any permutations of them, ex adm1n, fr33 or l0gin.
@@ -80,7 +82,7 @@ class URLstringCL():
 
             permutationsOfBadKeywords.extend(keywords)
 
-        url = self.URLinfo.url.split(".")[1]
+        url = self.URLinfo.domain
         for keyword in permutationsOfBadKeywords:
             if url.find(keyword) != -1:
                 violatedSpecialKeyword = True
@@ -89,6 +91,7 @@ class URLstringCL():
         if violatedSpecialKeyword:
             self.points += 80
             self.report.append(f"The URL contained the following bad keywords: {keywordViolated}")
+
 
     def checkTopDomain(self):
         """
@@ -111,3 +114,12 @@ class URLstringCL():
         if  urlLength > config.BAD_URL_LENGTH:
             self.points += 20
             self.report.append(f"The URL had a phishy length with {urlLength} letters")
+
+
+    def checkNumberOfSubdomains(self):
+        subdomains = self.URLinfo.subDomain
+        differentSubdomains = subdomains.split('.')
+
+        if len(differentSubdomains) > 2: #Maybe change to 3
+            self.points += 30
+            self.report.append(f"The URL have an unusual amount of {len(differentSubdomains)} subdomains ")
