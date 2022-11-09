@@ -14,13 +14,9 @@ def index():
 @app.route("/check", methods=['GET', 'POST'])
 def CheckURL():
     URLinput = str(request.form['URL_input'])
-    old_stdout = sys.stdout
-    new_stdout = io.StringIO()
-    sys.stdout = new_stdout
-    print("Conclusion, fishy?",am.algorithmManager(URLinput).run())
-    output = new_stdout.getvalue()
-    sys.stdout = old_stdout
-    output = output.replace('\n', '<br>')
+    algorithmEngine = am.algorithmManager(URLinput) #algorithm object
+    output = "fishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
+    output += "<br> evaluation points:" + str(algorithmEngine.points)
+    output += algorithmEngine.createOutputString()
     flash(output)
     return render_template("index.html")
-

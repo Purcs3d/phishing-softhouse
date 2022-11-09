@@ -26,7 +26,7 @@ class algorithmManager:
         self.runEvaluations() # collect total points and gather reports
         self.report["URLreport"] = self.URLinfoObj.generateReport() #information on URL
         self.report["errors"] = self.URLinfoObj.errors #errors during information gathering
-        self.printFormat() # print evaluation reports, URL info and errors
+        # self.printFormat() # print evaluation reports, URL info and errors
         if self.points > self.pointPhishingLimit:
             return True
         else:
@@ -61,6 +61,28 @@ class algorithmManager:
         self.report["DNSChecklist"] = DNSChecklistObj.report
         self.report["DatabaseComparisonCL"] = DatabaseComparisonCLobj.report
 
+
+    def createOutputString(self):
+        outputStr = "<br>"
+        for message in self.report["URLstringCL"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["HTMLdataCL"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["DNSChecklist"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["DatabaseComparisonCL"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["URLreport"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["errors"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        return outputStr
 
     def printFormat(self):
         """
