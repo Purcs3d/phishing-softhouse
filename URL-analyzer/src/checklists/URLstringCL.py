@@ -1,3 +1,4 @@
+import src.URLCheck.stringParser as sp
 class URLstringCL():
     """
         This checklist will evalute the values that have been fetched from the URL string input
@@ -86,3 +87,10 @@ class URLstringCL():
         if violatedSpecialKeyword:
             self.points += 80
             self.rapport.append(f"The URL contained the following bad keywords: {keywordViolated}")
+
+    def containUnicode(self):
+        if(sp.stringParser.UnicodeCheker(self)):
+            print("Unicode detected")
+            return 40
+        else:
+            return 0
