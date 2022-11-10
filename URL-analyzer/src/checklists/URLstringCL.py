@@ -117,7 +117,14 @@ class URLstringCL():
 
 
     def checkNumberOfSubdomains(self):
+        """
+        Checks if the URL has more than 2 subdomains
+        """
         subdomains = self.URLinfo.subDomain
+
+        if subdomains == None:
+            subdomains.append("www")
+
         differentSubdomains = subdomains.split('.')
 
         if len(differentSubdomains) > 2: #Maybe change to 3
