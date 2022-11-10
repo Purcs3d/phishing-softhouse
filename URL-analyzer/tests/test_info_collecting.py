@@ -9,6 +9,7 @@ import src.URLCheck.DNSresolver as dnsresolver
     run:
     pytest -s
     in this file's directory to run tests, or:
+    pytest -s test_info_collecting.py
     pytest -s test_info_collecting.py::test_HTMLparser
     for testing individual tests.
 """
@@ -17,6 +18,7 @@ import src.URLCheck.DNSresolver as dnsresolver
 def URLinfoObj():
     """
         This function just always returns a URLinfo object to skip redundant code
+        Called in parameter for the tests functions
     """
     return urlinfo.URLinfo("http://scanme.nmap.org/")
 @pytest.fixture
@@ -30,7 +32,7 @@ def urlHTMLparser(URLinfoObj):
         return htmlparser.HTMLparser(URLinfoObj)
 
 def test_stringParser(URLstringParser):
-    print("Testing subdomain and path info")
+    print("\nTesting subdomain and path info")
     URLstringParser.URLinfo.url = "https://cloud.timeedit.net/bth/web/sched1/file.html"
     URLinfoObj = URLstringParser.UrlResolver()
     assert URLinfoObj.subDomain == "cloud"
@@ -41,18 +43,18 @@ def test_stringParser(URLstringParser):
     assert URLinfoObj.file == "file.html"
 
 def test_DNSresolver(urlDNSresolver, URLstringParser):
-    print("Testing DNS resolving info on gp.se")
+    print("\nTesting DNS resolving info on gp.se")
     URLstringParser.URLinfo.url = "gp.se"
     URLinfoObj = URLstringParser.UrlResolver()
     URLinfoObj = urlDNSresolver.resolve()
     assert URLinfoObj.country == "Sweden"
     assert URLinfoObj.city == "Mölnlycke"
     assert URLinfoObj.region == "Västra Götaland"
-    # assert URLinfoObj.domainAge == "13 years" etc
+    assert str(URLinfoObj.registed) == "1994-05-31 00:00:00"
 
 
 def test_HTMLparser(urlHTMLparser, URLstringParser):
-    print("Testing Favicon info on karlskronahem.se (False atm)")
+    print("\nTesting Favicon info on karlskronahem.se (False atm)")
     URLstringParser.URLinfo.url = "karlskronahem.se"
     URLinfoObj = URLstringParser.UrlResolver()
     URLinfoObj = urlHTMLparser.parse()
@@ -60,7 +62,7 @@ def test_HTMLparser(urlHTMLparser, URLstringParser):
 
 #integration test
 def test_URLinfoCollecting(URLinfoObj, urlDNSresolver, urlHTMLparser, URLstringParser):
-    print("Testing integration test with URL: http://scanme.nmap.org/")
+    print("\nTesting integration test with URL: http://scanme.nmap.org/")
     URLinfoObj = URLstringParser.UrlResolver()
     URLinfoObj = urlDNSresolver.resolve()
     URLinfoObj = urlHTMLparser.parse()
