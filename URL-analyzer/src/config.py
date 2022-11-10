@@ -3,8 +3,11 @@ HOST = '127.0.0.0' # aka localhost
 PORT = '8000' # aka localhost:8000
 
 """ checklist constants"""
-#Add badKeywords to this list:
+#Add bad domain keywords to this list:
 BAD_KEYWORDS = ["admin", "login", "free", "update", "security", "billing", "check"]
+
+#Add bad subdomain keywords to this list:
+BAD_SUBDOMAINS = ["softhouse", "google", "facebook", "linkedin", "instagram"]
 
 # This dict generates decides the bad permutations from badKeywords:
 REPLACEMENT_CHARACTERS = {"e": "3", "o": "0", "i": "1", "a": "@", "l": "1"}

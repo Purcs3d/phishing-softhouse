@@ -25,6 +25,7 @@ class URLstringCL():
         self.checkTopDomain()
         self.checkUrlLength()
         self.checkNumberOfSubdomains()
+        self.checkBadSubdomains()
         return self.points
 
     def protocolCheck(self):
@@ -35,8 +36,7 @@ class URLstringCL():
 
     def checkSpecialChar(self):
         """
-        Questions:
-        Should the function punish a url more if it has multiple special character violations?
+        The function checks if the URL contains any unusual characters.
         """
         violatedSpecialChar = False
         charViolated = []
@@ -130,3 +130,28 @@ class URLstringCL():
         if len(differentSubdomains) > 2: #Maybe change to 3
             self.points += 30
             self.report.append(f"The URL have an unusual amount of {len(differentSubdomains)} subdomains ")
+
+
+    def checkBadSubdomains(self):
+        """
+        The function checks if the subdomain contains keywords that are considered phisy.
+        """
+        subdomains = self.URLinfo.subDomain
+        violatedSubdomainKeyword = False
+        violatedKeyword = []
+        badSubdomains = config.BAD_SUBDOMAINS
+
+        if subdomains == None:
+            subdomains.append("www")
+
+        differentSubdomains = subdomains.split('.')
+
+        for subdomain in differentSubdomains:
+            if subdomain in badSubdomains:
+                violatedSubdomainKeyword = True
+                violatedKeyword.append(subdomain)
+
+
+        if violatedSubdomainKeyword:
+            self.points += 40
+            self.report.append(f"The URL contained the following bad subdomains: {violatedKeyword}")
