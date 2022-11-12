@@ -14,6 +14,7 @@ class algorithmManager:
         self.URLinfoObj = URLinfo.URLinfo(url) #create URLinfo object
         self.URLinfoObj.collectInfo() #make object collect information about url
         self.pointPhishingLimit = 100
+        self.report = {}
 
     def run(self):
         """
@@ -22,13 +23,10 @@ class algorithmManager:
             then makes decision if the website is fishy/not fishy
             input: self, output: boolean
         """
-        self.runEvaluations() # collect total points
-        report = self.URLinfoObj.generateReport() #generate report on ULR
-        for info in report: # print all information gathered from URL
-            print(info)
-        print("Evaluation points:",self.points)
-        print(f"This site have been active for {self.URLinfoObj.active} \n Was created {self.URLinfoObj.registed} \n Was updated {self.URLinfoObj.update} \n Will expire in {self.URLinfoObj.expires}")
-
+        self.runEvaluations() # collect total points and gather reports
+        self.report["URLreport"] = self.URLinfoObj.generateReport() #information on URL
+        self.report["errors"] = self.URLinfoObj.errors #errors during information gathering
+        # self.printFormat() # print evaluation reports, URL info and errors
         if self.points > self.pointPhishingLimit:
             return True
         else:
@@ -56,3 +54,63 @@ class algorithmManager:
         self.points += HTMLdataCLobj.runEvaluation()
         self.points += DatabaseComparisonCLobj.runEvaluation()
         self.points += DNSChecklistObj.evaluate()
+
+        #gather their seperate reports
+        self.report["URLstringCL"] = URLstringCLobj.report
+        self.report["HTMLdataCL"] = HTMLdataCLobj.report
+        self.report["DNSChecklist"] = DNSChecklistObj.report
+        self.report["DatabaseComparisonCL"] = DatabaseComparisonCLobj.report
+
+
+    def createOutputString(self):
+        outputStr = "<br>"
+        for message in self.report["URLstringCL"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["HTMLdataCL"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["DNSChecklist"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["DatabaseComparisonCL"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["URLreport"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        for message in self.report["errors"]:
+            outputStr += message + "<br>"
+        outputStr += "<br>"
+        return outputStr
+
+    def printFormat(self):
+        """
+            self.report is a dictionary that holds information about
+                • checklist reports
+                • URL info
+                • errors
+            This function prints the dictionary items.
+        """
+        # print checklist info and evaluation
+        print("-" * 20,"\nReport and output:")
+        for message in self.report["URLstringCL"]:
+            print(message)
+        for message in self.report["HTMLdataCL"]:
+            print(message)
+        for message in self.report["DNSChecklist"]:
+            print(message)
+        for message in self.report["DatabaseComparisonCL"]:
+            print(message)
+        print("Evaluation points:",self.points)
+
+        # print info gathered
+        print("\n\n", "-" * 20,"\nInfo gathered from URL:")
+        for info in self.report["URLreport"]: # print all information gathered from URL
+            print(info)
+        #print(f"This site have been active for {self.URLinfoObj.active} \n Was created {self.URLinfoObj.registed} \n Was updated {self.URLinfoObj.update} \n Will expire in {self.URLinfoObj.expires}")
+
+        #print errors
+        print("\n", "-" * 20,"\nErrors:")
+        for error in self.report["errors"]:
+            print(error)

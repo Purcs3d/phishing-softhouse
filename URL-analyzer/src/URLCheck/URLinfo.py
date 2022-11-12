@@ -34,6 +34,11 @@ class URLinfo():
         self.region: str = None
         self.favicon: bool = None
         self.errors: list = [] # the error messages collected during information gathering
+        self.expires = None
+        self.registed = None
+        self.update = None
+        self.dateNow = None
+        self.active = None
 
     def getDNSinfo(self):
         """ update URLinfo object with DNS information"""
@@ -63,5 +68,7 @@ class URLinfo():
         """
         report = []
         for a, v in self.__dict__.items():
+            if a == "errors":
+                continue
             report.append(a + ": " + str(v))
         return report
