@@ -21,8 +21,8 @@ class URLinfo():
         self.www: str = None
         self.protocol : str  = None
         self.subDomain: str = None
-        self.domain: str = None
-        self.topDomain:str = None
+        self.domain: str = ""
+        self.topDomain:str = ""
         self.dir: str = None
         self.file: str = None
         self.path: str = None
@@ -33,12 +33,11 @@ class URLinfo():
         self.country: str = None
         self.region: str = None
         self.favicon: bool = None
-        self.errors: list = [] # the error messages collected during information gathering
         self.expires = None
-        self.registed = None
+        self.registered = None
         self.update = None
-        self.dateNow = None
         self.active = None
+        self.errors: list = [] # the error messages collected during information gathering
 
     def getDNSinfo(self):
         """ update URLinfo object with DNS information"""

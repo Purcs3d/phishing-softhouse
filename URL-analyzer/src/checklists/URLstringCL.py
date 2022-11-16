@@ -32,7 +32,6 @@ class URLstringCL():
         if self.URLinfo.protocol == "http":
             self.points += 20
             self.report.append("The website is using HTTP")
-            #self.reportGeneration.append("The website is using HTTP") kan fixa senare
 
     def checkSpecialChar(self):
         """
@@ -40,7 +39,6 @@ class URLstringCL():
         """
         violatedSpecialChar = False
         charViolated = []
-        print(type(self.URLinfo.subDomain))
         url = str(self.URLinfo.subDomain) + str(self.URLinfo.domain)
         badCharacters = config.BAD_CHARACTERS
         for char in badCharacters:
@@ -123,7 +121,7 @@ class URLstringCL():
         subdomains = self.URLinfo.subDomain
 
         if subdomains == None:
-            subdomains.append("www")
+            return
 
         differentSubdomains = subdomains.split('.')
 
@@ -142,7 +140,7 @@ class URLstringCL():
         badSubdomains = config.BAD_SUBDOMAINS
 
         if subdomains == None:
-            subdomains.append("www")
+            return
 
         differentSubdomains = subdomains.split('.')
 

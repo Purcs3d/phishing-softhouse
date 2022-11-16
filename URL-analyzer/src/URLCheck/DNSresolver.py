@@ -17,12 +17,23 @@ class DNSresolver():
 
     def resolve(self):
         try:
-            ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain) #temporär lösning
+            self.URLinfo.ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain) #temporär lösning
+            self.fetchDNSdata()
             self.fetchAge(self.URLinfo.url)
-            data = requests.get(f"https://geolocation-db.com/json/{ip}&position=true").json()
+        except TypeError:
+            self.URLinfo.errors.append(f"Error during DNS resolving: DNS creation info not found.")
+        except requests.exceptions.RequestException:
+            self.URLinfo.errors.append(f"Error during DNS resolving: Failed request to server")
         except Exception as e:
             self.URLinfo.errors.append(f"Error during DNS resolving: {e}")
             return self.URLinfo
+        return self.URLinfo
+
+    def fetchDNSdata(self):
+        """
+            fetch DNS data including geolocation and IP address
+        """
+        data = requests.get(f"https://geolocation-db.com/json/{self.URLinfo.ip}&position=true").json()
         if "IPv4" in data.keys():
             self.URLinfo.ip = data["IPv4"]
         if "IPv6" in data.keys():
@@ -31,13 +42,16 @@ class DNSresolver():
         self.URLinfo.city = data['city']
         self.URLinfo.region = data['state']
 
-        return self.URLinfo
-
-
     def fetchAge(self, url):
+        """
+            Fetches information about domain creation date and domain age
+        """
         w = whois.whois(url)
         self.URLinfo.expires = w.expiration_date
-        self.URLinfo.registed = w.creation_date
+        self.URLinfo.registered = w.creation_date
         self.URLinfo.update = w.updated_date
-        self.URLinfo.dateNow = dt.datetime.now()
-        self.URLinfo.active =  self.URLinfo.dateNow - self.URLinfo.registed
+        dateNow = dt.datetime.now()
+        if type(self.URLinfo.registered) == list: #if multiple registration dates -> pick latest
+            self.URLinfo.active =  dateNow - self.URLinfo.registered[0]
+        else:
+            self.URLinfo.active =  dateNow - self.URLinfo.registered
