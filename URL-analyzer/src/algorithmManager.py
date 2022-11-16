@@ -2,7 +2,7 @@ import src.URLCheck.URLinfo as URLinfo
 import src.checklists.DatabaseComparisonCL as DatabaseComparisonCL
 import src.checklists.HTMLdataCL as HTMLdataCL
 import src.checklists.URLstringCL as URLstringCL
-import src.checklists.DNSChecklist as DNSCL
+import src.checklists.DNSdataCL as DNSdataCL
 
 class algorithmManager:
     """
@@ -26,7 +26,6 @@ class algorithmManager:
         self.runEvaluations() # collect total points and gather reports
         self.report["URLreport"] = self.URLinfoObj.generateReport() #information on URL
         self.report["errors"] = self.URLinfoObj.errors #errors during information gathering
-        # self.printFormat() # print evaluation reports, URL info and errors
         if self.points > self.pointPhishingLimit:
             return True
         else:
@@ -47,13 +46,13 @@ class algorithmManager:
         URLstringCLobj = URLstringCL.URLstringCL(self.URLinfoObj)
         HTMLdataCLobj = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
-        DNSChecklistObj = DNSCL.DNSChecklist(self.URLinfoObj)
+        DNSChecklistObj = DNSdataCL.DNSdataCL(self.URLinfoObj)
 
         #run their seperate evaluations
         self.points += URLstringCLobj.runEvaluation()
         self.points += HTMLdataCLobj.runEvaluation()
         self.points += DatabaseComparisonCLobj.runEvaluation()
-        self.points += DNSChecklistObj.evaluate()
+        self.points += DNSChecklistObj.runEvaluation()
 
         #gather their seperate reports
         self.report["URLstringCL"] = URLstringCLobj.report

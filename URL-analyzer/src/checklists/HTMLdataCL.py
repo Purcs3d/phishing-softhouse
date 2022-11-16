@@ -21,7 +21,7 @@ class HTMLdataCL():
         self.faviconCheck()
         return self.points
 
-    def faviconCheck(self): #Lukas function
+    def faviconCheck(self): 
         """
             Checks whether Favicon exist on website or not
         """
