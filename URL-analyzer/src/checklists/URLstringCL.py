@@ -91,6 +91,7 @@ class URLstringCL():
     def containUnicode(self):
         if(sp.stringParser.UnicodeCheker(self)):
             print("Unicode detected")
-            return 40
+            return 10
         else:
+            print("No Unicode detected")
             return 0
