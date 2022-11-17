@@ -57,4 +57,3 @@ class algorithmManager:
         self.points += HTMLdataCLobj.runEvaluation()
         self.points += DatabaseComparisonCLobj.runEvaluation()
         self.points += DNSChecklistObj.evaluate()
-        self.points += URLstringCLobj.containUnicode()

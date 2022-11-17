@@ -22,6 +22,7 @@ class URLstringCL():
         self.protocolCheck()
         self.checkSpecialChar()
         self.checkSpecialKeywords()
+        self.containUnicode()
         return self.points
 
     def protocolCheck(self): #Emils function
@@ -91,7 +92,7 @@ class URLstringCL():
     def containUnicode(self):
         if(sp.stringParser.UnicodeCheker(self)):
             print("Unicode detected")
-            return 10
+            self.points+= 10
         else:
             print("No Unicode detected")
-            return 0
+            self.points+= 0
