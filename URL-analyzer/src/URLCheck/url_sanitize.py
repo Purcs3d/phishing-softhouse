@@ -22,28 +22,26 @@ def siteValid(url:str, redir:bool = True) -> bool:
         # check if site response is within OK range
         if 200 <= site_code <= 299:
             return True
-
-    except Exception as err:
-        code = err.__dict__['code']
-        # Check if server or client error occured (raise error in case of client error)
-        if 500 <= code <= 599:
+        else:
             return False
 
-        else:
-            raise err
+    except Exception as err:
+        # Check if server or client error occured (raise error in case of client error)
+        return False
 
 
 def addScheme(url:str, fetch:bool = True) -> str:
     """ 
     Checks if the address holds a
     """
+    prot_url = url
     schema = get_url(url).protocol
     if schema == None:
         # add http as "starting point"
         prot_url = 'http://' + url
     
     # fetch server requested scheme (if reachable)
-    if fetch:
+    if fetch and siteValid(prot_url, redir=False):
         try:
             prot_url = getRedir(prot_url)
         
@@ -57,7 +55,7 @@ def addScheme(url:str, fetch:bool = True) -> str:
             except Exception as err:
                 raise err
 
-    return url
+    return prot_url
 
 
 def getRedir(addr:str) -> str:
@@ -68,6 +66,4 @@ def getRedir(addr:str) -> str:
     connection = requests.get(addr)
     return connection.url
 
-URL  = 'www.amazon.com'
-
-print(siteValid(URL))
+URL  = 'ww7.youtube.com'
