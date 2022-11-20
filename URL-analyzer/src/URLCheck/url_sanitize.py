@@ -6,7 +6,7 @@ in regards to URL
 import requests
 from url_parser import get_url
 from urllib import request
-from urlparse import urlparse
+from urllib.parse import urlparse
 
 def siteValid(url:str, redir:bool = True) -> bool:
     """
@@ -18,7 +18,6 @@ def siteValid(url:str, redir:bool = True) -> bool:
     site_code = 0
     try:
         site_code = request.urlopen(url).getcode()
-        print(site_code)
 
         # check if site response is within OK range
         if 200 <= site_code <= 299:
@@ -33,7 +32,7 @@ def siteValid(url:str, redir:bool = True) -> bool:
 
 def addScheme(url:str, fetch:bool = True) -> str:
     """ 
-    Checks if the address holds a
+    Enures URL protocol prefix
     """
     prot_url = url
     prot = get_url(url).protocol
@@ -59,14 +58,16 @@ def addScheme(url:str, fetch:bool = True) -> str:
     return prot_url
 
 def rm_scheme(url:str):
-    prot = get_url(url).protocol()
-    if prot != None:
+    prot = get_url(url).protocol
+
+    if prot == None:
         return url
 
     else:
         parsed = urlparse(url)
         scheme = "%s://" % parsed.scheme
         return parsed.geturl().replace(scheme, '', 1)
+
 
 def getRedir(addr:str) -> str:
     #TODO does not fetch json redirects correctly (such as http://google.com -> https://consent.google.com/ml?continue=https://www.google.com/&gl=SE&m=0&pc=shp&uxe=none&hl=sv&src=1)
@@ -75,5 +76,3 @@ def getRedir(addr:str) -> str:
     """
     connection = requests.get(addr)
     return connection.url
-
-URL  = 'ww7.youtube.com'

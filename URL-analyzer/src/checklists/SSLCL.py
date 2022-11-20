@@ -11,8 +11,9 @@ __author__ = 'Totte Hansen, DVADS20h'
 
 class SSL_CL:
     def run_evaluation(self): #* auhtor: Totte Hansen
-        ...
-
+        """
+        Run through all tests sequentially using function calls
+        """
 
     def check_con(self):
         point_value = 50
@@ -22,7 +23,6 @@ class SSL_CL:
 
     def check_version(self): #* auhtor: Totte Hansen
         point_value = 20
-
 
     def __init__(self, url): #* auhtor: Totte Hansen
         self.url = url

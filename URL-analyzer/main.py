@@ -59,43 +59,8 @@
 
 
 from src.server_check import SSL_resolve as ssl_lib
-import socket
-import ssl
-from termios import ECHOE
-from src.URLCheck import url_sanitize
 
-def tester(addr, excep = False):
-    if not url_sanitize.siteValid:
-        assert(f"Site '{addr}' is invalid or closed")
+addr = "inet.se"
 
-    hostname = addr
-    print(hostname)
-    context = ssl.create_default_context()
-    try:
-        # open socket using https port 443
-        with socket.create_connection((hostname, 443)) as sock:
-
-            # fetch sock version
-            with context.wrap_socket(sock, server_hostname=hostname) as ssock:
-                try:
-                    return ssock.version()
-
-                except Exception as err:
-                    if excep:
-                        raise err
-                    else:
-                        return None
-
-    except Exception as err:
-        if excep:
-            raise err
-        else:
-            return None
-
-addr = "consent.google.com"
-
-# ssl_lib.ssl_parse(addr)
-addr_san = ssl_lib.ssl_sanetize(addr)
-
-print(tester(addr))
-print(tester(addr_san))
+print(ssl_lib.ssl_parse(addr).sane_url)
+print(ssl_lib.ssl_parse(addr).license)
