@@ -21,8 +21,8 @@ class URLinfo():
         self.www: str = None
         self.protocol : str  = None
         self.subDomain: str = None
-        self.domain: str = None
-        self.topDomain:str = None
+        self.domain: str = ""
+        self.topDomain:str = ""
         self.dir: str = None
         self.file: str = None
         self.path: str = None
@@ -33,6 +33,10 @@ class URLinfo():
         self.country: str = None
         self.region: str = None
         self.favicon: bool = None
+        self.expires = None
+        self.registered = None
+        self.update = None
+        self.active = None
         self.errors: list = [] # the error messages collected during information gathering
 
     def getDNSinfo(self):
@@ -63,5 +67,7 @@ class URLinfo():
         """
         report = []
         for a, v in self.__dict__.items():
+            if a == "errors":
+                continue
             report.append(a + ": " + str(v))
         return report

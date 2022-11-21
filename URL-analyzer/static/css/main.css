@@ -1,10 +1,10 @@
-body 
+body
 {
     text-align: center;
     background-color:rgb(129, 234, 255);
 }
 
-p.Title 
+p.Title
 {
     font-weight: bold;
     color: rgb(0, 0, 0);
@@ -14,7 +14,7 @@ p.Title
     margin:  10px;
 }
 
-p 
+p
 {
     font-weight: bold;
     color: rgb(0, 0, 0);
@@ -24,14 +24,14 @@ p
     margin:  10px;
 }
 
-img 
+img
 {
     margin: 30px 0 40px 0;
     width: 600px;
     border-radius: 10px;
 }
 
-input 
+input
 {
   width: 600px;
   margin: 10px 10px;
@@ -43,13 +43,13 @@ input
   text-align: center;
 }
 
-input:focus 
+input:focus
 {
     outline: none;
     border: solid 5px #ff1e00;
 }
 
-#btn 
+#btn
 {
     font-weight: bold;
     background-color: rgb(199, 33, 21);
@@ -59,7 +59,7 @@ input:focus
     color: white;
 }
 
-#btn:hover 
+#btn:hover
 {
     background-color: rgb(125, 17, 9);
 }

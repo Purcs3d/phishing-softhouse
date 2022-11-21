@@ -11,7 +11,7 @@ class HTMLparser():
     def __init__(self, URLinfo):
         self.URLinfo = URLinfo
 
-    def parse(self): #Lukas function
+    def parse(self):
         """
             This function get information from the HTML on the website
 
@@ -29,7 +29,7 @@ class HTMLparser():
             return self.URLinfo
         return self.URLinfo
 
-    def fetchFaviconInfo(self, responseInfo): #Lukas Funktion
+    def fetchFaviconInfo(self, responseInfo): 
         """
             Collects info about websites favicon, to my knowledge, favicon info exist in in html tags: link and meta
 
