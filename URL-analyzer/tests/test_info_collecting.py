@@ -50,7 +50,7 @@ def test_DNSresolver(urlDNSresolver, URLstringParser):
     assert URLinfoObj.country == "Sweden"
     assert URLinfoObj.city == "Mölnlycke"
     assert URLinfoObj.region == "Västra Götaland"
-    assert str(URLinfoObj.registed) == "1994-05-31 00:00:00"
+    assert str(URLinfoObj.registered) == "1994-05-31 00:00:00"
 
 
 def test_HTMLparser(urlHTMLparser, URLstringParser):
