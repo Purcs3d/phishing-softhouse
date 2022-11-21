@@ -48,6 +48,7 @@ class algorithmManager:
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
         DNSChecklistObj = DNSdataCL.DNSdataCL(self.URLinfoObj)
 
+
         #run their seperate evaluations
         self.points += URLstringCLobj.runEvaluation()
         self.points += HTMLdataCLobj.runEvaluation()

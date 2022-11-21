@@ -32,3 +32,14 @@ class stringParser():
         self.URLinfo.fragment = parse.fragment
         self.URLinfo.query = parse.query
         return self.URLinfo
+
+    def UnicodeCheker(self):
+        parse = get_url(self.URLinfo.url)
+        domain = parse.domain  
+        for i in domain:
+            try:
+                if(int(ord(i)) < 128 and int(ord(i)) > 0 ):    #Allow ascii table 128 
+                    pass 
+            except ValueError:
+                return True
+        return False
