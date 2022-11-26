@@ -46,3 +46,8 @@ if __name__ == '__main__':
 
 # if __name__ == '__main__':
 #     main()
+
+#########################################
+# nohup python main.py > log.txt 2>&1 &
+# pm2 start main.py --interpreter python3
+# forever start -c python main.py
