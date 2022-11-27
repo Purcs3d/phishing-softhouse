@@ -20,16 +20,19 @@ def main():
         elif arg1 == "terminal" and len(sys.argv) == 2:
             URL = ""
             while URL != "q":
-                URL = input('\nEnter q to Quit:\n````````````````\nEnter your URL: ')
-                if validators.domain(URL) == True or validators.url(URL) == True:
-                    algorithmEngine = am.algorithmManager(URL) #algorithm object
-                    output = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
-                    output += "\nEvaluation points:" + str(algorithmEngine.points)
-                    output += algorithmEngine.createOutputString()
-                    finalOutput = output.replace("<br>", "\n" )
-                    print(finalOutput)
-                else:
-                    print("The URL input is not valid\n")
+                try:
+                    URL = input('\nEnter q to Quit:\n````````````````\nEnter your URL: ')
+                    if validators.domain(URL) == True or validators.url(URL) == True:
+                        algorithmEngine = am.algorithmManager(URL) #algorithm object
+                        output = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
+                        output += "\nEvaluation points:" + str(algorithmEngine.points)
+                        output += algorithmEngine.createOutputString()
+                        finalOutput = output.replace("<br>", "\n" )
+                        print(finalOutput)
+                    else:
+                        print("The URL input is not valid\n")
+                except Exception:
+                    print("Something is broken in the backend")
         else:
             print("\nPlease don't, just use these two options:")
             print(f"Usage1:  python {sys.argv[0]} server")
@@ -67,3 +70,15 @@ if __name__ == '__main__':
 # nohup python main.py > log.txt 2>&1 &
 # pm2 start main.py --interpreter python3
 # forever start -c python main.py
+
+#########################################
+########    Test Links           ########
+#########################################
+    
+# Valid Links 
+# https://www.google.com/
+# www.google.com
+# google.com
+
+# Internal Server Error 500
+# https://log1nkarlskronahem.se/kontakt/
