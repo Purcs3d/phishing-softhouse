@@ -103,7 +103,7 @@ class URLstringCL():
             print("No Unicode detected")
             self.points+= 0
 
-            self.report.append(f"The URL contained the following bad keywords: {keywordViolated}")
+            #self.report.append(f"The URL contained the following bad keywords: {keywordViolated}")
 
 
     def checkTopDomain(self):
