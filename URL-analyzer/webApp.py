@@ -1,8 +1,5 @@
-import io
-import sys
 import src.algorithmManager as am
 from flask import Flask, flash, render_template, request
-
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'
