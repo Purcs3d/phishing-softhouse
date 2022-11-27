@@ -13,9 +13,9 @@
 
 ### Import and export requirements.txt
 ```shell
-pip install pipreqs                # install pipreqs
-python -m  pipreqs.pipreqs .       # export requirements.txt
-pip install -r requirements.txt    # import requirements.txt
+pip install pipreqs                       # install pipreqs
+python -m  pipreqs.pipreqs . --force      # export requirements.txt
+pip install -r requirements.txt           # import requirements.txt
 ```
 
 
