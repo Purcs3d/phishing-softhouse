@@ -2,23 +2,33 @@
 # -*- coding: utf-8 -*-
 # import src.algorithmManager as am
 import sys
+import src.algorithmManager as am
 from  webApp import app
 from multiprocessing import Process
 
 def main():
-
-    if len(sys.argv)<3 or len(sys.argv)>3:
-        print("Fatal: argument amount invalid.")
-        print(f"Usage:  py {sys.argv[0]} server run/close")
+    if len(sys.argv)<2 or len(sys.argv)>2:
+        print("\nUse these two options:")
+        print(f"Usage1:  python {sys.argv[0]} server")
+        print(f"Usage2:  python {sys.argv[0]} terminal\n")
         sys.exit(1)
     else:
         arg1 = sys.argv[1]
-        arg2 = sys.argv[2]
-        if arg1 == "server" and arg2 == "run":
+        if arg1 == "server" and len(sys.argv) == 2:
             Process(target=app.run()).start()
-        if arg1 == "server" and arg2 == "close":
-            app.close()
-
+        elif arg1 == "terminal" and len(sys.argv) == 2:
+            URL = input('Enter your URL: ')
+            algorithmEngine = am.algorithmManager(URL) #algorithm object
+            output = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
+            output += "\nEvaluation points:" + str(algorithmEngine.points)
+            output += algorithmEngine.createOutputString()
+            finalOutput = output.replace("<br>", "\n" )
+            print(finalOutput)
+        else:
+            print("\nPlease don't, just use these two options:")
+            print(f"Usage1:  python {sys.argv[0]} server")
+            print(f"Usage2:  python {sys.argv[0]} terminal\n")
+        sys.exit(1)
 
 if __name__ == '__main__':
     main()
