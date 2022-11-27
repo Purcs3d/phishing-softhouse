@@ -9,6 +9,7 @@ import urllib3
 from src.URLCheck import url_sanitize
 
 #! debug libs
+#TODO https://docs.python.org/3/library/ssl.html#client-side-operation TLS chain
 from pprint import pprint
 
 __author__  = "Totte Hansen, DVADS20h"

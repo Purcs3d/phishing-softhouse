@@ -60,7 +60,7 @@
 
 from src.server_check import SSL_resolve as ssl_lib
 
-addr = "inet.se"
+addr = "http://youtube.com"
 
 print(ssl_lib.ssl_parse(addr).sane_url)
 print(ssl_lib.ssl_parse(addr).license)
