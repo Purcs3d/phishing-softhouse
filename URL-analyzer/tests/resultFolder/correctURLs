@@ -1,0 +1,233 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: http://balll.s3.ca-tor.cloud-object-storage.appdomain.cloud/littorals/login.html?qqbhpmbs=qjilgcm3ut8opepxqbqfdkpj3qjq&uadhampcd=ny4s6xojbdekzt8jj4xpzxtum&aex=mfpjlw3pxhs8br861lydnsivj9u6v&nhdyajgly=oayjeqoagttd47hr3urhlhn&nxeyfniwq=crnmozncupfeaxcos 
+Points: 120 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 50 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: balll.s3.ca-tor.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /littorals/ 
+	file: login.html 
+	path: /littorals/login.html 
+	fragment: None 
+	query: {'qqbhpmbs': 'qjilgcm3ut8opepxqbqfdkpj3qjq', 'uadhampcd': 'ny4s6xojbdekzt8jj4xpzxtum', 'aex': 'mfpjlw3pxhs8br861lydnsivj9u6v', 'nhdyajgly': 'oayjeqoagttd47hr3urhlhn', 'nxeyfniwq': 'crnmozncupfeaxcos'} 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno 11001] getaddrinfo failed
+------------------------
+
+URL: http://biancaa.s3.ca-tor.cloud-object-storage.appdomain.cloud/poy/login.html?mbosuvz=lfg8adkc6vlabbazqsmromeo&qoxv=ectjdtdidsq9kibf7&sxvvrltxse=i1olalvkdfs6wruz4t5yr97&adsoayx=cfhlifg8obzqno3x4n1&elhm=qvvbpizlbpt68v5pyt 
+Points: 120 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 52 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: biancaa.s3.ca-tor.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /poy/ 
+	file: login.html 
+	path: /poy/login.html 
+	fragment: None 
+	query: {'mbosuvz': 'lfg8adkc6vlabbazqsmromeo', 'qoxv': 'ectjdtdidsq9kibf7', 'sxvvrltxse': 'i1olalvkdfs6wruz4t5yr97', 'adsoayx': 'cfhlifg8obzqno3x4n1', 'elhm': 'qvvbpizlbpt68v5pyt'} 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno 11001] getaddrinfo failed
+------------------------
+
+URL: http://jwtbuk492.s3.ams03.cloud-object-storage.appdomain.cloud/parameterizations/login.html?vhavfgxben=O67EERqkI545ULVmJc 
+Points: 120 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '3']
+		The URL had a phishy length with 53 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: jwtbuk492.s3.ams03.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /parameterizations/ 
+	file: login.html 
+	path: /parameterizations/login.html 
+	fragment: None 
+	query: {'vhavfgxben': 'O67EERqkI545ULVmJc'} 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno 11001] getaddrinfo failed
+------------------------
+
+URL: http://labanque-postale1654.justns.ru/log/files/login/login.php 
+Points: 105 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['1']
+		The URL contained the following bad topdomain: ru
+		The URL had a phishy length with 28 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: labanque-postale1654 
+	domain: justns 
+	topDomain: ru 
+	dir: /log/files/login/ 
+	file: login.php 
+	path: /log/files/login/login.php 
+	fragment: None 
+	query: None 
+	ip: 46.17.40.77 
+	city: Moscow 
+	country: Russia 
+	region: Moscow 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://msnmsmsnsm219421.ultimatefreehost.in 
+Points: 170 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['1']
+		The URL contained the following bad keywords: ['free']
+		The URL had a phishy length with 34 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: msnmsmsnsm219421 
+	domain: ultimatefreehost 
+	topDomain: in 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 31.22.4.234 
+	city: Newcastle upon Tyne 
+	country: United Kingdom 
+	region: Newcastle upon Tyne 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://price.s3.ca-tor.cloud-object-storage.appdomain.cloud/herba/index.html 
+Points: 120 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 50 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: price.s3.ca-tor.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /herba/ 
+	file: index.html 
+	path: /herba/index.html 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno 11001] getaddrinfo failed
+------------------------
+
+URL: http://price.s3.ca-tor.cloud-object-storage.appdomain.cloud/herba/login.html 
+Points: 120 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 50 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: price.s3.ca-tor.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /herba/ 
+	file: login.html 
+	path: /herba/login.html 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno 11001] getaddrinfo failed
+------------------------
+
