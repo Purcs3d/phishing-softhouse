@@ -1,9 +1,11 @@
 # https://www.digitalocean.com/community/tutorials/how-to-use-a-postgresql-database-in-a-flask-application#step-1-creating-the-postgresql-database-and-user
 import psycopg2
+import src.config as config
 
 # att göra: kolla upp lösenord, och char(200) om det finns dynamisk
 # kolla upp SQLinjection bibliotek
 # om en URL i previousSearches är mer än 2 dagar gammal vid ny select -> ta bort, gör en trigger
+# ändra whitelist till INSERT OR REPLACE ist för bara insert alla rader.
 
 class DBhandler():
     """
@@ -11,14 +13,15 @@ class DBhandler():
     """
     def __init__(self, URLinfo = None):
         self.conn = psycopg2.connect(
-           database="URLanalyzer",
-            user='postgres',
-            password='root',
-            host='localhost',
-            port= '5432'
+           database=config.DB,
+            user=config.DB_USERNAME,
+            password=config.DB_PASSWORD,
+            host=config.DB_HOST,
+            port= config.DB_PORT
         )
         self.URLinfo = URLinfo
         self.cursor = self.conn.cursor()
+        self.init_createWhitelist() #if it doesnt exist, checked in function
 
     def __del__(self):
         self.conn.close()
@@ -36,7 +39,8 @@ CREATE TABLE IF NOT EXISTS URLanalyzer.previousSearches (
 	ID 	SERIAL 	PRIMARY KEY,
 	searchDate DATE DEFAULT CURRENT_DATE,
 	URL TEXT,
-	report TEXT
+	report TEXT,
+    fishy BOOLEAN
 );
 
 
@@ -84,58 +88,70 @@ drop trigger removeOldSearches;
     def init_createWhitelist(self):
         sql_str = "select count(*) from URLanalyzer.whitelist;"
         self.cursor.execute(sql_str)
-        if self.cursor.fetchone()[0] != 0:
-            print("Whitelist already exist")
+        if self.cursor.fetchone()[0] != 0: # Whitelist already exist
             return
-        else:
+        else: #white list doesnt exist:
             with open("whitelist.txt") as file:
                 for line in file:
                     sql_str = f"INSERT INTO URLanalyzer.whitelist (URL) VALUES ('{line.rstrip()}');"
                     self.cursor.execute(sql_str)
                 self.conn.commit()
 
-    def checkURLinWhitelist(self, url):
+    def checkURLinWhitelist(self):
         """
             Checks if URL exist in whitelist
             input: URL, output: if it exist(True) or not (False)
         """
+        if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.": # www.login.bth.se
+            url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        else: # bth.se
+            url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        if url.startswith("www."):
+            url = url[4:]
         sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}%';"
         self.cursor.execute(sql_str)
         if self.cursor.fetchone() == None:
-            print(f"Url not found in whitelist: {url}")
             return False
         else:
             return True
 
-    def checkURLinpreviousSearches(self, url):
+    def checkURLinpreviousSearches(self):
         """
             Checks if URL exist in previousSearches table
             input: URL, output: if it exist(True) or not (False)
         """
-        sql_str = f"select * from URLanalyzer.previousSearches where url = '{url}';"
+        sql_str = f"select * from URLanalyzer.previousSearches where url = '{self.URLinfo.url}';"
         self.cursor.execute(sql_str)
         if self.cursor.fetchone() == None:
-            print(f"Url not found in previousSearches: {url}")
             return False
         else:
             return True
-    def fetchPreviousSearchReport(self, url):
+    def fetchPreviousSearchReport(self):
         """
             Fetches report from a url found in previousSearches table.
             ! Used in combination with the function checkURLinpreviousSearches !
             input: URL, output: report of previously searched URL
         """
-        sql_str = f"select report from URLanalyzer.previousSearches where url = '{url}';"
+        sql_str = f"select report from URLanalyzer.previousSearches where url = '{self.URLinfo.url}';"
+        self.cursor.execute(sql_str)
+        return self.cursor.fetchone()[0]
+    def fetchPreviousSearchPhishiness(self):
+        """
+            Fetches boolean that holds if a URL is fishy/not fishy from a url found in previousSearches table.
+            ! Used in combination with the function checkURLinpreviousSearches !
+            input: URL, output: bool
+        """
+        sql_str = f"select fishy from URLanalyzer.previousSearches where url = '{self.URLinfo.url}';"
         self.cursor.execute(sql_str)
         return self.cursor.fetchone()[0]
 
-    def insertIntopreviousSearches(self, url, report):
+    def insertIntopreviousSearches(self, url, report, fishy):
         """
             This function inserts a url into the database
             There is a trigger in the database that deletes url searches older than 3 days after insert
             input: URL, and its report
         """
-        sql_str = f"INSERT INTO URLanalyzer.previousSearches (URL, report) VALUES ('{url}', '{report}');"
+        sql_str = f"INSERT INTO URLanalyzer.previousSearches (URL, report, fishy) VALUES ('{url}', '{report}', {fishy});"
         self.cursor.execute(sql_str)
         self.conn.commit()
 
@@ -162,4 +178,4 @@ def testium():
         print(DBtester.fetchPreviousSearchReport("svt.se"))
     # DBtester.test()
 
-testium()
+# testium()
