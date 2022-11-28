@@ -31,8 +31,8 @@ def main():
                         print(finalOutput)
                     else:
                         print("The URL input is not valid\n")
-                except Exception:
-                    print("Something is broken in the backend")
+                except Exception as e:
+                    print(f"Error: {e}")
         else:
             print("\nPlease don't, just use these two options:")
             print(f"Usage1:  python {sys.argv[0]} server")

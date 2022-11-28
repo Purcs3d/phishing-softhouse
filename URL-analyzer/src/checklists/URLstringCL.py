@@ -93,7 +93,7 @@ class URLstringCL():
         if violatedSpecialKeyword:
             self.points += 80
 
-            self.rapport.append(f"The URL contained the following bad keywords: {keywordViolated}")
+            self.report.append(f"The URL contained the following bad keywords: {keywordViolated}")
 
     def containUnicode(self):
         if(sp.stringParser.UnicodeCheker(self)):

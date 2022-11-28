@@ -21,6 +21,6 @@ def CheckURL():
             flash(output)
         else:
             flash("Please enter a valid URL")
-    except Exception:
-        flash("Something is broken in the backend")
+    except Exception as e:
+        flash(f"Error: {e}") 
     return render_template("index.html")
