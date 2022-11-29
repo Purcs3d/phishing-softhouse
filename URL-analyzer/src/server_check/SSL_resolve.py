@@ -51,7 +51,7 @@ class ssl_parse: #* @auth: Totte Hansen
                 # fetch sock version
                 with context.wrap_socket(sock, server_hostname=hostname) as ssock:
                     try:
-                        return ssock.version()
+                        return ssock.getpeercert()
 
                     except Exception as err:
                         if excep:
@@ -73,4 +73,4 @@ class ssl_parse: #* @auth: Totte Hansen
     def __init__(self, url : str) -> None: #* @auth: Totte Hansen
         self.original_url = url
         self.sane_url = ssl_sanetize(url)
-        self.license = self.fetch_ssl(self.sane_url)
+        self.cert = self.fetch_ssl(self.sane_url)

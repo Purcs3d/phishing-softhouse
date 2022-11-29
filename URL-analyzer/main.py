@@ -59,8 +59,14 @@
 
 
 from src.server_check import SSL_resolve as ssl_lib
+from pprint import pprint
+from src.checklists.SSLCL import SSL_CL as ssl_cl
 
-addr = "http://youtube.com"
+addr = "http://facebook.com"
 
-print(ssl_lib.ssl_parse(addr).sane_url)
-print(ssl_lib.ssl_parse(addr).license)
+cert_wrap = ssl_lib.ssl_parser(addr)
+# cl = ssl_cl(addr)
+
+pprint(cert_wrap.cert)
+# print(cert_wrap.check_version())
+

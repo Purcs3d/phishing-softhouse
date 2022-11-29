@@ -24,13 +24,14 @@ class SSL_CL:
         point_value_none = 50
 
         # no license could be fetched from site
-        if self.ssl.license == None:
+        if self.cert == None:
             self.points += point_value_none
             self.report.append("The website lacks TSL/SSL ensurance")
 
-        elif self.ssl.license not in conf.WHITE_CRT_VER:
+        version = self.cert["version"]
+        if version >= conf.MIN_CERT_VER:
             self.points += point_value_version
-            self.report.append("The website uses an outdated TSL/SSL license version")
+            self.report.append("The website uses an outdated TSL/SSL license version (Version {self.cert['version']})")
 
     def check_licenser(self):
         """
@@ -88,4 +89,4 @@ class SSL_CL:
         self.report = []
 
         self.url = url
-        self.ssl = ssl_resolve.SSLParse(url)
+        self.cert = ssl_resolve.SSLParse(url)
