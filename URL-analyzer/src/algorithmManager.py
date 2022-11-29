@@ -17,12 +17,12 @@ class algorithmManager:
         self.DBonline = True
         self.URLinWhitelist = False
         self.URLinPreviousSearches = False
+        self.fishy = False
         try:
             self.checkDB() # check if in whitelist/previous searches
         except Exception as e:
             self.DBonline = False
-            self.URLinfoObj.errors.append(f"Error in database connection: {e}")
-            #continue -- failed DB connection, run anyway
+            self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway.")
         self.URLinfoObj.collectInfo() #make object collect information about url
         self.pointPhishingLimit = 100
 
@@ -45,19 +45,18 @@ class algorithmManager:
         self.report["errors"] = self.URLinfoObj.errors #errors during information gathering
 
         #fishy ?
-        fishy = None
         if self.points > self.pointPhishingLimit:
-            fishy = True
+            self.fishy = True
         else:
-            fishy = False
+            self.fishy = False
 
         # send url to history of searches table
         if self.DBonline == True: ##################################TODO: kan ej hantera symbolen '' i DB! ex special ['1']####
-            reportStr = "fishy?:" + str(fishy)
+            reportStr = "fishy?:" + str(self.fishy)
             reportStr +=  "<br> evaluation points:" + str(self.points)
-            reportStr += self.createOutputString()
-            self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, fishy)
-        return fishy
+            reportStr = self.createOutputString()
+            self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
+        return self.fishy
 
     def runEvaluations(self):
         """
@@ -90,13 +89,15 @@ class algorithmManager:
 
 
     def createOutputString(self):
-        outputStr = "<br>"
         if self.URLinWhitelist == True:
-            outputStr += "URL in whitelist."+ "<br>"
+            outputStr = "URL in exist whitelist and is not phishy."+ "<br>"
             return outputStr
         if self.URLinPreviousSearches == True:
+            outputStr = "URL recently searched; fetched report:"+ "<br>"
             outputStr += self.DBhandlerObj.fetchPreviousSearchReport()
             return outputStr
+        outputStr = "fishy?:" + str(self.fishy)
+        outputStr +=  "<br> evaluation points:" + str(self.points) + "<br>"
         for message in self.report["URLstringCL"]:
             outputStr += message + "<br>"
         outputStr += "<br>"

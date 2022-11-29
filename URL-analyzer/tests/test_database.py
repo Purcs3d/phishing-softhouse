@@ -14,8 +14,23 @@ import src.URLCheck.URLinfo as urlinfo
     ! Assumption: Whitelist is initialized !
 """
 
+def test_delDB():
+    print("\nTesting deleteing the URLanalyzer schema with all tables, function and trigger.")
+    URLinfoObj = urlinfo.URLinfo("svt.se")
+    URLinfoObj.getURLstringInfo()
+    DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
+    DBhandlerObj.delDB()
+
+def test_initDB():
+    print("\nTesting creating the database with all tables, function and trigger.")
+    URLinfoObj = urlinfo.URLinfo("alskdjdauodiuhwahdksjdjasldksakdas.se")
+    URLinfoObj.getURLstringInfo()
+    DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
+    DBhandlerObj.initDB()
+    assert DBhandlerObj.checkURLinpreviousSearches() == False
+
 def test_selects():
-    print("Tests to see if simple SELECT query works")
+    print("\nTests to see if simple SELECT query works")
     URLinfoObj = urlinfo.URLinfo("http://test.org/")
     URLinfoObj.getURLstringInfo()
     DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
@@ -23,7 +38,7 @@ def test_selects():
     DBhandlerObj.cursor.execute(sql_str)
 
 def test_checkWhitelist():
-    print("Checking if URLs exist in whitelist")
+    print("\nChecking if URLs exist in whitelist")
     URLinfoObj = urlinfo.URLinfo("http://www.google.se/")
     URLinfoObj.getURLstringInfo()
     DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
@@ -39,7 +54,7 @@ def test_checkWhitelist():
 
 
 def test_checkPreviousSearches():
-    print("Checking if URL not exist in previousSearches table")
+    print("\nChecking if URL not exist in previousSearches table")
     URLinfoObj = urlinfo.URLinfo("alskdjdauodiuhwahdksjdjasldksakdas.se")
     URLinfoObj.getURLstringInfo()
     DBhandlerObj = dbhandler.DBhandler(URLinfoObj)

@@ -15,8 +15,9 @@ def index():
 def CheckURL():
     URLinput = str(request.form['URL_input'])
     algorithmEngine = am.algorithmManager(URLinput) #algorithm object
-    output = "fishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
-    output += "<br> evaluation points:" + str(algorithmEngine.points)
-    output += algorithmEngine.createOutputString()
+    algorithmEngine.run()
+    # output = "fishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
+    # output += "<br> evaluation points:" + str(algorithmEngine.points)
+    output = algorithmEngine.createOutputString()
     flash(output)
     return render_template("index.html")

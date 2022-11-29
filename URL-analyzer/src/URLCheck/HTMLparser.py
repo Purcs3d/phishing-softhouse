@@ -24,12 +24,12 @@ class HTMLparser():
             else:
                 response = session.get(self.URLinfo.url)
             self.fetchFaviconInfo(response)
-        except Exception as e:
-            self.URLinfo.errors.append(f"Error during HTML info collecting: {e}")
+        except Exception:
+            self.URLinfo.errors.append(f"Error during HTML info collecting, connection failed.")
             return self.URLinfo
         return self.URLinfo
 
-    def fetchFaviconInfo(self, responseInfo): 
+    def fetchFaviconInfo(self, responseInfo):
         """
             Collects info about websites favicon, to my knowledge, favicon info exist in in html tags: link and meta
 

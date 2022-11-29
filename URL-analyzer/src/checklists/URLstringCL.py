@@ -48,7 +48,7 @@ class URLstringCL():
 
         if violatedSpecialChar:
             self.points += 30
-            self.report.append(f"The URL violated the following special characters: {charViolated}")
+            self.report.append("The URL violated the following special characters:" + ", ".join(charViolated))
 
 
     def checkSpecialKeywords(self):
@@ -88,7 +88,7 @@ class URLstringCL():
 
         if violatedSpecialKeyword:
             self.points += 80
-            self.report.append(f"The URL contained the following bad keywords: {keywordViolated}")
+            self.report.append("The URL contained the following bad keywords:" + ", ".join(keywordViolated))
 
 
     def checkTopDomain(self):

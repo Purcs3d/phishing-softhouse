@@ -18,8 +18,8 @@ class stringParser():
         """
         try:
             parse = get_url(self.URLinfo.url)
-        except Exception as e:
-            self.URLinfo.errors.append(f"Error during STRING parsing: {e}")
+        except Exception:
+            self.URLinfo.errors.append(f"Error during STRING parsing. Couldnt recognise URL format.")
             return self.URLinfo
         self.URLinfo.www = parse.www
         self.URLinfo.protocol = parse.protocol

@@ -1,11 +1,15 @@
 # https://www.digitalocean.com/community/tutorials/how-to-use-a-postgresql-database-in-a-flask-application#step-1-creating-the-postgresql-database-and-user
 import psycopg2
 import src.config as config
+from pathlib import Path
 
 # att göra: kolla upp lösenord, och char(200) om det finns dynamisk
 # kolla upp SQLinjection bibliotek
 # om en URL i previousSearches är mer än 2 dagar gammal vid ny select -> ta bort, gör en trigger
 # ändra whitelist till INSERT OR REPLACE ist för bara insert alla rader.
+
+# Hur skall DB initializeras
+# hur skall den tas bort??
 
 class DBhandler():
     """
@@ -21,12 +25,42 @@ class DBhandler():
         )
         self.URLinfo = URLinfo
         self.cursor = self.conn.cursor()
-        self.init_createWhitelist() #if it doesnt exist, checked in function
 
     def __del__(self):
         self.conn.close()
 
+    def delDB(self):
+        sql_str = "DROP SCHEMA IF EXISTS URLanalyzer CASCADE;"
+        self.cursor.execute(sql_str)
+        self.conn.commit()
+
+
     def initDB(self):
+        sql_str = "CREATE SCHEMA IF NOT EXISTS URLanalyzer;"
+        self.cursor.execute(sql_str)
+        sql_str = "CREATE TABLE IF NOT EXISTS URLanalyzer.whitelist (ID 	SERIAL 	PRIMARY KEY, URL TEXT);"
+        self.cursor.execute(sql_str)
+        sql_str = "CREATE TABLE IF NOT EXISTS URLanalyzer.previousSearches (ID 	SERIAL 	PRIMARY KEY,searchDate DATE DEFAULT CURRENT_DATE,URL TEXT,report TEXT,fishy BOOLEAN);"
+        self.cursor.execute(sql_str)
+        sql_str = """CREATE OR REPLACE FUNCTION oldSearchesFunc()
+          RETURNS TRIGGER
+          LANGUAGE PLPGSQL
+          AS
+        $$
+        BEGIN
+        	delete from urlanalyzer.previoussearches
+        	where extract(day from CURRENT_DATE)- extract( day from searchDate) > 3;
+        	RETURN NULL;
+        END;
+        $$"""
+        self.cursor.execute(sql_str)
+        sql_str = """create or replace trigger removeOldSearches
+        before insert on urlanalyzer.previoussearches
+        EXECUTE PROCEDURE oldSearchesFunc();"""
+        self.cursor.execute(sql_str)
+        self.conn.commit()
+        self.init_createWhitelist() #if it doesnt exist, checked in function
+        # DB STRING:
         """
 CREATE SCHEMA IF NOT EXISTS URLanalyzer;
 
@@ -43,22 +77,6 @@ CREATE TABLE IF NOT EXISTS URLanalyzer.previousSearches (
     fishy BOOLEAN
 );
 
-
-CREATE TABLE IF NOT EXISTS URLanalyzer.test (
-	ID 	SERIAL 	PRIMARY KEY
-);
-select * from URLanalyzer.test;
-select count(*) from urlanalyzer.test; -- if empy table -> 0
-drop table URLanalyzer.test;
-
-select * from urlanalyzer.previoussearches;
-
-select * from urlanalyzer.previoussearches;
-
-insert into urlanalyzer.previoussearches(URL, report)
-VALUES ('youtube.com', 'report');
-
--- for each new insert, remove searches older than 3 days
 CREATE OR REPLACE FUNCTION oldSearchesFunc()
   RETURNS TRIGGER
   LANGUAGE PLPGSQL
@@ -71,11 +89,11 @@ BEGIN
 END;
 $$
 create trigger removeOldSearches
-after insert on urlanalyzer.previoussearches
+before insert on urlanalyzer.previoussearches
 EXECUTE PROCEDURE oldSearchesFunc();
 
-drop function oldSearchesFunc;
-drop trigger removeOldSearches;
+drop function if exists oldSearchesFunc;
+drop trigger if exists removeOldSearches;
 
 -- drop table urlanalyzer.whitelist;
 -- truncate table urlanalyzer.whitelist;
@@ -91,7 +109,9 @@ drop trigger removeOldSearches;
         if self.cursor.fetchone()[0] != 0: # Whitelist already exist
             return
         else: #white list doesnt exist:
-            with open("whitelist.txt") as file:
+            dataFolder = Path("..\\src\\DB\\")
+            filename = dataFolder / "whitelist.txt"
+            with open(filename) as file:
                 for line in file:
                     sql_str = f"INSERT INTO URLanalyzer.whitelist (URL) VALUES ('{line.rstrip()}');"
                     self.cursor.execute(sql_str)
@@ -102,12 +122,13 @@ drop trigger removeOldSearches;
             Checks if URL exist in whitelist
             input: URL, output: if it exist(True) or not (False)
         """
-        if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.": # www.login.bth.se
-            url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        else: # bth.se
-            url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        if url.startswith("www."):
-            url = url[4:]
+        # if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.": # www.login.bth.se
+        #     url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        # else: # bth.se
+        #     url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        # if url.startswith("www."):
+        #     url = url[4:]
+        url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
         sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}%';"
         self.cursor.execute(sql_str)
         if self.cursor.fetchone() == None:
