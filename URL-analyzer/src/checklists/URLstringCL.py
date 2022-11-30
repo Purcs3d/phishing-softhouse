@@ -25,6 +25,7 @@ class URLstringCL():
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         self.containUnicode()
+        self.containsPort()
 
         self.checkTopDomain()
         self.checkUrlLength()
