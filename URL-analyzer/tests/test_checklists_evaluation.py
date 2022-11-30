@@ -2,7 +2,7 @@ import pytest
 import src.URLCheck.URLinfo as urlinfo
 import src.checklists.URLstringCL as URLCL
 import src.checklists.HTMLdataCL as HTMLCL
-import src.checklists.DNSChecklist as DNSCL
+import src.checklists.DNSdataCL as DNSCL
 import src.checklists.DatabaseComparisonCL as DBCL
 
 """
@@ -54,8 +54,8 @@ def test_DNS_checklist(URLinfoObj):
     URLinfoObj.url = "www.gp.se"
     URLinfoObj.getURLstringInfo() # used to fetch DNS info
     URLinfoObj.getDNSinfo()
-    DNSCLobj = DNSCL.DNSChecklist(URLinfoObj)
-    assert  points < DNSCLobj.evaluate() #site is more than 1 day old
+    DNSCLobj = DNSCL.DNSdataCL(URLinfoObj)
+    assert  points < DNSCLobj.runEvaluation() #site is more than 1 day old
 
 def test_HTML_checklist(URLinfoObj):
     print("\nTesting HTML evaluation")
@@ -76,7 +76,7 @@ def test_full_evaluation(URLinfoObj):
     URLinfoObj.url = "https://ieeexplore-ieee-org.miman.bib.bth.se/Xplore/cookiedetectresponse.jsp"
     URLinfoObj.collectInfo()
     URLCLobj = URLCL.URLstringCL(URLinfoObj)
-    DNSCLobj = DNSCL.DNSChecklist(URLinfoObj)
+    DNSCLobj = DNSCL.DNSdataCL(URLinfoObj)
     HTMLCLobj = HTMLCL.HTMLdataCL(URLinfoObj)
     URLCLobj.checkUrlLength()
     assert points < URLCLobj.points #url length > config_BAD_URL_Length
@@ -84,9 +84,9 @@ def test_full_evaluation(URLinfoObj):
     URLCLobj.checkNumberOfSubdomains()
     assert points < URLCLobj.points # bad number of subdomains
     points = URLCLobj.points
-    DNSCLobj = DNSCL.DNSChecklist(URLinfoObj)
+    DNSCLobj = DNSCL.DNSdataCL(URLinfoObj)
     points = 0 #reset for rest checklists
-    assert  points < DNSCLobj.evaluate() #site is more than 1 day old
-    points += DNSCLobj.evaluate()
+    assert  points < DNSCLobj.runEvaluation() #site is more than 1 day old
+    points += DNSCLobj.runEvaluation()
     HTMLCLobj.runEvaluation()
     assert  points < HTMLCLobj.points #site lacks favicon

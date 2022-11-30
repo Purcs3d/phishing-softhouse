@@ -26,7 +26,7 @@ class algorithmManager:
         self.runEvaluations() # collect total points and gather reports
         self.report["URLreport"] = self.URLinfoObj.generateReport() #information on URL
         self.report["errors"] = self.URLinfoObj.errors #errors during information gathering
-        if self.points > self.pointPhishingLimit:
+        if self.points >= self.pointPhishingLimit:
             return True
         else:
             return False
@@ -47,6 +47,7 @@ class algorithmManager:
         HTMLdataCLobj = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
         DNSChecklistObj = DNSdataCL.DNSdataCL(self.URLinfoObj)
+
 
         #run their seperate evaluations
         self.points += URLstringCLobj.runEvaluation()
