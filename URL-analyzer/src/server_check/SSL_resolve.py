@@ -29,7 +29,7 @@ def ssl_sanetize(url:str) -> str:
     return sane_url
 
 
-class ssl_parse: #* @auth: Totte Hansen
+class ssl_parser: #* @auth: Totte Hansen
     def sanitize_url(self, url:str) -> None:
         self.sane_url = url_sanitize.rm_scheme(url, True)
 

@@ -1,0 +1,5328 @@
+These are all of the URLs that the algorithm wrongly classified as not phishingLinks 
+
+URL: https://5a24v.app.link/btcoesecurebt365homelogin 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: 5a24v 
+	domain: app 
+	topDomain: link 
+	dir: None 
+	file: btcoesecurebt365homelogin 
+	path: /btcoesecurebt365homelogin 
+	fragment: None 
+	query: None 
+	ip: 13.33.141.30 
+	city: Seattle 
+	country: United States 
+	region: Washington 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://37f7a743313764869.temporary.link/mos/mm2/357a6fdf7642bf815a88822c447d9dc4 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['3', '8', '1']
+		The URL had a phishy length with 30 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 37f7a743313764869 
+	domain: temporary 
+	topDomain: link 
+	dir: /mos/mm2/ 
+	file: 357a6fdf7642bf815a88822c447d9dc4 
+	path: /mos/mm2/357a6fdf7642bf815a88822c447d9dc4 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -3] Temporary failure in name resolution
+------------------------
+
+URL: https://2021-free-robux-generator.000webhostapp.com 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 41 letters
+
+	www: None 
+	protocol: https 
+	subDomain: 2021-free-robux-generator 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://298123.groovepages.com/93952 
+Points: 30 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3', '8', '1']
+
+	www: None 
+	protocol: https 
+	subDomain: 298123 
+	domain: groovepages 
+	topDomain: com 
+	dir: None 
+	file: 93952 
+	path: /93952 
+	fragment: None 
+	query: None 
+	ip: 104.18.216.62 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://568235.groovepages.com/3461211 
+Points: 30 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3', '8']
+
+	www: None 
+	protocol: https 
+	subDomain: 568235 
+	domain: groovepages 
+	topDomain: com 
+	dir: None 
+	file: 3461211 
+	path: /3461211 
+	fragment: None 
+	query: None 
+	ip: 104.18.216.62 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://08863299.sso-secure-mail0454etr.pages.dev/?emailtoken=aaaa@example.jp&amp;domain=example.jp 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3', '8']
+		The URL had a phishy length with 39 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: 08863299.sso-secure-mail0454etr 
+	domain: pages 
+	topDomain: dev 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'emailtoken': 'aaaa@example.jp', 'amp;domain': 'example.jp'} 
+	ip: 104.18.21.135 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://a0585447.xsph.ru/sg1/rs/sg 
+Points: 85 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '8']
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: a0585447 
+	domain: xsph 
+	topDomain: ru 
+	dir: /sg1/rs/ 
+	file: sg 
+	path: /sg1/rs/sg 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://abaadteam.com/qlm/customer-area/app 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abaadteam 
+	topDomain: com 
+	dir: /qlm/customer-area/ 
+	file: app 
+	path: /qlm/customer-area/app 
+	fragment: None 
+	query: None 
+	ip: 37.48.65.148 
+	city: None 
+	country: Netherlands 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://abaadteam.com/qlm/customer-area 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abaadteam 
+	topDomain: com 
+	dir: /qlm/ 
+	file: customer-area 
+	path: /qlm/customer-area 
+	fragment: None 
+	query: None 
+	ip: 37.48.65.148 
+	city: None 
+	country: Netherlands 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://akakup.co.za.netune.co.za.lexna.com.na 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 36 letters
+		The URL have an unusual amount of 6 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: akakup.co.za.netune.co.za 
+	domain: lexna 
+	topDomain: com.na 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: Not found 
+	city: Not found 
+	country: Not found 
+	region: Not found 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://alerta208.000webhostapp.com 
+Points: 30 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '8']
+
+	www: None 
+	protocol: https 
+	subDomain: alerta208 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://alkautsar.or.id/assets/journal/IK/of1/5ybcwg4h2ilnx1to6e08fjkrsvapzm7ud3q9y3z4a781xne2kcdlrt5ovpqwhu6fbgijs0m9owbs59vl8x4jc02mknay6t1rgfzeqpiu7hd3?data=U2FtdWVsLkx5bmRAQk1IQ0Mub3Jn 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alkautsar 
+	topDomain: or.id 
+	dir: /assets/journal/IK/of1/ 
+	file: 5ybcwg4h2ilnx1to6e08fjkrsvapzm7ud3q9y3z4a781xne2kcdlrt5ovpqwhu6fbgijs0m9owbs59vl8x4jc02mknay6t1rgfzeqpiu7hd3 
+	path: /assets/journal/IK/of1/5ybcwg4h2ilnx1to6e08fjkrsvapzm7ud3q9y3z4a781xne2kcdlrt5ovpqwhu6fbgijs0m9owbs59vl8x4jc02mknay6t1rgfzeqpiu7hd3 
+	fragment: None 
+	query: {'data': 'U2FtdWVsLkx5bmRAQk1IQ0Mub3Jn'} 
+	ip: 185.27.133.15 
+	city: None 
+	country: United Kingdom 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://alkautsar.or.id/assets/journal/IK/of1/ohq4um1zepkcl75i6abdrv8wx0syf32ntgj9d5gztufjwspe2rkx61ih3bq9l08ynamvoc74acfb07zunwhokie15v4ytgmxpl69d23jsq8r?data=c2VucmlnaHRAbndvYnRjLm9yZw== 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alkautsar 
+	topDomain: or.id 
+	dir: /assets/journal/IK/of1/ 
+	file: ohq4um1zepkcl75i6abdrv8wx0syf32ntgj9d5gztufjwspe2rkx61ih3bq9l08ynamvoc74acfb07zunwhokie15v4ytgmxpl69d23jsq8r 
+	path: /assets/journal/IK/of1/ohq4um1zepkcl75i6abdrv8wx0syf32ntgj9d5gztufjwspe2rkx61ih3bq9l08ynamvoc74acfb07zunwhokie15v4ytgmxpl69d23jsq8r 
+	fragment: None 
+	query: {'data': 'c2VucmlnaHRAbndvYnRjLm9yZw'} 
+	ip: 185.27.133.15 
+	city: None 
+	country: United Kingdom 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://alkautsar.or.id/docs/IK/of1/bjfgy5x6mukv9ow3selh4idr7c2a8q0ntz1pb9hq3enu4rtmjf0divsawkl78zyx21cgpo56d7jqoup9nwczkiabfrythx0m8sgv231l5e64?data=am9obi5kaXhvbkBxdWVlbnN1LmNh 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alkautsar 
+	topDomain: or.id 
+	dir: /docs/IK/of1/ 
+	file: bjfgy5x6mukv9ow3selh4idr7c2a8q0ntz1pb9hq3enu4rtmjf0divsawkl78zyx21cgpo56d7jqoup9nwczkiabfrythx0m8sgv231l5e64 
+	path: /docs/IK/of1/bjfgy5x6mukv9ow3selh4idr7c2a8q0ntz1pb9hq3enu4rtmjf0divsawkl78zyx21cgpo56d7jqoup9nwczkiabfrythx0m8sgv231l5e64 
+	fragment: None 
+	query: {'data': 'am9obi5kaXhvbkBxdWVlbnN1LmNh'} 
+	ip: 185.27.133.15 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://alkautsar.or.id/docs/IK/of1/u1kb2az8sijfcxd7rlpvqwyh9nog6m4t5e30tecm75vysan6zo98qg4lr1x0w3ujpkf2dibhrnxefzgdmk3c9hu016j2t7iolwysp485qvba?data=aW5mb0BpbmJvZHljYW5hZGEuY2E= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alkautsar 
+	topDomain: or.id 
+	dir: /docs/IK/of1/ 
+	file: u1kb2az8sijfcxd7rlpvqwyh9nog6m4t5e30tecm75vysan6zo98qg4lr1x0w3ujpkf2dibhrnxefzgdmk3c9hu016j2t7iolwysp485qvba 
+	path: /docs/IK/of1/u1kb2az8sijfcxd7rlpvqwyh9nog6m4t5e30tecm75vysan6zo98qg4lr1x0w3ujpkf2dibhrnxefzgdmk3c9hu016j2t7iolwysp485qvba 
+	fragment: None 
+	query: {'data': 'aW5mb0BpbmJvZHljYW5hZGEuY2E'} 
+	ip: 185.27.133.15 
+	city: None 
+	country: United Kingdom 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://alkautsar.or.id/assets/markil/IK/of1/6puhbotq2jfxmz9n81s7kel4vw5igdy30car8onbvdi9c4yqzjaxlkm5s7e06rt1h2gufp3wkwqjgymup03bht2iecrz8dsnx1o4fv75la96?data=YmlsbEBhcGV4YXBwbGlhbmNlcmVwYWlyLmNvbQ== 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alkautsar 
+	topDomain: or.id 
+	dir: /assets/markil/IK/of1/ 
+	file: 6puhbotq2jfxmz9n81s7kel4vw5igdy30car8onbvdi9c4yqzjaxlkm5s7e06rt1h2gufp3wkwqjgymup03bht2iecrz8dsnx1o4fv75la96 
+	path: /assets/markil/IK/of1/6puhbotq2jfxmz9n81s7kel4vw5igdy30car8onbvdi9c4yqzjaxlkm5s7e06rt1h2gufp3wkwqjgymup03bht2iecrz8dsnx1o4fv75la96 
+	fragment: None 
+	query: {'data': 'YmlsbEBhcGV4YXBwbGlhbmNlcmVwYWlyLmNvbQ'} 
+	ip: 185.27.133.15 
+	city: None 
+	country: United Kingdom 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://amaz0n.pass-carod.ga 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: amaz0n 
+	domain: pass-carod 
+	topDomain: ga 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 195.20.51.112 
+	city: None 
+	country: Netherlands 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptdimdu1btfynjm= 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptdimdu1btfynjm= 
+	path: /p2w9yszpptdimdu1btfynjm= 
+	fragment: None 
+	query: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptfjmmozszb2mdg4cg== 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptfjmmozszb2mdg4cg== 
+	path: /p2w9yszpptfjmmozszb2mdg4cg== 
+	fragment: None 
+	query: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://anjayyoung.000webhostapp.com/cmosts.html 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 26 letters
+
+	www: None 
+	protocol: https 
+	subDomain: anjayyoung 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: cmosts.html 
+	path: /cmosts.html 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://appeal-form-fb-copyright18762.web.app/appeal.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['8', '1']
+		The URL had a phishy length with 36 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: appeal-form-fb-copyright18762 
+	topDomain: web.app 
+	dir: None 
+	file: appeal.html 
+	path: /appeal.html 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://appeal-form-fb-copyright18762.web.app 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['8', '1']
+		The URL had a phishy length with 36 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: appeal-form-fb-copyright18762 
+	topDomain: web.app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://appeal-form-fb-copyright104352.web.app/appeal.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3', '1']
+		The URL had a phishy length with 37 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: appeal-form-fb-copyright104352 
+	topDomain: web.app 
+	dir: None 
+	file: appeal.html 
+	path: /appeal.html 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://appeal-form-fb-copyright104352.web.app 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3', '1']
+		The URL had a phishy length with 37 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: appeal-form-fb-copyright104352 
+	topDomain: web.app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://appeal-form-fb-copyright104352.web.app/check.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3', '1']
+		The URL had a phishy length with 37 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: appeal-form-fb-copyright104352 
+	topDomain: web.app 
+	dir: None 
+	file: check.html 
+	path: /check.html 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://appeal-form-fb-copyright126776.web.app 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['1']
+		The URL had a phishy length with 37 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: appeal-form-fb-copyright126776 
+	topDomain: web.app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://appeal-form-fb-copyright126776.web.app/appeal.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['1']
+		The URL had a phishy length with 37 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: appeal-form-fb-copyright126776 
+	topDomain: web.app 
+	dir: None 
+	file: appeal.html 
+	path: /appeal.html 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://appeal-form-fb-copyright126776.web.app/check.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['1']
+		The URL had a phishy length with 37 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: appeal-form-fb-copyright126776 
+	topDomain: web.app 
+	dir: None 
+	file: check.html 
+	path: /check.html 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://asse6010.com/img/we/wetransfer?email=tontaina@mailfever.es 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '1']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: asse6010 
+	topDomain: com 
+	dir: /img/we/ 
+	file: wetransfer 
+	path: /img/we/wetransfer 
+	fragment: None 
+	query: {'email': 'tontaina@mailfever.es'} 
+	ip: 50.3.211.243 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://attnetemailcommunicationservice.weebly.com 
+Points: 20 
+
+The website generated the following report:
+		The URL had a phishy length with 40 letters
+
+	www: None 
+	protocol: https 
+	subDomain: attnetemailcommunicationservice 
+	domain: weebly 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 74.115.50.110 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://attspak.weebly.com 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: attspak 
+	domain: weebly 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 74.115.50.110 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://axieinfenity.com/axie.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: axieinfenity 
+	topDomain: com 
+	dir: None 
+	file: axie.php 
+	path: /axie.php 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://axieinfenity.com 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: axieinfenity 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://ayuda-blog1.blogspot.com/?m=1 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['1']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ayuda-blog1 
+	topDomain: blogspot.com 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'m': '1'} 
+	ip: 142.250.74.161 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://ayuda-blog1.blogspot.de/?m=1 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['1']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ayuda-blog1 
+	topDomain: blogspot.de 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'m': '1'} 
+	ip: 142.250.74.161 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://ayuda-blog1.blogspot.is/?m=1 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['1']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ayuda-blog1 
+	topDomain: blogspot.is 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'m': '1'} 
+	ip: 142.250.74.161 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://basis.org.ua/sites/all/themes/omega/alpha/chartererror/error.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: basis 
+	topDomain: org.ua 
+	dir: /sites/all/themes/omega/alpha/chartererror/ 
+	file: error.php 
+	path: /sites/all/themes/omega/alpha/chartererror/error.php 
+	fragment: None 
+	query: None 
+	ip: 77.87.195.106 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://biancaa.s3.ca-tor.cloud-object-storage.appdomain.cloud/poy/index.html 
+Points: 100 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 52 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: biancaa.s3.ca-tor.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /poy/ 
+	file: index.html 
+	path: /poy/index.html 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://blueberry8201455.brizy.site 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '8', '1']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: blueberry8201455 
+	domain: brizy 
+	topDomain: site 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 34.237.47.210 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+Error during HTML info collecting: Document is empty
+------------------------
+
+URL: http://btbroadbands453122689.boxmode.io 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['3', '8', '1']
+		The URL had a phishy length with 30 letters
+
+	www: None 
+	protocol: http 
+	subDomain: btbroadbands453122689 
+	domain: boxmode 
+	topDomain: io 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 209.192.137.208 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://btbroadbands453122689.boxmode.io 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3', '8', '1']
+		The URL had a phishy length with 30 letters
+
+	www: None 
+	protocol: https 
+	subDomain: btbroadbands453122689 
+	domain: boxmode 
+	topDomain: io 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 209.192.137.208 
+	city: Dallas 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://bt-info-101537.square.site 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3', '1']
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: bt-info-101537 
+	domain: square 
+	topDomain: site 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 76.223.91.57 
+	city: Seattle 
+	country: United States 
+	region: Washington 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://cancelaciondetranferenciasguatemala.webnode.es 
+Points: 40 
+
+The website generated the following report:
+		The URL had a phishy length with 44 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: cancelaciondetranferenciasguatemala 
+	domain: webnode 
+	topDomain: es 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 93.185.100.184 
+	city: None 
+	country: Czechia 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://careerassam.com/wp-admin/maint/storage/inline.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: careerassam 
+	topDomain: com 
+	dir: /wp-admin/maint/storage/ 
+	file: inline.php 
+	path: /wp-admin/maint/storage/inline.php 
+	fragment: None 
+	query: None 
+	ip: 184.168.116.155 
+	city: Scottsdale 
+	country: United States 
+	region: Arizona 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://cut.ly/AlertalBK 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: cut 
+	topDomain: ly 
+	dir: None 
+	file: AlertalBK 
+	path: /AlertalBK 
+	fragment: None 
+	query: None 
+	ip: 46.248.190.217 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://dappswalletsconnects.net 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: dappswalletsconnects 
+	topDomain: net 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.221 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://dottystylecreative.com/wp-content/cache/user.php 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: dottystylecreative 
+	topDomain: com 
+	dir: /wp-content/cache/ 
+	file: user.php 
+	path: /wp-content/cache/user.php 
+	fragment: None 
+	query: None 
+	ip: 35.201.9.151 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://drever-oauth.lhr.rocks/office 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: drever-oauth 
+	domain: lhr 
+	topDomain: rocks 
+	dir: None 
+	file: office 
+	path: /office 
+	fragment: None 
+	query: None 
+	ip: 143.204.237.93 
+	city: Seattle 
+	country: United States 
+	region: Washington 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://esgec.com/member2 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: esgec 
+	topDomain: com 
+	dir: None 
+	file: member2 
+	path: /member2 
+	fragment: None 
+	query: None 
+	ip: 156.226.92.156 
+	city: Johannesburg 
+	country: South Africa 
+	region: Gauteng 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://f0581423.xsph.ru/196f668278f3091a60914fb185dbe107 
+Points: 85 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '3', '8', '1']
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: f0581423 
+	domain: xsph 
+	topDomain: ru 
+	dir: None 
+	file: 196f668278f3091a60914fb185dbe107 
+	path: /196f668278f3091a60914fb185dbe107 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://f0581423.xsph.ru 
+Points: 85 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '3', '8', '1']
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: f0581423 
+	domain: xsph 
+	topDomain: ru 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://f0581423.xsph.ru/42631c4f5854115913deba74153d6a35 
+Points: 85 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '3', '8', '1']
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: f0581423 
+	domain: xsph 
+	topDomain: ru 
+	dir: None 
+	file: 42631c4f5854115913deba74153d6a35 
+	path: /42631c4f5854115913deba74153d6a35 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://f0581423.xsph.ru/9c75e4464c14f9a254395d7df6efb73a 
+Points: 85 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '3', '8', '1']
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: f0581423 
+	domain: xsph 
+	topDomain: ru 
+	dir: None 
+	file: 9c75e4464c14f9a254395d7df6efb73a 
+	path: /9c75e4464c14f9a254395d7df6efb73a 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://f0581423.xsph.ru/ede021c1ec2935873a6b2231dab0e953 
+Points: 85 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '3', '8', '1']
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: f0581423 
+	domain: xsph 
+	topDomain: ru 
+	dir: None 
+	file: ede021c1ec2935873a6b2231dab0e953 
+	path: /ede021c1ec2935873a6b2231dab0e953 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://facebookv-1.blogspot.com/?m=1 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['1']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: facebookv-1 
+	topDomain: blogspot.com 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'m': '1'} 
+	ip: 142.250.74.161 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fbmail-pages100049194.web.app 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 28 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: fbmail-pages100049194 
+	topDomain: web.app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fbmail-pages100049194.web.app/appeal.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 28 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: fbmail-pages100049194 
+	topDomain: web.app 
+	dir: None 
+	file: appeal.html 
+	path: /appeal.html 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fbpages-case10004915.web.app/appeal.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 27 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: fbpages-case10004915 
+	topDomain: web.app 
+	dir: None 
+	file: appeal.html 
+	path: /appeal.html 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fbpages-case10004915.web.app 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 27 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: fbpages-case10004915 
+	topDomain: web.app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fbpages-case10049515411.web.app 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 30 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: fbpages-case10049515411 
+	topDomain: web.app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fbpages-case10049515411.web.app/appeal.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 30 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: fbpages-case10049515411 
+	topDomain: web.app 
+	dir: None 
+	file: appeal.html 
+	path: /appeal.html 
+	fragment: None 
+	query: None 
+	ip: 199.36.158.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fc.cndf.qc.ca/USPTrack/c88238edba0182aa4cdf6c8ed2ccf54b/index4.php 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: fc 
+	domain: cndf 
+	topDomain: qc.ca 
+	dir: /USPTrack/c88238edba0182aa4cdf6c8ed2ccf54b/ 
+	file: index4.php 
+	path: /USPTrack/c88238edba0182aa4cdf6c8ed2ccf54b/index4.php 
+	fragment: None 
+	query: None 
+	ip: 67.43.226.216 
+	city: Saint-Eustache 
+	country: Canada 
+	region: Quebec 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://fgchvjnk.weebly.com 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: fgchvjnk 
+	domain: weebly 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 74.115.50.110 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fidelityhealthcare.biz/ekene/excelz/index.php?email=sirryh@li.is 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: fidelityhealthcare 
+	topDomain: biz 
+	dir: /ekene/excelz/ 
+	file: index.php 
+	path: /ekene/excelz/index.php 
+	fragment: None 
+	query: {'email': 'sirryh@li.is'} 
+	ip: 192.185.49.71 
+	city: Houston 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://forfatterskolen.net/public/lost/home/particulares.php 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: forfatterskolen 
+	topDomain: net 
+	dir: /public/lost/home/ 
+	file: particulares.php 
+	path: /public/lost/home/particulares.php 
+	fragment: None 
+	query: None 
+	ip: 193.93.255.248 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://foxconnhealthtechnologies.com/msproject/dds/ddfk 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 28 letters
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: foxconnhealthtechnologies 
+	topDomain: com 
+	dir: /msproject/dds/ 
+	file: ddfk 
+	path: /msproject/dds/ddfk 
+	fragment: None 
+	query: None 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://francocitesports.ca/cli/b/dsbanksms/bg-BG/index.html 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: francocitesports 
+	topDomain: ca 
+	dir: /cli/b/dsbanksms/bg-BG/ 
+	file: index.html 
+	path: /cli/b/dsbanksms/bg-BG/index.html 
+	fragment: None 
+	query: None 
+	ip: 172.67.171.44 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fsstradingco-my.sharepoint.com/personal/jeff_fsstrading_com/_layouts/15/onedrive.aspx?id=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847/7992.346DOD__513%20FA%20pdf.pdf&amp;parent=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847&amp;originalPath=aHR0cHM6Ly9mc3N0cmFkaW5nY28tbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvamVmZl9mc3N0cmFkaW5nX2NvbS9FYzF5ay1GS1dabEtzVDNveU1EMDdac0JjWlNwcVBmWlU1WGQyeVVoQS1DREtRP3J0aW1lPXoyOFNSWWw0MlVn 
+Points: 20 
+
+The website generated the following report:
+		The URL had a phishy length with 28 letters
+
+	www: None 
+	protocol: https 
+	subDomain: fsstradingco-my 
+	domain: sharepoint 
+	topDomain: com 
+	dir: /personal/jeff_fsstrading_com/_layouts/15/onedrive.aspx?id=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847/7992.346DOD__513%20FA%20pdf.pdf&amp;parent=/personal/jeff_fsstrading_com/Documents/SCANS/ 
+	file: Scan210505142847&amp;originalPath=aHR0cHM6Ly9mc3N0cmFkaW5nY28tbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvamVmZl9mc3N0cmFkaW5nX2NvbS9FYzF5ay1GS1dabEtzVDNveU1EMDdac0JjWlNwcVBmWlU1WGQyeVVoQS1DREtRP3J0aW1lPXoyOFNSWWw0MlVn 
+	path: /personal/jeff_fsstrading_com/_layouts/15/onedrive.aspx?id=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847/7992.346DOD__513%20FA%20pdf.pdf&amp;parent=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847&amp;originalPath=aHR0cHM6Ly9mc3N0cmFkaW5nY28tbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvamVmZl9mc3N0cmFkaW5nX2NvbS9FYzF5ay1GS1dabEtzVDNveU1EMDdac0JjWlNwcVBmWlU1WGQyeVVoQS1DREtRP3J0aW1lPXoyOFNSWWw0MlVn 
+	fragment: None 
+	query: None 
+	ip: 13.107.9.168 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://fsstradingco-my.sharepoint.com/personal/jeff_fsstrading_com/_layouts/15/onedrive.aspx?id=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847/7992.346DOD__513%20FA%20pdf.pdf&amp;parent=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847&amp;originalPath=aHR0cHM6Ly9mc3N0cmFkaW5nY28tbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvamVmZl9mc3N0cmFkaW5nX2NvbS9FYzF5ay1GS1dabEtzVDNveU1EMDdac0JjWlNwcVBmWlU1WGQyeVVoQS1DREtRP3J0aW1lPXZ4ZDJPWWw0MlVn 
+Points: 20 
+
+The website generated the following report:
+		The URL had a phishy length with 28 letters
+
+	www: None 
+	protocol: https 
+	subDomain: fsstradingco-my 
+	domain: sharepoint 
+	topDomain: com 
+	dir: /personal/jeff_fsstrading_com/_layouts/15/onedrive.aspx?id=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847/7992.346DOD__513%20FA%20pdf.pdf&amp;parent=/personal/jeff_fsstrading_com/Documents/SCANS/ 
+	file: Scan210505142847&amp;originalPath=aHR0cHM6Ly9mc3N0cmFkaW5nY28tbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvamVmZl9mc3N0cmFkaW5nX2NvbS9FYzF5ay1GS1dabEtzVDNveU1EMDdac0JjWlNwcVBmWlU1WGQyeVVoQS1DREtRP3J0aW1lPXZ4ZDJPWWw0MlVn 
+	path: /personal/jeff_fsstrading_com/_layouts/15/onedrive.aspx?id=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847/7992.346DOD__513%20FA%20pdf.pdf&amp;parent=/personal/jeff_fsstrading_com/Documents/SCANS/Scan210505142847&amp;originalPath=aHR0cHM6Ly9mc3N0cmFkaW5nY28tbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvamVmZl9mc3N0cmFkaW5nX2NvbS9FYzF5ay1GS1dabEtzVDNveU1EMDdac0JjWlNwcVBmWlU1WGQyeVVoQS1DREtRP3J0aW1lPXZ4ZDJPWWw0MlVn 
+	fragment: None 
+	query: None 
+	ip: 13.107.9.168 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://gallymac.co/Brooks/Benkendorfer/index.html 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: gallymac 
+	topDomain: co 
+	dir: /Brooks/Benkendorfer/ 
+	file: index.html 
+	path: /Brooks/Benkendorfer/index.html 
+	fragment: None 
+	query: None 
+	ip: 69.49.244.173 
+	city: Burlington 
+	country: United States 
+	region: Massachusetts 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://googleweblight.com/i?u=7a4298b9.sso-mail-secure234ds23d23wd1.pages.dev?user=loca@locaweb.com.br 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: googleweblight 
+	topDomain: com 
+	dir: None 
+	file: i 
+	path: /i 
+	fragment: None 
+	query: {'u': '7a4298b9.sso-mail-secure234ds23d23wd1.pages.dev?user'} 
+	ip: 142.250.74.97 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://grandcentralatkennedy.com/.1and1/login.php?signin=d41d8cd98f00b204e9800998ecf8427e&auth=39849f39c99c1731cfbeb1a72f7bbd32680c80ce0457b6956a94ba024f7ae3f872238e73 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: grandcentralatkennedy 
+	topDomain: com 
+	dir: /.1and1/ 
+	file: login.php 
+	path: /.1and1/login.php 
+	fragment: None 
+	query: {'signin': 'd41d8cd98f00b204e9800998ecf8427e', 'auth': '39849f39c99c1731cfbeb1a72f7bbd32680c80ce0457b6956a94ba024f7ae3f872238e73'} 
+	ip: 160.153.74.100 
+	city: Scottsdale 
+	country: United States 
+	region: Arizona 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://growthacademy.uz/idowu/deactivation/source/index.php?email= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: growthacademy 
+	topDomain: uz 
+	dir: /idowu/deactivation/source/ 
+	file: index.php 
+	path: /idowu/deactivation/source/index.php 
+	fragment: None 
+	query: {'email': ''} 
+	ip: 185.215.4.33 
+	city: None 
+	country: Denmark 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://hellobee.io/wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hellobee 
+	topDomain: io 
+	dir: /wp-admin/bb/navy/ 
+	file: d789ea29cb75c6c8cd5d080725e97a78 
+	path: /wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78 
+	fragment: None 
+	query: None 
+	ip: 34.221.128.25 
+	city: Boardman 
+	country: United States 
+	region: Oregon 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://hellobee.io/wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/que.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hellobee 
+	topDomain: io 
+	dir: /wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/ 
+	file: que.php 
+	path: /wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/que.php 
+	fragment: None 
+	query: None 
+	ip: 34.221.128.25 
+	city: Boardman 
+	country: United States 
+	region: Oregon 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://hellobee.io/wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/fulls.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hellobee 
+	topDomain: io 
+	dir: /wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/ 
+	file: fulls.php 
+	path: /wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/fulls.php 
+	fragment: None 
+	query: None 
+	ip: 34.221.128.25 
+	city: Boardman 
+	country: United States 
+	region: Oregon 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://hellobee.io/wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/full.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hellobee 
+	topDomain: io 
+	dir: /wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/ 
+	file: full.php 
+	path: /wp-admin/bb/navy/d789ea29cb75c6c8cd5d080725e97a78/full.php 
+	fragment: None 
+	query: None 
+	ip: 34.221.128.25 
+	city: Boardman 
+	country: United States 
+	region: Oregon 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://heyrhdlcs.weebly.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: heyrhdlcs 
+	domain: weebly 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 74.115.50.110 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://hgyt-agnesi-600637.netlify.app 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3']
+		The URL had a phishy length with 29 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: hgyt-agnesi-600637 
+	topDomain: netlify.app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 34.141.103.251 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://hindhosiery.com/office/Super-Nice-Office365/off/index.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hindhosiery 
+	topDomain: com 
+	dir: /office/Super-Nice-Office365/off/ 
+	file: index.php 
+	path: /office/Super-Nice-Office365/off/index.php 
+	fragment: None 
+	query: None 
+	ip: 192.185.171.186 
+	city: Houston 
+	country: United States 
+	region: Texas 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://hipotecario00011111.000webhostapp.com 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 35 letters
+
+	www: None 
+	protocol: https 
+	subDomain: hipotecario00011111 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://hkvvy.csb.app 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: hkvvy 
+	domain: csb 
+	topDomain: app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 104.18.6.3 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://iaaf.ma/vendor/psy/psysh/-/permiss/-/owner/-/aponewme/apo/7396f5114ce9141ece598acfbc225d37/login.php 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: iaaf 
+	topDomain: ma 
+	dir: /vendor/psy/psysh/-/permiss/-/owner/-/aponewme/apo/7396f5114ce9141ece598acfbc225d37/ 
+	file: login.php 
+	path: /vendor/psy/psysh/-/permiss/-/owner/-/aponewme/apo/7396f5114ce9141ece598acfbc225d37/login.php 
+	fragment: None 
+	query: None 
+	ip: 208.91.198.160 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://internet-tips074.blogspot.com/?id=6c73c9bec395adead0fbf365585ed617 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 28 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: internet-tips074 
+	topDomain: blogspot.com 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'id': '6c73c9bec395adead0fbf365585ed617'} 
+	ip: 142.250.74.65 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://internet-tips074.blogspot.com/?id=6c73c9bec395adead0fbf365585ed617&m=1 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 28 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: internet-tips074 
+	topDomain: blogspot.com 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'id': '6c73c9bec395adead0fbf365585ed617', 'm': '1'} 
+	ip: 142.250.74.65 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://internet-tips075.blogspot.com/?id=4efd47420842b6f25b76205c8544c657 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 28 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: internet-tips075 
+	topDomain: blogspot.com 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'id': '4efd47420842b6f25b76205c8544c657'} 
+	ip: 142.250.74.65 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://jemmastone.s3.jp-tok.cloud-object-storage.appdomain.cloud/blendor/index.html 
+Points: 100 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 55 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: jemmastone.s3.jp-tok.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /blendor/ 
+	file: index.html 
+	path: /blendor/index.html 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: https://kutt.it/XFT5J5 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: kutt 
+	topDomain: it 
+	dir: None 
+	file: XFT5J5 
+	path: /XFT5J5 
+	fragment: None 
+	query: None 
+	ip: 172.67.188.125 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://l.wl.co/l?u=https://s.id/H24ve?userid=E8PfOASz 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: l 
+	domain: wl 
+	topDomain: co 
+	dir: /l?u=https:/ 
+	file: s.id/H24ve 
+	path: /l?u=https://s.id/H24ve 
+	fragment: None 
+	query: {'userid': 'E8PfOASz'} 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: https://lightfin.s3.jp-osa.cloud-object-storage.appdomain.cloud/erythroplastid/index.html 
+Points: 100 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 53 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: lightfin.s3.jp-osa.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /erythroplastid/ 
+	file: index.html 
+	path: /erythroplastid/index.html 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://lividhardtofindentropy.jonathanchacon4.repl.co 
+Points: 60 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 44 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: lividhardtofindentropy 
+	domain: jonathanchacon4 
+	topDomain: repl.co 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 34.149.204.188 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://mail.matrixwestmortgage.com/redirect/retry.php?email= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: mail 
+	domain: matrixwestmortgage 
+	topDomain: com 
+	dir: /redirect/ 
+	file: retry.php 
+	path: /redirect/retry.php 
+	fragment: None 
+	query: {'email': ''} 
+	ip: 67.225.154.6 
+	city: Lansing 
+	country: United States 
+	region: Michigan 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://mail.signacolleges.com/images/dhl/dhl_topscript/cmd-login=ffa9cbde0d3cf9051af20b1737013098/?reff=MjQ5OGM2YmJlMjM1NzVjMDljZDQ2MTQyMjI4NjhiZDk= 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: mail 
+	domain: signacolleges 
+	topDomain: com 
+	dir: /images/dhl/dhl_topscript/cmd-login=ffa9cbde0d3cf9051af20b1737013098/ 
+	file: None 
+	path: /images/dhl/dhl_topscript/cmd-login=ffa9cbde0d3cf9051af20b1737013098/ 
+	fragment: None 
+	query: {'reff': 'MjQ5OGM2YmJlMjM1NzVjMDljZDQ2MTQyMjI4NjhiZDk'} 
+	ip: 192.185.129.112 
+	city: Houston 
+	country: United States 
+	region: Texas 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://me2.do/5Wc0sdFf 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: do 
+	dir: None 
+	file: 5Wc0sdFf 
+	path: /5Wc0sdFf 
+	fragment: None 
+	query: None 
+	ip: 125.209.210.90 
+	city: None 
+	country: South Korea 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://me2.kr/g50gq 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: kr 
+	dir: None 
+	file: g50gq 
+	path: /g50gq 
+	fragment: None 
+	query: None 
+	ip: 172.67.143.208 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://me2.kr/6w9qj 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: kr 
+	dir: None 
+	file: 6w9qj 
+	path: /6w9qj 
+	fragment: None 
+	query: None 
+	ip: 172.67.143.208 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://me2.kr/1ls1n 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: kr 
+	dir: None 
+	file: 1ls1n 
+	path: /1ls1n 
+	fragment: None 
+	query: None 
+	ip: 172.67.143.208 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://me2.kr/3j16h 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: kr 
+	dir: None 
+	file: 3j16h 
+	path: /3j16h 
+	fragment: None 
+	query: None 
+	ip: 172.67.143.208 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://me2.kr/1gne6 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: kr 
+	dir: None 
+	file: 1gne6 
+	path: /1gne6 
+	fragment: None 
+	query: None 
+	ip: 172.67.143.208 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://me2.kr/6wf3z 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: kr 
+	dir: None 
+	file: 6wf3z 
+	path: /6wf3z 
+	fragment: None 
+	query: None 
+	ip: 172.67.143.208 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://me2.kr/dbbj7?trackingid=McxjsPJ2&signature=newsletter 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: kr 
+	dir: None 
+	file: dbbj7 
+	path: /dbbj7 
+	fragment: None 
+	query: {'trackingid': 'McxjsPJ2', 'signature': 'newsletter'} 
+	ip: 172.67.143.208 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://me2.kr/77srn 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: me2 
+	topDomain: kr 
+	dir: None 
+	file: 77srn 
+	path: /77srn 
+	fragment: None 
+	query: None 
+	ip: 172.67.143.208 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://medicareturkey.net/Hitmafiles/off 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: medicareturkey 
+	topDomain: net 
+	dir: /Hitmafiles/ 
+	file: off 
+	path: /Hitmafiles/off 
+	fragment: None 
+	query: None 
+	ip: 192.185.30.230 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://medicareturkey.net/FinalNew/off 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: medicareturkey 
+	topDomain: net 
+	dir: /FinalNew/ 
+	file: off 
+	path: /FinalNew/off 
+	fragment: None 
+	query: None 
+	ip: 192.185.30.230 
+	city: Houston 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://medicareturkey.net/secuream/off 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: medicareturkey 
+	topDomain: net 
+	dir: /secuream/ 
+	file: off 
+	path: /secuream/off 
+	fragment: None 
+	query: None 
+	ip: 192.185.30.230 
+	city: Houston 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://memlbbcollectsnm2.gq 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: memlbbcollectsnm2 
+	topDomain: gq 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 195.20.53.230 
+	city: None 
+	country: Netherlands 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://mhnetsb.net/usa/contracts/contract 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: mhnetsb 
+	topDomain: net 
+	dir: /usa/contracts/ 
+	file: contract 
+	path: /usa/contracts/contract 
+	fragment: None 
+	query: None 
+	ip: 103.211.239.20 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://mlmlogistics.co.za/wp-admin/css/mf/25GB 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: mlmlogistics 
+	topDomain: co.za 
+	dir: /wp-admin/css/mf/ 
+	file: 25GB 
+	path: /wp-admin/css/mf/25GB 
+	fragment: None 
+	query: None 
+	ip: 41.76.111.112 
+	city: None 
+	country: South Africa 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://mlmlogistics.co.za/wp-admin/css/mf/25GB/index2.php?email= 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: mlmlogistics 
+	topDomain: co.za 
+	dir: /wp-admin/css/mf/25GB/ 
+	file: index2.php 
+	path: /wp-admin/css/mf/25GB/index2.php 
+	fragment: None 
+	query: {'email': ''} 
+	ip: 41.76.111.112 
+	city: None 
+	country: South Africa 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://molaytactical.com/SUN 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: molaytactical 
+	topDomain: com 
+	dir: None 
+	file: SUN 
+	path: /SUN 
+	fragment: None 
+	query: None 
+	ip: 103.82.241.235 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+Error during HTML info collecting: Document is empty
+------------------------
+
+URL: https://monarch-osemawe44th.org/content/office365-MD2/accessms/index.html 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: monarch-osemawe44th 
+	topDomain: org 
+	dir: /content/office365-MD2/accessms/ 
+	file: index.html 
+	path: /content/office365-MD2/accessms/index.html 
+	fragment: None 
+	query: None 
+	ip: 162.215.241.127 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://muffledfairfonts.jonathanchacon4.repl.co 
+Points: 60 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 38 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: muffledfairfonts 
+	domain: jonathanchacon4 
+	topDomain: repl.co 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 34.149.204.188 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://netflixappelaprojets.com/fr 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: netflixappelaprojets 
+	topDomain: com 
+	dir: None 
+	file: fr 
+	path: /fr 
+	fragment: None 
+	query: None 
+	ip: 66.155.98.126 
+	city: Toronto 
+	country: Canada 
+	region: Ontario 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://nicrosoft.e-mail-access.com/c/p/tc/83/515c5058-85b0-4689-a364-26671403e66f-9dd35236-ce69-4faf-bab3-00c3f76c5e9a 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: nicrosoft 
+	domain: e-mail-access 
+	topDomain: com 
+	dir: /c/p/tc/83/ 
+	file: 515c5058-85b0-4689-a364-26671403e66f-9dd35236-ce69-4faf-bab3-00c3f76c5e9a 
+	path: /c/p/tc/83/515c5058-85b0-4689-a364-26671403e66f-9dd35236-ce69-4faf-bab3-00c3f76c5e9a 
+	fragment: None 
+	query: None 
+	ip: 52.212.52.84 
+	city: Dublin 
+	country: Ireland 
+	region: Leinster 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://noel-ns.pl/wp-admin/UNION/UnionBank/online-banking/mobilenumber.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: noel-ns 
+	topDomain: pl 
+	dir: /wp-admin/UNION/UnionBank/online-banking/ 
+	file: mobilenumber.php 
+	path: /wp-admin/UNION/UnionBank/online-banking/mobilenumber.php 
+	fragment: None 
+	query: None 
+	ip: 195.78.66.254 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://noel-ns.pl/wp-admin/UNION/UnionBank/online-banking/otp2.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: noel-ns 
+	topDomain: pl 
+	dir: /wp-admin/UNION/UnionBank/online-banking/ 
+	file: otp2.php 
+	path: /wp-admin/UNION/UnionBank/online-banking/otp2.php 
+	fragment: None 
+	query: None 
+	ip: 195.78.66.254 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://noel-ns.pl/wp-admin/UNION/UnionBank/online-banking/otp1.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: noel-ns 
+	topDomain: pl 
+	dir: /wp-admin/UNION/UnionBank/online-banking/ 
+	file: otp1.php 
+	path: /wp-admin/UNION/UnionBank/online-banking/otp1.php 
+	fragment: None 
+	query: None 
+	ip: 195.78.66.254 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://noel-ns.pl/wp-admin/UNION/UnionBank/online-banking/login.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: noel-ns 
+	topDomain: pl 
+	dir: /wp-admin/UNION/UnionBank/online-banking/ 
+	file: login.php 
+	path: /wp-admin/UNION/UnionBank/online-banking/login.php 
+	fragment: None 
+	query: None 
+	ip: 195.78.66.254 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://nowwwcfvgh.page.link/XktS?platform=hootsuite 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: nowwwcfvgh 
+	domain: page 
+	topDomain: link 
+	dir: None 
+	file: XktS 
+	path: /XktS 
+	fragment: None 
+	query: {'platform': 'hootsuite'} 
+	ip: 142.250.74.65 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://odafema.weebly.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: odafema 
+	domain: weebly 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 74.115.50.110 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://parcel.emiratespost.ae.bangerpickleball.com/uae/e10a457802c35254b2bb02c992797ee5/garcia.php 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 41 letters
+		The URL have an unusual amount of 3 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: parcel.emiratespost.ae 
+	domain: bangerpickleball 
+	topDomain: com 
+	dir: /uae/e10a457802c35254b2bb02c992797ee5/ 
+	file: garcia.php 
+	path: /uae/e10a457802c35254b2bb02c992797ee5/garcia.php 
+	fragment: None 
+	query: None 
+	ip: 208.109.226.46 
+	city: Scottsdale 
+	country: United States 
+	region: Arizona 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://parcel.emiratespost.ae.bangerpickleball.com/uae/e10a457802c35254b2bb02c992797ee5/zlatan.php 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 41 letters
+		The URL have an unusual amount of 3 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: parcel.emiratespost.ae 
+	domain: bangerpickleball 
+	topDomain: com 
+	dir: /uae/e10a457802c35254b2bb02c992797ee5/ 
+	file: zlatan.php 
+	path: /uae/e10a457802c35254b2bb02c992797ee5/zlatan.php 
+	fragment: None 
+	query: None 
+	ip: 208.109.226.46 
+	city: Scottsdale 
+	country: United States 
+	region: Arizona 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://parcel.emiratespost.ae.bangerpickleball.com/uae/e10a457802c35254b2bb02c992797ee5 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 41 letters
+		The URL have an unusual amount of 3 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: parcel.emiratespost.ae 
+	domain: bangerpickleball 
+	topDomain: com 
+	dir: /uae/ 
+	file: e10a457802c35254b2bb02c992797ee5 
+	path: /uae/e10a457802c35254b2bb02c992797ee5 
+	fragment: None 
+	query: None 
+	ip: 208.109.226.46 
+	city: Scottsdale 
+	country: United States 
+	region: Arizona 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://priceless-booth-93cf04.netlify.app/ 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3']
+		The URL had a phishy length with 33 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: priceless-booth-93cf04 
+	topDomain: netlify.app 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: None 
+	ip: 35.198.80.163 
+	city: Mountain View 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://ptimarketing.com/index.html 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ptimarketing 
+	topDomain: com 
+	dir: None 
+	file: index.html 
+	path: /index.html 
+	fragment: None 
+	query: None 
+	ip: 136.0.161.82 
+	city: San Jose 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://publish-p43452-e180057.adobeaemcloud.com/ar/es/home.html 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3', '8', '1']
+		The URL had a phishy length with 39 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: publish-p43452-e180057 
+	topDomain: adobeaemcloud.com 
+	dir: /ar/es/ 
+	file: home.html 
+	path: /ar/es/home.html 
+	fragment: None 
+	query: None 
+	ip: 199.232.43.10 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://publish-p43452-e180057.adobeaemcloud.com 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '3', '8', '1']
+		The URL had a phishy length with 39 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: publish-p43452-e180057 
+	topDomain: adobeaemcloud.com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 199.232.43.10 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://rdx-usataxtretruns.com 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: rdx-usataxtretruns 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.222 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://recursing-knuth.45-88-108-231.plesk.page 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '3', '8', '1']
+		The URL had a phishy length with 38 letters
+
+	www: None 
+	protocol: http 
+	subDomain: recursing-knuth 
+	domain: 45-88-108-231 
+	topDomain: plesk.page 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: Not found 
+	city: Not found 
+	country: Not found 
+	region: Not found 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://reheart-suppo.com/owa/index2.php?l=aamkadlhotmwndi4lwvhmjutndk2oc1iywrhltmzntllmtnimda3mgauaaaaaadejthfefmxsiv%20a3wh1ms0aqailhmd6eckqkl40ajeueizaaaaaawgaaa_946f2cde0f344ac2567a45_j124456733ebe933255be_product-userid&fr2= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: reheart-suppo 
+	topDomain: com 
+	dir: /owa/ 
+	file: index2.php 
+	path: /owa/index2.php 
+	fragment: None 
+	query: {'l': 'aamkadlhotmwndi4lwvhmjutndk2oc1iywrhltmzntllmtnimda3mgauaaaaaadejthfefmxsiv%20a3wh1ms0aqailhmd6eckqkl40ajeueizaaaaaawgaaa_946f2cde0f344ac2567a45_j124456733ebe933255be_product-userid', 'fr2': ''} 
+	ip: 43.249.77.61 
+	city: None 
+	country: Hong Kong 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://reportegrupal12.000webhostapp.com 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '1']
+		The URL had a phishy length with 31 letters
+
+	www: None 
+	protocol: https 
+	subDomain: reportegrupal12 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://reporting-page004.000webhostapp.com 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 33 letters
+
+	www: None 
+	protocol: http 
+	subDomain: reporting-page004 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://reporting-page004.000webhostapp.com/m.ibolie.html 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 33 letters
+
+	www: None 
+	protocol: https 
+	subDomain: reporting-page004 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: m.ibolie.html 
+	path: /m.ibolie.html 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://rtuytxzweebley.weebly.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: rtuytxzweebley 
+	domain: weebly 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 74.115.50.110 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://safe-blockpage.000webhostapp.com 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 30 letters
+
+	www: None 
+	protocol: http 
+	subDomain: safe-blockpage 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://safe-blockpage.000webhostapp.com/m.ibolie.html 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 30 letters
+
+	www: None 
+	protocol: https 
+	subDomain: safe-blockpage 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: None 
+	file: m.ibolie.html 
+	path: /m.ibolie.html 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://sanderproperties.com/OneDrive/latest-onedrive 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: sanderproperties 
+	topDomain: com 
+	dir: /OneDrive/ 
+	file: latest-onedrive 
+	path: /OneDrive/latest-onedrive 
+	fragment: None 
+	query: None 
+	ip: 191.6.210.177 
+	city: None 
+	country: Brazil 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://sd-cz.weebly.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: sd-cz 
+	domain: weebly 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 74.115.50.110 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://sdfsdr.s3.jp-osa.cloud-object-storage.appdomain.cloud/mountaineer/login.html?uxbtgw=Z8M2YCxfhhCmPEdqqlW3&gakxjljt=ww9t6ZK646BHQEKSCcENVeaZqo&cmbyzfuf=kEnbiBZOdStrMVvL&txwbociisp=pHckt8rE24yxYEyq 
+Points: 100 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 51 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: sdfsdr.s3.jp-osa.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /mountaineer/ 
+	file: login.html 
+	path: /mountaineer/login.html 
+	fragment: None 
+	query: {'uxbtgw': 'Z8M2YCxfhhCmPEdqqlW3', 'gakxjljt': 'ww9t6ZK646BHQEKSCcENVeaZqo', 'cmbyzfuf': 'kEnbiBZOdStrMVvL', 'txwbociisp': 'pHckt8rE24yxYEyq'} 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: https://sdfsdr.s3.jp-osa.cloud-object-storage.appdomain.cloud/mountaineer/index.html 
+Points: 100 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 51 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: sdfsdr.s3.jp-osa.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /mountaineer/ 
+	file: index.html 
+	path: /mountaineer/index.html 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://sero.app/payroll 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: sero 
+	topDomain: app 
+	dir: None 
+	file: payroll 
+	path: /payroll 
+	fragment: None 
+	query: None 
+	ip: 3.98.242.182 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://service.csassistant02.com 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: service 
+	domain: csassistant02 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: https://shankarabuildpro.com/rein/office/index2.php 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: shankarabuildpro 
+	topDomain: com 
+	dir: /rein/office/ 
+	file: index2.php 
+	path: /rein/office/index2.php 
+	fragment: None 
+	query: None 
+	ip: 192.185.154.159 
+	city: Houston 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://split.to/pai-CEFCANCELATED 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: split 
+	topDomain: to 
+	dir: None 
+	file: pai-CEFCANCELATED 
+	path: /pai-CEFCANCELATED 
+	fragment: None 
+	query: None 
+	ip: 172.67.186.247 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://storage.googleapis.com/inboxino/brand.html 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: storage 
+	topDomain: googleapis.com 
+	dir: /inboxino/ 
+	file: brand.html 
+	path: /inboxino/brand.html 
+	fragment: None 
+	query: None 
+	ip: 142.250.74.176 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://strawberry8201708.brizy.site 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '8', '1']
+		The URL had a phishy length with 26 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: strawberry8201708 
+	domain: brizy 
+	topDomain: site 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 34.237.47.210 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+Error during HTML info collecting: Document is empty
+------------------------
+
+URL: http://swisscoat.com.cn/index.html 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: swisscoat 
+	topDomain: com.cn 
+	dir: None 
+	file: index.html 
+	path: /index.html 
+	fragment: None 
+	query: None 
+	ip: 47.100.18.223 
+	city: None 
+	country: China 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://tap-log.com/rtd/?hash=xefwex@cscs.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tap-log 
+	topDomain: com 
+	dir: /rtd/ 
+	file: None 
+	path: /rtd/ 
+	fragment: None 
+	query: {'hash': 'xefwex@cscs.com'} 
+	ip: 162.241.253.162 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://tap-log.com/rtd/?hash=adada@adada.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tap-log 
+	topDomain: com 
+	dir: /rtd/ 
+	file: None 
+	path: /rtd/ 
+	fragment: None 
+	query: {'hash': 'adada@adada.com'} 
+	ip: 162.241.253.162 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://tap-log.com/rtd/?hash=adafsfsda@fssfsf.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tap-log 
+	topDomain: com 
+	dir: /rtd/ 
+	file: None 
+	path: /rtd/ 
+	fragment: None 
+	query: {'hash': 'adafsfsda@fssfsf.com'} 
+	ip: 162.241.253.162 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://tap-log.com/rtd/?hash=sfssfsxx@cfsssscs.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tap-log 
+	topDomain: com 
+	dir: /rtd/ 
+	file: None 
+	path: /rtd/ 
+	fragment: None 
+	query: {'hash': 'sfssfsxx@cfsssscs.com'} 
+	ip: 162.241.253.162 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://tap-log.com/rtd/?hash=xx@cscs.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tap-log 
+	topDomain: com 
+	dir: /rtd/ 
+	file: None 
+	path: /rtd/ 
+	fragment: None 
+	query: {'hash': 'xx@cscs.com'} 
+	ip: 162.241.253.162 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://themeforest.co.za/FB/facebook_mobile/0nwvkztm= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: themeforest 
+	topDomain: co.za 
+	dir: /FB/facebook_mobile/ 
+	file: 0nwvkztm= 
+	path: /FB/facebook_mobile/0nwvkztm= 
+	fragment: None 
+	query: None 
+	ip: 67.225.177.94 
+	city: Lansing 
+	country: United States 
+	region: Michigan 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://themeforest.co.za/FB/facebook_mobile/5mde5yju= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: themeforest 
+	topDomain: co.za 
+	dir: /FB/facebook_mobile/ 
+	file: 5mde5yju= 
+	path: /FB/facebook_mobile/5mde5yju= 
+	fragment: None 
+	query: None 
+	ip: 67.225.177.94 
+	city: Lansing 
+	country: United States 
+	region: Michigan 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://themeforest.co.za/FB/facebook_mobile/3ndlimji= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: themeforest 
+	topDomain: co.za 
+	dir: /FB/facebook_mobile/ 
+	file: 3ndlimji= 
+	path: /FB/facebook_mobile/3ndlimji= 
+	fragment: None 
+	query: None 
+	ip: 67.225.177.94 
+	city: Lansing 
+	country: United States 
+	region: Michigan 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://thesouthsideitalian.org/docxxx02/cccccc 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: thesouthsideitalian 
+	topDomain: org 
+	dir: /docxxx02/ 
+	file: cccccc 
+	path: /docxxx02/cccccc 
+	fragment: None 
+	query: None 
+	ip: 162.241.124.193 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://tlkm.id/Rxr8vK 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tlkm 
+	topDomain: id 
+	dir: None 
+	file: Rxr8vK 
+	path: /Rxr8vK 
+	fragment: None 
+	query: None 
+	ip: 180.250.116.165 
+	city: Jakarta 
+	country: Indonesia 
+	region: Jakarta 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://tlkm.id/RxrSlT 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tlkm 
+	topDomain: id 
+	dir: None 
+	file: RxrSlT 
+	path: /RxrSlT 
+	fragment: None 
+	query: None 
+	ip: 180.250.116.165 
+	city: Jakarta 
+	country: Indonesia 
+	region: Jakarta 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://tusmiedos.com 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: tusmiedos 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 37.59.34.106 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://ucukdbanatys.000webhostapp.com/adrescounlogin/confirmid.php 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0']
+		The URL had a phishy length with 28 letters
+
+	www: None 
+	protocol: https 
+	subDomain: ucukdbanatys 
+	domain: 000webhostapp 
+	topDomain: com 
+	dir: /adrescounlogin/ 
+	file: confirmid.php 
+	path: /adrescounlogin/confirmid.php 
+	fragment: None 
+	query: None 
+	ip: 153.92.0.100 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://umaoofssyl.duckdns.org 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: umaoofssyl 
+	topDomain: duckdns.org 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 172.247.39.25 
+	city: Los Angeles 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://update-information.lakespoint.com.au/sin-in/?country.x=am&locale.x=en_am%3E&client=d0cac3d5bddc3cafc09e54f0c5dfdc8e 
+Points: 60 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 34 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: update-information 
+	domain: lakespoint 
+	topDomain: com.au 
+	dir: /sin-in/ 
+	file: None 
+	path: /sin-in/ 
+	fragment: None 
+	query: {'country.x': 'am', 'locale.x': 'en_am%3E', 'client': 'd0cac3d5bddc3cafc09e54f0c5dfdc8e'} 
+	ip: 103.27.35.250 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://usfkxkjihu.duckdns.org 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: usfkxkjihu 
+	topDomain: duckdns.org 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 172.247.39.25 
+	city: Los Angeles 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://vasd.sovovoh839.workers.dev 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3', '8']
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: vasd 
+	domain: sovovoh839 
+	topDomain: workers.dev 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://view.genial.ly/61560c30b308b00d2e870ffe 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: view 
+	domain: genial 
+	topDomain: ly 
+	dir: None 
+	file: 61560c30b308b00d2e870ffe 
+	path: /61560c30b308b00d2e870ffe 
+	fragment: None 
+	query: None 
+	ip: 143.204.237.129 
+	city: Seattle 
+	country: United States 
+	region: Washington 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://walletconnectclub.info 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: walletconnectclub 
+	topDomain: info 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.222 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://white-woman.surge.sh 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: white-woman 
+	domain: surge 
+	topDomain: sh 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 159.203.50.177 
+	city: Toronto 
+	country: Canada 
+	region: Ontario 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://wqfqrwefdedav.gmqkx3sjcy.workers.dev 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 34 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: wqfqrwefdedav 
+	domain: gmqkx3sjcy 
+	topDomain: workers.dev 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: https://www.googletagmanager.com/gtag/js?id=UA-112763434-1 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: www 
+	protocol: https 
+	subDomain: www. 
+	domain: googletagmanager 
+	topDomain: com 
+	dir: /gtag/ 
+	file: js 
+	path: /gtag/js 
+	fragment: None 
+	query: {'id': 'UA-112763434-1'} 
+	ip: 142.250.74.168 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://www.hxbpxu.cn/ESEqoYM3/dbs-wa 
+Points: 55 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL contained the following bad topdomain: cn
+		The website lacks favicon.
+
+	www: www 
+	protocol: http 
+	subDomain: www. 
+	domain: hxbpxu 
+	topDomain: cn 
+	dir: /ESEqoYM3/ 
+	file: dbs-wa 
+	path: /ESEqoYM3/dbs-wa 
+	fragment: None 
+	query: None 
+	ip: 103.224.182.249 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://www.hxbpxu.cn/TCB7Oslw/dbs-wa 
+Points: 55 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL contained the following bad topdomain: cn
+		The website lacks favicon.
+
+	www: www 
+	protocol: http 
+	subDomain: www. 
+	domain: hxbpxu 
+	topDomain: cn 
+	dir: /TCB7Oslw/ 
+	file: dbs-wa 
+	path: /TCB7Oslw/dbs-wa 
+	fragment: None 
+	query: None 
+	ip: 103.224.182.249 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://www.idnotify.com/att 
+Points: 0 
+
+The website generated the following report:
+
+	www: www 
+	protocol: https 
+	subDomain: www. 
+	domain: idnotify 
+	topDomain: com 
+	dir: None 
+	file: att 
+	path: /att 
+	fragment: None 
+	query: None 
+	ip: 35.161.124.106 
+	city: Boardman 
+	country: United States 
+	region: Oregon 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://www.mhora.com 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: www 
+	protocol: http 
+	subDomain: www. 
+	domain: mhora 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 173.236.172.53 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://www.phoneclaim.com/att 
+Points: 0 
+
+The website generated the following report:
+
+	www: www 
+	protocol: https 
+	subDomain: www. 
+	domain: phoneclaim 
+	topDomain: com 
+	dir: None 
+	file: att 
+	path: /att 
+	fragment: None 
+	query: None 
+	ip: 54.163.243.94 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: http://www.signacolleges.com/images/dhl/dhl_topscript/cmd-login=8728b22d7a2d2fc408ce72184c47c558/?reff=ODRhNmYwODczZTkwMjA4MTkxODI4YWY5M2FiZGMzMzU= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: www 
+	protocol: http 
+	subDomain: www. 
+	domain: signacolleges 
+	topDomain: com 
+	dir: /images/dhl/dhl_topscript/cmd-login=8728b22d7a2d2fc408ce72184c47c558/ 
+	file: None 
+	path: /images/dhl/dhl_topscript/cmd-login=8728b22d7a2d2fc408ce72184c47c558/ 
+	fragment: None 
+	query: {'reff': 'ODRhNmYwODczZTkwMjA4MTkxODI4YWY5M2FiZGMzMzU'} 
+	ip: 192.185.129.112 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://yelloman.s3.jp-osa.cloud-object-storage.appdomain.cloud/bottleholder/login.html?jelkoanakz=w6g9atngPxZPZ8nYvPmBIJqlhdGq&rygxggpi=XDVXPM7BAAYq2YPXF2&gou=JDNYAjVj3hc13eLhRpxb&lembr=swb3X9npbfetUJFrqA5 
+Points: 100 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 53 letters
+		The URL have an unusual amount of 4 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: yelloman.s3.jp-osa.cloud-object-storage 
+	domain: appdomain 
+	topDomain: cloud 
+	dir: /bottleholder/ 
+	file: login.html 
+	path: /bottleholder/login.html 
+	fragment: None 
+	query: {'jelkoanakz': 'w6g9atngPxZPZ8nYvPmBIJqlhdGq', 'rygxggpi': 'XDVXPM7BAAYq2YPXF2', 'gou': 'JDNYAjVj3hc13eLhRpxb', 'lembr': 'swb3X9npbfetUJFrqA5'} 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: https://yun.ir/c9wqib 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: yun 
+	topDomain: ir 
+	dir: None 
+	file: c9wqib 
+	path: /c9wqib 
+	fragment: None 
+	query: None 
+	ip: 168.119.97.252 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+URL: https://yun.ir/ilp3fb/HPx2pEzV8Mr9d@D 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: yun 
+	topDomain: ir 
+	dir: /ilp3fb/ 
+	file: HPx2pEzV8Mr9d@D 
+	path: /ilp3fb/HPx2pEzV8Mr9d@D 
+	fragment: None 
+	query: None 
+	ip: 168.119.97.252 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: module 'whois' has no attribute 'whois'
+------------------------
+
+The total accuracy was: 4%

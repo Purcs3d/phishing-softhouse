@@ -4,7 +4,7 @@
 Checklist and tests associated with SSL/TSL attributes
 """
 
-from src.server_check import ssl_resolve
+from src.server_check import SSL_resolve
 import config as conf
 
 
