@@ -115,6 +115,7 @@ def test_accuracy(inFileName, outFolder):
 
     algorithmAccuracy = round((float(countPhishingPositives)/float(testedURLs))*100)
 
+    print(f"The algorithm accuracy was: {algorithmAccuracy}%")
     wFileWrong.write(f"The total accuracy was: {algorithmAccuracy}%")
 
     readFile.close()
