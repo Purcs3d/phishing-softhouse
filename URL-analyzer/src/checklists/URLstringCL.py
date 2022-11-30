@@ -25,6 +25,7 @@ class URLstringCL():
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         self.containUnicode()
+        self.containsPort()
 
         self.checkTopDomain()
         self.checkUrlLength()
@@ -103,8 +104,11 @@ class URLstringCL():
             print("No Unicode detected")
             self.points+= 0
 
-            #self.report.append(f"The URL contained the following bad keywords: {keywordViolated}")
-
+    def containsPort(self):
+        if(sp.stringParser.port_specified(self)):
+            self.points+=25
+        else:
+            self.points+=0
 
     def checkTopDomain(self):
         """
