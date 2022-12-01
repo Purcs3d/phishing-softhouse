@@ -1,4 +1,6 @@
+import src.URLCheck.stringParser as sp
 import src.config as config
+
 class URLstringCL():
     """
         This checklist will evalute the values that have been fetched from the URL string input
@@ -22,6 +24,9 @@ class URLstringCL():
         self.protocolCheck()
         self.checkSpecialChar()
         self.checkSpecialKeywords()
+        self.containUnicode()
+        self.containsPort()
+
         self.checkTopDomain()
         self.checkUrlLength()
         self.checkNumberOfSubdomains()
@@ -90,6 +95,19 @@ class URLstringCL():
             self.points += 80
             self.report.append("The URL contained the following bad keywords:" + ", ".join(keywordViolated))
 
+    def containUnicode(self):
+        if(sp.stringParser.UnicodeCheker(self)):
+            print("Unicode detected")
+            self.points+= 10
+        else:
+            print("No Unicode detected")
+            self.points+= 0
+
+    def containsPort(self):
+        if(sp.stringParser.port_specified(self)):
+            self.points+=25
+        else:
+            self.points+=0
 
     def checkTopDomain(self):
         """

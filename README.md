@@ -11,6 +11,15 @@
 - Avoid having the *first character* in an issue be a number (0-9). This interferes with issue-ID fast tabbing when checking out a branch connected to the issue
 - Regard *milestones* as *sprints*. Milestone 1 is sprint 1, and issues should be added accordingly
 
+### Import and export requirements.txt
+```shell
+pip install pipreqs                       # install pipreqs
+python -m  pipreqs.pipreqs . --force      # export requirements.txt
+pip install -r requirements.txt           # import requirements.txt
+```
+
+
+
 ### Add and Commit ###
 
 In your terminal, while standing inside the repo on your local computer, perform:

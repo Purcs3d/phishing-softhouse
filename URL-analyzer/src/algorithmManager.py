@@ -45,7 +45,7 @@ class algorithmManager:
         self.report["errors"] = self.URLinfoObj.errors #errors during information gathering
 
         #fishy ?
-        if self.points > self.pointPhishingLimit:
+        if self.points >= self.pointPhishingLimit:
             self.fishy = True
         else:
             self.fishy = False
@@ -74,6 +74,7 @@ class algorithmManager:
         HTMLdataCLobj = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
         DNSChecklistObj = DNSdataCL.DNSdataCL(self.URLinfoObj)
+
 
         #run their seperate evaluations
         self.points += URLstringCLobj.runEvaluation()
