@@ -1,5 +1,6 @@
+import re
 from url_parser import get_url #pip install url-parser
-
+from URLinfo import URLinfo
 class stringParser():
     """
         The stringParser Class has one function in it
@@ -8,7 +9,7 @@ class stringParser():
         future: define a function that santize input here?
     """
 
-    def __init__(self, URLinfo):
+    def __init__(self, URLinfo: "URLinfo"):
         self.URLinfo = URLinfo
 
     def UrlResolver(self):
@@ -34,12 +35,15 @@ class stringParser():
         return self.URLinfo
 
     def UnicodeCheker(self):
-        parse = get_url(self.URLinfo.url)
-        domain = parse.domain  
-        for i in domain:
+        for i in self.URLinfo.domain:
             try:
                 if(int(ord(i)) < 128 and int(ord(i)) > 0 ):    #Allow ascii table 128 
                     pass 
             except ValueError:
                 return True
+        return False
+
+    def port_specified(self):
+        if(self.URLinfo.domain == re.search(':[0-9]{1,5}$')):
+            return True
         return False
