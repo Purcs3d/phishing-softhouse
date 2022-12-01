@@ -43,11 +43,13 @@ class algorithmManager:
         """
 
         # create checklists
-        URLstringCLobj = URLstringCL.URLstringCL(self.URLinfoObj)
-        HTMLdataCLobj = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
+        URLstringCLobj          = URLstringCL.URLstringCL(self.URLinfoObj)
+        HTMLdataCLobj           = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
+        # SSLCLObj              = sslCL.SSLCL(self.url) #TODO somethings whack. cant import
 
         #run their seperate evaluations
         self.points += URLstringCLobj.runEvaluation()
         self.points += HTMLdataCLobj.runEvaluation()
         self.points += DatabaseComparisonCLobj.runEvaluation()
+        # self.points += SSLCLObj.runEvaluation()

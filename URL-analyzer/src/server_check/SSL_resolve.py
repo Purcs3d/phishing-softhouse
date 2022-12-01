@@ -8,9 +8,6 @@ from termios import ECHOE
 import urllib3
 from src.URLCheck import url_sanitize
 
-#! debug libs
-#TODO https://docs.python.org/3/library/ssl.html#client-side-operation TLS chain
-
 __author__  = "Totte Hansen, DVADS20h"
 
 # checks connection and status of URL server

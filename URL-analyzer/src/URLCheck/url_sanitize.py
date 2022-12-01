@@ -8,6 +8,8 @@ from url_parser import get_url
 from urllib import request
 from urllib.parse import urlparse
 
+__author__ = 'Totte Hansen, DVADS20h'
+
 def siteValid(url:str, redir:bool = True) -> bool:
     """
     Checks if a site exists and is reachable

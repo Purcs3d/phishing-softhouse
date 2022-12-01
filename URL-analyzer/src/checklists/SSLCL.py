@@ -10,13 +10,10 @@ import ssl
 import whois
 from datetime import datetime, timezone
 
-
-#TODO report
-
 __author__ = 'Totte Hansen, DVADS20h'
 
-class SSL_CL:
-    def run_evaluation(self): #* auhtor: Totte Hansen *#
+class SSLCL:
+    def runEvaluation(self): #* auhtor: Totte Hansen *#
         """
         Run through all tests sequentially using function calls
         """
@@ -25,6 +22,12 @@ class SSL_CL:
             return
 
         self.check_version()
+        self.check_licenser()
+        self.check_cert_age()
+        self.check_cert_match()
+        self.check_time_valid()
+
+        return self.points
 
 
     def check_handshake(self) -> bool:
@@ -62,7 +65,8 @@ class SSL_CL:
             self.points += outdated_ver_points
             self.report.append(outdated_report)
 
-    def check_licenser(self):
+
+    def check_licenser(self): #TODO add phishy licensers
         """
         Check who the licenser is, and if its same as host
         """
@@ -73,6 +77,10 @@ class SSL_CL:
         site_org = whois.whois(self.cert.sane_url).org
         # fetch cert issuer corporation
         issuer = self.cert.cert["issuer"][1][0][1]
+
+        if site_org == issuer:
+            self.points += self_license_points
+            self.report.append(self_license_report)
 
 
     def check_cert_age(self): #TODO
@@ -96,7 +104,7 @@ class SSL_CL:
 
 
 
-    def check_cert_math(self) -> None:
+    def check_cert_match(self) -> None:
         """
         Check if the cert hostaddress matches the input address
         """
@@ -125,7 +133,8 @@ class SSL_CL:
         """
         ...
 
-    def check_valid(self):
+
+    def check_time_valid(self):
         """
         Check if the cert is valid between the "NOT before" and "NOT after" dates, 
         and check if the cert has been revoked
@@ -135,23 +144,28 @@ class SSL_CL:
         cert_before_report  = "The certificate is not allowed to be userd yet, therefore invalid"
 
         # get the delta of the "NOT BEFORE"
-        current_time = datetime.now(timezone.utc)
+        current_time = datetime.utcnow()
 
-        before_delta = current_time - self.cert.cert["notBefore"]
-        # if 
+        # convert from datetime str to utc datetime
+        notAfter_datetime = ssl.cert_time_to_seconds(self.cert.cert["notAfter"])
+        notAfter_datetime = datetime.utcfromtimestamp(notAfter_datetime)
 
-
-        after_delta = self.cert.cert["notAfter"]
+        # test cert not too old
+        if current_time > notAfter_datetime:
+            self.points += cert_timeout_points
+            self.report.append(cert_after_report)
         
-    
-    
-    def check_self_signed(self):
-        """
-        Check if the domain has signed the cert themselves. if they have, phishy
-        """
-        ...
+        # convert from datetime str to utc datetime
+        notBefore_datetime = ssl.cert_time_to_seconds(self.cert.cert["notBefore"])
+        notBefore_datetime = datetime.utcfromtimestamp(notBefore_datetime)
 
-    def check_encrypt(self):
+        # test cert is not too "young"
+        if current_time < notBefore_datetime:
+            self.points += cert_timeout_points
+            self.report.append(cert_before_report)
+
+
+    def check_encrypt(self): #TODO find method for fetching encrypt method
         """
         Check if the certificate uses a hard-to-spoof hashing algorithm (e.g. SHA256)
         """
