@@ -26,8 +26,8 @@ class DBhandler():
         self.URLinfo = URLinfo
         self.cursor = self.conn.cursor()
 
-    def __del__(self):
-        self.conn.close()
+    # def __del__(self):
+        # self.conn.close() # not needed based on https://www.psycopg.org/docs/connection.html#connection
 
     def delDB(self):
         sql_str = "DROP SCHEMA IF EXISTS URLanalyzer CASCADE;"
