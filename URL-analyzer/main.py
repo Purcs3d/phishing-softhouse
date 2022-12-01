@@ -62,11 +62,13 @@ from src.server_check import SSL_resolve as ssl_lib
 from pprint import pprint
 from src.checklists.SSLCL import SSL_CL as ssl_cl
 import ssl
+import socket
 
 hostname = 'youtube.com'
 
 
 context = ssl.create_default_context().verify_mode
+with socket.create_connection() as sock:
 pprint(context.__dict__)
 
 # addr = "http://facebook.com"

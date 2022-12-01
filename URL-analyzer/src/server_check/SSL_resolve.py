@@ -43,11 +43,10 @@ class ssl_parser: #* @auth: Totte Hansen
             assert(f"Site {self.sane_url} is invalid or closed")
 
         hostname = self.sane_url
-        context = ssl.create_default_context()
+        context = ssl.create_default_context().verify_mode
         try:
             # open socket using https port 443
             with socket.create_connection((hostname, 443)) as sock:
-
                 # fetch sock version
                 with context.wrap_socket(sock, server_hostname=hostname) as ssock:
                     try:
