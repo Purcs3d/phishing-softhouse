@@ -172,7 +172,7 @@ class URLstringCL():
 
         if violatedSubdomainKeyword:
             self.points += 40
-            self.report.append(f"The URL contained the following bad subdomains: {violatedKeyword}")
+            self.report.append(f"The URL contained the following bad subdomains: " + ", ".join(violatedKeyword))
 
     def numbersInDomain(self):
         """
@@ -188,7 +188,7 @@ class URLstringCL():
 
         if numbersInDomain:
             self.points += 20
-            self.report.append(f"The URL contained the following numbers in the domain: {numbers}")
+            self.report.append(f"The URL contained the following numbers in the domain:" + ", ".join(numbers))
 
     def numbersinSubdomain(self):
         """
@@ -206,4 +206,4 @@ class URLstringCL():
 
         if numbersInSubdomain:
             self.points += 20
-            self.report.append(f"The URL contained the following numbers in the subdomain: {numbers}")
+            self.report.append(f"The URL contained the following numbers in the subdomain:" + ", ".join(numbers))
