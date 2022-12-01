@@ -72,6 +72,7 @@ class algorithmManager:
         HTMLdataCLobj           = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
         DNSChecklistObj = DNSdataCL.DNSdataCL(self.URLinfoObj)
+        # SSLCLObj              = sslCL.SSLCL(self.url) #TODO somethings whack. cant import
 
 
         #run their seperate evaluations
@@ -79,12 +80,14 @@ class algorithmManager:
         self.points += HTMLdataCLobj.runEvaluation()
         self.points += DatabaseComparisonCLobj.runEvaluation()
         self.points += DNSChecklistObj.runEvaluation()
+        # self.points += SSLCLObj.runEvaluation() #TODO
 
         #gather their seperate reports
-        self.report["URLstringCL"] = URLstringCLobj.report
-        self.report["HTMLdataCL"] = HTMLdataCLobj.report
-        self.report["DNSdataCL"] = DNSChecklistObj.report
+        self.report["URLstringCL"]          = URLstringCLobj.report
+        self.report["HTMLdataCL"]           = HTMLdataCLobj.report
+        self.report["DNSdataCL"]            = DNSChecklistObj.report
         self.report["DatabaseComparisonCL"] = DatabaseComparisonCLobj.report
+        # self.report["SSLCL"]                = SSLCLObj.report
 
 
     def createOutputString(self):
