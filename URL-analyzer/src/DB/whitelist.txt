@@ -58,6 +58,7 @@ bitly.net
 bittrend.pro
 bre.is
 btcconv.com
+bth.se
 buckhrsolutions.co.uk
 bunq.me
 cards.twitter.com
@@ -109,6 +110,8 @@ event.on24.com
 evernote.com
 exchangesumo.com
 f1mats.com
+facebook.com
+facebook.se
 fehupay.com
 fiddle.jshell.net
 files.cdn.thinkific.com
@@ -276,6 +279,7 @@ sites.google.com
 skin.club
 smarturl.it
 soeberg.dk
+softhouse.se
 sparkasse-musterstadt.if-einblick.de
 sso.godaddy.com
 standardchartered.com.kz
