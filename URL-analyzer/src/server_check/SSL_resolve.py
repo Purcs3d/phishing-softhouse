@@ -10,7 +10,6 @@ from src.URLCheck import url_sanitize
 
 #! debug libs
 #TODO https://docs.python.org/3/library/ssl.html#client-side-operation TLS chain
-from pprint import pprint
 
 __author__  = "Totte Hansen, DVADS20h"
 
@@ -29,7 +28,7 @@ def ssl_sanetize(url:str) -> str:
     return sane_url
 
 
-class ssl_parser: #* @auth: Totte Hansen
+class ssl_parser:
     def sanitize_url(self, url:str) -> None:
         self.sane_url = url_sanitize.rm_scheme(url, True)
 
@@ -43,7 +42,7 @@ class ssl_parser: #* @auth: Totte Hansen
             assert(f"Site {self.sane_url} is invalid or closed")
 
         hostname = self.sane_url
-        context = ssl.create_default_context().verify_mode
+        context = ssl.create_default_context()
         try:
             # open socket using https port 443
             with socket.create_connection((hostname, 443)) as sock:
@@ -67,7 +66,7 @@ class ssl_parser: #* @auth: Totte Hansen
 
 
     def updateSSL(self) -> None: #* @auth: Totte Hansen
-        ...
+        self.cert = self.fetch_ssl()
 
     def __init__(self, url : str) -> None: #* @auth: Totte Hansen
         self.original_url = url

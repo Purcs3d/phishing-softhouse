@@ -6,6 +6,7 @@ Checklist and tests associated with SSL/TSL attributes
 
 from src.server_check import SSL_resolve
 import config as conf
+import ssl
 
 
 #TODO report
@@ -17,7 +18,29 @@ class SSL_CL:
         """
         Run through all tests sequentially using function calls
         """
-        self.check_version
+        # return early in case certificate is empty
+        if self.check_handshake == False:
+            return
+
+        self.check_version()
+
+
+    def check_handshake(self) -> bool:
+        """
+        Check if the cert handshake returned properly. If the cert is empty, great phishiness
+        """
+        # amount of points to be added in case of empty cert
+        empty_points = 100
+
+        # check if cert dict is empty
+        if len(self.cert.cert) == 0:
+            self.report.append("SSL/TSL certificate returned with empty attributes")
+            self.points += empty_points
+            # return handshake did not return properly
+            return False
+
+        return True
+
 
     def check_version(self): #* auhtor: Totte Hansen *#
         point_value_version = 20
@@ -35,7 +58,7 @@ class SSL_CL:
 
     def check_licenser(self):
         """
-        Check who the licenser is, and if its a valid one
+        Check who the licenser is, and if its same as host
         """
         ...
 
@@ -45,13 +68,29 @@ class SSL_CL:
         """
         ...
 
-    def check_domain_own(self):
+    def check_cert_math(self) -> None:
+        """
+        Check if the cert hostaddress matches the input address
+        """
+        address_points = 50
+
+        # test if the returned cert supports the URL
+        try:
+            ssl.match_hostname(self.cert.cert, self.cert.san)
+
+        # cert does not support the URL
+        except ssl.CertificateError:
+            self.report.append("The returned certificate does not support the input URL")
+            self.points += address_points
+
+
+    def check_domain_time(self):
         """
         Check how long the current owner has owned the cert (short owner age, phishy)
         """
         ...
 
-    def check_crt_origin(self):
+    def check_cert_origin(self):
         """
         Check country of origin of the certificate. #TODO check untrusted cert countries
         """
@@ -63,13 +102,7 @@ class SSL_CL:
         and check if the cert has been revoked
         """
         ...
-
-    def ceck_protected(self): #? `check_chain`?
-        """
-        Check what sites are protected using the wildcard protector, and its chains
-        #? I have no idea how to algorithmize this
-        """
-        ...
+    
     
     def check_self_signed(self):
         """

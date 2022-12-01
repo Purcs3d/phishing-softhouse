@@ -67,9 +67,10 @@ import socket
 hostname = 'youtube.com'
 
 
-context = ssl.create_default_context().verify_mode
-with socket.create_connection() as sock:
-pprint(context.__dict__)
+cert = ssl_lib.ssl_parser(hostname)
+
+ssl.match_hostname(cert.cert, 'facebook.com')
+    
 
 # addr = "http://facebook.com"
 
