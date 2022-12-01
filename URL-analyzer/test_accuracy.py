@@ -44,6 +44,8 @@ def test_accuracy(inFileName, outFolder):
         lineNum += 1
         try:
             response = requests.get(url)
+            if response.status_code != 200:
+                raise Exception("Website does not exist")
         except:
             print(f"Skipping the URL: {url}, beacuse it does not exists.\n")
             wFileSkipped.write(f"{url}\n")

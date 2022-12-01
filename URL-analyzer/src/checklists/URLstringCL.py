@@ -140,7 +140,10 @@ class URLstringCL():
         badSubdomains = config.BAD_SUBDOMAINS
 
         if subdomains == None:
-            return
+            subdomains = ""
+
+        if subdomains.find("www") == -1:
+            subdomains = "www." + subdomains
 
         differentSubdomains = subdomains.split('.')
 
