@@ -1,80 +1,81 @@
-# #!/usr/bin/env python
-# # -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 # import src.algorithmManager as am
-# import io
-# import sys
-# from flask import Flask, flash, render_template, request
+import sys
+import src.algorithmManager as am
+import validators
+from  webApp import app
+from multiprocessing import Process
+
+def main():
+    if len(sys.argv)<2 or len(sys.argv)>2:
+        print("\nUse these two options:")
+        print(f"Usage1:  python {sys.argv[0]} server")
+        print(f"Usage2:  python {sys.argv[0]} terminal\n")
+        sys.exit(1)
+    else:
+        arg1 = sys.argv[1]
+        if arg1 == "server" and len(sys.argv) == 2:
+            Process(target=app.run()).start()
+        elif arg1 == "terminal" and len(sys.argv) == 2:
+            URL = ""
+            while URL != "q":
+                try:
+                    URL = input('\nEnter q to Quit:\n````````````````\nEnter your URL: ')
+                    if validators.domain(URL) == True or validators.url(URL) == True:
+                        algorithmEngine = am.algorithmManager(URL) #algorithm object
+                        output = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
+                        output += "\nEvaluation points:" + str(algorithmEngine.points)
+                        output += algorithmEngine.createOutputString()
+                        finalOutput = output.replace("<br>", "\n" )
+                        print(finalOutput)
+                    else:
+                        print("The URL input is not valid\n")
+                except Exception as e:
+                    print(f"Error: {e}")
+        else:
+            print("\nPlease don't, just use these two options:")
+            print(f"Usage1:  python {sys.argv[0]} server")
+            print(f"Usage2:  python {sys.argv[0]} terminal\n")
+        sys.exit(1)
 
 
-
-# def func(input):
-#     val = am.algorithmManager(input)
-#     old_stdout = sys.stdout
-#     new_stdout = io.StringIO()
-#     sys.stdout = new_stdout
-#     print(val.run())
-#     output = new_stdout.getvalue()
-#     sys.stdout = old_stdout
-#     output = output.replace('\n', '<br>')
-#     return output
-
+# from  webApp import app
+# from waitress import serve
 
 # def main():
 
-#     app = Flask(__name__)
-#     app.config['SECRET_KEY'] = 'asdsdgtrbfgbrdfsdf'
+#     if len(sys.argv)<3 or len(sys.argv)>3:
+#         print("Fatal: argument amount invalid.")
+#         print(f"Usage:  py {sys.argv[0]} server run/close")
+#         sys.exit(1)
+#     else:
+#         arg1 = sys.argv[1]
+#         arg2 = sys.argv[2]
+#         if arg1 == "server" and arg2 == "run":
+#             serve(app, host='0.0.0.0', port=5000, threads=8)
+#             app.run(debug=True)
 
-#     @app.route("/")
-#     def index():
-#         return render_template("index.html")
-
-#     @app.route("/check", methods=['GET', 'POST'])
-#     def CheckURL():
-#         URLinput = str(request.form['URL_input'])
-#         flash(func(URLinput))
-#         return render_template("index.html")
-#     app.run(debug=True)
-
-
-
-
-#     #Website
-#     # if len(sys.argv)<2 or len(sys.argv)>2: #2 arguments only.
-#     #     print("Fatal: argument amount invalid.")
-#     #     print(f"Usage:  py {sys.argv[0]} URLinput.ex")
-#     #     sys.exit(1)
-#     # else:
-#     #     URLstring = sys.argv[1]
-
-
-#     # #URL-analyzing
-#     # print("_"*20)
-#     # print("Information fetched:\n")
-#     # ex = am.algorithmManager(URLstring)
-#     # print("\n" + "_"*20,"\n" + "Is website fishy?",ex.run())
+#         if arg1 == "server" and arg2 == "close":
+#             app.close()
 
 
 # if __name__ == '__main__':
 #     main()
 
+#########################################
+# nohup python main.py > log.txt 2>&1 &
+# pm2 start main.py --interpreter python3
+# forever start -c python main.py
 
-from src.server_check import SSL_resolve as ssl_lib
-from src.checklists.SSLCL import SSL_CL as ssl_cl
-from pprint import pprint
-import ssl
-import socket
-import whois
-from datetime import datetime, timezone
-from time import sleep
+#########################################
+########    Test Links           ########
+#########################################
 
-hostname = 'amazon.com'
+# Valid Links
+# https://www.google.com/
+# www.google.com
+# google.com
 
-cert = ssl_lib.ssl_parser(hostname)
-time_now = datetime.utcnow()
-
-# convert time in str to timedate
-cert_time = cert.cert["notAfter"].split(" ")
-#set [year, month, day, ]
-cert_time = datetime(cert_time[], cert_time[], cert_time[])
-
-pprint()
+# Internal Server Error 500
+# https://log1nkarlskronahem.se/kontakt/

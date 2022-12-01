@@ -11,6 +11,7 @@ class DatabaseComparisonCL():
 
     def __init__(self, URLinfo = None):
         self.points = 0
+        self.report = []
         self.URLinfo = URLinfo
 
     def runEvaluation(self):

@@ -1,5 +1,5 @@
 import src.URLCheck.DNSresolver as DNSresolver
-import src.URLCheck.HTMLparser as HTMLparser
+# import src.URLCheck.HTMLparser as HTMLparser
 import src.URLCheck.stringParser as stringParser
 
 
@@ -21,8 +21,8 @@ class URLinfo():
         self.www: str = None
         self.protocol : str  = None
         self.subDomain: str = None
-        self.domain: str = None
-        self.topDomain:str = None
+        self.domain: str = ""
+        self.topDomain:str = ""
         self.dir: str = None
         self.file: str = None
         self.path: str = None
@@ -32,8 +32,12 @@ class URLinfo():
         self.city: str = None
         self.country: str = None
         self.region: str = None
-        self.favicon: Boolean = None
-        self.errors: List = [] # the error messages collected during information gathering
+        self.favicon: bool = None
+        self.expires = None
+        self.registered = None
+        self.update = None
+        self.active = None
+        self.errors: list = [] # the error messages collected during information gathering
 
     def getDNSinfo(self):
         """ update URLinfo object with DNS information"""
@@ -54,7 +58,7 @@ class URLinfo():
         """Extract all kind of information we can get from the URL """
         self.getURLstringInfo()
         self.getDNSinfo()
-        self.getHTMLinfo()
+        # self.getHTMLinfo()
 
     def generateReport(self):
         """
@@ -63,5 +67,7 @@ class URLinfo():
         """
         report = []
         for a, v in self.__dict__.items():
+            if a == "errors":
+                continue
             report.append(a + ": " + str(v))
         return report
