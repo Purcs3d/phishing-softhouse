@@ -3,18 +3,28 @@ import src.checklists.DatabaseComparisonCL as DatabaseComparisonCL
 import src.checklists.HTMLdataCL as HTMLdataCL
 import src.checklists.URLstringCL as URLstringCL
 import src.checklists.DNSdataCL as DNSdataCL
+import src.DB.DBhandler as DBhandler
 
 class algorithmManager:
     """
-        This class managing the URLinfo object and the checklist objects
+        This class manages the URLinfo object and the checklist objects
     """
     def __init__(self, url):
         self.url = url
         self.points = 0
+        self.report = {}
         self.URLinfoObj = URLinfo.URLinfo(url) #create URLinfo object
+        self.DBonline = True
+        self.URLinWhitelist = False
+        self.URLinPreviousSearches = False
+        self.fishy = False
+        try:
+            self.checkDB() # check if in whitelist/previous searches
+        except Exception as e:
+            self.DBonline = False
+            self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway.")
         self.URLinfoObj.collectInfo() #make object collect information about url
         self.pointPhishingLimit = 100
-        self.report = {}
 
     def run(self):
         """
@@ -23,13 +33,30 @@ class algorithmManager:
             then makes decision if the website is fishy/not fishy
             input: self, output: boolean
         """
+        # check if in DB
+        if self.URLinWhitelist == True:
+            return False #if in whitelist it is not fishy
+        if self.URLinPreviousSearches == True:
+            return self.DBhandlerObj.fetchPreviousSearchPhishiness() # previous phisiness result
+
+        # otherwise do regular run
         self.runEvaluations() # collect total points and gather reports
         self.report["URLreport"] = self.URLinfoObj.generateReport() #information on URL
         self.report["errors"] = self.URLinfoObj.errors #errors during information gathering
+
+        #fishy ?
         if self.points >= self.pointPhishingLimit:
-            return True
+            self.fishy = True
         else:
-            return False
+            self.fishy = False
+
+        # send url to history of searches table
+        if self.DBonline == True:
+            # reportStr = "fishy?:" + str(self.fishy)
+            # reportStr +=  "<br> evaluation points:" + str(self.points)
+            reportStr = self.createOutputString()
+            self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
+        return self.fishy
 
     def runEvaluations(self):
         """
@@ -58,19 +85,27 @@ class algorithmManager:
         #gather their seperate reports
         self.report["URLstringCL"] = URLstringCLobj.report
         self.report["HTMLdataCL"] = HTMLdataCLobj.report
-        self.report["DNSChecklist"] = DNSChecklistObj.report
+        self.report["DNSdataCL"] = DNSChecklistObj.report
         self.report["DatabaseComparisonCL"] = DatabaseComparisonCLobj.report
 
 
     def createOutputString(self):
-        outputStr = "<br>"
+        if self.URLinWhitelist == True:
+            outputStr = "URL in exist whitelist and is not phishy."+ "<br>"
+            return outputStr
+        if self.URLinPreviousSearches == True:
+            outputStr = "URL recently searched; fetched report:"+ "<br>"
+            outputStr += self.DBhandlerObj.fetchPreviousSearchReport()
+            return outputStr
+        outputStr = "fishy?:" + str(self.fishy)
+        outputStr +=  "<br> evaluation points:" + str(self.points) + "<br>"
         for message in self.report["URLstringCL"]:
             outputStr += message + "<br>"
         outputStr += "<br>"
         for message in self.report["HTMLdataCL"]:
             outputStr += message + "<br>"
         outputStr += "<br>"
-        for message in self.report["DNSChecklist"]:
+        for message in self.report["DNSdataCL"]:
             outputStr += message + "<br>"
         outputStr += "<br>"
         for message in self.report["DatabaseComparisonCL"]:
@@ -83,6 +118,15 @@ class algorithmManager:
             outputStr += message + "<br>"
         outputStr += "<br>"
         return outputStr
+
+    def checkDB(self):
+        """
+            check if URL in whitelist of previous searches
+        """
+        self.URLinfoObj.getURLstringInfo()
+        self.DBhandlerObj = DBhandler.DBhandler(self.URLinfoObj)
+        self.URLinWhitelist = self.DBhandlerObj.checkURLinWhitelist()
+        self.URLinPreviousSearches = self.DBhandlerObj.checkURLinpreviousSearches()
 
     def printFormat(self):
         """
@@ -98,7 +142,7 @@ class algorithmManager:
             print(message)
         for message in self.report["HTMLdataCL"]:
             print(message)
-        for message in self.report["DNSChecklist"]:
+        for message in self.report["DNSdataCL"]:
             print(message)
         for message in self.report["DatabaseComparisonCL"]:
             print(message)

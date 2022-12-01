@@ -24,8 +24,8 @@ class DNSresolver():
             self.URLinfo.errors.append(f"Error during DNS resolving: DNS creation info not found.")
         except requests.exceptions.RequestException:
             self.URLinfo.errors.append(f"Error during DNS resolving: Failed request to server")
-        except Exception as e:
-            self.URLinfo.errors.append(f"Error during DNS resolving: {e}")
+        except Exception:
+            self.URLinfo.errors.append(f"Error during DNS resolving, connection failed")
             return self.URLinfo
         return self.URLinfo
 
