@@ -59,24 +59,22 @@
 
 
 from src.server_check import SSL_resolve as ssl_lib
-from pprint import pprint
 from src.checklists.SSLCL import SSL_CL as ssl_cl
+from pprint import pprint
 import ssl
 import socket
+import whois
+from datetime import datetime, timezone
+from time import sleep
 
-hostname = 'youtube.com'
-
+hostname = 'amazon.com'
 
 cert = ssl_lib.ssl_parser(hostname)
+time_now = datetime.utcnow()
 
-ssl.match_hostname(cert.cert, 'facebook.com')
-    
+# convert time in str to timedate
+cert_time = cert.cert["notAfter"].split(" ")
+#set [year, month, day, ]
+cert_time = datetime(cert_time[], cert_time[], cert_time[])
 
-# addr = "http://facebook.com"
-
-# cert_wrap = ssl_lib.ssl_parser(addr)
-# # cl = ssl_cl(addr)
-
-# pprint(cert_wrap.cert)
-# # print(cert_wrap.check_version())
-
+pprint()

@@ -7,6 +7,8 @@ Checklist and tests associated with SSL/TSL attributes
 from src.server_check import SSL_resolve
 import config as conf
 import ssl
+import whois
+from datetime import datetime, timezone
 
 
 #TODO report
@@ -30,12 +32,13 @@ class SSL_CL:
         Check if the cert handshake returned properly. If the cert is empty, great phishiness
         """
         # amount of points to be added in case of empty cert
-        empty_points = 100
+        empty_cert_points = 100
+        empty_cert_report = "SSL/TSL certificate returned with empty attributes"
 
         # check if cert dict is empty
         if len(self.cert.cert) == 0:
-            self.report.append("SSL/TSL certificate returned with empty attributes")
-            self.points += empty_points
+            self.report.append(empty_cert_report)
+            self.points += empty_cert_points
             # return handshake did not return properly
             return False
 
@@ -43,30 +46,55 @@ class SSL_CL:
 
 
     def check_version(self): #* auhtor: Totte Hansen *#
-        point_value_version = 20
-        point_value_none = 50
+        outdated_ver_points = 20
+        outdated_report = "The website uses a depricated SSL/TSL version (<3)"
+
+        no_cert_points = 30
+        no_cert_report = "The website lacks TSL/SSL ensurance"
 
         # no license could be fetched from site
         if self.cert == None:
-            self.points += point_value_none
-            self.report.append("The website lacks TSL/SSL ensurance")
+            self.points += no_cert_points
+            self.report.append(no_cert_report)
 
         version = self.cert["version"]
         if version >= conf.MIN_CERT_VER:
-            self.points += point_value_version
-            self.report.append("The website uses an outdated TSL/SSL license version (Version {self.cert['version']})")
+            self.points += outdated_ver_points
+            self.report.append(outdated_report)
 
     def check_licenser(self):
         """
         Check who the licenser is, and if its same as host
         """
-        ...
+        self_license_points = 25
+        self_license_report = "The certificate is self issued"
 
-    def check_crt_age(self):
+        # fetch site registered owner
+        site_org = whois.whois(self.cert.sane_url).org
+        # fetch cert issuer corporation
+        issuer = self.cert.cert["issuer"][1][0][1]
+
+
+    def check_cert_age(self): #TODO
         """
         Check if the license is extemrely young (old certs are seen as more likely legitimate)
         """
+        one_day_points = 75
+        one_day_report = "The license age is less than a day"
+
+        one_week_points = 50
+        one_week_report = "The license age is less than a week"
+
+        one_month_points = 25
+        one_month_report = "The license age is less than a month"
+
+        # get age
+        # cert_age = self.cert.cert[]
+        
+        #TODO find cert issue time method
         ...
+
+
 
     def check_cert_math(self) -> None:
         """
@@ -80,13 +108,14 @@ class SSL_CL:
 
         # cert does not support the URL
         except ssl.CertificateError:
-            self.report.append("The returned certificate does not support the input URL")
+            self.report.append("Returned certificate does not support the given URL")
             self.points += address_points
 
 
-    def check_domain_time(self):
+    def check_domain_time(self): #TODO
         """
         Check how long the current owner has owned the cert (short owner age, phishy)
+        #TODO find cert issue time method
         """
         ...
 
@@ -101,7 +130,19 @@ class SSL_CL:
         Check if the cert is valid between the "NOT before" and "NOT after" dates, 
         and check if the cert has been revoked
         """
-        ...
+        cert_timeout_points = 50
+        cert_after_report   = "The certificate is out of date, therefore invalid"
+        cert_before_report  = "The certificate is not allowed to be userd yet, therefore invalid"
+
+        # get the delta of the "NOT BEFORE"
+        current_time = datetime.now(timezone.utc)
+
+        before_delta = current_time - self.cert.cert["notBefore"]
+        # if 
+
+
+        after_delta = self.cert.cert["notAfter"]
+        
     
     
     def check_self_signed(self):
