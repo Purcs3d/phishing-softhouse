@@ -32,7 +32,7 @@ class URLstringCL():
         self.checkUrlLength()
         self.checkNumberOfSubdomains()
         self.checkBadSubdomains()
-        
+
         return self.points
 
     def protocolCheck(self):
@@ -189,12 +189,14 @@ class URLstringCL():
         if numbersInDomain:
             self.points += 20
             self.report.append(f"The URL contained the following numbers in the domain: {numbers}")
-    
+
     def numbersinSubdomain(self):
         """
         The function checks if the subdomain contains numbers.
         """
         subdomain = self.URLinfo.subDomain
+        if subdomain == None:
+            return
         numbersInSubdomain = False
         numbers = []
         for char in subdomain:
