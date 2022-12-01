@@ -52,8 +52,6 @@ class algorithmManager:
 
         # send url to history of searches table
         if self.DBonline == True:
-            # reportStr = "fishy?:" + str(self.fishy)
-            # reportStr +=  "<br> evaluation points:" + str(self.points)
             reportStr = self.createOutputString()
             self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
         return self.fishy

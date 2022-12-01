@@ -7,7 +7,7 @@ DB ="URLanalyzer"
 DB_USERNAME ='postgres'
 DB_PASSWORD ='root'
 DB_HOST ='localhost'
-DB_PORT = '5432'
+DB_PORT = '5433'
 
 """ Checklist constants """
 #Add bad domain keywords to this list:

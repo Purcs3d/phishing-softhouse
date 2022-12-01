@@ -97,14 +97,14 @@ class URLstringCL():
 
     def containUnicode(self):
         if(sp.stringParser.UnicodeCheker(self)):
-            print("Unicode detected")
+            self.report.append("Unicode detected")
             self.points+= 10
         else:
-            print("No Unicode detected")
             self.points+= 0
 
     def containsPort(self):
         if(sp.stringParser.port_specified(self)):
+            self.report.append("port found in domain")
             self.points+=25
         else:
             self.points+=0

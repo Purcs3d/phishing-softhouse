@@ -15,6 +15,7 @@ def CheckURL():
         URLinput = str(request.form['URL_input'])
         if validators.domain(URLinput) == True or validators.url(URLinput) == True:
             algorithmEngine = am.algorithmManager(URLinput) #algorithm object
+            fishy = algorithmEngine.run()
             output = algorithmEngine.createOutputString()
             flash(output)
         else:
