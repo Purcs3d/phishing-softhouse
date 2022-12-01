@@ -1,5 +1,5 @@
 import src.URLCheck.DNSresolver as DNSresolver
-# import src.URLCheck.HTMLparser as HTMLparser
+import src.URLCheck.HTMLparser as HTMLparser
 import src.URLCheck.stringParser as stringParser
 
 
@@ -58,7 +58,7 @@ class URLinfo():
         """Extract all kind of information we can get from the URL """
         self.getURLstringInfo()
         self.getDNSinfo()
-        # self.getHTMLinfo()
+        self.getHTMLinfo()
 
     def generateReport(self):
         """
