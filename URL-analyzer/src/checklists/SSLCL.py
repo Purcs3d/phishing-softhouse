@@ -13,6 +13,10 @@ from datetime import datetime, timezone
 __author__ = 'Totte Hansen, DVADS20h'
 
 class SSLCL:
+    """
+    Evalutates phishiness within the SSL/TLS certificates
+    """
+
     def runEvaluation(self): #* auhtor: Totte Hansen *#
         """
         Run through all tests sequentially using function calls
