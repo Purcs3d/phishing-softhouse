@@ -54,11 +54,11 @@ def test_DNSresolver(urlDNSresolver, URLstringParser):
 
 
 def test_HTMLparser(urlHTMLparser, URLstringParser):
-    print("\nTesting Favicon info on karlskronahem.se (False atm)")
-    URLstringParser.URLinfo.url = "karlskronahem.se"
+    print("\nTesting Favicon info on svt.se (True atm)")
+    URLstringParser.URLinfo.url = "svt.se"
     URLinfoObj = URLstringParser.UrlResolver()
     URLinfoObj = urlHTMLparser.parse()
-    assert URLinfoObj.favicon == False
+    assert URLinfoObj.favicon == True
 
 #integration test
 def test_URLinfoCollecting(URLinfoObj, urlDNSresolver, urlHTMLparser, URLstringParser):
