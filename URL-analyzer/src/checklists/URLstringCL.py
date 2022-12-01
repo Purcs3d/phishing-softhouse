@@ -25,12 +25,14 @@ class URLstringCL():
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         self.containUnicode()
+        self.numbersInDomain()
+        self.numbersinSubdomain()
         self.containsPort()
-
         self.checkTopDomain()
         self.checkUrlLength()
         self.checkNumberOfSubdomains()
         self.checkBadSubdomains()
+        
         return self.points
 
     def protocolCheck(self):
@@ -171,3 +173,35 @@ class URLstringCL():
         if violatedSubdomainKeyword:
             self.points += 40
             self.report.append(f"The URL contained the following bad subdomains: {violatedKeyword}")
+
+    def numbersInDomain(self):
+        """
+        The function checks if the domain contains numbers.
+        """
+        domain = self.URLinfo.domain
+        numbersInDomain = False
+        numbers = []
+        for char in domain:
+            if char.isdigit():
+                numbersInDomain = True
+                numbers.append(char)
+
+        if numbersInDomain:
+            self.points += 20
+            self.report.append(f"The URL contained the following numbers in the domain: {numbers}")
+    
+    def numbersinSubdomain(self):
+        """
+        The function checks if the subdomain contains numbers.
+        """
+        subdomain = self.URLinfo.subDomain
+        numbersInSubdomain = False
+        numbers = []
+        for char in subdomain:
+            if char.isdigit():
+                numbersInSubdomain = True
+                numbers.append(char)
+
+        if numbersInSubdomain:
+            self.points += 20
+            self.report.append(f"The URL contained the following numbers in the subdomain: {numbers}")
