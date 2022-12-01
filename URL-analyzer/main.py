@@ -57,7 +57,7 @@ if __name__ == '__main__':
 #         arg2 = sys.argv[2]
 #         if arg1 == "server" and arg2 == "run":
 #             serve(app, host='0.0.0.0', port=5000, threads=8)
-#             app.run(debug=True) 
+#             app.run(debug=True)
 
 #         if arg1 == "server" and arg2 == "close":
 #             app.close()
@@ -74,8 +74,8 @@ if __name__ == '__main__':
 #########################################
 ########    Test Links           ########
 #########################################
-    
-# Valid Links 
+
+# Valid Links
 # https://www.google.com/
 # www.google.com
 # google.com

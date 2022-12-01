@@ -1,6 +1,6 @@
 import re
 from url_parser import get_url #pip install url-parser
-import src.URLCheck.URLinfo as URLinfo 
+import src.URLCheck.URLinfo as URLinfo
 class stringParser():
     """
         The stringParser Class has one function in it
@@ -44,6 +44,6 @@ class stringParser():
         return False
 
     def port_specified(self):
-        if(self.URLinfo.domain == re.search(':[0-9]{1,5}$')):
+        if re.search(':[0-9]{1,5}$', self.URLinfo.topDomain):
             return True
         return False
