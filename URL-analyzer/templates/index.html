@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>URL-Phishing Analysis Online Tool</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>URL phishyness checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
 </head>
 <body>
-    <p class="Title"> URL-Phishing Analysis Online Tool </p>
+    <p class="Title"> URL phishyness checker </p>
     <br>
-    <img src="{{url_for('static', filename='img/antiphishing.jpg')}}" />
+    <!-- <img src="{{url_for('static', filename='img/antiphishing.jpg')}}" /> -->
     <br>
     <form action="check" method="post">
         <p>Enter The URL:</p>
