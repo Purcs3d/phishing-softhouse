@@ -39,8 +39,6 @@ def main():
             print(f"Usage2:  python {sys.argv[0]} terminal\n")
         sys.exit(1)
 
-if __name__ == '__main__':
-    main()
 
 
 # from  webApp import app
