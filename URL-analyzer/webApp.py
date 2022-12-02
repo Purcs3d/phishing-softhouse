@@ -5,21 +5,22 @@ import validators
 app = Flask(__name__)   
 app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'    
 
-@app.route("/") 
+@app.route("/")
 def index():    
-    return render_template("index.html")    
+    return render_template("index.html")
 
 @app.route("/check", methods=['GET', 'POST'])   
 def CheckURL(): 
     try:
         URLinput = str(request.form['URL_input'])   
-        if validators.domain(URLinput) == True or validators.url(URLinput) == True: 
-            algorithmEngine = am.algorithmManager(URLinput) 
-            fishy = algorithmEngine.run()
-            output = algorithmEngine.createOutputString()
-            flash(output)
-        else:
-            flash("Please enter a valid URL")
+
+        algorithmEngine = am.algorithmManager(URLinput) 
+        fishy = algorithmEngine.run()
+
+        output = algorithmEngine.createOutputString()
+        flash(output)
+
     except Exception as e:
         flash(f"Error: {e}")
+
     return render_template("index.html")

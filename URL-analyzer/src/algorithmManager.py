@@ -56,6 +56,7 @@ class algorithmManager:
             self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
         return self.fishy
 
+
     def runEvaluations(self):
         """
             This function sends in the URLinfo to all checklists which runs evaluations on the different
@@ -117,6 +118,7 @@ class algorithmManager:
         outputStr += "<br>"
         return outputStr
 
+
     def checkDB(self):
         """
             check if URL in whitelist of previous searches
@@ -125,6 +127,7 @@ class algorithmManager:
         self.DBhandlerObj = DBhandler.DBhandler(self.URLinfoObj)
         self.URLinWhitelist = self.DBhandlerObj.checkURLinWhitelist()
         self.URLinPreviousSearches = self.DBhandlerObj.checkURLinpreviousSearches()
+        
 
     def printFormat(self):
         """
