@@ -7,9 +7,11 @@ from pathlib import Path
 # kolla upp SQLinjection bibliotek
 # om en URL i previousSearches är mer än 2 dagar gammal vid ny select -> ta bort, gör en trigger
 # ändra whitelist till INSERT OR REPLACE ist för bara insert alla rader.
-
 # Hur skall DB initializeras
 # hur skall den tas bort??
+
+#note:  länkar såsom lksajd.asdkwjoi sparas i previousSearches
+#note: skall
 
 class DBhandler():
     """
@@ -60,48 +62,6 @@ class DBhandler():
         self.cursor.execute(sql_str)
         self.conn.commit()
         self.init_createWhitelist() #if it doesnt exist, checked in function
-        # DB STRING:
-        """
-CREATE SCHEMA IF NOT EXISTS URLanalyzer;
-
-CREATE TABLE IF NOT EXISTS URLanalyzer.whitelist (
-	ID 	SERIAL 	PRIMARY KEY,
-	URL TEXT
-);
-
-CREATE TABLE IF NOT EXISTS URLanalyzer.previousSearches (
-	ID 	SERIAL 	PRIMARY KEY,
-	searchDate DATE DEFAULT CURRENT_DATE,
-	URL TEXT,
-	report TEXT,
-    fishy BOOLEAN
-);
-
-CREATE OR REPLACE FUNCTION oldSearchesFunc()
-  RETURNS TRIGGER
-  LANGUAGE PLPGSQL
-  AS
-$$
-BEGIN
-	delete from urlanalyzer.previoussearches
-	where extract(day from CURRENT_DATE)- extract( day from searchDate) > 3;
-	RETURN NULL;
-END;
-$$
-create trigger removeOldSearches
-before insert on urlanalyzer.previoussearches
-EXECUTE PROCEDURE oldSearchesFunc();
-
-drop function if exists oldSearchesFunc;
-drop trigger if exists removeOldSearches;
-
--- drop table urlanalyzer.whitelist;
--- truncate table urlanalyzer.whitelist;
--- SELECT * FROM URLanalyzer.whitelist;
--- INSERT INTO URLanalyzer.whitelist (URL)
--- VALUES ('youtube.com');
--- DROP SCHEMA IF EXISTS URLanalyzer CASCADE;
-        """
 
     def init_createWhitelist(self):
         sql_str = "select count(*) from URLanalyzer.whitelist;"
@@ -122,15 +82,19 @@ drop trigger if exists removeOldSearches;
             Checks if URL exist in whitelist
             input: URL, output: if it exist(True) or not (False)
         """
-        if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.": # www.login.bth.se
-            url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        else: # bth.se
-            url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        # if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.": # www.login.bth.se
+        #     url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        # else: # bth.se
+        #     url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        # if url.startswith("www."):
+        #     url = url[4:]
+        # print(url)
+        url = self.URLinfo.subDomain + "." + self.URLinfo.domain +"."+ self.URLinfo.topDomain
         if url.startswith("www."):
-            url = url[4:]
-        print(url)
+            url = url[5:]
+            print(url)
         # url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}%';"
+        sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}';"
         self.cursor.execute(sql_str)
         if self.cursor.fetchone() == None:
             return False
@@ -177,27 +141,45 @@ drop trigger if exists removeOldSearches;
         self.cursor.execute(sql_str)
         self.conn.commit()
 
+# DB STRING:
+        """
+CREATE SCHEMA IF NOT EXISTS URLanalyzer;
 
+CREATE TABLE IF NOT EXISTS URLanalyzer.whitelist (
+	ID 	SERIAL 	PRIMARY KEY,
+	URL TEXT
+);
 
-    def test(self):
-        # sql_str = "select * from URLanalyzer.whitelist"
-        # self.cursor.execute(sql_str)
-        # sql_str = "INSERT INTO URLanalyzer.previousSearches (URL, report) VALUES ('youtube.com', 'balls');"
-        # self.cursor.execute(sql_str)
-        sql_str = "select * from URLanalyzer.previousSearches;"
-        self.cursor.execute(sql_str)
-        for i in self.cursor.fetchall():
-            print(i)
+CREATE TABLE IF NOT EXISTS URLanalyzer.previousSearches (
+	ID 	SERIAL 	PRIMARY KEY,
+	searchDate DATE DEFAULT CURRENT_DATE,
+	URL TEXT,
+	report TEXT,
+    fishy BOOLEAN
+);
 
+CREATE OR REPLACE FUNCTION oldSearchesFunc()
+  RETURNS TRIGGER
+  LANGUAGE PLPGSQL
+  AS
+$$
+BEGIN
+	delete from urlanalyzer.previoussearches
+	where extract(day from CURRENT_DATE)- extract( day from searchDate) > 3;
+	RETURN NULL;
+END;
+$$
+create trigger removeOldSearches
+before insert on urlanalyzer.previoussearches
+EXECUTE PROCEDURE oldSearchesFunc();
 
-def testium():
-    DBtester = DBhandler()
-    # DBtester.init_createWhitelist()
-    # DBtester.checkURLinWhitelist("svt.se")
-    # DBtester.checkURLinWhitelist("medium.com")
-    # DBtester.checkURLinWhitelist("medium.com/1231231 ta in subdomain+domain+topdomain")
-    if DBtester.checkURLinpreviousSearches("svt.se"):
-        print(DBtester.fetchPreviousSearchReport("svt.se"))
-    # DBtester.test()
+drop function if exists oldSearchesFunc;
+drop trigger if exists removeOldSearches;
 
-# testium()
+-- drop table urlanalyzer.whitelist;
+-- truncate table urlanalyzer.whitelist;
+-- SELECT * FROM URLanalyzer.whitelist;
+-- INSERT INTO URLanalyzer.whitelist (URL)
+-- VALUES ('youtube.com');
+-- DROP SCHEMA IF EXISTS URLanalyzer CASCADE;
+        """
