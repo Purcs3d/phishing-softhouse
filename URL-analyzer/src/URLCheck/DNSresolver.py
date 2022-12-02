@@ -17,7 +17,7 @@ class DNSresolver():
 
     def resolve(self):
         try:
-            self.URLinfo.ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain) #temporär lösning
+            self.URLinfo.ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain)
             self.fetchDNSdata()
             self.fetchAge(self.URLinfo.url)
         except TypeError:

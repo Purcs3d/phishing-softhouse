@@ -1,7 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-# from selenium import webdriver
-# from selenium.webdriver.firefox.options import Options
 
 class HTMLparser():
     """
@@ -22,18 +20,16 @@ class HTMLparser():
         """
         try: #kolla om vi kan få HTML info från websida
             if self.URLinfo.protocol == None:
-                response = requests.get("https://" + self.URLinfo.url) #temporär lösnin
+                response = requests.get("https://" + self.URLinfo.url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 2, stream = True)
             else:
-                response = requests.get(self.URLinfo.url)
-            # driver = webdriver.Firefox(executable_path='C:/Users/lukas/Downloads/Assignments/LP_1_H22/grupparbete/geckodriver.exe', log_path='C:/Users/lukas/Downloads/Assignments/LP_1_H22/grupparbete/phishing-softhouse/URL-analyzer/tests/Log/geckodriver.log')
-            # driver.get(self.URLinfo.url)
-            # response = requests.get(driver.current_url)
-            # driver.quit()
-            for webPage in response.history:
-                self.fetchFaviconInfo(webPage.text)
+                response = requests.get(self.URLinfo.url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 2, stream = True)
+            if response.history:
+                for webPage in response.history:
+                    self.fetchFaviconInfo(webPage.text)
+            while response.next:
+                self.fetchFaviconInfo(response.next.text)
             self.fetchFaviconInfo(response.text)
         except Exception as e:
-            print(e)
             self.URLinfo.errors.append(f"Error during HTML info collecting, connection failed.")
             return self.URLinfo
         return self.URLinfo
@@ -44,12 +40,9 @@ class HTMLparser():
 
             input: response info from HTML request, output:
         """
-        # extDocs = responseInfo.html.find("link") #find all HTML tags called "link" -> results into a dictionary
         self.URLinfo.favicon = False # default is False, if function find information about favicon -> True
-        # for link in BeautifulSoup(responseInfo).find_all('a', href=True):
-        #         print(link['href'])
         extDocs = []
-        for doc in BeautifulSoup(responseInfo, "html.parser").find_all('link', href = True, rel = True):
+        for doc in BeautifulSoup(responseInfo, "html.parser").find_all('link'):
             if "rel" in doc.attrs.keys():
                 if "icon" in doc.attrs["rel"]:
                     self.URLinfo.favicon = True
@@ -59,11 +52,11 @@ class HTMLparser():
             if "id" in doc.attrs.keys():
                 if "favicon" in doc.attrs["id"] or ".ico" in doc.attrs["id"]:
                     self.URLinfo.favicon = True
-        for doc in BeautifulSoup(responseInfo, "html.parser").find_all("meta", href = True, rel = True):
+        for doc in BeautifulSoup(responseInfo, "html.parser").find_all("meta"):
             if "content" in doc.attrs.keys():
                 if ".ico" in doc.attrs["content"] or "favicon" in doc.attrs["content"]:
                     self.URLinfo.favicon = True
-
-# def testium():
-#     urlHTMLparser = HTMLparser()
-#     urlHTMLparser.parse()
+        for doc in BeautifulSoup(responseInfo, "html.parser").find_all("img"):
+            if "src" in doc.attrs.keys():
+                if ".ico" in doc.attrs["src"] or "favicon" in doc.attrs["src"]:
+                    self.URLinfo.favicon = True
