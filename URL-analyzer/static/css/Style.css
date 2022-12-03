@@ -21,23 +21,19 @@ body
 }
 
 
-
-p.Title
+h1.Title
 {
     font-weight: bold;
-    color: #ffffff;
-    font-size: 2.5em;
-    display: inline-block;
-    margin: 0.5% 0 1% 0;
+    color: #63d297;
 }
 
-p
-{
+h2{
     font-weight: bold;
+    color: #63d297;
+}
+p{
     color: #ffffff;
-    font-size: 1.5em;
-    display: inline-block;
-    margin: 0.5% 0 1% 0;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 input

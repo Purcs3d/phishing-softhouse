@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>URL phishyness checker</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
+    <meta charset="UTF-8">  
+    <title>URL phishyness checker</title>   
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">    
     <div id="right-corner"> 
         Made by 
         <br>
-        <span style="font-style: normal;"> BDE </span>  
+        <span style="font-style: normal;"> BDE </span>      
+    
     </div>
 </head>
+
 <body>
-    <p class="Title"> URL phishyness checker </p>
-    <br>
-    <br>
+    <h1 class="Title"> URL phishyness checker </h1>
         <form action="check" method="post">        
-            <p>Enter The URL:</p>
+            <h2>Enter The URL:</h2>
             <br>
             <input type="text" name="URL_input">
             <br>
             <input type="submit" value="Check" id="btn">
-            <br>
+            
+            <table>
             {% for message in get_flashed_messages() %}
                 {% autoescape false %}
                 <p>{{ message }}</p>
                 {% endautoescape %}
             {% endfor %}
-        
+            </table> 
         </form>
 </body>
 </html>
