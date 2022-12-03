@@ -31,7 +31,11 @@ h2{
     font-weight: bold;
     color: #63d297;
 }
-p{
+th{
+    color: #ffffff;
+    font-family: 'Proxima Nova', sans-serif;
+}
+td{
     color: #ffffff;
     font-family: 'Proxima Nova', sans-serif;
 }
