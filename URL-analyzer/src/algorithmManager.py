@@ -124,16 +124,22 @@ class algorithmManager:
         outputDict["points"] = self.points
         for message in self.report["URLstringCL"]:
             outputDict["URLstringCL"] = message
+            
         for message in self.report["HTMLdataCL"]:
             outputDict["HTMLdataCL"] = message
+
         for message in self.report["DNSdataCL"]:
             outputDict["DNSdataCL"] = message
+
         for message in self.report["DatabaseComparisonCL"]:
             outputDict["DatabaseComparisonCL"] = message
+
         for message in self.report["URLreport"]:
             outputDict["URLreport"] = message
+
         for message in self.report["errors"]:
             outputDict["errors"] = message
+            
         return outputDict
 
 
