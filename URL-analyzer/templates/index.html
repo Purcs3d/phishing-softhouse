@@ -23,10 +23,14 @@
             <input type="submit" value="Check" id="btn">
             
             <table>
-            {% for message in get_flashed_messages() %}
-                {% autoescape false %}
-                <p>{{ message }}</p>
-                {% endautoescape %}
+            {% outDict = get_flashed_messages() %}
+            {% for key in outDict %}
+                <tr>
+                    <th>{{ key }}</th>
+                </tr>
+                <tr>
+                    <td>{{ outDict[key] }}</td>
+                </tr>
             {% endfor %}
             </table> 
         </form>

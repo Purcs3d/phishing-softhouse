@@ -90,33 +90,51 @@ class algorithmManager:
 
     def createOutputString(self):
         if self.URLinWhitelist == True:
-            outputStr = "URL in exist whitelist and is not phishy."+ "<br>"
-            return outputStr
+            outputDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
+            return outputDict
+
         if self.URLinPreviousSearches == True:
-            outputStr = "URL recently searched; fetched report:"+ "<br>"
-            outputStr += self.DBhandlerObj.fetchPreviousSearchReport()
-            return outputStr
-        outputStr = "fishy?:" + str(self.fishy)
-        outputStr +=  "<br> evaluation points:" + str(self.points) + "<br>"
+            outputDict['recent'] = {"URL recently searched; fetched report:"}
+            outputDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
+            return outputDict
+        # outputStr = "fishy?:" + str(self.fishy)
+        # outputStr +=  "<br> evaluation points:" + str(self.points) + "<br>"
+        # for message in self.report["URLstringCL"]:
+        #     outputStr += message + "<br>"
+        # outputStr += "<br>"
+        # for message in self.report["HTMLdataCL"]:
+        #     outputStr += message + "<br>"
+        # outputStr += "<br>"
+        # for message in self.report["DNSdataCL"]:
+        #     outputStr += message + "<br>"
+        # outputStr += "<br>"
+        # for message in self.report["DatabaseComparisonCL"]:
+        #     outputStr += message + "<br>"
+        # outputStr += "<br>"
+        # for message in self.report["URLreport"]:
+        #     outputStr += message + "<br>"
+        # outputStr += "<br>"
+        # for message in self.report["errors"]:
+        #     outputStr += message + "<br>"
+        # outputStr += "<br>"
+        # return outputStr
+
+        outputDict = {}
+        outputDict["fishy"] = self.fishy
+        outputDict["points"] = self.points
         for message in self.report["URLstringCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
+            outputDict["URLstringCL"] = message
         for message in self.report["HTMLdataCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
+            outputDict["HTMLdataCL"] = message
         for message in self.report["DNSdataCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
+            outputDict["DNSdataCL"] = message
         for message in self.report["DatabaseComparisonCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
+            outputDict["DatabaseComparisonCL"] = message
         for message in self.report["URLreport"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
+            outputDict["URLreport"] = message
         for message in self.report["errors"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        return outputStr
+            outputDict["errors"] = message
+        return outputDict
 
 
     def checkDB(self):

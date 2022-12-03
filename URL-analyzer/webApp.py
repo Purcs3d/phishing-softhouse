@@ -6,9 +6,6 @@ app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'
 
 __author__ = "Totte Hansen, Rasmus Andersen"
 
-@app.route("/")
-def index():
-    return render_template("index.html")
 @app.route("/") #home page
 def index():    #home page
     return render_template("index.html")    #home page
