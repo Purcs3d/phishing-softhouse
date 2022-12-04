@@ -15,26 +15,26 @@
 
 <body>
     <h1 class="Title"> URL phishyness checker </h1>
-        <form action="check" method="post">        
-            <h2>Enter The URL:</h2>
-            <br>
-            <input type="text" name="URL_input">
-            <br>
-            <input type="submit" value="Check" id="btn">
-            
-            <table>
-            {% with outDict = get_flashed_messages() %}
-                {% for key, value in output %}
-                    {% for i in output[key] %}
-                        <tr>
-                            <th>{{ key }}</th>
-                            <td>{{ i }}</td>
-                        </tr>
-                    {% endfor %}
-                {% endfor %}
-            {% endwith %}
-            </table> 
-        </form>
+    <form action="check" method="post">        
+        <h2>Enter The URL:</h2>
+        <br>
+        <input type="text" name="URL_input">
+        <br>
+        <input type="submit" value="Check" id="btn">
+        
+        <table>
+        {% with outDict = get_flashed_messages() %}
+            {% for key in outDict %}
+                <tr>
+                    <th>{{ key }}</th>
+                </tr>
+                <tr>
+                    <td>{{ outDict[key] }}</td>
+                </tr>
+            {% endfor %}
+        {% endwith %}
+        </table> 
+    </form>
 </body>
 </html>
 
