@@ -13,14 +13,17 @@ def index():    #home page
 @app.route("/check", methods=['GET', 'POST'])
 def CheckURL(): 
     try:
-        URLinput = str(request.form['URL_input'])
+        URLinput = str(request.form['URL_input'])\
 
-        algorithmEngine = am.algorithmManager(URLinput) 
+        AMObj = am.algorithmManager(URLinput) 
+        AMObj.run()
+        AMObj.runEvaluations()
 
-        output = algorithmEngine.createOutputString()   #create output string
+        output = AMObj.createOutputString()   #create output string
         flash(output)   #flash output string
 
     except Exception as e:  #if error
+        raise(e)    
         flash(f"Error: {e}")    #flash error
 
     return render_template("index.html")
