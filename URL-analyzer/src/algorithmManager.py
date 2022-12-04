@@ -125,7 +125,6 @@ class algorithmManager:
         if(len(self.report["URLstringCL"]) > 0):
             for message in self.report["URLstringCL"]:
                 outputDict["URLstringCL"] = message
-        
         if(len(self.report["HTMLdataCL"]) > 0):
             for message in self.report["HTMLdataCL"]:
                 outputDict["HTMLdataCL"] = message
