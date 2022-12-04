@@ -24,13 +24,13 @@
             
             <table>
             {% with outDict = get_flashed_messages() %}
-                {% for key in outDict %}
-                    <tr>
-                        <th>{{ key }}</th>
-                    </tr>
-                    <tr>
-                        <td>{{ outDict[key] }}</td>
-                    </tr>
+                {% for key, value in output %}
+                    {% for i in output[key] %}
+                        <tr>
+                            <th>{{ key }}</th>
+                            <td>{{ i }}</td>
+                        </tr>
+                    {% endfor %}
                 {% endfor %}
             {% endwith %}
             </table> 

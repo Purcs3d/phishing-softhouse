@@ -30,11 +30,12 @@ def main():
 
                     output = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
                     output += "\nEvaluation points:" + str(algorithmEngine.points)
-                    output += algorithmEngine.createOutputString()
+                    outputDict = algorithmEngine.createOutputString()
 
                     finalOutput = output.replace("<br>", "\n" )
-                    print(finalOutput)
-
+                    #print(finalOutput)
+                    for i in outputDict:
+                        print(i, outputDict[i])
                 except Exception as e:
                     print(f"Error: {e}")
 

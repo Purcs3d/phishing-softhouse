@@ -23,7 +23,7 @@ def CheckURL():
     except Exception as e:  #if error
         flash(f"Error: {e}")    #flash error
 
-    return render_template("index.html")
+    return render_template("index.html") #render template
 
 def format_report(algo):
     """

@@ -122,24 +122,25 @@ class algorithmManager:
         outputDict = {}
         outputDict["fishy"] = self.fishy
         outputDict["points"] = self.points
-        for message in self.report["URLstringCL"]:
-            outputDict["URLstringCL"] = message
-            
-        for message in self.report["HTMLdataCL"]:
-            outputDict["HTMLdataCL"] = message
-
-        for message in self.report["DNSdataCL"]:
-            outputDict["DNSdataCL"] = message
-
-        for message in self.report["DatabaseComparisonCL"]:
-            outputDict["DatabaseComparisonCL"] = message
-
-        for message in self.report["URLreport"]:
-            outputDict["URLreport"] = message
-
-        for message in self.report["errors"]:
-            outputDict["errors"] = message
-            
+        if(len(self.report["URLstringCL"]) > 0):
+            for message in self.report["URLstringCL"]:
+                outputDict["URLstringCL"] = message
+        
+        if(len(self.report["HTMLdataCL"]) > 0):
+            for message in self.report["HTMLdataCL"]:
+                outputDict["HTMLdataCL"] = message
+        if(len(self.report["DNSdataCL"]) > 0):
+            for message in self.report["DNSdataCL"]:
+                outputDict["DNSdataCL"] = message
+        if(len(self.report["DatabaseComparisonCL"]) > 0):
+            for message in self.report["DatabaseComparisonCL"]:
+                outputDict["DatabaseComparisonCL"] = message
+        if(len(self.report["URLreport"]) > 0):
+            for message in self.report["URLreport"]:
+                outputDict["URLreport"] = message
+        if(len(self.report["errors"]) > 0):
+            for message in self.report["errors"]:
+                outputDict["errors"] = message  
         return outputDict
 
 
