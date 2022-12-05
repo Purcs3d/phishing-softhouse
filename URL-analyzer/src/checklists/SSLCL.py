@@ -23,11 +23,11 @@ class SSLCL:
         """
         # return early in case certificate is empty
         if self.cert.cert == None:
+            # self.points += 100
             return self.points
-        if self.check_handshake == False or self.URLinfo.ip == None:
-            return self.points
+        # if self.URLinfo.ip == None:
+        #     return self.points
 
-        print("running through SSL evaluation")
         self.check_version()
         self.check_licenser()
         self.check_cert_age()
@@ -56,10 +56,10 @@ class SSLCL:
 
 
     def check_version(self): #* auhtor: Totte Hansen *#
-        outdated_ver_points = 20
+        outdated_ver_points = 50
         outdated_report = "The website uses a depricated SSL/TSL version (less than version 3)"
 
-        no_cert_points = 30
+        no_cert_points = 80
         no_cert_report = "The website lacks TSL/SSL ensurance"
 
         # no license could be fetched from site
@@ -71,6 +71,14 @@ class SSLCL:
         if version <= conf.MIN_CERT_VER:
             self.points += outdated_ver_points
             self.report.append(outdated_report)
+
+        if self.URLinfo.TLSversion == "TLSv1.2" or self.URLinfo.TLSversion == "TLSv1.1" or self.URLinfo.TLSversion == "TLSv1.0":
+            self.points += outdated_ver_points
+            self.report.append(outdated_report)
+
+        if self.URLinfo.TLSversion == None:
+            self.points += no_cert_points
+            self.report.append(no_cert_report)
 
 
     def check_licenser(self): #TODO add phishy licensers
@@ -94,7 +102,7 @@ class SSLCL:
                 self.points += self_license_points
                 self.report.append(self_license_report)
         except Exception:
-            self.URLinfoObj.errors.append("Error in SSL resolving, licence checking failed")
+            self.URLinfo.errors.append("Error in SSL resolving, licence checking failed")
 
 
     def check_cert_age(self): #TODO

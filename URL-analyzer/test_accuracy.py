@@ -63,7 +63,6 @@ def test_accuracy(inFileName, outFolder):
             wFileCorrect.write(f"Points: {evaluationURL.points} \n\n")
             wFileCorrect.write(f"The website generated the following report:\n")
 
-            print(evaluationURL.report["URLstringCL"])
             for item in evaluationURL.report["URLstringCL"]:
                 wFileCorrect.write(f"\t\t{item}\n")
             for item in evaluationURL.report["HTMLdataCL"]:

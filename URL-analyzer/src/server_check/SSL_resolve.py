@@ -31,38 +31,34 @@ class ssl_parser:
     def sanitize_url(self, url:str) -> None:
         self.sane_url = url_sanitize.rm_scheme(url, True)
 
-    def fetch_ssl(self, excep: bool = False) -> str: #* @auth: Totte Hansen
+    def fetch_ssl(self) -> str: #* @auth: Totte Hansen
         """
         Fetches socket encryption version, if one is present.
         If socket is encrypted is determined by URL scheme.
         """
 
         if not url_sanitize.siteValid:
-            assert(f"Site {self.sane_url} is invalid or closed")
+            self.URLinfo.append(f"Site {self.sane_url} is invalid or closed")
 
         hostname = self.sane_url
         # hostname = self.URLinfo.domain + "." + self.URLinfo.topDomain
         context = ssl.create_default_context()
         try:
             # open socket using https port 443
-            with socket.create_connection((hostname, 443), timeout=5) as sock:
+            with socket.create_connection((hostname, 443), timeout=8) as sock:
                 # fetch sock version
                 with context.wrap_socket(sock, server_hostname=hostname) as ssock:
                     try:
+                        self.URLinfo.TLSversion = ssock.version()
                         return ssock.getpeercert()
 
                     except Exception as err:
-                        if excep:
-                            raise err
-                        else:
-                            return None
+                        self.URLinfo.errors.append("Error during SSL resolving, Couldnt get cert info")
+                        return None
 
         except Exception as err:
-            if excep:
-                # raise err
-                self.URLinfo.errors.append("Error during SSL resolving, Socket connection timed out")
-            else:
-                return None
+            self.URLinfo.errors.append("Error during SSL resolving, Socket connection timed out")
+            return None
 
 
 
@@ -72,5 +68,6 @@ class ssl_parser:
     def __init__(self, url : str, URLinfo) -> None: #* @auth: Totte Hansen
         self.original_url = url
         self.URLinfo = URLinfo
-        self.sane_url = self.ssl_sanetize(url)
-        self.cert = self.fetch_ssl(self.sane_url)
+        # self.sane_url = self.ssl_sanetize(url)
+        self.sane_url = self.URLinfo.domain + "." + self.URLinfo.topDomain
+        self.cert = self.fetch_ssl()

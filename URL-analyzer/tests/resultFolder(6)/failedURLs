@@ -1,0 +1,312 @@
+These are all of the URLs that the algorithm wrongly classified as not phishingLinks 
+
+URL: http://amcgardiennage.com/p2w9yszpptdimdu1btfynjm= 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptdimdu1btfynjm= 
+	path: /p2w9yszpptdimdu1btfynjm= 
+	fragment: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptfjmmozszb2mdg4cg== 
+Points: 20 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptfjmmozszb2mdg4cg== 
+	path: /p2w9yszpptfjmmozszb2mdg4cg== 
+	fragment: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: https://cut.ly/AlertalBK 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: cut 
+	topDomain: ly 
+	dir: None 
+	file: AlertalBK 
+	path: /AlertalBK 
+	fragment: None 
+	ip: 46.248.190.217 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: TLSv1.3 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: http://foxconnhealthtechnologies.com/msproject/dds/ddfk 
+Points: 41 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 28 letters
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: foxconnhealthtechnologies 
+	topDomain: com 
+	dir: /msproject/dds/ 
+	file: ddfk 
+	path: /msproject/dds/ddfk 
+	fragment: None 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 1, 4, 21, 42, 5), datetime.datetime(2023, 1, 4, 16, 42, 5)] 
+	registered: [datetime.datetime(2019, 1, 4, 21, 42, 5), datetime.datetime(2019, 1, 4, 16, 42, 5)] 
+	update: [datetime.datetime(2022, 10, 16, 20, 42, 34), datetime.datetime(2021, 1, 5, 12, 56, 37)] 
+	active: 1430 days, 17:52:42.314658 
+	TLSversion: None 
+	daysActive: 1430 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://grandcentralatkennedy.com/.1and1/login.php?signin=d41d8cd98f00b204e9800998ecf8427e&auth=39849f39c99c1731cfbeb1a72f7bbd32680c80ce0457b6956a94ba024f7ae3f872238e73 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: grandcentralatkennedy 
+	topDomain: com 
+	dir: /.1and1/ 
+	file: login.php 
+	path: /.1and1/login.php 
+	fragment: None 
+	ip: 160.153.74.100 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: TLSv1.2 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: https://hkvvy.csb.app 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: hkvvy 
+	domain: csb 
+	topDomain: app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 104.18.6.3 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: TLSv1.3 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: https://l.wl.co/l?u=https://s.id/H24ve?userid=E8PfOASz 
+Points: 40 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: l 
+	domain: wl 
+	topDomain: co 
+	dir: /l?u=https:/ 
+	file: s.id/H24ve 
+	path: /l?u=https://s.id/H24ve 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://ptimarketing.com/index.html 
+Points: 60 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ptimarketing 
+	topDomain: com 
+	dir: None 
+	file: index.html 
+	path: /index.html 
+	fragment: None 
+	ip: 136.0.161.82 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: https://rdx-usataxtretruns.com 
+Points: 90 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: rdx-usataxtretruns 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 103.224.212.222 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: TLSv1.2 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: http://recursing-knuth.45-88-108-231.plesk.page 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 4, 5, 8
+		The URL contained the following numbers in the domain:4, 5, 8, 8, 1, 0, 8, 2, 3, 1
+		The URL had a phishy length with 38 letters
+
+	www: None 
+	protocol: http 
+	subDomain: recursing-knuth 
+	domain: 45-88-108-231 
+	topDomain: plesk.page 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 45.88.108.231 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+Error during SSL resolving, Socket connection timed out
+------------------------
+

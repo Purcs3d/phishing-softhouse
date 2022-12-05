@@ -36,6 +36,7 @@ class URLinfo():
         self.registered = None
         self.update = None
         self.active = None
+        self.TLSversion = None
         self.errors: list = [] # the error messages collected during information gathering
 
     def getDNSinfo(self):
