@@ -26,10 +26,6 @@ class DBhandler():
         self.URLinfo = URLinfo
         self.cursor = self.conn.cursor()
 
-
-
-
-
     def delDB(self):
         sql_str = "DROP SCHEMA IF EXISTS URLanalyzer CASCADE;"
         self.cursor.execute(sql_str)
