@@ -79,13 +79,16 @@ class DBhandler():
             Checks if URL exist in whitelist
             input: URL, output: if it exist(True) or not (False)
         """
-        if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.": # www.login.bth.se
-            url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        else: # bth.se
-            url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        if url.startswith("www."):
-            url = url[5:]
-        sql_str = f"select * from URLanalyzer.whitelist where url LIKE '{url}';"
+        # if self.URLinfo.subDomain != None: # www.login.bth.se
+        #     url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        # else: # bth.se
+        #     url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        # print("asdsaASDKSALDLA", url)
+        if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.":
+            sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}';"
+        else:
+            sql_str = f"select * from URLanalyzer.whitelist where url = '{url}';"
         self.cursor.execute(sql_str)
         if self.cursor.fetchone() == None:
             return False

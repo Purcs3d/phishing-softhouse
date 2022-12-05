@@ -41,6 +41,10 @@ def test_checkWhitelist():
     URLinfoObj.getURLstringInfo()
     DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
     assert DBhandlerObj.checkURLinWhitelist() == True # "google.se" in whitelist
+    URLinfoObj = urlinfo.URLinfo("http://www.subdomain.google.se/")
+    URLinfoObj.getURLstringInfo()
+    DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
+    assert DBhandlerObj.checkURLinWhitelist() == True # "google.se" in whitelist
     URLinfoObj = urlinfo.URLinfo("www.addons.mozilla.org")
     URLinfoObj.getURLstringInfo()
     DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
@@ -48,8 +52,15 @@ def test_checkWhitelist():
     URLinfoObj = urlinfo.URLinfo("appleid.apple.com.akadns.net")
     URLinfoObj.getURLstringInfo()
     DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
-    assert DBhandlerObj.checkURLinWhitelist() == True # "google.se" in whitelist
-
+    assert DBhandlerObj.checkURLinWhitelist() == True
+    URLinfoObj = urlinfo.URLinfo("http://www.phishgoogle.se")
+    URLinfoObj.getURLstringInfo()
+    DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
+    assert DBhandlerObj.checkURLinWhitelist() == False
+    URLinfoObj = urlinfo.URLinfo("http://www.subdomain.phishsvt.se")
+    URLinfoObj.getURLstringInfo()
+    DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
+    assert DBhandlerObj.checkURLinWhitelist() == False
 
 def test_checkPreviousSearches():
     print("\nChecking if URL not exist in previousSearches table")
