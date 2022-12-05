@@ -51,7 +51,7 @@ class DBhandler():
         $$
         BEGIN
         	delete from urlanalyzer.previoussearches
-        	where extract(day from CURRENT_DATE)- extract( day from searchDate) > 3;
+        	where CURRENT_DATE  :: timestamp  -  searchDate :: timestamp > interval '3 days';
         	RETURN NULL;
         END;
         $$"""
@@ -82,19 +82,13 @@ class DBhandler():
             Checks if URL exist in whitelist
             input: URL, output: if it exist(True) or not (False)
         """
-        # if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.": # www.login.bth.se
-        #     url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        # else: # bth.se
-        #     url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        # if url.startswith("www."):
-        #     url = url[4:]
-        # print(url)
-        url = self.URLinfo.subDomain + "." + self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.": # www.login.bth.se
+            url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
+        else: # bth.se
+            url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
         if url.startswith("www."):
             url = url[5:]
-            print(url)
-        # url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}';"
+        sql_str = f"select * from URLanalyzer.whitelist where url LIKE '{url}';"
         self.cursor.execute(sql_str)
         if self.cursor.fetchone() == None:
             return False
@@ -111,6 +105,11 @@ class DBhandler():
         if self.cursor.fetchone() == None:
             return False
         else:
+            sql_str = f"Select CURRENT_DATE  :: timestamp  -  searchDate :: timestamp from urlanalyzer.previoussearches where url = '{self.URLinfo.url}';"
+            self.cursor.execute(sql_str)
+            date = self.cursor.fetchone()[0]
+            if date.days > 3: # if previous search is older than 3 days -> return false anyways.
+                return False
             return True
     def fetchPreviousSearchReport(self):
         """
@@ -164,9 +163,9 @@ CREATE OR REPLACE FUNCTION oldSearchesFunc()
   AS
 $$
 BEGIN
-	delete from urlanalyzer.previoussearches
-	where extract(day from CURRENT_DATE)- extract( day from searchDate) > 3;
-	RETURN NULL;
+    delete from urlanalyzer.previoussearches
+    where CURRENT_DATE  :: timestamp  -  searchDate :: timestamp > interval '3 days';
+    RETURN NULL;
 END;
 $$
 create trigger removeOldSearches

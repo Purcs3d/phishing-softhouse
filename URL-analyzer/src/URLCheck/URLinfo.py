@@ -27,7 +27,6 @@ class URLinfo():
         self.file: str = None
         self.path: str = None
         self.fragment: str = None
-        self.query:str = None
         self.ip: str = None
         self.city: str = None
         self.country: str = None
