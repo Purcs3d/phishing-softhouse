@@ -2,7 +2,14 @@
 HOST = '127.0.0.0' # aka localhost
 PORT = '8000' # aka localhost:8000
 
-""" checklist constants"""
+""" DB configurations """
+DB ="URLanalyzer"
+DB_USERNAME ='postgres'
+DB_PASSWORD ='root'
+DB_HOST ='localhost'
+DB_PORT = '5432'
+
+""" Checklist constants """
 #Add bad domain keywords to this list:
 BAD_KEYWORDS = ["admin", "login", "free", "update", "security", "billing", "check", "notify", "google", "manager", "parcel",
                 "collect", "signin", "facebook", "linkedin", "connect"]

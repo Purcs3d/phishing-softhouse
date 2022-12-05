@@ -50,12 +50,28 @@ def test_DNSresolver(urlDNSresolver, URLstringParser):
     assert URLinfoObj.country == "Sweden"
     assert URLinfoObj.city == "Mölnlycke"
     assert URLinfoObj.region == "Västra Götaland"
-    assert str(URLinfoObj.registed) == "1994-05-31 00:00:00"
+    assert str(URLinfoObj.registered) == "1994-05-31 00:00:00"
 
 
 def test_HTMLparser(urlHTMLparser, URLstringParser):
-    print("\nTesting Favicon info on karlskronahem.se (False atm)")
-    URLstringParser.URLinfo.url = "karlskronahem.se"
+    print("\nTesting Favicon info on some websites, done (2022-12)")
+    URLstringParser.URLinfo.url = "svt.se" 
+    URLinfoObj = URLstringParser.UrlResolver()
+    URLinfoObj = urlHTMLparser.parse()
+    assert URLinfoObj.favicon == True
+    URLstringParser.URLinfo.url = "youtube.com"
+    URLinfoObj = URLstringParser.UrlResolver()
+    URLinfoObj = urlHTMLparser.parse()
+    assert URLinfoObj.favicon == True
+    URLstringParser.URLinfo.url = "hltv.org" # in <img>
+    URLinfoObj = URLstringParser.UrlResolver()
+    URLinfoObj = urlHTMLparser.parse()
+    assert URLinfoObj.favicon == True
+    URLstringParser.URLinfo.url = "https://cert.europa.eu/blog" # user agent mozilla
+    URLinfoObj = URLstringParser.UrlResolver()
+    URLinfoObj = urlHTMLparser.parse()
+    assert URLinfoObj.favicon == True
+    URLstringParser.URLinfo.url = "https://archive.ics.uci.edu/ml/index.php" # not favicon atm(2022-12)
     URLinfoObj = URLstringParser.UrlResolver()
     URLinfoObj = urlHTMLparser.parse()
     assert URLinfoObj.favicon == False
