@@ -1,0 +1,623 @@
+These are all of the URLs that the algorithm wrongly classified as not phishingLinks 
+
+URL: http://abaadteam.com/qlm/customer-area/app 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abaadteam 
+	topDomain: com 
+	dir: /qlm/customer-area/ 
+	file: app 
+	path: /qlm/customer-area/app 
+	fragment: None 
+	ip: 81.171.22.4 
+	city: None 
+	country: Netherlands 
+	region: None 
+	favicon: False 
+	expires: 2023-03-07 19:15:47 
+	registered: 2022-03-07 19:15:47 
+	update: 2022-05-16 06:34:31 
+	active: 272 days, 18:34:27.985775 
+	daysActive: 272 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://abaadteam.com/qlm/customer-area 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abaadteam 
+	topDomain: com 
+	dir: /qlm/ 
+	file: customer-area 
+	path: /qlm/customer-area 
+	fragment: None 
+	ip: 81.171.22.4 
+	city: None 
+	country: Netherlands 
+	region: None 
+	favicon: False 
+	expires: 2023-03-07 19:15:47 
+	registered: 2022-03-07 19:15:47 
+	update: 2022-05-16 06:34:31 
+	active: 272 days, 18:34:29.282640 
+	daysActive: 272 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://akakup.co.za.netune.co.za.lexna.com.na 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 36 letters
+		The URL have an unusual amount of 6 subdomains 
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: akakup.co.za.netune.co.za 
+	domain: lexna 
+	topDomain: com.na 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 102.221.51.86 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptdimdu1btfynjm= 
+Points: 21 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptdimdu1btfynjm= 
+	path: /p2w9yszpptdimdu1btfynjm= 
+	fragment: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5031 days, 17:09:32.546190 
+	daysActive: 5031 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptfjmmozszb2mdg4cg== 
+Points: 21 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptfjmmozszb2mdg4cg== 
+	path: /p2w9yszpptfjmmozszb2mdg4cg== 
+	fragment: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5031 days, 17:09:33.595991 
+	daysActive: 5031 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://asse6010.com/img/we/wetransfer?email=tontaina@mailfever.es 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 6
+		The URL contained the following numbers in the domain:6, 0, 1, 0
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: asse6010 
+	topDomain: com 
+	dir: /img/we/ 
+	file: wetransfer 
+	path: /img/we/wetransfer 
+	fragment: None 
+	ip: 50.3.211.243 
+	city: Frankfurt am Main 
+	country: Germany 
+	region: Hesse 
+	favicon: False 
+	expires: 2023-04-09 18:09:14 
+	registered: 2022-04-09 18:09:14 
+	update: [datetime.datetime(2022, 7, 19, 4, 56, 53), datetime.datetime(2022, 4, 10, 3, 10, 2)] 
+	active: 239 days, 19:42:31.003768 
+	daysActive: 239 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://axieinfenity.com/axie.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: axieinfenity 
+	topDomain: com 
+	dir: None 
+	file: axie.php 
+	path: /axie.php 
+	fragment: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-11-12 19:00:34 
+	registered: 2022-11-12 19:00:34 
+	update: [datetime.datetime(2022, 11, 12, 21, 46, 20), datetime.datetime(2022, 11, 12, 22, 31, 43)] 
+	active: 22 days, 18:51:15.901377 
+	daysActive: 22 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://axieinfenity.com 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: axieinfenity 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-11-12 19:00:34 
+	registered: 2022-11-12 19:00:34 
+	update: [datetime.datetime(2022, 11, 12, 21, 46, 20), datetime.datetime(2022, 11, 12, 22, 31, 43)] 
+	active: 22 days, 18:51:20.612625 
+	daysActive: 22 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://btbroadbands453122689.boxmode.io 
+Points: 91 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:1, 2, 3, 4, 5, 6, 8, 9
+		The URL contained the following numbers in the subdomain:4, 5, 3, 1, 2, 2, 6, 8, 9
+		The URL had a phishy length with 30 letters
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: btbroadbands453122689 
+	domain: boxmode 
+	topDomain: io 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 209.192.137.208 
+	city: Dallas 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: 2023-07-29 13:01:35 
+	registered: 2019-07-29 13:01:35 
+	update: 2022-07-31 08:35:56 
+	active: 1225 days, 0:50:54.298548 
+	daysActive: 1225 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: https://btbroadbands453122689.boxmode.io 
+Points: 71 
+
+The website generated the following report:
+		The URL violated the following special characters:1, 2, 3, 4, 5, 6, 8, 9
+		The URL contained the following numbers in the subdomain:4, 5, 3, 1, 2, 2, 6, 8, 9
+		The URL had a phishy length with 30 letters
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: btbroadbands453122689 
+	domain: boxmode 
+	topDomain: io 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 209.192.137.208 
+	city: Dallas 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: 2023-07-29 13:01:35 
+	registered: 2019-07-29 13:01:35 
+	update: 2022-07-31 08:35:56 
+	active: 1225 days, 0:50:59.566811 
+	daysActive: 1225 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: https://cut.ly/AlertalBK 
+Points: 1 
+
+The website generated the following report:
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: cut 
+	topDomain: ly 
+	dir: None 
+	file: AlertalBK 
+	path: /AlertalBK 
+	fragment: None 
+	ip: 46.248.190.217 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: True 
+	expires: 2032-02-09 14:18:08.270000 
+	registered: 2021-02-09 14:18:08.270000 
+	update: 2021-07-10 23:40:24.969000 
+	active: 663 days, 23:34:42.500340 
+	daysActive: 663 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+Error during SSL resolving, could not fetch server info
+------------------------
+
+URL: http://foxconnhealthtechnologies.com/msproject/dds/ddfk 
+Points: 41 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 28 letters
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: foxconnhealthtechnologies 
+	topDomain: com 
+	dir: /msproject/dds/ 
+	file: ddfk 
+	path: /msproject/dds/ddfk 
+	fragment: None 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 1, 4, 21, 42, 5), datetime.datetime(2023, 1, 4, 16, 42, 5)] 
+	registered: [datetime.datetime(2019, 1, 4, 21, 42, 5), datetime.datetime(2019, 1, 4, 16, 42, 5)] 
+	update: [datetime.datetime(2022, 10, 16, 20, 42, 34), datetime.datetime(2021, 1, 5, 12, 56, 37)] 
+	active: 1430 days, 16:12:18.982642 
+	daysActive: 1430 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://grandcentralatkennedy.com/.1and1/login.php?signin=d41d8cd98f00b204e9800998ecf8427e&auth=39849f39c99c1731cfbeb1a72f7bbd32680c80ce0457b6956a94ba024f7ae3f872238e73 
+Points: 21 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: grandcentralatkennedy 
+	topDomain: com 
+	dir: /.1and1/ 
+	file: login.php 
+	path: /.1and1/login.php 
+	fragment: None 
+	ip: 160.153.74.100 
+	city: Scottsdale 
+	country: United States 
+	region: Arizona 
+	favicon: True 
+	expires: [datetime.datetime(2024, 8, 7, 17, 53, 42), datetime.datetime(2024, 8, 7, 12, 53, 42)] 
+	registered: [datetime.datetime(2003, 8, 7, 17, 53, 42), datetime.datetime(2003, 8, 7, 12, 53, 42)] 
+	update: [datetime.datetime(2022, 9, 6, 14, 1, 37), datetime.datetime(2022, 1, 12, 16, 24, 14)] 
+	active: 7059 days, 20:02:52.327260 
+	daysActive: 7059 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: https://hkvvy.csb.app 
+Points: 1 
+
+The website generated the following report:
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: hkvvy 
+	domain: csb 
+	topDomain: app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 104.18.6.3 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2027-05-08 16:00:02 
+	registered: 2018-05-08 16:00:02 
+	update: [datetime.datetime(2022, 6, 15, 8, 46, 31), datetime.datetime(2022, 4, 29, 11, 13, 42, 10000)] 
+	active: 1671 days, 21:57:06.892264 
+	daysActive: 1671 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+Error during SSL resolving, could not fetch server info
+------------------------
+
+URL: https://l.wl.co/l?u=https://s.id/H24ve?userid=E8PfOASz 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: l 
+	domain: wl 
+	topDomain: co 
+	dir: /l?u=https:/ 
+	file: s.id/H24ve 
+	path: /l?u=https://s.id/H24ve 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+Error during DNS resolving, connection failed
+Error during SSL resolving, could not fetch server info
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://ptimarketing.com/index.html 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ptimarketing 
+	topDomain: com 
+	dir: None 
+	file: index.html 
+	path: /index.html 
+	fragment: None 
+	ip: 136.0.161.82 
+	city: San Jose 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: 2023-06-19 02:21:57 
+	registered: 2022-06-19 02:21:57 
+	update: [datetime.datetime(2022, 6, 19, 2, 22), datetime.datetime(2022, 11, 9, 16, 45, 24)] 
+	active: 169 days, 11:37:59.274198 
+	daysActive: 169 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: https://rdx-usataxtretruns.com 
+Points: 21 
+
+The website generated the following report:
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: rdx-usataxtretruns 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 103.224.212.222 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: [datetime.datetime(2023, 10, 1, 18, 55, 1), datetime.datetime(2023, 10, 1, 13, 55, 1)] 
+	registered: [datetime.datetime(2021, 10, 1, 18, 55, 1), datetime.datetime(2021, 10, 1, 13, 55, 1)] 
+	update: [datetime.datetime(2022, 10, 8, 9, 47, 7), datetime.datetime(2021, 12, 2, 14, 20, 38)] 
+	active: 429 days, 19:05:22.565166 
+	daysActive: 429 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+
+URL: http://recursing-knuth.45-88-108-231.plesk.page 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 4, 5, 8
+		The URL contained the following numbers in the domain:4, 5, 8, 8, 1, 0, 8, 2, 3, 1
+		The URL had a phishy length with 38 letters
+
+	www: None 
+	protocol: http 
+	subDomain: recursing-knuth 
+	domain: 45-88-108-231 
+	topDomain: plesk.page 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: Not found 
+	city: Not found 
+	country: Not found 
+	region: Not found 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://reheart-suppo.com/owa/index2.php?l=aamkadlhotmwndi4lwvhmjutndk2oc1iywrhltmzntllmtnimda3mgauaaaaaadejthfefmxsiv%20a3wh1ms0aqailhmd6eckqkl40ajeueizaaaaaawgaaa_946f2cde0f344ac2567a45_j124456733ebe933255be_product-userid&fr2= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: reheart-suppo 
+	topDomain: com 
+	dir: /owa/ 
+	file: index2.php 
+	path: /owa/index2.php 
+	fragment: None 
+	ip: 43.249.77.61 
+	city: None 
+	country: Hong Kong 
+	region: None 
+	favicon: False 
+	expires: 2023-09-30 18:28:20 
+	registered: 2022-09-30 18:28:20 
+	update: [datetime.datetime(2022, 10, 1, 7, 38, 45), datetime.datetime(2022, 10, 1, 7, 38, 46)] 
+	active: 65 days, 19:32:14.104789 
+	daysActive: 65 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+

@@ -1,0 +1,10 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: https://08863299.sso-secure-mail0454etr.pages.dev/?emailtoken=aaaa@example.jp&amp;domain=example.jp 
+Points: 115 
+
+The website generated the following report:
+		The URL violated the following special characters:0, 2, 3, 4, 5, 6, 8, 9
+		The URL contained the following numbers in the subdomain:0, 8, 8, 6, 3, 2, 9, 9, 0, 4, 5, 4
+		The URL had a phishy length with 39 letters
+		The website lacks favicon.

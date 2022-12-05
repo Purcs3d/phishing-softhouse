@@ -1,0 +1,108 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: https://08863299.sso-secure-mail0454etr.pages.dev/?emailtoken=aaaa@example.jp&amp;domain=example.jp 
+Points: 115 
+
+The website generated the following report:
+		The URL violated the following special characters:0, 2, 3, 4, 5, 6, 8, 9
+		The URL contained the following numbers in the subdomain:0, 8, 8, 6, 3, 2, 9, 9, 0, 4, 5, 4
+		The URL had a phishy length with 39 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: 08863299.sso-secure-mail0454etr 
+	domain: pages 
+	topDomain: dev 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	ip: 104.18.21.135 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, could not fetch server info
+------------------------
+
+URL: http://dappswalletsconnects.net 
+Points: 120 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL contained the following bad keywords:connect
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: dappswalletsconnects 
+	topDomain: net 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 103.224.212.221 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-11-22 19:02:19 
+	registered: 2022-11-22 19:02:19 
+	update: [datetime.datetime(2022, 11, 22, 21, 46, 49), datetime.datetime(2022, 11, 22, 22, 22, 13)] 
+	active: 12 days, 18:50:36.025070 
+	daysActive: 12 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+Error during SSL resolving, could not fetch server info
+------------------------
+
+URL: http://msnmsmsnsm219421.ultimatefreehost.in 
+Points: 191 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:1, 2, 4, 9
+		The URL contained the following bad keywords:free
+		The URL contained the following numbers in the subdomain:2, 1, 9, 4, 2, 1
+		The URL had a phishy length with 34 letters
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: msnmsmsnsm219421 
+	domain: ultimatefreehost 
+	topDomain: in 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 31.22.4.234 
+	city: Newcastle upon Tyne 
+	country: United Kingdom 
+	region: Newcastle upon Tyne 
+	favicon: False 
+	expires: 2023-04-19 08:32:27 
+	registered: 2014-04-19 08:32:27 
+	update: 2022-05-17 08:37:29 
+	active: 3152 days, 5:25:38.082571 
+	daysActive: 3152 
+
+Database connection failed... evaluation run anyway. connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+------------------------
+

@@ -22,12 +22,12 @@ class SSLCL:
         Run through all tests sequentially using function calls
         """
         # return early in case certificate is empty
-        print(self.cert.cert)
         if self.cert.cert == None:
             return self.points
         if self.check_handshake == False or self.URLinfo.ip == None:
             return self.points
 
+        print("running through SSL evaluation")
         self.check_version()
         self.check_licenser()
         self.check_cert_age()
@@ -80,14 +80,21 @@ class SSLCL:
         self_license_points = 25
         self_license_report = "The certificate is self issued"
 
-        # fetch site registered owner
-        site_org = whois.whois(self.cert.sane_url).org
-        # fetch cert issuer corporation
-        issuer = self.cert.cert["issuer"][1][0][1]
+        # error med URL STORAGE.GOOGLEAPIS.COM
+        #whois.parser.PywhoisError: No match for "STORAGE.GOOGLEAPIS.COM".
+        #>>> Last update of whois database: 2022-12-05T13:01:02Z <<<
 
-        if site_org == issuer:
-            self.points += self_license_points
-            self.report.append(self_license_report)
+        try:
+            # fetch site registered owner
+            site_org = whois.whois(self.cert.sane_url).org
+            # fetch cert issuer corporation
+            issuer = self.cert.cert["issuer"][1][0][1]
+
+            if site_org == issuer:
+                self.points += self_license_points
+                self.report.append(self_license_report)
+        except Exception:
+            self.URLinfoObj.errors.append("Error in SSL resolving, licence checking failed")
 
 
     def check_cert_age(self): #TODO
