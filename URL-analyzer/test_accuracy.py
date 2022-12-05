@@ -44,6 +44,8 @@ def test_accuracy(inFileName, outFolder):
         lineNum += 1
         try:
             response = requests.get(url)
+            if response.status_code != 200:
+                raise Exception("Website does not exist")
         except:
             print(f"Skipping the URL: {url}, beacuse it does not exists.\n")
             wFileSkipped.write(f"{url}\n")
@@ -116,8 +118,10 @@ def test_accuracy(inFileName, outFolder):
     algorithmAccuracy = round((float(countPhishingPositives)/float(testedURLs))*100)
 
     print(f"The algorithm accuracy was: {algorithmAccuracy}%")
-    wFileWrong.write(f"The total accuracy was: {algorithmAccuracy}%")
 
+    wAccuracyFile = open(os.path.join(outFolderName, f"Algorithm Accuracy: {algorithmAccuracy}%").replace("\\", "/"), mode='w', encoding='utf-8')
+
+    wAccuracyFile.close()
     readFile.close()
     wFileWrong.close()
     wFileCorrect.close()

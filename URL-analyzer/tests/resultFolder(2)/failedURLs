@@ -1,0 +1,1064 @@
+These are all of the URLs that the algorithm wrongly classified as not phishingLinks 
+
+URL: https://08863299.sso-secure-mail0454etr.pages.dev/?emailtoken=aaaa@example.jp&amp;domain=example.jp 
+Points: 70 
+
+The website generated the following report:
+		The URL violated the following special characters: ['0', '2', '3', '4', '5', '6', '8', '9']
+		The URL had a phishy length with 39 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: 08863299.sso-secure-mail0454etr 
+	domain: pages 
+	topDomain: dev 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	query: {'emailtoken': 'aaaa@example.jp', 'amp;domain': 'example.jp'} 
+	ip: 104.18.21.135 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://abaadteam.com/qlm/customer-area/app 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abaadteam 
+	topDomain: com 
+	dir: /qlm/customer-area/ 
+	file: app 
+	path: /qlm/customer-area/app 
+	fragment: None 
+	query: None 
+	ip: 207.244.67.214 
+	city: Manassas 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2023-03-07 19:15:47 
+	registered: 2022-03-07 19:15:47 
+	update: 2022-05-16 06:34:31 
+	active: 268 days, 17:02:33.318739 
+	daysActive: 268 
+
+------------------------
+
+URL: http://abaadteam.com/qlm/customer-area 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abaadteam 
+	topDomain: com 
+	dir: /qlm/ 
+	file: customer-area 
+	path: /qlm/customer-area 
+	fragment: None 
+	query: None 
+	ip: 207.244.67.214 
+	city: Manassas 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2023-03-07 19:15:47 
+	registered: 2022-03-07 19:15:47 
+	update: 2022-05-16 06:34:31 
+	active: 268 days, 17:02:34.979488 
+	daysActive: 268 
+
+------------------------
+
+URL: http://akakup.co.za.netune.co.za.lexna.com.na 
+Points: 91 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 36 letters
+		The URL have an unusual amount of 6 subdomains 
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: akakup.co.za.netune.co.za 
+	domain: lexna 
+	topDomain: com.na 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: Not found 
+	city: Not found 
+	country: Not found 
+	region: Not found 
+	favicon: False 
+	expires: None 
+	registered: 2018-07-04 10:21:30.458000 
+	update: 2022-05-20 10:16:06.959000 
+	active: 1611 days, 1:56:56.293378 
+	daysActive: 1611 
+
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptdimdu1btfynjm= 
+Points: 21 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptdimdu1btfynjm= 
+	path: /p2w9yszpptdimdu1btfynjm= 
+	fragment: None 
+	query: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5027 days, 15:37:25.233149 
+	daysActive: 5027 
+
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptfjmmozszb2mdg4cg== 
+Points: 21 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptfjmmozszb2mdg4cg== 
+	path: /p2w9yszpptfjmmozszb2mdg4cg== 
+	fragment: None 
+	query: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5027 days, 15:37:25.797768 
+	daysActive: 5027 
+
+------------------------
+
+URL: http://asse6010.com/img/we/wetransfer?email=tontaina@mailfever.es 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '1', '6']
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: asse6010 
+	topDomain: com 
+	dir: /img/we/ 
+	file: wetransfer 
+	path: /img/we/wetransfer 
+	fragment: None 
+	query: {'email': 'tontaina@mailfever.es'} 
+	ip: 50.3.211.243 
+	city: Frankfurt am Main 
+	country: Germany 
+	region: Hesse 
+	favicon: False 
+	expires: 2023-04-09 18:09:14 
+	registered: 2022-04-09 18:09:14 
+	update: [datetime.datetime(2022, 7, 19, 4, 56, 53), datetime.datetime(2022, 4, 10, 3, 10, 2)] 
+	active: 235 days, 18:10:19.996993 
+	daysActive: 235 
+
+------------------------
+
+URL: http://axieinfenity.com/axie.php 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: axieinfenity 
+	topDomain: com 
+	dir: None 
+	file: axie.php 
+	path: /axie.php 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-11-12 19:00:34 
+	registered: 2022-11-12 19:00:34 
+	update: [datetime.datetime(2022, 11, 12, 21, 46, 20), datetime.datetime(2022, 11, 12, 22, 31, 43)] 
+	active: 18 days, 17:19:03.356607 
+	daysActive: 18 
+
+------------------------
+
+URL: http://axieinfenity.com 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: axieinfenity 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-11-12 19:00:34 
+	registered: 2022-11-12 19:00:34 
+	update: [datetime.datetime(2022, 11, 12, 21, 46, 20), datetime.datetime(2022, 11, 12, 22, 31, 43)] 
+	active: 18 days, 17:19:05.228189 
+	daysActive: 18 
+
+------------------------
+
+URL: http://btbroadbands453122689.boxmode.io 
+Points: 71 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['1', '2', '3', '4', '5', '6', '8', '9']
+		The URL had a phishy length with 30 letters
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: btbroadbands453122689 
+	domain: boxmode 
+	topDomain: io 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 209.192.137.208 
+	city: Dallas 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: 2023-07-29 13:01:35 
+	registered: 2019-07-29 13:01:35 
+	update: 2022-07-31 08:35:56 
+	active: 1220 days, 23:18:38.059329 
+	daysActive: 1220 
+
+------------------------
+
+URL: https://btbroadbands453122689.boxmode.io 
+Points: 51 
+
+The website generated the following report:
+		The URL violated the following special characters: ['1', '2', '3', '4', '5', '6', '8', '9']
+		The URL had a phishy length with 30 letters
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: btbroadbands453122689 
+	domain: boxmode 
+	topDomain: io 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 209.192.137.208 
+	city: Dallas 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: 2023-07-29 13:01:35 
+	registered: 2019-07-29 13:01:35 
+	update: 2022-07-31 08:35:56 
+	active: 1220 days, 23:18:40.608369 
+	daysActive: 1220 
+
+------------------------
+
+URL: https://cut.ly/AlertalBK 
+Points: 1 
+
+The website generated the following report:
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: cut 
+	topDomain: ly 
+	dir: None 
+	file: AlertalBK 
+	path: /AlertalBK 
+	fragment: None 
+	query: None 
+	ip: 46.248.190.217 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: True 
+	expires: 2032-02-09 14:18:08.270000 
+	registered: 2021-02-09 14:18:08.270000 
+	update: 2021-07-10 23:40:24.969000 
+	active: 659 days, 22:02:25.756450 
+	daysActive: 659 
+
+------------------------
+
+URL: http://foxconnhealthtechnologies.com/msproject/dds/ddfk 
+Points: 41 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 28 letters
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: foxconnhealthtechnologies 
+	topDomain: com 
+	dir: /msproject/dds/ 
+	file: ddfk 
+	path: /msproject/dds/ddfk 
+	fragment: None 
+	query: None 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 1, 4, 21, 42, 5), datetime.datetime(2023, 1, 4, 16, 42, 5)] 
+	registered: [datetime.datetime(2019, 1, 4, 21, 42, 5), datetime.datetime(2019, 1, 4, 16, 42, 5)] 
+	update: [datetime.datetime(2022, 10, 16, 20, 42, 34), datetime.datetime(2021, 1, 5, 12, 56, 37)] 
+	active: 1426 days, 14:39:48.529022 
+	daysActive: 1426 
+
+------------------------
+
+URL: http://grandcentralatkennedy.com/.1and1/login.php?signin=d41d8cd98f00b204e9800998ecf8427e&auth=39849f39c99c1731cfbeb1a72f7bbd32680c80ce0457b6956a94ba024f7ae3f872238e73 
+Points: 21 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: grandcentralatkennedy 
+	topDomain: com 
+	dir: /.1and1/ 
+	file: login.php 
+	path: /.1and1/login.php 
+	fragment: None 
+	query: {'signin': 'd41d8cd98f00b204e9800998ecf8427e', 'auth': '39849f39c99c1731cfbeb1a72f7bbd32680c80ce0457b6956a94ba024f7ae3f872238e73'} 
+	ip: 160.153.74.100 
+	city: Scottsdale 
+	country: United States 
+	region: Arizona 
+	favicon: True 
+	expires: [datetime.datetime(2024, 8, 7, 17, 53, 42), datetime.datetime(2024, 8, 7, 12, 53, 42)] 
+	registered: [datetime.datetime(2003, 8, 7, 17, 53, 42), datetime.datetime(2003, 8, 7, 12, 53, 42)] 
+	update: [datetime.datetime(2022, 9, 6, 14, 1, 37), datetime.datetime(2022, 1, 12, 16, 24, 14)] 
+	active: 7055 days, 18:33:36.556840 
+	daysActive: 7055 
+
+------------------------
+
+URL: https://hkvvy.csb.app 
+Points: 1 
+
+The website generated the following report:
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: hkvvy 
+	domain: csb 
+	topDomain: app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 104.18.7.3 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2027-05-08 16:00:02 
+	registered: 2018-05-08 16:00:02 
+	update: [datetime.datetime(2022, 6, 15, 8, 46, 31), datetime.datetime(2022, 4, 29, 11, 13, 42, 10000)] 
+	active: 1667 days, 20:27:45.460269 
+	daysActive: 1667 
+
+------------------------
+
+URL: https://l.wl.co/l?u=https://s.id/H24ve?userid=E8PfOASz 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: l 
+	domain: wl 
+	topDomain: co 
+	dir: /l?u=https:/ 
+	file: s.id/H24ve 
+	path: /l?u=https://s.id/H24ve 
+	fragment: None 
+	query: {'userid': 'E8PfOASz'} 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://ptimarketing.com/index.html 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ptimarketing 
+	topDomain: com 
+	dir: None 
+	file: index.html 
+	path: /index.html 
+	fragment: None 
+	query: None 
+	ip: 136.0.161.82 
+	city: San Jose 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: 2023-06-19 02:21:57 
+	registered: 2022-06-19 02:21:57 
+	update: [datetime.datetime(2022, 6, 19, 2, 22), datetime.datetime(2022, 11, 9, 16, 45, 24)] 
+	active: 165 days, 10:08:51.035538 
+	daysActive: 165 
+
+------------------------
+
+URL: https://rdx-usataxtretruns.com 
+Points: 21 
+
+The website generated the following report:
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: rdx-usataxtretruns 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.222 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: [datetime.datetime(2023, 10, 1, 18, 55, 1), datetime.datetime(2023, 10, 1, 13, 55, 1)] 
+	registered: [datetime.datetime(2021, 10, 1, 18, 55, 1), datetime.datetime(2021, 10, 1, 13, 55, 1)] 
+	update: [datetime.datetime(2022, 10, 8, 9, 47, 7), datetime.datetime(2021, 12, 2, 14, 20, 38)] 
+	active: 425 days, 17:36:12.810513 
+	daysActive: 425 
+
+------------------------
+
+URL: http://recursing-knuth.45-88-108-231.plesk.page 
+Points: 70 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['0', '1', '2', '3', '4', '5', '8']
+		The URL had a phishy length with 38 letters
+
+	www: None 
+	protocol: http 
+	subDomain: recursing-knuth 
+	domain: 45-88-108-231 
+	topDomain: plesk.page 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: Not found 
+	city: Not found 
+	country: Not found 
+	region: Not found 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://reheart-suppo.com/owa/index2.php?l=aamkadlhotmwndi4lwvhmjutndk2oc1iywrhltmzntllmtnimda3mgauaaaaaadejthfefmxsiv%20a3wh1ms0aqailhmd6eckqkl40ajeueizaaaaaawgaaa_946f2cde0f344ac2567a45_j124456733ebe933255be_product-userid&fr2= 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: reheart-suppo 
+	topDomain: com 
+	dir: /owa/ 
+	file: index2.php 
+	path: /owa/index2.php 
+	fragment: None 
+	query: {'l': 'aamkadlhotmwndi4lwvhmjutndk2oc1iywrhltmzntllmtnimda3mgauaaaaaadejthfefmxsiv%20a3wh1ms0aqailhmd6eckqkl40ajeueizaaaaaawgaaa_946f2cde0f344ac2567a45_j124456733ebe933255be_product-userid', 'fr2': ''} 
+	ip: 43.249.77.61 
+	city: None 
+	country: Hong Kong 
+	region: None 
+	favicon: False 
+	expires: 2023-09-30 18:28:20 
+	registered: 2022-09-30 18:28:20 
+	update: [datetime.datetime(2022, 10, 1, 7, 38, 45), datetime.datetime(2022, 10, 1, 7, 38, 46)] 
+	active: 61 days, 18:03:02.408252 
+	daysActive: 61 
+
+------------------------
+
+URL: https://storage.googleapis.com/inboxino/brand.html 
+Points: 20 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: storage 
+	topDomain: googleapis.com 
+	dir: /inboxino/ 
+	file: brand.html 
+	path: /inboxino/brand.html 
+	fragment: None 
+	query: None 
+	ip: 142.250.74.112 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: No match for "STORAGE.GOOGLEAPIS.COM".
+>>> Last update of whois database: 2022-12-01T11:31:39Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+
+------------------------
+
+URL: https://tlkm.id/Rxr8vK 
+Points: 21 
+
+The website generated the following report:
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tlkm 
+	topDomain: id 
+	dir: None 
+	file: Rxr8vK 
+	path: /Rxr8vK 
+	fragment: None 
+	query: None 
+	ip: 180.250.119.59 
+	city: Jakarta 
+	country: Indonesia 
+	region: Jakarta 
+	favicon: False 
+	expires: 2023-04-23 00:09:04 
+	registered: 2018-04-23 07:09:04 
+	update: 2022-08-25 01:09:08 
+	active: 1683 days, 5:23:29.069078 
+	daysActive: 1683 
+
+------------------------
+
+URL: https://tlkm.id/RxrSlT 
+Points: 21 
+
+The website generated the following report:
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: tlkm 
+	topDomain: id 
+	dir: None 
+	file: RxrSlT 
+	path: /RxrSlT 
+	fragment: None 
+	query: None 
+	ip: 180.250.116.165 
+	city: Jakarta 
+	country: Indonesia 
+	region: Jakarta 
+	favicon: False 
+	expires: 2023-04-23 00:09:04 
+	registered: 2018-04-23 07:09:04 
+	update: 2022-08-25 01:09:08 
+	active: 1683 days, 5:23:56.657346 
+	daysActive: 1683 
+
+------------------------
+
+URL: http://tusmiedos.com 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: tusmiedos 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 37.59.34.106 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: http://umaoofssyl.duckdns.org 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: umaoofssyl 
+	topDomain: duckdns.org 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 172.247.39.25 
+	city: Los Angeles 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://usfkxkjihu.duckdns.org 
+Points: 40 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: usfkxkjihu 
+	topDomain: duckdns.org 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 172.247.39.25 
+	city: Los Angeles 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: https://vasd.sovovoh839.workers.dev 
+Points: 50 
+
+The website generated the following report:
+		The URL violated the following special characters: ['3', '8', '9']
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: vasd 
+	domain: sovovoh839 
+	topDomain: workers.dev 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://walletconect.info 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+		This domain is younger then two days
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: walletconect 
+	topDomain: info 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 103.224.212.220 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-11-29 14:20:18 
+	registered: 2022-11-29 14:20:18 
+	update: 2022-11-29 14:20:20 
+	active: 1 day, 22:38:27.205319 
+	daysActive: 1 
+
+------------------------
+
+URL: http://wqfqrwefdedav.gmqkx3sjcy.workers.dev 
+Points: 90 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters: ['3']
+		The URL had a phishy length with 34 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: wqfqrwefdedav 
+	domain: gmqkx3sjcy 
+	topDomain: workers.dev 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: [Errno -5] No address associated with hostname
+------------------------
+
+URL: http://www.hxbpxu.cn/ESEqoYM3/dbs-wa 
+Points: 55 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL contained the following bad topdomain: cn
+		The website lacks favicon.
+
+	www: www 
+	protocol: http 
+	subDomain: www. 
+	domain: hxbpxu 
+	topDomain: cn 
+	dir: /ESEqoYM3/ 
+	file: dbs-wa 
+	path: /ESEqoYM3/dbs-wa 
+	fragment: None 
+	query: None 
+	ip: 103.224.182.249 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-05-15 13:42:43 
+	registered: 2022-05-15 13:42:43 
+	update: None 
+	active: 199 days, 23:16:47.392681 
+	daysActive: 199 
+
+------------------------
+
+URL: http://www.mhora.com 
+Points: 41 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+		This site is over a year old
+
+	www: www 
+	protocol: http 
+	subDomain: www. 
+	domain: mhora 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	query: None 
+	ip: 173.236.172.53 
+	city: Brea 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: [datetime.datetime(2022, 12, 28, 1, 16, 49), datetime.datetime(2022, 12, 27, 20, 16, 49)] 
+	registered: [datetime.datetime(2002, 12, 28, 1, 16, 49), datetime.datetime(2002, 12, 27, 20, 16, 49)] 
+	update: [datetime.datetime(2022, 10, 7, 8, 47, 30), datetime.datetime(2021, 12, 21, 0, 24)] 
+	active: 7278 days, 11:42:46.448680 
+	daysActive: 7278 
+
+------------------------
+
+URL: https://www.phoneclaim.com/att 
+Points: 0 
+
+The website generated the following report:
+
+	www: www 
+	protocol: https 
+	subDomain: www. 
+	domain: phoneclaim 
+	topDomain: com 
+	dir: None 
+	file: att 
+	path: /att 
+	fragment: None 
+	query: None 
+	ip: 34.205.116.195 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: Expecting value: line 1 column 1 (char 0)
+------------------------
+
+URL: https://yun.ir/c9wqib 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: yun 
+	topDomain: ir 
+	dir: None 
+	file: c9wqib 
+	path: /c9wqib 
+	fragment: None 
+	query: None 
+	ip: 168.119.97.252 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: https://yun.ir/ilp3fb/HPx2pEzV8Mr9d@D 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: yun 
+	topDomain: ir 
+	dir: /ilp3fb/ 
+	file: HPx2pEzV8Mr9d@D 
+	path: /ilp3fb/HPx2pEzV8Mr9d@D 
+	fragment: None 
+	query: None 
+	ip: 168.119.97.252 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+The total accuracy was: 11%
