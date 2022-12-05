@@ -1,10 +1,10 @@
-""" 
+"""
 Handles TSL/SSL related tasks, such as fethcing, checking, and testing of URLs
 """
 
 import socket
 import ssl
-from termios import ECHOE
+# import src.URLCheck.URLinfo as URLinfo
 import urllib3
 from src.URLCheck import url_sanitize
 
@@ -13,24 +13,26 @@ __author__  = "Totte Hansen, DVADS20h"
 # checks connection and status of URL server
 url_con = urllib3.PoolManager()
 
-def ssl_sanetize(url:str) -> str:
-    """
-    Append SSL attributes
-    """
-    sane_url = url_sanitize.rm_scheme(url)
-
-    if not url_sanitize.siteValid(sane_url):
-        assert("SSL could not fetch server")
-
-    return sane_url
 
 
 class ssl_parser:
+    def ssl_sanetize(self, url:str) -> str:
+        """
+        Append SSL attributes
+        """
+        # sane_url = url_sanitize.rm_scheme(url)
+        sane_url = self.URLinfo.domain + "." + self.URLinfo.topDomain
+
+        if not url_sanitize.siteValid(sane_url):
+            # assert("SSL could not fetch server")
+            self.URLinfo.errors.append("Error during SSL resolving, could not fetch server info")
+            return sane_url
+
     def sanitize_url(self, url:str) -> None:
         self.sane_url = url_sanitize.rm_scheme(url, True)
 
     def fetch_ssl(self, excep: bool = False) -> str: #* @auth: Totte Hansen
-        """ 
+        """
         Fetches socket encryption version, if one is present.
         If socket is encrypted is determined by URL scheme.
         """
@@ -39,10 +41,11 @@ class ssl_parser:
             assert(f"Site {self.sane_url} is invalid or closed")
 
         hostname = self.sane_url
+        # hostname = self.URLinfo.domain + "." + self.URLinfo.topDomain
         context = ssl.create_default_context()
         try:
             # open socket using https port 443
-            with socket.create_connection((hostname, 443)) as sock:
+            with socket.create_connection((hostname, 443), timeout=5) as sock:
                 # fetch sock version
                 with context.wrap_socket(sock, server_hostname=hostname) as ssock:
                     try:
@@ -56,7 +59,8 @@ class ssl_parser:
 
         except Exception as err:
             if excep:
-                raise err
+                # raise err
+                self.URLinfo.errors.append("Error during SSL resolving, Socket connection timed out")
             else:
                 return None
 
@@ -65,7 +69,8 @@ class ssl_parser:
     def updateSSL(self) -> None: #* @auth: Totte Hansen
         self.cert = self.fetch_ssl()
 
-    def __init__(self, url : str) -> None: #* @auth: Totte Hansen
+    def __init__(self, url : str, URLinfo) -> None: #* @auth: Totte Hansen
         self.original_url = url
-        self.sane_url = ssl_sanetize(url)
+        self.URLinfo = URLinfo
+        self.sane_url = self.ssl_sanetize(url)
         self.cert = self.fetch_ssl(self.sane_url)

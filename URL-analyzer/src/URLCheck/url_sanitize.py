@@ -1,4 +1,4 @@
-""" 
+"""
 Allows for formatting options and sanity checks (such as URL server existance)
 in regards to URL
 """
@@ -33,7 +33,7 @@ def siteValid(url:str, redir:bool = True) -> bool:
 
 
 def addScheme(url:str, fetch:bool = True) -> str:
-    """ 
+    """
     Enures URL protocol prefix
     """
     prot_url = url
@@ -41,12 +41,12 @@ def addScheme(url:str, fetch:bool = True) -> str:
     if prot == None:
         # add http as "starting point"
         prot_url = 'http://' + url
-    
+
     # fetch server requested scheme (if reachable)
     if fetch and siteValid(prot_url, redir=False):
         try:
             prot_url = getRedir(prot_url)
-        
+
         except:
             # try reachability using 'https' if 'http' fail
             try:
@@ -73,7 +73,7 @@ def rm_scheme(url:str):
 
 def getRedir(addr:str) -> str:
     #TODO does not fetch json redirects correctly (such as http://google.com -> https://consent.google.com/ml?continue=https://www.google.com/&gl=SE&m=0&pc=shp&uxe=none&hl=sv&src=1)
-    """ 
+    """
     Fetches URL after server redirects.
     """
     connection = requests.get(addr)

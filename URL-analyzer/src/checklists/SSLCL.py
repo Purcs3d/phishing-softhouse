@@ -22,8 +22,11 @@ class SSLCL:
         Run through all tests sequentially using function calls
         """
         # return early in case certificate is empty
-        if self.check_handshake == False:
-            return
+        print(self.cert.cert)
+        if self.cert.cert == None:
+            return self.points
+        if self.check_handshake == False or self.URLinfo.ip == None:
+            return self.points
 
         self.check_version()
         self.check_licenser()
@@ -54,7 +57,7 @@ class SSLCL:
 
     def check_version(self): #* auhtor: Totte Hansen *#
         outdated_ver_points = 20
-        outdated_report = "The website uses a depricated SSL/TSL version (<3)"
+        outdated_report = "The website uses a depricated SSL/TSL version (less than version 3)"
 
         no_cert_points = 30
         no_cert_report = "The website lacks TSL/SSL ensurance"
@@ -64,8 +67,8 @@ class SSLCL:
             self.points += no_cert_points
             self.report.append(no_cert_report)
 
-        version = self.cert["version"]
-        if version >= conf.MIN_CERT_VER:
+        version = self.cert.cert["version"]
+        if version <= conf.MIN_CERT_VER:
             self.points += outdated_ver_points
             self.report.append(outdated_report)
 
@@ -102,7 +105,7 @@ class SSLCL:
 
         # get age
         # cert_age = self.cert.cert[]
-        
+
         #TODO find cert issue time method
         ...
 
@@ -116,7 +119,7 @@ class SSLCL:
 
         # test if the returned cert supports the URL
         try:
-            ssl.match_hostname(self.cert.cert, self.cert.san)
+            ssl.match_hostname(self.cert.cert, self.cert.sane_url)
 
         # cert does not support the URL
         except ssl.CertificateError:
@@ -140,7 +143,7 @@ class SSLCL:
 
     def check_time_valid(self):
         """
-        Check if the cert is valid between the "NOT before" and "NOT after" dates, 
+        Check if the cert is valid between the "NOT before" and "NOT after" dates,
         and check if the cert has been revoked
         """
         cert_timeout_points = 50
@@ -158,7 +161,7 @@ class SSLCL:
         if current_time > notAfter_datetime:
             self.points += cert_timeout_points
             self.report.append(cert_after_report)
-        
+
         # convert from datetime str to utc datetime
         notBefore_datetime = ssl.cert_time_to_seconds(self.cert.cert["notBefore"])
         notBefore_datetime = datetime.utcfromtimestamp(notBefore_datetime)
@@ -176,9 +179,9 @@ class SSLCL:
         ...
 
 
-    def __init__(self, url):
+    def __init__(self, url, URLinfo):
         self.points = 0
         self.report = []
-
+        self.URLinfo = URLinfo
         self.url = url
-        self.cert = ssl_resolve.SSLParse(url)
+        self.cert = SSL_resolve.ssl_parser(url, URLinfo)

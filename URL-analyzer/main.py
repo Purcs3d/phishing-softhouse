@@ -32,7 +32,7 @@ def main():
                     else:
                         print("The URL input is not valid\n")
                 except Exception as e:
-                    print(f"Error: {e}")
+                    raise (e)
         else:
             print("\nPlease don't, just use these two options:")
             print(f"Usage1:  python {sys.argv[0]} server")
