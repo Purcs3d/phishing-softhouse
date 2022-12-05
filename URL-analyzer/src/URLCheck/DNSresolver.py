@@ -18,8 +18,8 @@ class DNSresolver():
     def resolve(self):
         try:
             self.URLinfo.ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain)
-            self.fetchDNSdata()
             self.fetchAge(self.URLinfo.url)
+            self.fetchDNSdata()
         except TypeError:
             self.URLinfo.errors.append(f"Error during DNS resolving: DNS creation info not found.")
         except requests.exceptions.RequestException:
