@@ -118,8 +118,10 @@ def test_accuracy(inFileName, outFolder):
     algorithmAccuracy = round((float(countPhishingPositives)/float(testedURLs))*100)
 
     print(f"The algorithm accuracy was: {algorithmAccuracy}%")
-    wFileWrong.write(f"The total accuracy was: {algorithmAccuracy}%")
 
+    wAccuracyFile = open(os.path.join(outFolderName, f"Algorithm Accuracy: {algorithmAccuracy}%").replace("\\", "/"), mode='w', encoding='utf-8')
+
+    wAccuracyFile.close()
     readFile.close()
     wFileWrong.close()
     wFileCorrect.close()
