@@ -31,7 +31,6 @@ class stringParser():
         self.URLinfo.file = parse.file
         self.URLinfo.path = parse.path
         self.URLinfo.fragment = parse.fragment
-        self.URLinfo.query = parse.query
         return self.URLinfo
 
     def UnicodeCheker(self):

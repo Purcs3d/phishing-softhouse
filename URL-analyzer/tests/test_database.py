@@ -7,11 +7,9 @@ import src.URLCheck.URLinfo as urlinfo
     run:
     pytest -s
     in this file's directory to run all tests, or e.g.:
-    pytest -s test_checklists_evaluation.py
-    pytest -s test_checklists_evaluation.py::test_string_checklist
+    pytest -s test_database.py
+    pytest test_database.py::test_checkPreviousSearchesUpdate -s
     for testing individual tests.
-
-    ! Assumption: Whitelist is initialized !
 """
 
 def test_delDB():
@@ -59,3 +57,15 @@ def test_checkPreviousSearches():
     URLinfoObj.getURLstringInfo()
     DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
     assert DBhandlerObj.checkURLinpreviousSearches() == False
+
+def test_checkPreviousSearchesUpdate():
+    print("\nChecking if URL not exist in previousSearches table even though old one exist")
+    URLinfoObj = urlinfo.URLinfo("https://www.hltv.org/")
+    URLinfoObj.getURLstringInfo()
+    DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
+    report = "reportie"
+    fishy = False
+    sql_str = f"INSERT INTO URLanalyzer.previousSearches (searchDate, URL, report, fishy) VALUES ('2022-11-02','{URLinfoObj.url}', '{report}', {fishy});"
+    DBhandlerObj.cursor.execute(sql_str)
+    DBhandlerObj.conn.commit()
+    assert DBhandlerObj.checkURLinpreviousSearches() == False # sätter in den i DB, den är gammal -> ska ej finnas i previous searches
