@@ -1,0 +1,407 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: http://abaadteam.com/qlm/customer-area/app 
+Points: 110 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abaadteam 
+	topDomain: com 
+	dir: /qlm/customer-area/ 
+	file: app 
+	path: /qlm/customer-area/app 
+	fragment: None 
+	ip: 37.48.65.152 
+	city: None 
+	country: Netherlands 
+	region: None 
+	favicon: False 
+	expires: 2023-03-07 19:15:47 
+	registered: 2022-03-07 19:15:47 
+	update: 2022-05-16 06:34:31 
+	active: 274 days, 15:36:58.467920 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 274 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://abaadteam.com/qlm/customer-area 
+Points: 110 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abaadteam 
+	topDomain: com 
+	dir: /qlm/ 
+	file: customer-area 
+	path: /qlm/customer-area 
+	fragment: None 
+	ip: 37.48.65.152 
+	city: None 
+	country: Netherlands 
+	region: None 
+	favicon: False 
+	expires: 2023-03-07 19:15:47 
+	registered: 2022-03-07 19:15:47 
+	update: 2022-05-16 06:34:31 
+	active: 274 days, 15:37:01.716535 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 274 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://akakup.co.za.netune.co.za.lexna.com.na 
+Points: 111 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 36 letters
+		The URL have an unusual amount of 6 subdomains 
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: akakup.co.za.netune.co.za 
+	domain: lexna 
+	topDomain: com.na 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 102.221.51.86 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: 2018-07-04 10:21:30.458000 
+	update: 2022-05-20 10:16:06.959000 
+	active: 1617 days, 0:31:20.271890 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1617 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: http://asse6010.com/img/we/wetransfer?email=tontaina@mailfever.es 
+Points: 110 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 6
+		The URL contained the following numbers in the domain:6, 0, 1, 0
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: asse6010 
+	topDomain: com 
+	dir: /img/we/ 
+	file: wetransfer 
+	path: /img/we/wetransfer 
+	fragment: None 
+	ip: 50.3.211.243 
+	city: Frankfurt am Main 
+	country: Germany 
+	region: Hesse 
+	favicon: False 
+	expires: 2023-04-09 18:09:14 
+	registered: 2022-04-09 18:09:14 
+	update: [datetime.datetime(2022, 7, 19, 4, 56, 53), datetime.datetime(2022, 4, 10, 3, 10, 2)] 
+	active: 241 days, 16:43:41.027529 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 241 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://axieinfenity.com/axie.php 
+Points: 110 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: axieinfenity 
+	topDomain: com 
+	dir: None 
+	file: axie.php 
+	path: /axie.php 
+	fragment: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: 2023-11-12 19:00:34 
+	registered: 2022-11-12 19:00:34 
+	update: [datetime.datetime(2022, 11, 12, 21, 46, 20), datetime.datetime(2022, 11, 12, 22, 31, 43)] 
+	active: 24 days, 15:52:31.064105 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 24 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: http://axieinfenity.com 
+Points: 110 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: axieinfenity 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-11-12 19:00:34 
+	registered: 2022-11-12 19:00:34 
+	update: [datetime.datetime(2022, 11, 12, 21, 46, 20), datetime.datetime(2022, 11, 12, 22, 31, 43)] 
+	active: 24 days, 15:52:35.323747 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 24 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://btbroadbands453122689.boxmode.io 
+Points: 141 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:1, 2, 3, 4, 5, 6, 8, 9
+		The URL contained the following numbers in the subdomain:4, 5, 3, 1, 2, 2, 6, 8, 9
+		The URL had a phishy length with 30 letters
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: btbroadbands453122689 
+	domain: boxmode 
+	topDomain: io 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 209.192.137.208 
+	city: Dallas 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: 2023-07-29 13:01:35 
+	registered: 2019-07-29 13:01:35 
+	update: 2022-07-31 08:35:56 
+	active: 1226 days, 21:51:38.624526 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 1226 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: https://btbroadbands453122689.boxmode.io 
+Points: 121 
+
+The website generated the following report:
+		The URL violated the following special characters:1, 2, 3, 4, 5, 6, 8, 9
+		The URL contained the following numbers in the subdomain:4, 5, 3, 1, 2, 2, 6, 8, 9
+		The URL had a phishy length with 30 letters
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: btbroadbands453122689 
+	domain: boxmode 
+	topDomain: io 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 209.192.137.208 
+	city: Dallas 
+	country: United States 
+	region: Texas 
+	favicon: True 
+	expires: 2023-07-29 13:01:35 
+	registered: 2019-07-29 13:01:35 
+	update: 2022-07-31 08:35:56 
+	active: 1226 days, 21:51:45.331790 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 1226 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://reheart-suppo.com/owa/index2.php?l=aamkadlhotmwndi4lwvhmjutndk2oc1iywrhltmzntllmtnimda3mgauaaaaaadejthfefmxsiv%20a3wh1ms0aqailhmd6eckqkl40ajeueizaaaaaawgaaa_946f2cde0f344ac2567a45_j124456733ebe933255be_product-userid&fr2= 
+Points: 110 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: reheart-suppo 
+	topDomain: com 
+	dir: /owa/ 
+	file: index2.php 
+	path: /owa/index2.php 
+	fragment: None 
+	ip: 43.249.77.61 
+	city: None 
+	country: Hong Kong 
+	region: None 
+	favicon: False 
+	expires: 2023-09-30 18:28:20 
+	registered: 2022-09-30 18:28:20 
+	update: 2022-10-01 07:38:45 
+	active: 67 days, 16:38:42.532504 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 67 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: https://08863299.sso-secure-mail0454etr.pages.dev/?emailtoken=aaaa@example.jp&amp;domain=example.jp 
+Points: 135 
+
+The website generated the following report:
+		The URL violated the following special characters:0, 2, 3, 4, 5, 6, 8, 9
+		The URL contained the following numbers in the subdomain:0, 8, 8, 6, 3, 2, 9, 9, 0, 4, 5, 4
+		The URL had a phishy length with 39 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: 08863299.sso-secure-mail0454etr 
+	domain: pages 
+	topDomain: dev 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	ip: 104.18.20.135 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://dappswalletsconnects.net 
+Points: 190 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL contained the following bad keywords:connect
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: dappswalletsconnects 
+	topDomain: net 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 103.224.212.221 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-11-22 19:02:19 
+	registered: 2022-11-22 19:02:19 
+	update: [datetime.datetime(2022, 11, 22, 21, 46, 49), datetime.datetime(2022, 11, 22, 22, 22, 13)] 
+	active: 14 days, 16:04:53.285358 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 14 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://msnmsmsnsm219421.ultimatefreehost.in 
+Points: 211 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:1, 2, 4, 9
+		The URL contained the following bad keywords:free
+		The URL contained the following numbers in the subdomain:2, 1, 9, 4, 2, 1
+		The URL had a phishy length with 34 letters
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: msnmsmsnsm219421 
+	domain: ultimatefreehost 
+	topDomain: in 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 31.22.4.234 
+	city: Newcastle upon Tyne 
+	country: United Kingdom 
+	region: Newcastle upon Tyne 
+	favicon: False 
+	expires: 2023-04-19 08:32:27 
+	registered: 2014-04-19 08:32:27 
+	update: 2022-05-17 08:37:29 
+	active: 3154 days, 2:34:48.354618 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 3154 
+
+Database connection failed... evaluation run anyway.
+------------------------
+

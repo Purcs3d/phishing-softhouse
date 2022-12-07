@@ -1,0 +1,238 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: http://amcgardiennage.com/p2w9yszpptdimdu1btfynjm= 
+Points: 101 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptdimdu1btfynjm= 
+	path: /p2w9yszpptdimdu1btfynjm= 
+	fragment: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5033 days, 16:01:52.050795 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5033 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'amcgardiennage.com'. (_ssl.c:1131)Hostname:amcgardiennage.com
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptfjmmozszb2mdg4cg== 
+Points: 101 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptfjmmozszb2mdg4cg== 
+	path: /p2w9yszpptfjmmozszb2mdg4cg== 
+	fragment: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5033 days, 16:01:53.769562 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5033 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'amcgardiennage.com'. (_ssl.c:1131)Hostname:amcgardiennage.com
+------------------------
+
+URL: http://foxconnhealthtechnologies.com/msproject/dds/ddfk 
+Points: 121 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 28 letters
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: foxconnhealthtechnologies 
+	topDomain: com 
+	dir: /msproject/dds/ 
+	file: ddfk 
+	path: /msproject/dds/ddfk 
+	fragment: None 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 1, 4, 21, 42, 5), datetime.datetime(2023, 1, 4, 16, 42, 5)] 
+	registered: [datetime.datetime(2019, 1, 4, 21, 42, 5), datetime.datetime(2019, 1, 4, 16, 42, 5)] 
+	update: [datetime.datetime(2022, 10, 16, 20, 42, 34), datetime.datetime(2021, 1, 5, 12, 56, 37)] 
+	active: 1432 days, 15:01:01.788393 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 1432 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed outEOF occurred in violation of protocol (_ssl.c:1131)Hostname:foxconnhealthtechnologies.com
+------------------------
+
+URL: https://l.wl.co/l?u=https://s.id/H24ve?userid=E8PfOASz 
+Points: 120 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: l 
+	domain: wl 
+	topDomain: co 
+	dir: /l?u=https:/ 
+	file: s.id/H24ve 
+	path: /l?u=https://s.id/H24ve 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out[Errno -5] No address associated with hostnameHostname:wl.co
+------------------------
+
+URL: http://ptimarketing.com/index.html 
+Points: 140 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ptimarketing 
+	topDomain: com 
+	dir: None 
+	file: index.html 
+	path: /index.html 
+	fragment: None 
+	ip: 136.0.161.82 
+	city: San Jose 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: 2023-06-19 02:21:57 
+	registered: 2022-06-19 02:21:57 
+	update: [datetime.datetime(2022, 6, 19, 2, 22), datetime.datetime(2022, 11, 9, 16, 45, 24)] 
+	active: 171 days, 10:21:31.303898 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 171 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed outtimed outHostname:ptimarketing.com
+------------------------
+
+URL: http://recursing-knuth.45-88-108-231.plesk.page 
+Points: 170 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 4, 5, 8
+		The URL contained the following numbers in the domain:4, 5, 8, 8, 1, 0, 8, 2, 3, 1
+		The URL had a phishy length with 38 letters
+
+	www: None 
+	protocol: http 
+	subDomain: recursing-knuth 
+	domain: 45-88-108-231 
+	topDomain: plesk.page 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 45.88.108.231 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for '45-88-108-231.plesk.page'. (_ssl.c:1131)Hostname:45-88-108-231.plesk.page
+------------------------
+
+URL: http://100realt.ru 
+Points: 176 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1
+		The URL contained the following numbers in the domain:1, 0, 0
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 100realt 
+	topDomain: ru 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 37.46.134.153 
+	city: None 
+	country: Russia 
+	region: None 
+	favicon: False 
+	expires: 2023-07-31 20:29:07 
+	registered: 2015-07-31 20:29:07 
+	update: None 
+	active: 2685 days, 16:14:41.604674 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 2685 
+
+Database connection failed... evaluation run anyway.
+------------------------
+

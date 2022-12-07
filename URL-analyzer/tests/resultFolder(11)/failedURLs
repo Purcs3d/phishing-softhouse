@@ -1,0 +1,69 @@
+These are all of the URLs that the algorithm wrongly classified as not phishingLinks 
+
+URL: https://cut.ly/AlertalBK 
+Points: 81 
+
+The website generated the following report:
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: cut 
+	topDomain: ly 
+	dir: None 
+	file: AlertalBK 
+	path: /AlertalBK 
+	fragment: None 
+	ip: 46.248.190.217 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: True 
+	expires: 2032-02-09 14:18:08.270000 
+	registered: 2021-02-09 14:18:08.270000 
+	update: 2021-07-10 23:40:24.969000 
+	active: 665 days, 21:18:46.713881 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 665 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, could not fetch server info
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: https://hkvvy.csb.app 
+Points: 81 
+
+The website generated the following report:
+		This site is over a year old
+
+	www: None 
+	protocol: https 
+	subDomain: hkvvy 
+	domain: csb 
+	topDomain: app 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 104.18.7.3 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: 2027-05-08 16:00:02 
+	registered: 2018-05-08 16:00:02 
+	update: [datetime.datetime(2022, 6, 15, 8, 46, 31), datetime.datetime(2022, 4, 29, 11, 13, 42, 10000)] 
+	active: 1673 days, 19:37:03.707591 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1673 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+Error during SSL resolving, could not fetch server info
+Error during SSL resolving, Socket connection timed out
+------------------------
+

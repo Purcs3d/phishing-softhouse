@@ -21,14 +21,16 @@ class SSLCL:
         """
         Run through all tests sequentially using function calls
         """
-        # return early in case certificate is empty
-        if self.cert.cert == None:
-            # self.points += 100
-            return self.points
-        # if self.URLinfo.ip == None:
-        #     return self.points
 
-        self.check_version()
+        if not self.check_version():
+            return self.points
+
+        if not self.check_handshake() :
+            return self.points
+
+        if self.check_incomplete_cert():
+            return self.points
+
         self.check_licenser()
         self.check_cert_age()
         self.check_cert_match()
@@ -36,6 +38,13 @@ class SSLCL:
 
         return self.points
 
+
+    def check_incomplete_cert(self):
+        if self.URLinfo.certIncomplete == True:
+            self.points += 50
+            return True
+
+        return False
 
     def check_handshake(self) -> bool:
         """
@@ -57,28 +66,27 @@ class SSLCL:
 
     def check_version(self): #* auhtor: Totte Hansen *#
         outdated_ver_points = 50
+        outdated_report_tls = "The website uses a depricated SSL/TSL version (less than TSLv1.3)"
         outdated_report = "The website uses a depricated SSL/TSL version (less than version 3)"
 
         no_cert_points = 80
         no_cert_report = "The website lacks TSL/SSL ensurance"
 
         # no license could be fetched from site
-        if self.cert == None:
+        if self.cert.cert == None:
             self.points += no_cert_points
             self.report.append(no_cert_report)
+            return False
 
         version = self.cert.cert["version"]
         if version <= conf.MIN_CERT_VER:
             self.points += outdated_ver_points
             self.report.append(outdated_report)
 
-        if self.URLinfo.TLSversion == "TLSv1.2" or self.URLinfo.TLSversion == "TLSv1.1" or self.URLinfo.TLSversion == "TLSv1.0":
+        if self.URLinfo.TLSversion in conf.BAD_CERT_VERSIONS:
             self.points += outdated_ver_points
-            self.report.append(outdated_report)
-
-        if self.URLinfo.TLSversion == None:
-            self.points += no_cert_points
-            self.report.append(no_cert_report)
+            self.report.append(outdated_report_tls)
+        return True
 
 
     def check_licenser(self): #TODO add phishy licensers
@@ -102,6 +110,7 @@ class SSLCL:
                 self.points += self_license_points
                 self.report.append(self_license_report)
         except Exception:
+            self.points += self_license_points
             self.URLinfo.errors.append("Error in SSL resolving, licence checking failed")
 
 

@@ -1,0 +1,339 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: http://amcgardiennage.com/p2w9yszpptdimdu1btfynjm= 
+Points: 101 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptdimdu1btfynjm= 
+	path: /p2w9yszpptdimdu1btfynjm= 
+	fragment: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5033 days, 16:10:29.786401 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5033 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://amcgardiennage.com/p2w9yszpptfjmmozszb2mdg4cg== 
+Points: 101 
+
+The website generated the following report:
+		The website is using HTTP
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptfjmmozszb2mdg4cg== 
+	path: /p2w9yszpptfjmmozszb2mdg4cg== 
+	fragment: None 
+	ip: 213.186.33.2 
+	city: None 
+	country: France 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5033 days, 16:10:31.234635 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5033 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://foxconnhealthtechnologies.com/msproject/dds/ddfk 
+Points: 121 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL had a phishy length with 28 letters
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: foxconnhealthtechnologies 
+	topDomain: com 
+	dir: /msproject/dds/ 
+	file: ddfk 
+	path: /msproject/dds/ddfk 
+	fragment: None 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 1, 4, 21, 42, 5), datetime.datetime(2023, 1, 4, 16, 42, 5)] 
+	registered: [datetime.datetime(2019, 1, 4, 21, 42, 5), datetime.datetime(2019, 1, 4, 16, 42, 5)] 
+	update: [datetime.datetime(2022, 10, 16, 20, 42, 34), datetime.datetime(2021, 1, 5, 12, 56, 37)] 
+	active: 1432 days, 15:09:38.412431 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 1432 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: https://l.wl.co/l?u=https://s.id/H24ve?userid=E8PfOASz 
+Points: 120 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: l 
+	domain: wl 
+	topDomain: co 
+	dir: /l?u=https:/ 
+	file: s.id/H24ve 
+	path: /l?u=https://s.id/H24ve 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://ptimarketing.com/index.html 
+Points: 140 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ptimarketing 
+	topDomain: com 
+	dir: None 
+	file: index.html 
+	path: /index.html 
+	fragment: None 
+	ip: 136.0.161.82 
+	city: San Jose 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: 2023-06-19 02:21:57 
+	registered: 2022-06-19 02:21:57 
+	update: [datetime.datetime(2022, 6, 19, 2, 22), datetime.datetime(2022, 11, 9, 16, 45, 24)] 
+	active: 171 days, 10:29:59.706900 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 171 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://recursing-knuth.45-88-108-231.plesk.page 
+Points: 170 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 4, 5, 8
+		The URL contained the following numbers in the domain:4, 5, 8, 8, 1, 0, 8, 2, 3, 1
+		The URL had a phishy length with 38 letters
+
+	www: None 
+	protocol: http 
+	subDomain: recursing-knuth 
+	domain: 45-88-108-231 
+	topDomain: plesk.page 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 45.88.108.231 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://100realt.ru 
+Points: 176 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1
+		The URL contained the following numbers in the domain:1, 0, 0
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 100realt 
+	topDomain: ru 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 37.46.134.153 
+	city: None 
+	country: Russia 
+	region: None 
+	favicon: False 
+	expires: 2023-07-31 20:29:07 
+	registered: 2015-07-31 20:29:07 
+	update: None 
+	active: 2685 days, 16:23:10.574585 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 2685 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://google.com 
+Points: 141 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL contained the following bad keywords:google
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: google 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 142.250.74.142 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: [datetime.datetime(2028, 9, 14, 4, 0), datetime.datetime(2028, 9, 13, 7, 0)] 
+	registered: [datetime.datetime(1997, 9, 15, 4, 0), datetime.datetime(1997, 9, 15, 7, 0)] 
+	update: 2019-09-09 15:39:04 
+	active: 9214 days, 8:54:43.479445 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 9214 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: http://linkedin.com 
+Points: 151 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL contained the following bad keywords:linkedin
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: linkedin 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 13.107.42.14 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2024, 11, 2, 15, 38, 11), datetime.datetime(2024, 11, 2, 0, 0)] 
+	registered: 2002-11-02 15:38:11 
+	update: 2022-10-01 09:36:59 
+	active: 7339 days, 21:16:38.080390 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 7339 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://tiptotoenails.com 
+Points: 111 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+		This site is over a year old
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: tiptotoenails 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 69.65.10.202 
+	city: Arlington Heights 
+	country: United States 
+	region: Illinois 
+	favicon: False 
+	expires: 2023-08-31 15:41:52 
+	registered: 2009-08-31 15:41:52 
+	update: 2022-08-31 11:05:01 
+	active: 4845 days, 21:13:11.303227 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 4845 
+
+Database connection failed... evaluation run anyway.
+------------------------
+

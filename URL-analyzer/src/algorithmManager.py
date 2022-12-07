@@ -5,6 +5,7 @@ import src.checklists.URLstringCL as URLstringCL
 import src.checklists.DNSdataCL as DNSdataCL
 import src.DB.DBhandler as DBhandler
 import src.checklists.SSLCL as SSLCL
+from src.URLCheck import url_sanitize
 
 
 class algorithmManager:
@@ -12,14 +13,18 @@ class algorithmManager:
         This class manages the URLinfo object and the checklist objects
     """
     def __init__(self, url):
-        self.url = url
+        self.url = url.strip()
         self.points = 0
+        self.websiteOnline = True
         self.report = {}
         self.URLinfoObj = URLinfo.URLinfo(url) #create URLinfo object
         self.DBonline = True
         self.URLinWhitelist = False
         self.URLinPreviousSearches = False
         self.fishy = False
+        self.check_websiteOnline()
+
+
         try:
             self.checkDB() # check if in whitelist/previous searches
         except Exception:
@@ -29,6 +34,14 @@ class algorithmManager:
             self.URLinfoObj.collectInfo() #make object collect information about url
         self.pointPhishingLimit = 100
 
+    def check_websiteOnline(self):
+        if url_sanitize.siteValid(self.url):
+            self.websiteOnline = True
+        else:
+            self.websiteOnline = False
+            self.points += 100
+        return self.points
+
     def run(self):
         """
             Run through the algorithm with the URL
@@ -37,6 +50,8 @@ class algorithmManager:
             input: self, output: boolean
         """
         # check if in DB
+        if self.websiteOnline == False:
+            return True
         if self.URLinWhitelist == True:
             return False #if in whitelist it is not fishy
         if self.URLinPreviousSearches == True:
@@ -94,6 +109,9 @@ class algorithmManager:
 
 
     def createOutputString(self):
+        if self.websiteOnline == False:
+            outputStr = "Website is not up and cannot be classified."+ "<br>"
+            return outputStr
         if self.URLinWhitelist == True:
             outputStr = "URL in exist whitelist and is not phishy."+ "<br>"
             return outputStr
