@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 
 __author__ = 'Totte Hansen, DVADS20h'
 
-def siteValid(url:str, redir:bool = True) -> bool:
+def siteValid(url:str, redir:bool = True, printstatus = False) -> bool:
     """
     Checks if a site exists and is reachable
     Requires supplied schema
@@ -20,8 +20,11 @@ def siteValid(url:str, redir:bool = True) -> bool:
     site_code = 0
     try:
         # site_code = request.urlopen(url).getcode()
-        site_code = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}).status_code
-
+        site_code = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout = 5).status_code
+        if printstatus == True:
+            print("Connection status code:", site_code)
+        if site_code == 403:
+            site_code = request.urlopen(url).getcode()
         # check if site response is within OK range
         if 200 <= site_code <= 299:
             return True
@@ -30,6 +33,7 @@ def siteValid(url:str, redir:bool = True) -> bool:
 
     except Exception as err:
         # Check if server or client error occured (raise error in case of client error)
+        print(str(err))
         return False
 
 

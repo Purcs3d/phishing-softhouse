@@ -43,7 +43,7 @@ def test_accuracy(inFileName, outFolder):
         url = line.strip('\n')
         lineNum += 1
         try:
-            response = requests.get(url)
+            response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout = 2)
             if response.status_code != 200:
                 raise Exception("Website does not exist")
         except:
@@ -68,6 +68,8 @@ def test_accuracy(inFileName, outFolder):
             for item in evaluationURL.report["HTMLdataCL"]:
                 wFileCorrect.write(f"\t\t{item}\n")
             for item in evaluationURL.report["DNSdataCL"]:
+                wFileCorrect.write(f"\t\t{item}\n")
+            for item in evaluationURL.report["SSLCL"]:
                 wFileCorrect.write(f"\t\t{item}\n")
             for item in evaluationURL.report["DatabaseComparisonCL"]:
                 wFileCorrect.write(f"\t\t{item}\n")

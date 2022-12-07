@@ -24,9 +24,8 @@ def main():
                     URL = input('\nEnter q to Quit:\n````````````````\nEnter your URL: ')
                     if validators.domain(URL) == True or validators.url(URL) == True:
                         algorithmEngine = am.algorithmManager(URL) #algorithm object
-                        output = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
-                        output += "\nEvaluation points:" + str(algorithmEngine.points)
-                        output += algorithmEngine.createOutputString()
+                        fishy = algorithmEngine.run()
+                        output = algorithmEngine.createOutputString()
                         finalOutput = output.replace("<br>", "\n" )
                         print(finalOutput)
                     else:
