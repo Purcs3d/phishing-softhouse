@@ -35,7 +35,7 @@ class algorithmManager:
         self.pointPhishingLimit = 100
 
     def check_websiteOnline(self):
-        if url_sanitize.siteValid(self.url, printstatus = True):
+        if url_sanitize.siteValid(self.url):
             self.websiteOnline = True
         else:
             self.websiteOnline = False
