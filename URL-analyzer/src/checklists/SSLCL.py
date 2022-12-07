@@ -42,6 +42,7 @@ class SSLCL:
     def check_incomplete_cert(self):
         if self.URLinfo.certIncomplete == True:
             self.points += 50
+            self.report.append("Websites certificate information was incomplete")
             return True
 
         return False
@@ -111,7 +112,7 @@ class SSLCL:
                 self.report.append(self_license_report)
         except Exception:
             self.points += self_license_points
-            self.URLinfo.errors.append("Error in SSL resolving, licence checking failed")
+            self.report.append("Information about websites registered issuer and owner was not found")
 
 
     def check_cert_age(self): #TODO

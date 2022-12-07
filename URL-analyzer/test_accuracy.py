@@ -119,9 +119,9 @@ def test_accuracy(inFileName, outFolder):
 
     print(f"The algorithm accuracy was: {algorithmAccuracy}%")
 
-    wAccuracyFile = open(os.path.join(outFolderName, f"Algorithm Accuracy: {algorithmAccuracy}%").replace("\\", "/"), mode='w', encoding='utf-8')
-
-    wAccuracyFile.close()
+    # wAccuracyFile = open(os.path.join(outFolderName, f"Algorithm Accuracy: {algorithmAccuracy}%").replace("\\", "/"), mode='w', encoding='utf-8')
+    #
+    # wAccuracyFile.close()
     readFile.close()
     wFileWrong.close()
     wFileCorrect.close()

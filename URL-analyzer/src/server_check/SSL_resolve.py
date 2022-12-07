@@ -59,7 +59,7 @@ class ssl_parser:
         except Exception as err:
             if "EOF" in str(err):
                 self.URLinfo.certIncomplete = True
-            self.URLinfo.errors.append("Error during SSL resolving, Socket connection timed out")
+            self.URLinfo.errors.append("Error during SSL resolving, Socket connection timed out or was denied")
             return None
 
 

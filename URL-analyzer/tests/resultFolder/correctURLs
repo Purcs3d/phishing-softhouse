@@ -1,233 +1,202 @@
 These are all of the URLs that the algorithm correctly classified as phishingLinks 
 
-URL: http://balll.s3.ca-tor.cloud-object-storage.appdomain.cloud/littorals/login.html?qqbhpmbs=qjilgcm3ut8opepxqbqfdkpj3qjq&uadhampcd=ny4s6xojbdekzt8jj4xpzxtum&aex=mfpjlw3pxhs8br861lydnsivj9u6v&nhdyajgly=oayjeqoagttd47hr3urhlhn&nxeyfniwq=crnmozncupfeaxcos 
-Points: 120 
+URL: http://amcgardiennage.com/p2w9yszpptdimdu1btfynjm= 
+Points: 101 
 
 The website generated the following report:
 		The website is using HTTP
-		The URL violated the following special characters: ['3']
-		The URL had a phishy length with 50 letters
-		The URL have an unusual amount of 4 subdomains 
-		The website lacks favicon.
+		This site is over a year old
 
 	www: None 
 	protocol: http 
-	subDomain: balll.s3.ca-tor.cloud-object-storage 
-	domain: appdomain 
-	topDomain: cloud 
-	dir: /littorals/ 
-	file: login.html 
-	path: /littorals/login.html 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptdimdu1btfynjm= 
+	path: /p2w9yszpptdimdu1btfynjm= 
 	fragment: None 
-	query: {'qqbhpmbs': 'qjilgcm3ut8opepxqbqfdkpj3qjq', 'uadhampcd': 'ny4s6xojbdekzt8jj4xpzxtum', 'aex': 'mfpjlw3pxhs8br861lydnsivj9u6v', 'nhdyajgly': 'oayjeqoagttd47hr3urhlhn', 'nxeyfniwq': 'crnmozncupfeaxcos'} 
-	ip: None 
+	ip: 213.186.33.2 
 	city: None 
-	country: None 
+	country: France 
 	region: None 
-	favicon: False 
-	expires: None 
-	registered: None 
-	update: None 
-	active: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5033 days, 18:52:28.646993 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5033 
 
-Error during DNS resolving: [Errno 11001] getaddrinfo failed
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
 ------------------------
 
-URL: http://biancaa.s3.ca-tor.cloud-object-storage.appdomain.cloud/poy/login.html?mbosuvz=lfg8adkc6vlabbazqsmromeo&qoxv=ectjdtdidsq9kibf7&sxvvrltxse=i1olalvkdfs6wruz4t5yr97&adsoayx=cfhlifg8obzqno3x4n1&elhm=qvvbpizlbpt68v5pyt 
-Points: 120 
+URL: http://amcgardiennage.com/p2w9yszpptfjmmozszb2mdg4cg== 
+Points: 101 
 
 The website generated the following report:
 		The website is using HTTP
-		The URL violated the following special characters: ['3']
-		The URL had a phishy length with 52 letters
-		The URL have an unusual amount of 4 subdomains 
-		The website lacks favicon.
+		This site is over a year old
 
 	www: None 
 	protocol: http 
-	subDomain: biancaa.s3.ca-tor.cloud-object-storage 
-	domain: appdomain 
-	topDomain: cloud 
-	dir: /poy/ 
-	file: login.html 
-	path: /poy/login.html 
+	subDomain: None 
+	domain: amcgardiennage 
+	topDomain: com 
+	dir: None 
+	file: p2w9yszpptfjmmozszb2mdg4cg== 
+	path: /p2w9yszpptfjmmozszb2mdg4cg== 
 	fragment: None 
-	query: {'mbosuvz': 'lfg8adkc6vlabbazqsmromeo', 'qoxv': 'ectjdtdidsq9kibf7', 'sxvvrltxse': 'i1olalvkdfs6wruz4t5yr97', 'adsoayx': 'cfhlifg8obzqno3x4n1', 'elhm': 'qvvbpizlbpt68v5pyt'} 
-	ip: None 
+	ip: 213.186.33.2 
 	city: None 
-	country: None 
+	country: France 
 	region: None 
-	favicon: False 
-	expires: None 
-	registered: None 
-	update: None 
-	active: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 2, 24, 20, 41, 7), datetime.datetime(2023, 2, 24, 19, 41, 7)] 
+	registered: [datetime.datetime(2009, 2, 24, 20, 41, 7), datetime.datetime(2009, 2, 24, 19, 41, 7)] 
+	update: [datetime.datetime(2022, 2, 22, 8, 4, 24), datetime.datetime(2022, 2, 22, 7, 4, 24)] 
+	active: 5033 days, 18:52:30.242016 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5033 
 
-Error during DNS resolving: [Errno 11001] getaddrinfo failed
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
 ------------------------
 
-URL: http://jwtbuk492.s3.ams03.cloud-object-storage.appdomain.cloud/parameterizations/login.html?vhavfgxben=O67EERqkI545ULVmJc 
-Points: 120 
+URL: http://foxconnhealthtechnologies.com/msproject/dds/ddfk 
+Points: 121 
 
 The website generated the following report:
 		The website is using HTTP
-		The URL violated the following special characters: ['0', '3']
-		The URL had a phishy length with 53 letters
-		The URL have an unusual amount of 4 subdomains 
-		The website lacks favicon.
-
-	www: None 
-	protocol: http 
-	subDomain: jwtbuk492.s3.ams03.cloud-object-storage 
-	domain: appdomain 
-	topDomain: cloud 
-	dir: /parameterizations/ 
-	file: login.html 
-	path: /parameterizations/login.html 
-	fragment: None 
-	query: {'vhavfgxben': 'O67EERqkI545ULVmJc'} 
-	ip: None 
-	city: None 
-	country: None 
-	region: None 
-	favicon: False 
-	expires: None 
-	registered: None 
-	update: None 
-	active: None 
-
-Error during DNS resolving: [Errno 11001] getaddrinfo failed
-------------------------
-
-URL: http://labanque-postale1654.justns.ru/log/files/login/login.php 
-Points: 105 
-
-The website generated the following report:
-		The website is using HTTP
-		The URL violated the following special characters: ['1']
-		The URL contained the following bad topdomain: ru
 		The URL had a phishy length with 28 letters
-		The website lacks favicon.
+		This site is over a year old
 
 	www: None 
 	protocol: http 
-	subDomain: labanque-postale1654 
-	domain: justns 
-	topDomain: ru 
-	dir: /log/files/login/ 
-	file: login.php 
-	path: /log/files/login/login.php 
+	subDomain: None 
+	domain: foxconnhealthtechnologies 
+	topDomain: com 
+	dir: /msproject/dds/ 
+	file: ddfk 
+	path: /msproject/dds/ddfk 
 	fragment: None 
-	query: None 
-	ip: 46.17.40.77 
-	city: Moscow 
-	country: Russia 
-	region: Moscow 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2023, 1, 4, 21, 42, 5), datetime.datetime(2023, 1, 4, 16, 42, 5)] 
+	registered: [datetime.datetime(2019, 1, 4, 21, 42, 5), datetime.datetime(2019, 1, 4, 16, 42, 5)] 
+	update: [datetime.datetime(2022, 10, 16, 20, 42, 34), datetime.datetime(2021, 1, 5, 12, 56, 37)] 
+	active: 1432 days, 17:51:39.680153 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 1432 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: https://l.wl.co/l?u=https://s.id/H24ve?userid=E8PfOASz 
+Points: 120 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: l 
+	domain: wl 
+	topDomain: co 
+	dir: /l?u=https:/ 
+	file: s.id/H24ve 
+	path: /l?u=https://s.id/H24ve 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
 	favicon: False 
 	expires: None 
 	registered: None 
 	update: None 
 	active: None 
+	certIncomplete: False 
+	TLSversion: None 
 
-Error during DNS resolving: module 'whois' has no attribute 'whois'
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out
 ------------------------
 
-URL: http://msnmsmsnsm219421.ultimatefreehost.in 
+URL: http://ptimarketing.com/index.html 
+Points: 140 
+
+The website generated the following report:
+		The website is using HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ptimarketing 
+	topDomain: com 
+	dir: None 
+	file: index.html 
+	path: /index.html 
+	fragment: None 
+	ip: 136.0.161.82 
+	city: San Jose 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: 2023-06-19 02:21:57 
+	registered: 2022-06-19 02:21:57 
+	update: [datetime.datetime(2022, 6, 19, 2, 22), datetime.datetime(2022, 11, 9, 16, 45, 24)] 
+	active: 171 days, 13:12:04.547821 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 171 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out
+------------------------
+
+URL: http://recursing-knuth.45-88-108-231.plesk.page 
 Points: 170 
 
 The website generated the following report:
 		The website is using HTTP
-		The URL violated the following special characters: ['1']
-		The URL contained the following bad keywords: ['free']
-		The URL had a phishy length with 34 letters
-		The website lacks favicon.
+		The URL violated the following special characters:0, 1, 2, 3, 4, 5, 8
+		The URL contained the following numbers in the domain:4, 5, 8, 8, 1, 0, 8, 2, 3, 1
+		The URL had a phishy length with 38 letters
 
 	www: None 
 	protocol: http 
-	subDomain: msnmsmsnsm219421 
-	domain: ultimatefreehost 
-	topDomain: in 
+	subDomain: recursing-knuth 
+	domain: 45-88-108-231 
+	topDomain: plesk.page 
 	dir: None 
 	file: None 
 	path: None 
 	fragment: None 
-	query: None 
-	ip: 31.22.4.234 
-	city: Newcastle upon Tyne 
-	country: United Kingdom 
-	region: Newcastle upon Tyne 
-	favicon: False 
-	expires: None 
-	registered: None 
-	update: None 
-	active: None 
-
-Error during DNS resolving: module 'whois' has no attribute 'whois'
-------------------------
-
-URL: http://price.s3.ca-tor.cloud-object-storage.appdomain.cloud/herba/index.html 
-Points: 120 
-
-The website generated the following report:
-		The website is using HTTP
-		The URL violated the following special characters: ['3']
-		The URL had a phishy length with 50 letters
-		The URL have an unusual amount of 4 subdomains 
-		The website lacks favicon.
-
-	www: None 
-	protocol: http 
-	subDomain: price.s3.ca-tor.cloud-object-storage 
-	domain: appdomain 
-	topDomain: cloud 
-	dir: /herba/ 
-	file: index.html 
-	path: /herba/index.html 
-	fragment: None 
-	query: None 
-	ip: None 
+	ip: 45.88.108.231 
 	city: None 
 	country: None 
 	region: None 
-	favicon: False 
+	favicon: True 
 	expires: None 
 	registered: None 
 	update: None 
 	active: None 
+	certIncomplete: False 
+	TLSversion: None 
 
-Error during DNS resolving: [Errno 11001] getaddrinfo failed
-------------------------
-
-URL: http://price.s3.ca-tor.cloud-object-storage.appdomain.cloud/herba/login.html 
-Points: 120 
-
-The website generated the following report:
-		The website is using HTTP
-		The URL violated the following special characters: ['3']
-		The URL had a phishy length with 50 letters
-		The URL have an unusual amount of 4 subdomains 
-		The website lacks favicon.
-
-	www: None 
-	protocol: http 
-	subDomain: price.s3.ca-tor.cloud-object-storage 
-	domain: appdomain 
-	topDomain: cloud 
-	dir: /herba/ 
-	file: login.html 
-	path: /herba/login.html 
-	fragment: None 
-	query: None 
-	ip: None 
-	city: None 
-	country: None 
-	region: None 
-	favicon: False 
-	expires: None 
-	registered: None 
-	update: None 
-	active: None 
-
-Error during DNS resolving: [Errno 11001] getaddrinfo failed
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out
 ------------------------
 
