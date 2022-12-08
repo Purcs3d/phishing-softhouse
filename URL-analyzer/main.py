@@ -3,7 +3,6 @@
 # import src.algorithmManager as am
 import sys
 import src.algorithmManager as am
-import validators
 from  webApp import app
 from multiprocessing import Process
 
@@ -12,30 +11,41 @@ def main():
         print("\nUse these two options:")
         print(f"Usage1:  python {sys.argv[0]} server")
         print(f"Usage2:  python {sys.argv[0]} terminal\n")
+
         sys.exit(1)
+
     else:
         arg1 = sys.argv[1]
+
         if arg1 == "server" and len(sys.argv) == 2:
             Process(target=app.run()).start()
+
         elif arg1 == "terminal" and len(sys.argv) == 2:
             URL = ""
+
             while URL != "q":
                 try:
-                    URL = input('\nEnter q to Quit:\n````````````````\nEnter your URL: ')
-                    if validators.domain(URL) == True or validators.url(URL) == True:
-                        algorithmEngine = am.algorithmManager(URL) #algorithm object
-                        fishy = algorithmEngine.run()
-                        output = algorithmEngine.createOutputString()
-                        finalOutput = output.replace("<br>", "\n" )
-                        print(finalOutput)
-                    else:
-                        print("The URL input is not valid\n")
+                    URL = input('\nEnter q to Quit:\n\
+                                 ````````````````\n\
+                                 Enter your URL: ')
+
+                    algorithmEngine = am.algorithmManager(URL) #algorithm object
+
+                    output  = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
+                    output += "\nEvaluation points:" + str(algorithmEngine.points)
+                    outputDict = algorithmEngine.createOutputString()
+                    
+                    for i in outputDict:
+                        print(i, outputDict[i])
+
                 except Exception as e:
-                    raise (e)
+                    print(f"Error: {e}")
+
         else:
-            print("\nPlease don't, just use these two options:")
+            print("Please don't, just use these two options:")
             print(f"Usage1:  python {sys.argv[0]} server")
             print(f"Usage2:  python {sys.argv[0]} terminal\n")
+
         sys.exit(1)
 
 if __name__ == '__main__':
