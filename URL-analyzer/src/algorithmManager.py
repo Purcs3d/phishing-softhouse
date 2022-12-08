@@ -30,7 +30,7 @@ class algorithmManager:
             self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway.")
         if self.URLinWhitelist == False and self.URLinPreviousSearches == False:
             self.check_websiteOnline()
-            self.URLinfoObj.collectInfo() #make object collect information about url
+        self.URLinfoObj.collectInfo() #make object collect information about url
         self.pointPhishingLimit = 100
 
     def check_websiteOnline(self):
@@ -72,6 +72,7 @@ class algorithmManager:
             reportStr = self.createOutputString()
             self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
         return self.fishy
+
 
     def runEvaluations(self):
         """
@@ -143,6 +144,7 @@ class algorithmManager:
         outputStr += "<br>"
         return outputStr
 
+
     def checkDB(self):
         """
             check if URL in whitelist of previous searches
@@ -151,6 +153,7 @@ class algorithmManager:
         self.DBhandlerObj = DBhandler.DBhandler(self.URLinfoObj)
         self.URLinWhitelist = self.DBhandlerObj.checkURLinWhitelist()
         self.URLinPreviousSearches = self.DBhandlerObj.checkURLinpreviousSearches()
+        
 
     def printFormat(self):
         """
