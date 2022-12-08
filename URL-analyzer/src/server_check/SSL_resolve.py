@@ -9,9 +9,6 @@ from src.URLCheck import url_sanitize
 
 __author__  = "Totte Hansen, DVADS20h"
 
-# checks connection and status of URL server
-url_con = urllib3.PoolManager()
-
 
 
 class ssl_parser:

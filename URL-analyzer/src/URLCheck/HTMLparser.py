@@ -20,9 +20,9 @@ class HTMLparser():
         """
         try: #kolla om vi kan få HTML info från websida
             if self.URLinfo.protocol == None:
-                response = requests.get("https://" + self.URLinfo.url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 2, stream = True)
+                response = requests.get("https://" + self.URLinfo.url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 3)
             else:
-                response = requests.get(self.URLinfo.url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 2, stream = True)
+                response = requests.get(self.URLinfo.url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 3)
             if response.history:
                 for webPage in response.history:
                     self.fetchFaviconInfo(webPage.text)
