@@ -21,19 +21,14 @@
         <input type="text" name="URL_input">
         <br>
         <input type="submit" value="Check" id="btn">
-        
-        <table>
-        {% with outDict = get_flashed_messages() %}
-            {% for key in outDict %}
-                <tr>
-                    <th>{{ key }}</th>
-                </tr>
-                <tr>
-                    <td>{{ outDict[key] }}</td>
-                </tr>
+        <div class="report">
+            {% if output %}
+            <h2>Report:</h2>
+            {% for key in output %}
+            <h3> {{ key }} </h3> <p> {{ output[key] }} </p>
             {% endfor %}
-        {% endwith %}
-        </table> 
+            {% endif %}
+        </div>
     </form>
 </body>
 </html>

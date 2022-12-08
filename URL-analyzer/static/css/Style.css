@@ -19,7 +19,18 @@ body
     padding-left: 4px;
     background: #63d297;
 }
-
+report{
+    color: #ffffff;
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    padding-left: 4px;
+    border: #63d297;
+}
+p{
+    color: #ffffff;
+    font-family: 'Proxima Nova', sans-serif;
+}
 
 h1.Title
 {
@@ -31,17 +42,9 @@ h2{
     font-weight: bold;
     color: #63d297;
 }
-th{
-    color: #ffffff;
-    font-family: 'Proxima Nova', sans-serif;
-}
-td{
-    color: #ffffff;
-    font-family: 'Proxima Nova', sans-serif;
-}
-tr{
-    color: #ffffff;
-    font-family: 'Proxima Nova', sans-serif;
+h3{
+    font-weight: bold;
+    color: #63d297;
 }
 
 input

@@ -20,13 +20,12 @@ def CheckURL():
         AMObj.runEvaluations()
 
         output = AMObj.createOutputString()   #create output string
-        flash(output)   #flash output string
 
     except Exception as e:  #if error
         raise(e)    
         flash(f"Error: {e}")    #flash error
 
-    return render_template("index.html") #render template
+    return render_template("index.html", output = output) #render template
 
 def format_report(algo):
     """
