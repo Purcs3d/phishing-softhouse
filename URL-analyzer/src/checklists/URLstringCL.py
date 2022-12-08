@@ -160,7 +160,10 @@ class URLstringCL():
         badSubdomains = config.BAD_SUBDOMAINS
 
         if subdomains == None:
-            return
+            subdomains = ""
+
+        if subdomains.find("www") == -1:
+            subdomains = "www." + subdomains
 
         differentSubdomains = subdomains.split('.')
 
@@ -186,9 +189,10 @@ class URLstringCL():
                 numbersInDomain = True
                 numbers.append(char)
 
-        if numbersInDomain:
-            self.points += 20
+        if numbersInDomain and len(numbers) > 2: 
+            self.points += 40
             self.report.append(f"The URL contained the following numbers in the domain:" + ", ".join(numbers))
+
 
     def numbersinSubdomain(self):
         """
@@ -207,3 +211,7 @@ class URLstringCL():
         if numbersInSubdomain:
             self.points += 20
             self.report.append(f"The URL contained the following numbers in the subdomain:" + ", ".join(numbers))
+        if len(numbers) > 3:
+            self.points += 50
+            self.report.append(f"The URL contained >5 numbers in the subdomain.")
+            return

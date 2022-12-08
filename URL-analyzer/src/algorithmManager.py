@@ -90,17 +90,17 @@ class algorithmManager:
 
     def createOutputString(self):
         if self.URLinWhitelist == True:
-            reportList['whiteList'] ={"URL in exist whitelist and is not phishy."}
-            return reportList
+            reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
+            return reportDict
 
         if self.URLinPreviousSearches == True:
-            reportList['recent'] = {"URL recently searched; fetched report:"}
-            reportList['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
-            return reportList
-        reportList = []
+            reportDict['recent'] = {"URL recently searched; fetched report:"}
+            reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
+            return reportDict
+        reportDict = {}
         
         for key in self.report:
-            reportList.append(self.report[key])
+            reportDict.append(self.report[key])
 
 
 
@@ -126,7 +126,7 @@ class algorithmManager:
         #     for message in self.report["errors"]:
         #         outputDict["errors"] = message  
 
-        return reportList
+        return reportDict
 
 
     def checkDB(self):

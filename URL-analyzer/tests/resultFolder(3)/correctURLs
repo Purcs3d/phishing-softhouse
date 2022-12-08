@@ -1,0 +1,499 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: http://100like.org 
+Points: 170 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1
+		The URL contained the following numbers in the domain:1, 0, 0
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 100like 
+	topDomain: org 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 34.98.99.30 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2023-11-13 07:19:48 
+	registered: 2017-11-13 07:19:48 
+	update: 2022-11-26 02:14:15 
+	active: 1850 days, 9:07:00.224980 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 1850 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://102312.getiphonexhere.com 
+Points: 240 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3
+		The URL contained the following numbers in the subdomain:1, 0, 2, 3, 1, 2
+		The URL contained >5 numbers in the subdomain.
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 102312 
+	domain: getiphonexhere 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 50.28.59.161 
+	city: Lansing 
+	country: United States 
+	region: Michigan 
+	favicon: False 
+	expires: [datetime.datetime(2023, 2, 18, 19, 40, 47), datetime.datetime(2023, 2, 18, 14, 40, 47)] 
+	registered: [datetime.datetime(2018, 2, 18, 19, 40, 47), datetime.datetime(2018, 2, 18, 14, 40, 47)] 
+	update: [datetime.datetime(2022, 11, 15, 17, 38, 20), datetime.datetime(2022, 2, 14, 16, 43, 25)] 
+	active: 1752 days, 20:46:07.810234 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1752 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://153284594738391.statictab.com/2506080? 
+Points: 230 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:1, 2, 3, 4, 5, 7, 8, 9
+		The URL contained the following numbers in the subdomain:1, 5, 3, 2, 8, 4, 5, 9, 4, 7, 3, 8, 3, 9, 1
+		The URL contained >5 numbers in the subdomain.
+		The URL had a phishy length with 27 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 153284594738391 
+	domain: statictab 
+	topDomain: com 
+	dir: None 
+	file: 2506080 
+	path: /2506080 
+	fragment: None 
+	ip: 54.157.50.253 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2023-04-25 18:42:28 
+	registered: 2011-04-25 18:42:28 
+	update: 2021-10-27 00:49:07 
+	active: 4243 days, 21:44:30.618231 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 4243 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://153284594738391.statictab.com/2506080?signed_request=vLSGIn9-mAPLo6LyP7j3KlFSRK21rVpIY43KPlBTDWI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTQxNjU0NDIzNywicGFnZSI6eyJpZCI6IjQ2MDk4ODc5NzI3ODA2NyIsImFkbWluIjpmYWxzZSwibGlrZWQiOnRydWV9LCJ1c 
+Points: 230 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:1, 2, 3, 4, 5, 7, 8, 9
+		The URL contained the following numbers in the subdomain:1, 5, 3, 2, 8, 4, 5, 9, 4, 7, 3, 8, 3, 9, 1
+		The URL contained >5 numbers in the subdomain.
+		The URL had a phishy length with 27 letters
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 153284594738391 
+	domain: statictab 
+	topDomain: com 
+	dir: None 
+	file: 2506080 
+	path: /2506080 
+	fragment: None 
+	ip: 54.157.50.253 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2023-04-25 18:42:28 
+	registered: 2011-04-25 18:42:28 
+	update: 2021-10-27 00:49:07 
+	active: 4243 days, 21:44:35.316651 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 4243 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://194433.com 
+Points: 170 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:1, 3, 4, 9
+		The URL contained the following numbers in the domain:1, 9, 4, 4, 3, 3
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 194433 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 23.19.164.130 
+	city: Phoenix 
+	country: United States 
+	region: Arizona 
+	favicon: True 
+	expires: [datetime.datetime(2023, 11, 3, 1, 0, 12), datetime.datetime(2023, 11, 2, 20, 0, 12)] 
+	registered: [datetime.datetime(2014, 11, 3, 1, 0, 12), datetime.datetime(2014, 11, 2, 20, 0, 12)] 
+	update: [datetime.datetime(2022, 9, 17, 9, 11, 33), datetime.datetime(2022, 7, 2, 0, 48, 37)] 
+	active: 2956 days, 15:26:58.590316 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2956 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://247sunbet.com 
+Points: 170 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:2, 4, 7
+		The URL contained the following numbers in the domain:2, 4, 7
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 247sunbet 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 23.19.164.130 
+	city: Phoenix 
+	country: United States 
+	region: Arizona 
+	favicon: True 
+	expires: [datetime.datetime(2023, 12, 14, 17, 38, 41), datetime.datetime(2023, 12, 14, 12, 38, 41)] 
+	registered: [datetime.datetime(2014, 12, 14, 17, 38, 41), datetime.datetime(2014, 12, 14, 12, 38, 41)] 
+	update: [datetime.datetime(2022, 10, 24, 4, 25, 39), datetime.datetime(2022, 10, 23, 23, 25, 36)] 
+	active: 2914 days, 22:48:48.872702 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2914 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://280333.com/bbs/bbs27.htm 
+Points: 170 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 2, 3, 8
+		The URL contained the following numbers in the domain:2, 8, 0, 3, 3, 3
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 280333 
+	topDomain: com 
+	dir: /bbs/ 
+	file: bbs27.htm 
+	path: /bbs/bbs27.htm 
+	fragment: None 
+	ip: 194.124.245.204 
+	city: None 
+	country: Switzerland 
+	region: None 
+	favicon: True 
+	expires: [datetime.datetime(2024, 6, 30, 4, 48, 12), datetime.datetime(2024, 6, 30, 0, 48)] 
+	registered: [datetime.datetime(2011, 6, 30, 4, 48, 12), datetime.datetime(2011, 6, 30, 5, 48)] 
+	update: 2021-10-25 12:48:12 
+	active: 4178 days, 11:39:33.811493 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4178 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?amp 
+Points: 240 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 5, 6
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1
+		The URL contained >5 numbers in the subdomain.
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: [datetime.datetime(2007, 4, 25, 3, 53, 43), datetime.datetime(2007, 3, 24, 3, 16, 6)] 
+	update: [datetime.datetime(2022, 4, 11, 2, 54, 3), datetime.datetime(2022, 4, 11, 2, 54, 4)] 
+	active: 5705 days, 12:34:17.548415 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5705 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=1976cb6f0d9ccf78f5fb8ab5278cc2791976cb6f0d9ccf78f5fb8ab5278cc279&amp;session=1976cb6f0d9ccf78f5fb8ab5278cc2791976cb6f0d9ccf78f5fb8ab5278cc279 
+Points: 240 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 5, 6
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1
+		The URL contained >5 numbers in the subdomain.
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: [datetime.datetime(2007, 4, 25, 3, 53, 43), datetime.datetime(2007, 3, 24, 3, 16, 6)] 
+	update: [datetime.datetime(2022, 4, 11, 2, 54, 3), datetime.datetime(2022, 4, 11, 2, 54, 4)] 
+	active: 5705 days, 12:34:31.195213 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5705 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=4c7ceee16436a463f48625b81372aa8f4c7ceee16436a463f48625b81372aa8f&amp;session=4c7ceee16436a463f48625b81372aa8f4c7ceee16436a463f48625b81372aa8f 
+Points: 240 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 5, 6
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1
+		The URL contained >5 numbers in the subdomain.
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: [datetime.datetime(2007, 4, 25, 3, 53, 43), datetime.datetime(2007, 3, 24, 3, 16, 6)] 
+	update: [datetime.datetime(2022, 4, 11, 2, 54, 3), datetime.datetime(2022, 4, 11, 2, 54, 4)] 
+	active: 5705 days, 12:34:39.422052 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5705 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=75560504970db7e8c69bf16419216a3075560504970db7e8c69bf16419216a30&amp;session=75560504970db7e8c69bf16419216a3075560504970db7e8c69bf16419216a30 
+Points: 240 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 5, 6
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1
+		The URL contained >5 numbers in the subdomain.
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: [datetime.datetime(2007, 4, 25, 3, 53, 43), datetime.datetime(2007, 3, 24, 3, 16, 6)] 
+	update: [datetime.datetime(2022, 4, 11, 2, 54, 3), datetime.datetime(2022, 4, 11, 2, 54, 4)] 
+	active: 5705 days, 12:34:52.382957 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5705 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=bc4ce1f4d682271d4b98ead7226faa82bc4ce1f4d682271d4b98ead7226faa82&amp;session=bc4ce1f4d682271d4b98ead7226faa82bc4ce1f4d682271d4b98ead7226faa82 
+Points: 240 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 5, 6
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1
+		The URL contained >5 numbers in the subdomain.
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: [datetime.datetime(2007, 4, 25, 3, 53, 43), datetime.datetime(2007, 3, 24, 3, 16, 6)] 
+	update: [datetime.datetime(2022, 4, 11, 2, 54, 3), datetime.datetime(2022, 4, 11, 2, 54, 4)] 
+	active: 5705 days, 12:35:03.221043 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5705 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=cde216e99a08498914d999825331ba9bcde216e99a08498914d999825331ba9b&amp;session=cde216e99a08498914d999825331ba9bcde216e99a08498914d999825331ba9b 
+Points: 240 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 5, 6
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1
+		The URL contained >5 numbers in the subdomain.
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: [datetime.datetime(2007, 4, 25, 3, 53, 43), datetime.datetime(2007, 3, 24, 3, 16, 6)] 
+	update: [datetime.datetime(2022, 4, 11, 2, 54, 3), datetime.datetime(2022, 4, 11, 2, 54, 4)] 
+	active: 5705 days, 12:35:12.390536 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5705 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/step3.php?cmd=*&amp;id=*&amp;session=* 
+Points: 240 
+
+The website generated the following report:
+		The website is using HTTP
+		The URL violated the following special characters:0, 1, 2, 3, 5, 6
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1
+		The URL contained >5 numbers in the subdomain.
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: step3.php 
+	path: /wordpress/wp-content/plugins/wp-tech/step3.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: [datetime.datetime(2007, 4, 25, 3, 53, 43), datetime.datetime(2007, 3, 24, 3, 16, 6)] 
+	update: [datetime.datetime(2022, 4, 11, 2, 54, 3), datetime.datetime(2022, 4, 11, 2, 54, 4)] 
+	active: 5705 days, 12:35:23.171154 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5705 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+

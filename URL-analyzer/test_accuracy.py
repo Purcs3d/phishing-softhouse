@@ -43,7 +43,9 @@ def test_accuracy(inFileName, outFolder):
         url = line.strip('\n')
         lineNum += 1
         try:
-            response = requests.get(url)
+            response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout = 2)
+            if response.status_code != 200:
+                raise Exception("Website does not exist")
         except:
             print(f"Skipping the URL: {url}, beacuse it does not exists.\n")
             wFileSkipped.write(f"{url}\n")
@@ -65,7 +67,9 @@ def test_accuracy(inFileName, outFolder):
                 wFileCorrect.write(f"\t\t{item}\n")
             for item in evaluationURL.report["HTMLdataCL"]:
                 wFileCorrect.write(f"\t\t{item}\n")
-            for item in evaluationURL.report["DNSChecklist"]:
+            for item in evaluationURL.report["DNSdataCL"]:
+                wFileCorrect.write(f"\t\t{item}\n")
+            for item in evaluationURL.report["SSLCL"]:
                 wFileCorrect.write(f"\t\t{item}\n")
             for item in evaluationURL.report["DatabaseComparisonCL"]:
                 wFileCorrect.write(f"\t\t{item}\n")
@@ -93,7 +97,7 @@ def test_accuracy(inFileName, outFolder):
                 wFileWrong.write(f"\t\t{item}\n")
             for item in evaluationURL.report["HTMLdataCL"]:
                 wFileWrong.write(f"\t\t{item}\n")
-            for item in evaluationURL.report["DNSChecklist"]:
+            for item in evaluationURL.report["DNSdataCL"]:
                 wFileWrong.write(f"\t\t{item}\n")
             for item in evaluationURL.report["DatabaseComparisonCL"]:
                 wFileWrong.write(f"\t\t{item}\n")
@@ -116,8 +120,10 @@ def test_accuracy(inFileName, outFolder):
     algorithmAccuracy = round((float(countPhishingPositives)/float(testedURLs))*100)
 
     print(f"The algorithm accuracy was: {algorithmAccuracy}%")
-    wFileWrong.write(f"The total accuracy was: {algorithmAccuracy}%")
 
+    # wAccuracyFile = open(os.path.join(outFolderName, f"Algorithm Accuracy: {algorithmAccuracy}%").replace("\\", "/"), mode='w', encoding='utf-8')
+    #
+    # wAccuracyFile.close()
     readFile.close()
     wFileWrong.close()
     wFileCorrect.close()
