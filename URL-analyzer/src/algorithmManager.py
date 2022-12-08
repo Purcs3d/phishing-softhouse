@@ -118,7 +118,6 @@ class algorithmManager:
             reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
             return reportDict
         reportDict = {}
-        reportDict[""]
         
         reportDict["Phishy"].append(self.fishy)
         reportDict["Points"].append(self.points)

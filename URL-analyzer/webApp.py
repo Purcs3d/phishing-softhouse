@@ -1,24 +1,42 @@
 import src.algorithmManager as am
 from flask import Flask, flash, render_template, request, Blueprint
-import validators
 
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'
+app = Flask(__name__)   
+app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'  
 
-@app.route("/")
-def index():
-    return render_template("index.html")
+__author__ = "Totte Hansen, Rasmus Andersen"
+
+@app.route("/") #home page
+def index():    #home page
+    return render_template("index.html")    #home page
 
 @app.route("/check", methods=['GET', 'POST'])
-def CheckURL():
+def CheckURL(): 
     try:
         URLinput = str(request.form['URL_input'])
-        if validators.domain(URLinput) == True or validators.url(URLinput) == True:
-            algorithmEngine = am.algorithmManager(URLinput) #algorithm object
-            fishy = algorithmEngine.run()
-            output = algorithmEngine.createOutputString()
-        else:
-            flash("Please enter a valid URL")
-    except Exception as e:
-        flash(f"Error: {e}")
-    return render_template("index.html", output=output)
+
+        # return early if empty
+        if URLinput.strip() == "":
+            empty_url_str = "No URL was given"
+            print(empty_url_str)
+            return render_template("index.html", output = empty_url_str)
+            
+
+        AMObj = am.algorithmManager(URLinput) 
+        AMObj.run()
+        AMObj.runEvaluations()
+
+        # format output so HTML parsable
+        output = AMObj.createOutputString()
+
+    except Exception as e:  #if error
+        flash(f"Error: {e}")    #flash error
+        raise(e)
+
+    return render_template("index.html", output = output) #render template
+
+def format_report(algo):
+    """
+    Format report dictionary into HTML table
+    """
+    ...

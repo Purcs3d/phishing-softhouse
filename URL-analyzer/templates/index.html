@@ -20,12 +20,14 @@
         <input type="text" name="URL_input">
         <br>
         <input type="submit" value="Check" id="btn">
-        {% if output is mapping %}
         <div class="report">
-            <h2>Report:</h2>
-            {% for key in output %}
-            <h3> {{ key }} </h3> <p> {{ output[key] }} </p>
-            {% endfor %}
+            {% if output is mapping %}
+                <h2>Report:</h2>
+                {% for key in output %}
+                    {% for index in key %}
+                        <p> {{index}} </p>
+                    {% endfor %}
+                {% endfor %}
             {% else %}
                 <p> {{output}} </p>
             {% endif %}
