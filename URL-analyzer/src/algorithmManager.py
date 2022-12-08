@@ -22,6 +22,7 @@ class algorithmManager:
         self.URLinWhitelist = False
         self.URLinPreviousSearches = False
         self.fishy = False
+        self.pointPhishingLimit = 100
 
         try:
             self.checkDB() # check if in whitelist/previous searches
@@ -30,8 +31,8 @@ class algorithmManager:
             self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway.")
         if self.URLinWhitelist == False and self.URLinPreviousSearches == False:
             self.check_websiteOnline()
-            self.URLinfoObj.collectInfo() #make object collect information about url
-        self.pointPhishingLimit = 100
+            if self.websiteOnline == True:
+                self.URLinfoObj.collectInfo() #make object collect information about url
 
     def check_websiteOnline(self):
         if url_sanitize.siteValid(self.url):

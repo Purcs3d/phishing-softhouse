@@ -1,0 +1,132 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: https://ablerefrigeration.com/full-width-slider.slider/img/yh/jayx/update.html 
+Points: 120 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: ablerefrigeration 
+	topDomain: com 
+	dir: /full-width-slider.slider/img/yh/jayx/ 
+	file: update.html 
+	path: /full-width-slider.slider/img/yh/jayx/update.html 
+	fragment: None 
+	ip: 199.59.243.222 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2023-10-12 18:52:17 
+	registered: 2001-10-12 18:52:17 
+	update: 2022-10-31 17:36:12 
+	active: 7726 days, 21:02:16.400424 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 7726 
+
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: https://acccountupgrade.my-free.website 
+Points: 180 
+
+The website generated the following report:
+		The URL contained the following bad keywords:free
+		The URL had a phishy length with 29 letters
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: https 
+	subDomain: acccountupgrade 
+	domain: my-free 
+	topDomain: website 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: https://accesoboamerica.webcindario.com/bankofamerica/login.php 
+Points: 110 
+
+The website generated the following report:
+		The URL had a phishy length with 29 letters
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: https 
+	subDomain: accesoboamerica 
+	domain: webcindario 
+	topDomain: com 
+	dir: /bankofamerica/ 
+	file: login.php 
+	path: /bankofamerica/login.php 
+	fragment: None 
+	ip: 5.57.226.200 
+	city: Madrid 
+	country: Spain 
+	region: Madrid 
+	favicon: False 
+	expires: 2023-02-28 12:45:04 
+	registered: 2001-02-28 12:45:04 
+	update: 2018-02-22 23:22:03 
+	active: 7953 days, 3:09:35.574746 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 7953 
+
+------------------------
+
+URL: https://accountsecure00.webcindario.com/signOn/secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+Points: 140 
+
+The website generated the following report:
+		The URL violated the following special characters:0
+		The URL had a phishy length with 29 letters
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: https 
+	subDomain: accountsecure00 
+	domain: webcindario 
+	topDomain: com 
+	dir: /signOn/ 
+	file: secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+	path: /signOn/secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+	fragment: None 
+	ip: 5.57.226.200 
+	city: Madrid 
+	country: Spain 
+	region: Madrid 
+	favicon: False 
+	expires: 2023-02-28 12:45:04 
+	registered: 2001-02-28 12:45:04 
+	update: 2018-02-22 23:22:03 
+	active: 7953 days, 3:09:39.162931 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 7953 
+
+------------------------
+
