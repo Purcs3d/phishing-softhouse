@@ -1,17 +1,7 @@
-# https://www.digitalocean.com/community/tutorials/how-to-use-a-postgresql-database-in-a-flask-application#step-1-creating-the-postgresql-database-and-user
+
 import psycopg2
 import src.config as config
 from pathlib import Path
-
-# att göra: kolla upp lösenord, och char(200) om det finns dynamisk
-# kolla upp SQLinjection bibliotek
-# om en URL i previousSearches är mer än 2 dagar gammal vid ny select -> ta bort, gör en trigger
-# ändra whitelist till INSERT OR REPLACE ist för bara insert alla rader.
-# Hur skall DB initializeras
-# hur skall den tas bort??
-
-#note:  länkar såsom lksajd.asdkwjoi sparas i previousSearches
-#note: skall
 
 class DBhandler():
     """
@@ -79,12 +69,7 @@ class DBhandler():
             Checks if URL exist in whitelist
             input: URL, output: if it exist(True) or not (False)
         """
-        # if self.URLinfo.subDomain != None: # www.login.bth.se
-        #     url = self.URLinfo.subDomain +"."+ self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        # else: # bth.se
-        #     url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
         url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
-        # print("asdsaASDKSALDLA", url)
         if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.":
             sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}';"
         else:

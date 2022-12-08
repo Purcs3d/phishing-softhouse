@@ -19,8 +19,8 @@ def siteValid(url:str, redir:bool = True) -> bool:
 
     site_code = 0
     try:
-        # site_code = request.urlopen(url).getcode()
         site_code = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 5).status_code
+        
         # check if site response is within OK range
         if 200 <= site_code <= 299:
             return True
@@ -29,7 +29,6 @@ def siteValid(url:str, redir:bool = True) -> bool:
 
     except Exception as err:
         # Check if server or client error occured (raise error in case of client error)
-        print(str(err))
         return False
 
 
