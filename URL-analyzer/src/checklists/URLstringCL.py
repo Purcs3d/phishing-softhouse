@@ -37,7 +37,7 @@ class URLstringCL():
     def protocolCheck(self):
         if self.URLinfo.protocol == "http":
             self.points += 10
-            self.report.append("The URL's protocol is HTTP")
+            self.report.append("The URL:s protocol is HTTP")
 
     def checkSpecialChar(self):
         """
