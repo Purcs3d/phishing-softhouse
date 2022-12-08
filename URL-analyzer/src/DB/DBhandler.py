@@ -66,7 +66,7 @@ class DBhandler():
         if self.cursor.fetchone()[0] != 0: # Whitelist already exist
             return
         else: #white list doesnt exist:
-            dataFolder = Path("..\\src\\DB\\")
+            dataFolder = Path("../src/DB/")
             filename = dataFolder / "whitelist.txt"
             with open(filename) as file:
                 for line in file:

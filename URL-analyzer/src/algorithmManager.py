@@ -22,8 +22,6 @@ class algorithmManager:
         self.URLinWhitelist = False
         self.URLinPreviousSearches = False
         self.fishy = False
-        self.check_websiteOnline()
-
 
         try:
             self.checkDB() # check if in whitelist/previous searches
@@ -31,6 +29,7 @@ class algorithmManager:
             self.DBonline = False
             self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway.")
         if self.URLinWhitelist == False and self.URLinPreviousSearches == False:
+            self.check_websiteOnline()
             self.URLinfoObj.collectInfo() #make object collect information about url
         self.pointPhishingLimit = 100
 
@@ -109,15 +108,15 @@ class algorithmManager:
 
 
     def createOutputString(self):
-        if self.websiteOnline == False:
-            outputStr = "Website is not up or denied connection and cannot be classified."+ "<br>"
-            return outputStr
         if self.URLinWhitelist == True:
             outputStr = "URL in exist whitelist and is not phishy."+ "<br>"
             return outputStr
         if self.URLinPreviousSearches == True:
             outputStr = "URL recently searched; fetched report:"+ "<br>"
             outputStr += self.DBhandlerObj.fetchPreviousSearchReport()
+            return outputStr
+        if self.websiteOnline == False:
+            outputStr = "Website is not up or denied connection and cannot be classified."+ "<br>"
             return outputStr
         outputStr = "fishy?:" + str(self.fishy)
         outputStr +=  "<br> evaluation points:" + str(self.points) + "<br>"
