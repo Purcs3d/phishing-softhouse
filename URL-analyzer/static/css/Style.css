@@ -19,25 +19,35 @@ body
     padding-left: 4px;
     background: #63d297;
 }
-
-
-
-p.Title
-{
-    font-weight: bold;
+#report{
     color: #ffffff;
-    font-size: 2.5em;
-    display: inline-block;
-    margin: 0.5% 0 1% 0;
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    padding-left: 4px;
+    border: #63d297;
+    border-style: solid;
+    margin: 100px;
+    border-radius: 5px;
+}
+p{
+    color: #ffffff;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
-p
+h1.Title
 {
     font-weight: bold;
-    color: #ffffff;
-    font-size: 1.5em;
-    display: inline-block;
-    margin: 0.5% 0 1% 0;
+    color: #63d297;
+}
+
+h2{
+    font-weight: bold;
+    color: #63d297;
+}
+h3{
+    font-weight: bold;
+    color: #63d297;
 }
 
 input
@@ -76,3 +86,12 @@ input:focus
 {
     background-color: #34b470;
 }
+
+div#loading {
+    width: 35px;
+    height: 35px;
+    display: none;
+    background: url(/static/loadingimage.gif) no-repeat;
+    cursor: wait;
+    }
+

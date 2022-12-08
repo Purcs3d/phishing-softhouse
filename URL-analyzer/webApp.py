@@ -1,26 +1,42 @@
 import src.algorithmManager as am
 from flask import Flask, flash, render_template, request, Blueprint
-import validators
 
 app = Flask(__name__)   
-app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'    
+app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'  
 
-@app.route("/")
-def index():    
-    return render_template("index.html")
+__author__ = "Totte Hansen, Rasmus Andersen"
 
-@app.route("/check", methods=['GET', 'POST'])   
+@app.route("/") #home page
+def index():    #home page
+    return render_template("index.html")    #home page
+
+@app.route("/check", methods=['GET', 'POST'])
 def CheckURL(): 
     try:
-        URLinput = str(request.form['URL_input'])   
+        URLinput = str(request.form['URL_input'])
 
-        algorithmEngine = am.algorithmManager(URLinput) 
-        fishy = algorithmEngine.run()
+        # return early if empty
+        if URLinput.strip() == "":
+            empty_url_str = "No URL was given"
+            print(empty_url_str)
+            return render_template("index.html", output = empty_url_str)
+            
 
-        output = algorithmEngine.createOutputString()
-        flash(output)
+        AMObj = am.algorithmManager(URLinput) 
+        AMObj.run()
+        AMObj.runEvaluations()
 
-    except Exception as e:
-        flash(f"Error: {e}")
+        # format output so HTML parsable
+        output = AMObj.createOutputString()
 
-    return render_template("index.html")
+    except Exception as e:  #if error
+        flash(f"Error: {e}")    #flash error
+        raise(e)
+
+    return render_template("index.html", output = output) #render template
+
+def format_report(algo):
+    """
+    Format report dictionary into HTML table
+    """
+    ...
