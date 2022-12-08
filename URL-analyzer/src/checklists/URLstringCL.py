@@ -25,12 +25,14 @@ class URLstringCL():
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         self.containUnicode()
+        self.numbersInDomain()
+        self.numbersinSubdomain()
         self.containsPort()
-
         self.checkTopDomain()
         self.checkUrlLength()
         self.checkNumberOfSubdomains()
         self.checkBadSubdomains()
+
         return self.points
 
     def protocolCheck(self):
@@ -53,7 +55,7 @@ class URLstringCL():
 
         if violatedSpecialChar:
             self.points += 30
-            self.report.append(f"The URL violated the following special characters: {charViolated}")
+            self.report.append("The URL violated the following special characters:" + ", ".join(charViolated))
 
 
     def checkSpecialKeywords(self):
@@ -93,19 +95,18 @@ class URLstringCL():
 
         if violatedSpecialKeyword:
             self.points += 80
-
-            self.report.append(f"The URL contained the following bad keywords: {keywordViolated}")
+            self.report.append("The URL contained the following bad keywords:" + ", ".join(keywordViolated))
 
     def containUnicode(self):
         if(sp.stringParser.UnicodeCheker(self)):
-            print("Unicode detected")
+            self.report.append("Unicode detected")
             self.points+= 10
         else:
-            print("No Unicode detected")
             self.points+= 0
 
     def containsPort(self):
         if(sp.stringParser.port_specified(self)):
+            self.report.append("port found in domain")
             self.points+=25
         else:
             self.points+=0
@@ -159,7 +160,10 @@ class URLstringCL():
         badSubdomains = config.BAD_SUBDOMAINS
 
         if subdomains == None:
-            return
+            subdomains = ""
+
+        if subdomains.find("www") == -1:
+            subdomains = "www." + subdomains
 
         differentSubdomains = subdomains.split('.')
 
@@ -171,4 +175,43 @@ class URLstringCL():
 
         if violatedSubdomainKeyword:
             self.points += 40
-            self.report.append(f"The URL contained the following bad subdomains: {violatedKeyword}")
+            self.report.append(f"The URL contained the following bad subdomains: " + ", ".join(violatedKeyword))
+
+    def numbersInDomain(self):
+        """
+        The function checks if the domain contains numbers.
+        """
+        domain = self.URLinfo.domain
+        numbersInDomain = False
+        numbers = []
+        for char in domain:
+            if char.isdigit():
+                numbersInDomain = True
+                numbers.append(char)
+
+        if numbersInDomain and len(numbers) > 2: 
+            self.points += 40
+            self.report.append(f"The URL contained the following numbers in the domain:" + ", ".join(numbers))
+
+
+    def numbersinSubdomain(self):
+        """
+        The function checks if the subdomain contains numbers.
+        """
+        subdomain = self.URLinfo.subDomain
+        if subdomain == None:
+            return
+        numbersInSubdomain = False
+        numbers = []
+        for char in subdomain:
+            if char.isdigit():
+                numbersInSubdomain = True
+                numbers.append(char)
+
+        if numbersInSubdomain:
+            self.points += 20
+            self.report.append(f"The URL contained the following numbers in the subdomain:" + ", ".join(numbers))
+        if len(numbers) > 3:
+            self.points += 50
+            self.report.append(f"The URL contained >5 numbers in the subdomain.")
+            return

@@ -17,15 +17,15 @@ class DNSresolver():
 
     def resolve(self):
         try:
-            self.URLinfo.ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain) #temporär lösning
-            self.fetchDNSdata()
+            self.URLinfo.ip = socket.gethostbyname(self.URLinfo.domain + "." + self.URLinfo.topDomain)
             self.fetchAge(self.URLinfo.url)
+            self.fetchDNSdata()
         except TypeError:
             self.URLinfo.errors.append(f"Error during DNS resolving: DNS creation info not found.")
         except requests.exceptions.RequestException:
-            self.URLinfo.errors.append(f"Error during DNS resolving: Failed request to server")
-        except Exception as e:
-            self.URLinfo.errors.append(f"Error during DNS resolving: {e}")
+            self.URLinfo.errors.append(f"Error during DNS resolving: Failed request to domain-info server")
+        except Exception:
+            self.URLinfo.errors.append(f"Error during DNS resolving, connection failed")
             return self.URLinfo
         return self.URLinfo
 

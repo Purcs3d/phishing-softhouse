@@ -27,7 +27,6 @@ class URLinfo():
         self.file: str = None
         self.path: str = None
         self.fragment: str = None
-        self.query:str = None
         self.ip: str = None
         self.city: str = None
         self.country: str = None
@@ -37,6 +36,8 @@ class URLinfo():
         self.registered = None
         self.update = None
         self.active = None
+        self.certIncomplete = False
+        self.TLSversion = None
         self.errors: list = [] # the error messages collected during information gathering
 
     def getDNSinfo(self):

@@ -1,6 +1,6 @@
 import re
 from url_parser import get_url #pip install url-parser
-from URLinfo import URLinfo
+import src.URLCheck.URLinfo as URLinfo
 class stringParser():
     """
         The stringParser Class has one function in it
@@ -19,8 +19,8 @@ class stringParser():
         """
         try:
             parse = get_url(self.URLinfo.url)
-        except Exception as e:
-            self.URLinfo.errors.append(f"Error during STRING parsing: {e}")
+        except Exception:
+            self.URLinfo.errors.append(f"Error during STRING parsing. Couldnt recognise URL format.")
             return self.URLinfo
         self.URLinfo.www = parse.www
         self.URLinfo.protocol = parse.protocol
@@ -31,19 +31,18 @@ class stringParser():
         self.URLinfo.file = parse.file
         self.URLinfo.path = parse.path
         self.URLinfo.fragment = parse.fragment
-        self.URLinfo.query = parse.query
         return self.URLinfo
 
     def UnicodeCheker(self):
         for i in self.URLinfo.domain:
             try:
-                if(int(ord(i)) < 128 and int(ord(i)) > 0 ):    #Allow ascii table 128 
-                    pass 
+                if(int(ord(i)) < 128 and int(ord(i)) > 0 ):    #Allow ascii table 128
+                    pass
             except ValueError:
                 return True
         return False
 
     def port_specified(self):
-        if(self.URLinfo.domain == re.search(':[0-9]{1,5}$')):
+        if re.search(':[0-9]{1,5}$', self.URLinfo.topDomain):
             return True
         return False

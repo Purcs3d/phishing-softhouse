@@ -15,12 +15,11 @@ def CheckURL():
         URLinput = str(request.form['URL_input'])
         if validators.domain(URLinput) == True or validators.url(URLinput) == True:
             algorithmEngine = am.algorithmManager(URLinput) #algorithm object
-            output = "fishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
-            output += "<br> evaluation points:" + str(algorithmEngine.points)
-            output += algorithmEngine.createOutputString()
+            fishy = algorithmEngine.run()
+            output = algorithmEngine.createOutputString()
             flash(output)
         else:
             flash("Please enter a valid URL")
     except Exception as e:
-        flash(f"Error: {e}") 
+        flash(f"Error: {e}")
     return render_template("index.html")
