@@ -3,6 +3,7 @@
 # import src.algorithmManager as am
 import sys
 import src.algorithmManager as am
+import validators
 from  webApp import app
 from multiprocessing import Process
 
@@ -41,7 +42,7 @@ def main():
                         print(i, outputDict[i])
 
                 except Exception as e:
-                    print(f"Error: {e}\n")
+                    print(f"Error: {e}")
 
         else:
             print("Please don't, just use these two options:")
@@ -52,44 +53,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# from  webApp import app
-# from waitress import serve
-
-# def main():
-
-#     if len(sys.argv)<3 or len(sys.argv)>3:
-#         print("Fatal: argument amount invalid.")
-#         print(f"Usage:  py {sys.argv[0]} server run/close")
-#         sys.exit(1)
-#     else:
-#         arg1 = sys.argv[1]
-#         arg2 = sys.argv[2]
-#         if arg1 == "server" and arg2 == "run":
-#             serve(app, host='0.0.0.0', port=5000, threads=8)
-#             app.run(debug=True)
-
-#         if arg1 == "server" and arg2 == "close":
-#             app.close()
-
-
-# if __name__ == '__main__':
-#     main()
-
-#########################################
-# nohup python main.py > log.txt 2>&1 &
-# pm2 start main.py --interpreter python3
-# forever start -c python main.py
-
-#########################################
-########    Test Links           ########
-#########################################
-
-# Valid Links
-# https://www.google.com/
-# www.google.com
-# google.com
-
-# Internal Server Error 500
-# https://log1nkarlskronahem.se/kontakt/

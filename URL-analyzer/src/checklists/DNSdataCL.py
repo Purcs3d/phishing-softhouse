@@ -22,8 +22,8 @@ class DNSdataCL():
     def evaluateDomainCreation(self):
         """
             Evaluates the domain creation date,
-             • if its less than 2 days old -> very likely phishy
-             • if its less than 10 days old -> probably phishy
+             • if its less than 20 days old -> very likely phishy
+             • if its less than 365 days old -> probably phishy
         """
         if self.URLinfo.active == None: # if domain age request failed
             return
@@ -34,12 +34,15 @@ class DNSdataCL():
                 break
             else:
                 self.URLinfo.daysActive+=i
-        if(int(self.URLinfo.daysActive) < 2):
-            self.report.append("This domain is younger then two days")
-            self.points +=  50
-        elif(int(self.URLinfo.daysActive) < 10):
-            self.report.append("This domain is younger then ten days")
+        if(int(self.URLinfo.daysActive) < 20):
+            self.report.append("This domain is younger then 20 days")
+            self.points +=  100
+            return
+        elif(int(self.URLinfo.daysActive) < 365):
+            self.report.append("This domain is younger than a year")
+            self.points += 50
+            return
+        elif(int(self.URLinfo.daysActive) < 730):
+            self.report.append("This domain is younger than 2 years old")
             self.points += 20
-        elif(int(self.URLinfo.daysActive) > 365):
-            self.report.append("This site is over a year old")
-            self.points += 1
+            return
