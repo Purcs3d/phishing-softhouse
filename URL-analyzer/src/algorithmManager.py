@@ -109,40 +109,64 @@ class algorithmManager:
 
 
     def createOutputString(self):
-        if self.websiteOnline == False:
-            outputStr = "Website is not up or denied connection and cannot be classified."+ "<br>"
-            return outputStr
         if self.URLinWhitelist == True:
-            outputStr = "URL in exist whitelist and is not phishy."+ "<br>"
-            return outputStr
+            reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
+            return reportDict
+
         if self.URLinPreviousSearches == True:
-            outputStr = "URL recently searched; fetched report:"+ "<br>"
-            outputStr += self.DBhandlerObj.fetchPreviousSearchReport()
-            return outputStr
-        outputStr = "fishy?:" + str(self.fishy)
-        outputStr +=  "<br> evaluation points:" + str(self.points) + "<br>"
-        for message in self.report["URLstringCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["HTMLdataCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["DNSdataCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["SSLCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["DatabaseComparisonCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["URLreport"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["errors"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        return outputStr
+            reportDict['recent'] = {"URL recently searched; fetched report:"}
+            reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
+            return reportDict
+        reportDict = {}
+        reportDict[""]
+        
+        reportDict["Phishy"].append(self.fishy)
+        reportDict["Points"].append(self.points)
+        if(len(self.report["URLstringCL"]) > 0):
+            reportDict["URL string information"].append(self.report["URLstringCL"])
+        
+        if(len(self.report["HTMLdataCL"]) > 0):
+            reportDict["HTML data information"].append(self.report["HTMLdataCL"])
+        
+        if(len(self.report["DNSdataCL"]) > 0):
+            reportDict["DNS data information"].append(self.report["DNSdataCL"])
+        
+        if(len(self.report["DatabaseComparisonCL"]) > 0):
+            reportDict["Database comparison information"].append(self.report["DatabaseComparisonCL"])
+        
+        if(len(self.report["SSLCL"]) > 0):
+            reportDict["SSL information"].append(self.report["SSLCL"])
+        
+        if(len(self.report["errors"]) > 0):
+            reportDict["Errors"].append(self.report["errors"])
+        return reportDict
+
+
+
+
+        # outputDict = {}
+        # outputDict["fishy"] = self.fishy
+        # outputDict["points"] = self.points
+        # if(len(self.report["URLstringCL"]) > 0):
+        #     for message in self.report["URLstringCL"]:
+        #         outputDict["URLstringCL"] = message
+        # if(len(self.report["HTMLdataCL"]) > 0):
+        #     for message in self.report["HTMLdataCL"]:
+        #         outputDict["HTMLdataCL"] = message
+        # if(len(self.report["DNSdataCL"]) > 0):
+        #     for message in self.report["DNSdataCL"]:
+        #         outputDict["DNSdataCL"] = message
+        # if(len(self.report["DatabaseComparisonCL"]) > 0):
+        #     for message in self.report["DatabaseComparisonCL"]:
+        #         outputDict["DatabaseComparisonCL"] = message
+        # if(len(self.report["URLreport"]) > 0):
+        #     for message in self.report["URLreport"]:
+        #         outputDict["URLreport"] = message
+        # if(len(self.report["errors"]) > 0):
+        #     for message in self.report["errors"]:
+        #         outputDict["errors"] = message  
+
+        return reportDict
 
     def checkDB(self):
         """

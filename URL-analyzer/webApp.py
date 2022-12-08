@@ -17,9 +17,8 @@ def CheckURL():
             algorithmEngine = am.algorithmManager(URLinput) #algorithm object
             fishy = algorithmEngine.run()
             output = algorithmEngine.createOutputString()
-            flash(output)
         else:
             flash("Please enter a valid URL")
     except Exception as e:
         flash(f"Error: {e}")
-    return render_template("index.html")
+    return render_template("index.html", output=output)
