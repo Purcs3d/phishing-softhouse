@@ -3,7 +3,6 @@
 # import src.algorithmManager as am
 import sys
 import src.algorithmManager as am
-import validators
 from  webApp import app
 from multiprocessing import Process
 
@@ -35,8 +34,6 @@ def main():
                     output  = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
                     output += "\nEvaluation points:" + str(algorithmEngine.points)
                     outputDict = algorithmEngine.createOutputString()
-
-                    finalOutput = output.replace("<br>", "\n" )
                     
                     for i in outputDict:
                         print(i, outputDict[i])

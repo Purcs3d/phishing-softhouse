@@ -16,9 +16,10 @@ def CheckURL():
         URLinput = str(request.form['URL_input'])
 
         # return early if empty
-        if URLinput == "":
+        if URLinput.strip() == "":
             empty_url_str = "No URL was given"
-            return render_template("index.html",output = empty_url_str)
+            print(empty_url_str)
+            return render_template("index.html", output = empty_url_str)
             
 
         AMObj = am.algorithmManager(URLinput) 
