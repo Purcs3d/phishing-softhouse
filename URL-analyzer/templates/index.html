@@ -22,11 +22,13 @@
         <br>
         <input type="submit" value="Check" id="btn">
         <div class="report">
-            {% if output %}
-            <h2>Report:</h2>
-            {% for key in output %}
-            <h3> {{ key }} </h3> <p> {{ output[key] }} </p>
-            {% endfor %}
+            {% if output is mapping %}
+                <h2>Report:</h2>
+                {% for key in output %}
+                <h3> {{ key }} </h3> <p> {{ output[key] }} </p>
+                {% endfor %}
+            {% else %}
+                <p> {{output}} </p>
             {% endif %}
         </div>
     </form>

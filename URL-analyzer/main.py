@@ -25,22 +25,26 @@ def main():
 
             while URL != "q":
                 try:
-                    URL = input('\nEnter q to Quit:\n````````````````\nEnter your URL: ')
+                    URL = input('\nEnter q to Quit:\n\
+                                 ````````````````\n\
+                                 Enter your URL: ')
+
                     algorithmEngine = am.algorithmManager(URL) #algorithm object
 
-                    output = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
+                    output  = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
                     output += "\nEvaluation points:" + str(algorithmEngine.points)
                     outputDict = algorithmEngine.createOutputString()
 
                     finalOutput = output.replace("<br>", "\n" )
-                    #print(finalOutput)
+                    
                     for i in outputDict:
                         print(i, outputDict[i])
+
                 except Exception as e:
-                    print(f"Error: {e}")
+                    print(f"Error: {e}\n")
 
         else:
-            print("\nPlease don't, just use these two options:")
+            print("Please don't, just use these two options:")
             print(f"Usage1:  python {sys.argv[0]} server")
             print(f"Usage2:  python {sys.argv[0]} terminal\n")
 
