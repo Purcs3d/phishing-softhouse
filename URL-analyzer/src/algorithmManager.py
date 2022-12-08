@@ -109,63 +109,46 @@ class algorithmManager:
 
 
     def createOutputString(self):
-        if self.URLinWhitelist == True:
-            reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
-            return reportDict
+        # if self.URLinWhitelist == True:
+        #     reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
+        #     return reportDict
 
-        if self.URLinPreviousSearches == True:
-            reportDict['recent'] = {"URL recently searched; fetched report:"}
-            reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
-            return reportDict
-        reportDict = {}
-        
-        reportDict["Phishy"].append(self.fishy)
-        reportDict["Points"].append(self.points)
+        # if self.URLinPreviousSearches == True:
+        #     reportDict['recent'] = {"URL recently searched; fetched report:"}
+        #     reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
+        #     return reportDict
+
+        # reportDict = {}
+        # reportDict['Phishy'] = self.fishy
+        # reportDict['points'] = self.points
+        # if(self.report['URLstringCL'] != {}):
+        #     reportDict['URLstringCL'] = self.report['URLstringCL']
+
+
+        outputDict = {"Phishy":[], "Points":[], "URL string info":[], "HTMLdataCL":[], "DNS data info":[], "Database comparsion info":[], "SSL info":[]}
+        outputDict["Phishy"].append(self.fishy)
+        outputDict["Points"].append(self.points)
         if(len(self.report["URLstringCL"]) > 0):
-            reportDict["URL string information"].append(self.report["URLstringCL"])
-        
+            for message in self.report["URLstringCL"]:
+                outputDict["URL string info"].append(message)
         if(len(self.report["HTMLdataCL"]) > 0):
-            reportDict["HTML data information"].append(self.report["HTMLdataCL"])
-        
+            for message in self.report["HTML data info"]:
+                outputDict["HTMLdataCL"].append(message)
         if(len(self.report["DNSdataCL"]) > 0):
-            reportDict["DNS data information"].append(self.report["DNSdataCL"])
-        
+            for message in self.report["DNSdataCL"]:
+                outputDict["DNS data info"].append(message)
         if(len(self.report["DatabaseComparisonCL"]) > 0):
-            reportDict["Database comparison information"].append(self.report["DatabaseComparisonCL"])
-        
+            for message in self.report["DatabaseComparisonCL"]:
+                outputDict["Database comparsion info"].append(message)
         if(len(self.report["SSLCL"]) > 0):
-            reportDict["SSL information"].append(self.report["SSLCL"])
-        
-        if(len(self.report["errors"]) > 0):
-            reportDict["Errors"].append(self.report["errors"])
-        return reportDict
+            for message in self.report["SSLCL"]:
+                outputDict["SSL info"].append(message)
 
+        from pprint import pprint
+        pprint(outputDict)
+        return outputDict
 
-
-
-        # outputDict = {}
-        # outputDict["fishy"] = self.fishy
-        # outputDict["points"] = self.points
-        # if(len(self.report["URLstringCL"]) > 0):
-        #     for message in self.report["URLstringCL"]:
-        #         outputDict["URLstringCL"] = message
-        # if(len(self.report["HTMLdataCL"]) > 0):
-        #     for message in self.report["HTMLdataCL"]:
-        #         outputDict["HTMLdataCL"] = message
-        # if(len(self.report["DNSdataCL"]) > 0):
-        #     for message in self.report["DNSdataCL"]:
-        #         outputDict["DNSdataCL"] = message
-        # if(len(self.report["DatabaseComparisonCL"]) > 0):
-        #     for message in self.report["DatabaseComparisonCL"]:
-        #         outputDict["DatabaseComparisonCL"] = message
-        # if(len(self.report["URLreport"]) > 0):
-        #     for message in self.report["URLreport"]:
-        #         outputDict["URLreport"] = message
-        # if(len(self.report["errors"]) > 0):
-        #     for message in self.report["errors"]:
-        #         outputDict["errors"] = message  
-
-        return reportDict
+        return outputDict
 
     def checkDB(self):
         """

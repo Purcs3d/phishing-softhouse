@@ -20,18 +20,17 @@
         <input type="text" name="URL_input">
         <br>
         <input type="submit" value="Check" id="btn">
-        {% if output %}
-        <div class="report">
-            <h2>Report:</h2>
-            <br>
-            {% for item in output %}
-                <h3>{{ item }}</h3>
-                {% for val in output[item] %}
-                    <p>{{ val }}</p>
+        {% if outputDict %}
+        <div id="report">
+            <h2>Report</h2>
+            {% for entry in outputDict %}
+                <h3>{{ entry }}</h3>
+                {% for index in outputDict[entry] %}
+                <p>{{ index }}</p>
                 {% endfor %}
             {% endfor %}
-        </div>
         {% endif %}
+        </div>
     </form>
 </body>
 </html>

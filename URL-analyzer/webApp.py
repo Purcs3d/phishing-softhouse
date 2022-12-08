@@ -27,13 +27,13 @@ def CheckURL():
         AMObj.runEvaluations()
 
         # format output so HTML parsable
-        output = AMObj.createOutputString()
+        outputDict = AMObj.createOutputString()
 
     except Exception as e:  #if error
         flash(f"Error: {e}")    #flash error
         raise(e)
 
-    return render_template("index.html", output = output) #render template
+    return render_template("index.html", outputDict = outputDict) #render template
 
 def format_report(algo):
     """
