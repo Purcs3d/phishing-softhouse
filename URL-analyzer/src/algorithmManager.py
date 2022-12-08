@@ -90,57 +90,43 @@ class algorithmManager:
 
     def createOutputString(self):
         if self.URLinWhitelist == True:
-            outputDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
-            return outputDict
+            reportList['whiteList'] ={"URL in exist whitelist and is not phishy."}
+            return reportList
 
         if self.URLinPreviousSearches == True:
-            outputDict['recent'] = {"URL recently searched; fetched report:"}
-            outputDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
-            return outputDict
-        # outputStr = "fishy?:" + str(self.fishy)
-        # outputStr +=  "<br> evaluation points:" + str(self.points) + "<br>"
-        # for message in self.report["URLstringCL"]:
-        #     outputStr += message + "<br>"
-        # outputStr += "<br>"
-        # for message in self.report["HTMLdataCL"]:
-        #     outputStr += message + "<br>"
-        # outputStr += "<br>"
-        # for message in self.report["DNSdataCL"]:
-        #     outputStr += message + "<br>"
-        # outputStr += "<br>"
-        # for message in self.report["DatabaseComparisonCL"]:
-        #     outputStr += message + "<br>"
-        # outputStr += "<br>"
-        # for message in self.report["URLreport"]:
-        #     outputStr += message + "<br>"
-        # outputStr += "<br>"
-        # for message in self.report["errors"]:
-        #     outputStr += message + "<br>"
-        # outputStr += "<br>"
-        # return outputStr
+            reportList['recent'] = {"URL recently searched; fetched report:"}
+            reportList['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
+            return reportList
+        reportList = []
+        
+        for key in self.report:
+            reportList.append(self.report[key])
 
-        outputDict = {}
-        outputDict["fishy"] = self.fishy
-        outputDict["points"] = self.points
-        if(len(self.report["URLstringCL"]) > 0):
-            for message in self.report["URLstringCL"]:
-                outputDict["URLstringCL"] = message
-        if(len(self.report["HTMLdataCL"]) > 0):
-            for message in self.report["HTMLdataCL"]:
-                outputDict["HTMLdataCL"] = message
-        if(len(self.report["DNSdataCL"]) > 0):
-            for message in self.report["DNSdataCL"]:
-                outputDict["DNSdataCL"] = message
-        if(len(self.report["DatabaseComparisonCL"]) > 0):
-            for message in self.report["DatabaseComparisonCL"]:
-                outputDict["DatabaseComparisonCL"] = message
-        if(len(self.report["URLreport"]) > 0):
-            for message in self.report["URLreport"]:
-                outputDict["URLreport"] = message
-        if(len(self.report["errors"]) > 0):
-            for message in self.report["errors"]:
-                outputDict["errors"] = message  
-        return outputDict
+
+
+        # outputDict = {}
+        # outputDict["fishy"] = self.fishy
+        # outputDict["points"] = self.points
+        # if(len(self.report["URLstringCL"]) > 0):
+        #     for message in self.report["URLstringCL"]:
+        #         outputDict["URLstringCL"] = message
+        # if(len(self.report["HTMLdataCL"]) > 0):
+        #     for message in self.report["HTMLdataCL"]:
+        #         outputDict["HTMLdataCL"] = message
+        # if(len(self.report["DNSdataCL"]) > 0):
+        #     for message in self.report["DNSdataCL"]:
+        #         outputDict["DNSdataCL"] = message
+        # if(len(self.report["DatabaseComparisonCL"]) > 0):
+        #     for message in self.report["DatabaseComparisonCL"]:
+        #         outputDict["DatabaseComparisonCL"] = message
+        # if(len(self.report["URLreport"]) > 0):
+        #     for message in self.report["URLreport"]:
+        #         outputDict["URLreport"] = message
+        # if(len(self.report["errors"]) > 0):
+        #     for message in self.report["errors"]:
+        #         outputDict["errors"] = message  
+
+        return reportList
 
 
     def checkDB(self):

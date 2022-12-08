@@ -21,13 +21,15 @@
         <input type="text" name="URL_input">
         <br>
         <input type="submit" value="Check" id="btn">
-        <div class="report">
-            {% if output %}
+        {% if output %}
+        <div id="report">
             <h2>Report:</h2>
-            {% for key in output %}
-            <h3> {{ key }} </h3> <p> {{ output[key] }} </p>
+            {% for entry in output %}
+                {% for index in entry %}
+                    <p>{{ index }}</p>
+                {% endfor %}
             {% endfor %}
-            {% endif %}
+        {% endif %}
         </div>
     </form>
 </body>

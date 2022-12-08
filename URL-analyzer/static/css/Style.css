@@ -19,13 +19,16 @@ body
     padding-left: 4px;
     background: #63d297;
 }
-report{
+#report{
     color: #ffffff;
     font-family: 'Proxima Nova', sans-serif;
     font-style: italic;
     font-size: 1.5em;
     padding-left: 4px;
     border: #63d297;
+    border-style: solid;
+    margin: 100px;
+    border-radius: 5px;
 }
 p{
     color: #ffffff;
@@ -83,3 +86,11 @@ input:focus
 {
     background-color: #34b470;
 }
+
+div#loading {
+    width: 35px;
+    height: 35px;
+    display: none;
+    background: url(/static/loadingimage.gif) no-repeat;
+    cursor: wait;
+    }
