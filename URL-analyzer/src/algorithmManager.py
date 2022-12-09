@@ -158,7 +158,7 @@ class algorithmManager:
             for message in self.report["SSLCL"]:
                 outputDict["SSL info"].append(message)
 
-        from pprint import pprint
+        from pprint import pprint #TODO remove
         pprint(outputDict)
         return outputDict
 

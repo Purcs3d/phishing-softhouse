@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # import src.algorithmManager as am
-import sys
 import src.algorithmManager as am
 from  webApp import app
-from multiprocessing import Process
+
+#! PLEASE STOP USING MULTIPROCESS WHEN NOT NEEDED!!! IT HAS BUGS !#
 
 def main():
     # if len(sys.argv)<2 or len(sys.argv)>2:
@@ -18,7 +18,8 @@ def main():
     #     arg1 = sys.argv[1]
 
     #     if arg1 == "server" and len(sys.argv) == 2:
-            Process(target=app.run()).start()
+        app.run()
+            # Process(target=app.run()).start()
 
         # elif arg1 == "terminal" and len(sys.argv) == 2:
         #     URL = ""
