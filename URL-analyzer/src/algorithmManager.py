@@ -138,8 +138,8 @@ class algorithmManager:
         # init and add HTMLdataCL frontend parseable
         if self.report["HTMLdataCL"]:
             outputDict["HTML data info"] = []
-            for message in self.report["HTML data info"]:
-                outputDict["HTMLdataCL"].append(message)
+            for message in self.report["HTMLdataCL"]:
+                outputDict["HTML data info"].append(message)
 
         # init and add DNSdataCL frontend parseable
         if self.report["DNSdataCL"]:
@@ -162,7 +162,6 @@ class algorithmManager:
         pprint(outputDict)
         return outputDict
 
-        return outputDict
 
     def checkDB(self):
         """
