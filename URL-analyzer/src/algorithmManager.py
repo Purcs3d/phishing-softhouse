@@ -128,23 +128,32 @@ class algorithmManager:
         outputDict = {"Phishy":[], "Points":[]}
         outputDict["Phishy"].append(self.fishy)
         outputDict["Points"].append(self.points)
-        if(len(self.report["URLstringCL"]) > 0):
+
+        # init and add URLStringCL frontend parseable
+        if self.report["URLstringCL"]:
             outputDict["URL string info"] = []
             for message in self.report["URLstringCL"]:
                 outputDict["URL string info"].append(message)
-        if(len(self.report["HTMLdataCL"]) > 0):
+        
+        # init and add HTMLdataCL frontend parseable
+        if self.report["HTMLdataCL"]:
             outputDict["HTML data info"] = []
             for message in self.report["HTML data info"]:
                 outputDict["HTMLdataCL"].append(message)
-        if(len(self.report["DNSdataCL"]) > 0):
+
+        # init and add DNSdataCL frontend parseable
+        if self.report["DNSdataCL"]:
             outputDict["DNS data info"] = []
             for message in self.report["DNSdataCL"]:
                 outputDict["DNS data info"].append(message)
-        if(len(self.report["DatabaseComparisonCL"]) > 0):
+
+        # init and add DatabaseComparisonCL frontend parseable
+        if self.report["DatabaseComparisonCL"]:
             outputDict["Database comparsion info"] = []
             for message in self.report["DatabaseComparisonCL"]:
                 outputDict["Database comparsion info"].append(message)
-        if(len(self.report["SSLCL"]) > 0):
+
+        if self.report["SSLCL"]:
             outputDict["SSL info"] = []
             for message in self.report["SSLCL"]:
                 outputDict["SSL info"].append(message)
