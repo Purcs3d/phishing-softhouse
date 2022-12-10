@@ -124,7 +124,7 @@ class algorithmManager:
         # if(self.report['URLstringCL'] != {}):
         #     reportDict['URLstringCL'] = self.report['URLstringCL']
 
-
+        # init format dict
         outputDict = {"Phishy":[], "Points":[]}
         outputDict["Phishy"].append(self.fishy)
         outputDict["Points"].append(self.points)

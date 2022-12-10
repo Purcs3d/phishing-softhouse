@@ -33,7 +33,7 @@ def CheckURL():
         flash(f"Error: {e}")    #flash error
         raise(e)
 
-    return render_template("index.html", outputDict = outputDict) #render template
+    return render_template("index.html", output = outputDict) #render template
 
 def format_report(algo):
     """
