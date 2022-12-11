@@ -21,13 +21,14 @@
         {% if output %}
         <div id="report">
             <h2>Report:</h2>
-            {% for entry in outputDict %}
+            {% for entry in output %}
                 <h3>{{ entry }}</h3>
                 {% for index in output[entry] %}
-                <p>{{ index }}</p>
+                    <p>{{ index }}</p>
                 {% endfor %}
             {% endfor %}
-        
+        </div>
+        {% endif %}
         </form>
 </body>
 </html>
