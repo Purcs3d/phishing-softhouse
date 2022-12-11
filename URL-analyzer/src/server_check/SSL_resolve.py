@@ -49,7 +49,7 @@ class ssl_parser:
                         self.URLinfo.TLSversion = ssock.version()
                         return ssock.getpeercert()
 
-                    except Exception as err:
+                    except Exception:
                         self.URLinfo.errors.append("Error during SSL resolving, Couldnt get cert info")
                         return None
 
