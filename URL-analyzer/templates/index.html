@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">  
     <title>URL phishyness checker</title>   
@@ -11,7 +10,6 @@
         <span style="font-style: normal;"> BDE </span>      
     </div>
 </head>
-
 <body>
     <h1 class="Title"> URL phishyness checker </h1>
     <form action="check" method="post">        
@@ -20,23 +18,16 @@
         <input type="text" name="URL_input">
         <br>
         <input type="submit" value="Check" id="btn">
-        <!-- if output is formatted dict -->
-        {% if output is mapping%}
+        {% if output %}
         <div id="report">
-            <h2>Report</h2>
-            {% for entry in output %}
+            <h2>Report:</h2>
+            {% for entry in outputDict %}
                 <h3>{{ entry }}</h3>
                 {% for index in output[entry] %}
                 <p>{{ index }}</p>
                 {% endfor %}
             {% endfor %}
         
-        <!-- if output is undefined return value, print raw -->
-        {% else %}
-        <p> {{ output }} </p>
-
-        {% endif %}
-        </div>
-    </form>
+        </form>
 </body>
 </html>

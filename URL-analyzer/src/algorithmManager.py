@@ -74,6 +74,7 @@ class algorithmManager:
             self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
         return self.fishy
 
+
     def runEvaluations(self):
         """
             This function sends in the URLinfo to all checklists which runs evaluations on the different
@@ -86,8 +87,8 @@ class algorithmManager:
         """
 
         # create checklists
-        URLstringCLobj          = URLstringCL.URLstringCL(self.URLinfoObj)
-        HTMLdataCLobj           = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
+        URLstringCLobj = URLstringCL.URLstringCL(self.URLinfoObj)
+        HTMLdataCLobj = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
         DNSChecklistObj = DNSdataCL.DNSdataCL(self.URLinfoObj)
         SSLCLObj              = SSLCL.SSLCL(self.url, self.URLinfoObj)
@@ -101,28 +102,29 @@ class algorithmManager:
         self.points += SSLCLObj.runEvaluation()
 
         #gather their seperate reports
-        self.report["URLstringCL"]          = URLstringCLobj.report
-        self.report["HTMLdataCL"]           = HTMLdataCLobj.report
-        self.report["DNSdataCL"]            = DNSChecklistObj.report
+        self.report["URLstringCL"] = URLstringCLobj.report
+        self.report["HTMLdataCL"] = HTMLdataCLobj.report
+        self.report["DNSdataCL"] = DNSChecklistObj.report
         self.report["DatabaseComparisonCL"] = DatabaseComparisonCLobj.report
         self.report["SSLCL"]                = SSLCLObj.report
 
 
     def createOutputString(self):
-        # if self.URLinWhitelist == True:
-        #     reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
-        #     return reportDict
+        if self.URLinWhitelist == True:
+            reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
+            return reportDict
 
-        # if self.URLinPreviousSearches == True:
-        #     reportDict['recent'] = {"URL recently searched; fetched report:"}
-        #     reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
-        #     return reportDict
+        if self.URLinPreviousSearches == True:
+            reportDict['recent'] = {"URL recently searched; fetched report:"}
+            reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
+            return reportDict
 
-        # reportDict = {}
-        # reportDict['Phishy'] = self.fishy
-        # reportDict['points'] = self.points
-        # if(self.report['URLstringCL'] != {}):
-        #     reportDict['URLstringCL'] = self.report['URLstringCL']
+        reportDict = {}
+        reportDict['Phishy'] = self.fishy
+        reportDict['points'] = self.points
+        if(self.report['URLstringCL'] != {}):
+            reportDict['URLstringCL'] = self.report['URLstringCL']
+
 
         # init format dict
         outputDict = {"Phishy":[], "Points":[]}
@@ -157,9 +159,15 @@ class algorithmManager:
             outputDict["SSL info"] = []
             for message in self.report["SSLCL"]:
                 outputDict["SSL info"].append(message)
+        if(len(self.report["URLreport"]) > 0):
+            outputDict["URL info"] = []
+            for message in self.report["URLreport"]:
+                outputDict["URL info"].append(message)
+        if(len(self.report["errors"]) > 0):
+            outputDict["Errors"] = []
+            for message in self.report["errors"]:
+                outputDict["Errors"].append(message)
 
-        from pprint import pprint #TODO remove
-        pprint(outputDict)
         return outputDict
 
 
