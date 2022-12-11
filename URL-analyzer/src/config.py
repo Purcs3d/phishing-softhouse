@@ -7,7 +7,7 @@ HOST = '127.0.0.0' # aka localhost
 PORT = '5000' # aka localhost:5000
 
 """ DB configurations """
-DB ="URLanalyzer"
+DB ="postgres"
 DB_USERNAME ='postgres'
 DB_PASSWORD ='root'
 DB_HOST ='localhost'
