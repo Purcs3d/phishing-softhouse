@@ -32,7 +32,7 @@ def CheckURL():
         # check URL against algomanager
         AMObj = am.algorithmManager(URLinput) 
         AMObj.run()
-        AMObj.runEvaluations()
+        # AMObj.runEvaluations()
 
         # format algomanager output
         outputDict = AMObj.createOutputString()
