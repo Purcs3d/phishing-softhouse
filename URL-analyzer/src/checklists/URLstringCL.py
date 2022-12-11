@@ -21,7 +21,6 @@ class URLstringCL():
         """
             Run through all checks by calling on their functions
         """
-        self.protocolCheck()
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         self.containUnicode()
@@ -33,11 +32,6 @@ class URLstringCL():
         self.checkBadSubdomains()
 
         return self.points
-
-    def protocolCheck(self):
-        if self.URLinfo.protocol == "http":
-            self.points += 10
-            self.report.append("The URL:s protocol is HTTP")
 
     def checkSpecialChar(self):
         """
