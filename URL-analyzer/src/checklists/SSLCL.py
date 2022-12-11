@@ -67,11 +67,11 @@ class SSLCL:
 
     def check_version(self): #* auhtor: Totte Hansen *#
         outdated_ver_points = 60
-        outdated_ver_points_tls = 60
+        outdated_ver_points_tls = 50
         outdated_report_tls = "The website uses a depricated SSL/TSL version (less than TSLv1.3)"
         outdated_report = "The website uses a depricated SSL/TSL version (less than version 3)"
 
-        no_cert_points = 80
+        no_cert_points = 100
         no_cert_report = "The website lacks TSL/SSL ensurance"
 
         # no license could be fetched from site
@@ -100,7 +100,7 @@ class SSLCL:
         """
         Check who the licenser is, and if its same as host
         """
-        self_license_points = 25
+        self_license_points = 50
         self_license_report = "The certificate is self issued"
 
         try:
@@ -142,7 +142,7 @@ class SSLCL:
         """
         Check if the cert hostaddress matches the input address
         """
-        address_points = 50
+        address_points = 100
 
         # test if the returned cert supports the URL
         try:
@@ -177,7 +177,7 @@ class SSLCL:
         Check if the cert is valid between the "NOT before" and "NOT after" dates,
         and check if the cert has been revoked
         """
-        cert_timeout_points = 50
+        cert_timeout_points = 100
         cert_after_report   = "The certificate is out of date, therefore invalid"
         cert_before_report  = "The certificate is not allowed to be userd yet, therefore invalid"
 

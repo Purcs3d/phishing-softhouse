@@ -71,7 +71,7 @@ class DBhandler():
         """
         url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
         if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.":
-            sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}';"
+            sql_str = f"select * from URLanalyzer.whitelist where url LIKE '{self.URLinfo.domain}%' AND '%{self.URLinfo.topDomain}';"
         else:
             sql_str = f"select * from URLanalyzer.whitelist where url = '{url}';"
         self.cursor.execute(sql_str)

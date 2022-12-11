@@ -257,7 +257,6 @@ quinnbet.com
 rabot.dev
 rabots.org
 rakibhasaan.com
-rsci.app.link
 s.id
 s3-us-west-1.amazonaws.com
 s3-us-west-2.amazonaws.com

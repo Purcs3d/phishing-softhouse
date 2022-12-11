@@ -26,7 +26,7 @@ def test_accuracy(inFileName, outFolder):
 
     dateFile = open(os.path.join(outFolderName, "Date & Time"), mode='w', encoding='utf-8')
     dateFile.write(datetime.now().strftime('Date: %d/%m/%Y \nTime: %H:%M:%S'))
-    dateFile.close()
+
 
     wFileWrong = open(os.path.join(outFolderName, "failedURLs").replace("\\", "/"), mode='w', encoding='utf-8')
     wFileWrong.write("These are all of the URLs that the algorithm wrongly classified as not phishingLinks \n\n")
@@ -121,8 +121,9 @@ def test_accuracy(inFileName, outFolder):
 
     print(f"The algorithm accuracy was: {algorithmAccuracy}%")
 
-    # wAccuracyFile = open(os.path.join(outFolderName, f"Algorithm Accuracy: {algorithmAccuracy}%").replace("\\", "/"), mode='w', encoding='utf-8')
-    #
+    dateFile.write(f"Algorithm Accuracy: {algorithmAccuracy}%")
+     # = open(os.path.join(outFolderName, f"Algorithm Accuracy: {algorithmAccuracy}%").replace("\\", "/"), mode='w', encoding='utf-8')
+
     # wAccuracyFile.close()
     readFile.close()
     wFileWrong.close()
@@ -130,6 +131,7 @@ def test_accuracy(inFileName, outFolder):
     wFileSkipped.close()
     wFileRawURLWrong.close()
     wFileRawURLCorrect.close()
+    dateFile.close()
 
 
 test_accuracy("tests/phishingLinks.txt", "tests/resultFolder")

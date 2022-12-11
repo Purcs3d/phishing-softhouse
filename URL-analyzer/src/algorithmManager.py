@@ -137,7 +137,7 @@ class algorithmManager:
             outputDict["URL string info"] = []
             for message in self.report["URLstringCL"]:
                 outputDict["URL string info"].append(message)
-
+        
         # init and add HTMLdataCL frontend parseable
         if self.report["HTMLdataCL"]:
             outputDict["HTML data info"] = []
