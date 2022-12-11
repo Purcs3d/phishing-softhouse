@@ -1,0 +1,2708 @@
+These are all of the URLs that the algorithm correctly classified as phishingLinks 
+
+URL: https://ablerefrigeration.com/full-width-slider.slider/img/yh/jayx/update.html 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: ablerefrigeration 
+	topDomain: com 
+	dir: /full-width-slider.slider/img/yh/jayx/ 
+	file: update.html 
+	path: /full-width-slider.slider/img/yh/jayx/update.html 
+	fragment: None 
+	ip: 199.59.243.222 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2023-10-12 18:52:17 
+	registered: 2001-10-12 18:52:17 
+	update: 2022-10-31 17:36:12 
+	active: 7729 days, 19:07:07.535452 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 7729 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: https://acccountupgrade.my-free.website 
+Points: 220 
+
+The website generated the following report:
+		The URL contained the following bad keywords:free
+		The URL had a phishy length with 29 letters
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: https 
+	subDomain: acccountupgrade 
+	domain: my-free 
+	topDomain: website 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: https://accesoboamerica.webcindario.com/bankofamerica/login.php 
+Points: 130 
+
+The website generated the following report:
+		The URL had a phishy length with 29 letters
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: https 
+	subDomain: accesoboamerica 
+	domain: webcindario 
+	topDomain: com 
+	dir: /bankofamerica/ 
+	file: login.php 
+	path: /bankofamerica/login.php 
+	fragment: None 
+	ip: 5.57.226.200 
+	city: Madrid 
+	country: Spain 
+	region: Madrid 
+	favicon: False 
+	expires: 2023-02-28 12:45:04 
+	registered: 2001-02-28 12:45:04 
+	update: 2018-02-22 23:22:03 
+	active: 7956 days, 1:14:26.533054 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 7956 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: https://accountsecure00.webcindario.com/signOn/secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+Points: 170 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:0, 0
+		The URL had a phishy length with 29 letters
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: https 
+	subDomain: accountsecure00 
+	domain: webcindario 
+	topDomain: com 
+	dir: /signOn/ 
+	file: secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+	path: /signOn/secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+	fragment: None 
+	ip: 5.57.226.200 
+	city: Madrid 
+	country: Spain 
+	region: Madrid 
+	favicon: False 
+	expires: 2023-02-28 12:45:04 
+	registered: 2001-02-28 12:45:04 
+	update: 2018-02-22 23:22:03 
+	active: 7956 days, 1:14:29.851208 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 7956 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://53241.cc 
+Points: 200 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:5, 3, 2, 4, 1
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		This domain is younger than a year
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 53241 
+	topDomain: cc 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 172.67.202.17 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2024-01-10 07:11:13 
+	registered: 2022-01-10 07:11:13 
+	update: 2022-12-05 08:00:58 
+	active: 335 days, 6:48:28.714301 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 335 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://565caipiao.com 
+Points: 190 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:5, 6, 5
+		This domain is younger than a year
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 565caipiao 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 103.63.2.155 
+	city: None 
+	country: Hong Kong 
+	region: None 
+	favicon: True 
+	expires: 2023-01-27 10:14:31 
+	registered: 2022-01-27 10:14:31 
+	update: 2022-01-27 10:14:32 
+	active: 318 days, 3:45:17.674906 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 318 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://623112j4j3.codesandbox.io/bigshuju 
+Points: 110 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:6, 2, 3, 1, 1, 2, 4, 3
+		The URL contained >3 numbers in the subdomain.
+
+	www: None 
+	protocol: http 
+	subDomain: 623112j4j3 
+	domain: codesandbox 
+	topDomain: io 
+	dir: None 
+	file: bigshuju 
+	path: /bigshuju 
+	fragment: None 
+	ip: 104.18.6.114 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2029-11-23 16:45:43 
+	registered: 2016-11-23 16:45:43 
+	update: 2020-10-26 09:50:38 
+	active: 2208 days, 21:14:19.351762 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 2208 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://623112j4j3.codesandbox.io/fzn 
+Points: 110 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:6, 2, 3, 1, 1, 2, 4, 3
+		The URL contained >3 numbers in the subdomain.
+
+	www: None 
+	protocol: http 
+	subDomain: 623112j4j3 
+	domain: codesandbox 
+	topDomain: io 
+	dir: None 
+	file: fzn 
+	path: /fzn 
+	fragment: None 
+	ip: 104.18.6.114 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2029-11-23 16:45:43 
+	registered: 2016-11-23 16:45:43 
+	update: 2020-10-26 09:50:38 
+	active: 2208 days, 21:14:37.612439 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 2208 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://638308.com 
+Points: 300 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:6, 3, 8, 3, 0, 8
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		This domain is younger than a year
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 638308 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 155.235.92.227 
+	city: None 
+	country: South Africa 
+	region: None 
+	favicon: False 
+	expires: 2023-05-10 17:28:26 
+	registered: 2022-05-10 17:28:26 
+	update: 2022-05-10 17:28:26 
+	active: 214 days, 20:32:08.998210 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 214 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://76843.com/2018/zh017.htm 
+Points: 160 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:7, 6, 8, 4, 3
+		The URL contained >3 numbers in the subdomain.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 76843 
+	topDomain: com 
+	dir: /2018/ 
+	file: zh017.htm 
+	path: /2018/zh017.htm 
+	fragment: None 
+	ip: 18.166.27.250 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2023-01-11 10:59:27 
+	registered: 2013-01-11 10:59:27 
+	update: 2022-10-22 07:15:20 
+	active: 3621 days, 3:01:21.428827 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 3621 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://911men.ru/NetbankingBanreservas/Personas/Login.htm 
+Points: 210 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:9, 1, 1
+		The URL contained the following bad topdomain: ru
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 911men 
+	topDomain: ru 
+	dir: /NetbankingBanreservas/Personas/ 
+	file: Login.htm 
+	path: /NetbankingBanreservas/Personas/Login.htm 
+	fragment: None 
+	ip: 194.85.61.76 
+	city: Moscow 
+	country: Russia 
+	region: Moscow 
+	favicon: False 
+	expires: 2022-11-09 14:09:15 
+	registered: 2017-11-09 14:09:15 
+	update: None 
+	active: 1857 days, 23:51:41.982117 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1857 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://9skis.com/wp-includes/logn/appv/pl/cusm/myaccount/signin/?country.x=NL&amp;locale.x=en_NL 
+Points: 230 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:9
+		The website lacks favicon.
+		This domain is younger than a year
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 9skis 
+	topDomain: com 
+	dir: /wp-includes/logn/appv/pl/cusm/myaccount/signin/ 
+	file: None 
+	path: /wp-includes/logn/appv/pl/cusm/myaccount/signin/ 
+	fragment: None 
+	ip: 23.19.128.53 
+	city: Seattle 
+	country: United States 
+	region: Washington 
+	favicon: False 
+	expires: 2023-04-11 03:41:22 
+	registered: 2022-04-11 03:41:22 
+	update: 2022-04-11 03:41:22 
+	active: 244 days, 10:19:54.815114 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 244 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://9skis.com/wp-includes/logn/appv/pl/cusm/myaccount/signin/?country.x=NL&locale.x=en_NL 
+Points: 230 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:9
+		The website lacks favicon.
+		This domain is younger than a year
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 9skis 
+	topDomain: com 
+	dir: /wp-includes/logn/appv/pl/cusm/myaccount/signin/ 
+	file: None 
+	path: /wp-includes/logn/appv/pl/cusm/myaccount/signin/ 
+	fragment: None 
+	ip: 23.19.128.53 
+	city: Seattle 
+	country: United States 
+	region: Washington 
+	favicon: False 
+	expires: 2023-04-11 03:41:22 
+	registered: 2022-04-11 03:41:22 
+	update: 2022-04-11 03:41:22 
+	active: 244 days, 10:20:07.348652 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 244 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://a0ga.byethost24.com/amzon 
+Points: 180 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:0, 2, 4
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: a0ga 
+	domain: byethost24 
+	topDomain: com 
+	dir: None 
+	file: amzon 
+	path: /amzon 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://aaaaa.the4orce.net 
+Points: 180 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:4
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: aaaaa 
+	domain: the4orce 
+	topDomain: net 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 64.136.248.204 
+	city: Kalamazoo 
+	country: United States 
+	region: Michigan 
+	favicon: False 
+	expires: 2023-02-28 16:21:07 
+	registered: 2009-02-28 16:21:07 
+	update: 2022-09-05 20:35:47 
+	active: 5033 days, 21:40:36.521756 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5033 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://abeshalinks.com/images/coffee/780124435960781206685369172031169852364079820/rapidly/cs/customer_center/318/myaccount/settings 
+Points: 190 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger than a year
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: abeshalinks 
+	topDomain: com 
+	dir: /images/coffee/780124435960781206685369172031169852364079820/rapidly/cs/customer_center/318/myaccount/ 
+	file: settings 
+	path: /images/coffee/780124435960781206685369172031169852364079820/rapidly/cs/customer_center/318/myaccount/settings 
+	fragment: None 
+	ip: 172.120.69.18 
+	city: San Jose 
+	country: United States 
+	region: California 
+	favicon: False 
+	expires: 2023-02-25 19:04:02 
+	registered: 2022-02-25 19:04:02 
+	update: 2022-02-25 19:04:02 
+	active: 288 days, 18:57:47.809283 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 288 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://ablerefrigeration.com/full-width-slider.slider/img/yh/jayx/update.html 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ablerefrigeration 
+	topDomain: com 
+	dir: /full-width-slider.slider/img/yh/jayx/ 
+	file: update.html 
+	path: /full-width-slider.slider/img/yh/jayx/update.html 
+	fragment: None 
+	ip: 199.59.243.222 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2023-10-12 18:52:17 
+	registered: 2001-10-12 18:52:17 
+	update: 2022-10-31 17:36:12 
+	active: 7729 days, 19:09:39.837893 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 7729 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://acccountupgrade.my-free.website 
+Points: 220 
+
+The website generated the following report:
+		The URL contained the following bad keywords:free
+		The URL had a phishy length with 29 letters
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: acccountupgrade 
+	domain: my-free 
+	topDomain: website 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://accesoboamerica.webcindario.com/bankofamerica/login.php 
+Points: 130 
+
+The website generated the following report:
+		The URL had a phishy length with 29 letters
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: accesoboamerica 
+	domain: webcindario 
+	topDomain: com 
+	dir: /bankofamerica/ 
+	file: login.php 
+	path: /bankofamerica/login.php 
+	fragment: None 
+	ip: 5.57.226.200 
+	city: Madrid 
+	country: Spain 
+	region: Madrid 
+	favicon: False 
+	expires: 2023-02-28 12:45:04 
+	registered: 2001-02-28 12:45:04 
+	update: 2018-02-22 23:22:03 
+	active: 7956 days, 1:16:57.285390 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 7956 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://accountsecure00.webcindario.com/signOn/secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+Points: 170 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:0, 0
+		The URL had a phishy length with 29 letters
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: accountsecure00 
+	domain: webcindario 
+	topDomain: com 
+	dir: /signOn/ 
+	file: secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+	path: /signOn/secfrm2formOnScreen.toenterSiteIndicator-GIAMW&request_local-es-us&source-siso&forFSG7264519.html 
+	fragment: None 
+	ip: 5.57.226.200 
+	city: Madrid 
+	country: Spain 
+	region: Madrid 
+	favicon: False 
+	expires: 2023-02-28 12:45:04 
+	registered: 2001-02-28 12:45:04 
+	update: 2018-02-22 23:22:03 
+	active: 7956 days, 1:17:00.258919 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 7956 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://account-serv.freeweb.pk 
+Points: 220 
+
+The website generated the following report:
+		The URL contained the following bad keywords:free
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: account-serv 
+	domain: freeweb 
+	topDomain: pk 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 185.27.134.46 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://accurateofes.com/potil/yalert.html 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: accurateofes 
+	topDomain: com 
+	dir: /potil/ 
+	file: yalert.html 
+	path: /potil/yalert.html 
+	fragment: None 
+	ip: 184.168.224.162 
+	city: Scottsdale 
+	country: United States 
+	region: Arizona 
+	favicon: False 
+	expires: 2024-12-09 10:15:37 
+	registered: 2014-12-09 10:15:37 
+	update: 2022-12-10 11:11:32 
+	active: 2924 days, 3:46:35.421123 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2924 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://activaet-eset.com 
+Points: 110 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger than 2 years old
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: activaet-eset 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 103.224.212.219 
+	city: None 
+	country: Australia 
+	region: None 
+	favicon: False 
+	expires: 2023-04-30 17:02:46 
+	registered: 2021-04-30 17:02:46 
+	update: 2022-07-24 11:02:41 
+	active: 589 days, 20:59:33.400648 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 589 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://ad-file.com/tags/Chase 
+Points: 110 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger than 2 years old
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ad-file 
+	topDomain: com 
+	dir: /tags/ 
+	file: Chase 
+	path: /tags/Chase 
+	fragment: None 
+	ip: 23.82.12.36 
+	city: Phoenix 
+	country: United States 
+	region: Arizona 
+	favicon: False 
+	expires: 2023-01-13 19:28:21 
+	registered: 2021-01-13 19:28:21 
+	update: 2022-01-26 11:42:11 
+	active: 696 days, 18:34:04.118891 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 696 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://adh.facebook.com-chojmzglgi.chefaaronmaree.com 
+Points: 200 
+
+The website generated the following report:
+		The URL had a phishy length with 44 letters
+		The URL have an unusual amount of 3 subdomains 
+		The URL contained the following bad subdomains: facebook
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: adh.facebook.com-chojmzglgi 
+	domain: chefaaronmaree 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 66.23.235.195 
+	city: Secaucus 
+	country: United States 
+	region: New Jersey 
+	favicon: False 
+	expires: 2023-06-27 13:42:34 
+	registered: 2019-06-27 13:42:34 
+	update: 2022-06-23 03:28:03 
+	active: 1263 days, 0:19:55.299978 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1263 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://adh.facebook.com-kubcruowkp.chefaaronmaree.com 
+Points: 200 
+
+The website generated the following report:
+		The URL had a phishy length with 44 letters
+		The URL have an unusual amount of 3 subdomains 
+		The URL contained the following bad subdomains: facebook
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: adh.facebook.com-kubcruowkp 
+	domain: chefaaronmaree 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 66.23.235.195 
+	city: Secaucus 
+	country: United States 
+	region: New Jersey 
+	favicon: False 
+	expires: 2023-06-27 13:42:34 
+	registered: 2019-06-27 13:42:34 
+	update: 2022-06-23 03:28:03 
+	active: 1263 days, 0:19:59.389636 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1263 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://adminn.creatorlink.net 
+Points: 120 
+
+The website generated the following report:
+		The URL contained the following bad keywords:tor
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: adminn 
+	domain: creatorlink 
+	topDomain: net 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 182.162.106.34 
+	city: None 
+	country: South Korea 
+	region: None 
+	favicon: False 
+	expires: 2024-04-04 02:17:28 
+	registered: 2014-04-04 02:17:28 
+	update: 2022-11-21 00:04:39 
+	active: 3173 days, 11:45:12.051271 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 3173 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://adozionegatti.byethost7.com/facebook.html 
+Points: 180 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:7
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: adozionegatti 
+	domain: byethost7 
+	topDomain: com 
+	dir: None 
+	file: facebook.html 
+	path: /facebook.html 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://advancedhose.co.uk/Review/Validation/index.php 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger than a year
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: advancedhose 
+	topDomain: co.uk 
+	dir: /Review/Validation/ 
+	file: index.php 
+	path: /Review/Validation/index.php 
+	fragment: None 
+	ip: 81.17.29.147 
+	city: Cheserex 
+	country: Switzerland 
+	region: Vaud 
+	favicon: False 
+	expires: 2023-04-20 00:00:00 
+	registered: 2022-04-20 00:00:00 
+	update: 2022-11-17 00:00:00 
+	active: 235 days, 14:02:47.662384 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 235 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://agentlerebellion.com/wp-content/themes/twentynineteen/js/inoi/receipt 
+Points: 190 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger than a year
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: agentlerebellion 
+	topDomain: com 
+	dir: /wp-content/themes/twentynineteen/js/inoi/ 
+	file: receipt 
+	path: /wp-content/themes/twentynineteen/js/inoi/receipt 
+	fragment: None 
+	ip: 156.238.104.88 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2024-02-12 19:13:39 
+	registered: 2022-02-12 19:13:39 
+	update: 2022-10-03 05:53:37 
+	active: 301 days, 18:49:13.136902 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 301 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://albel.intnet.mu/File/download_doc.php 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: albel 
+	domain: intnet 
+	topDomain: mu 
+	dir: /File/ 
+	file: download_doc.php 
+	path: /File/download_doc.php 
+	fragment: None 
+	ip: 202.123.2.7 
+	city: None 
+	country: Mauritius 
+	region: None 
+	favicon: False 
+	expires: 2025-07-29 19:00:00 
+	registered: 1996-02-19 13:00:00 
+	update: 2022-11-30 19:08:09.790000 
+	active: 9792 days, 1:03:07.268104 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 9792 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://albel.intnet.mu/File/download_doc.php?l=_JeHFUq_VJOXJoGYDw_OXK0K0QWHtoGYDw_Product-UserID&amp;userid_JeHJOXK0IDw_JOXK0IDD&amp;userid= 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: albel 
+	domain: intnet 
+	topDomain: mu 
+	dir: /File/ 
+	file: download_doc.php 
+	path: /File/download_doc.php 
+	fragment: None 
+	ip: 202.123.2.7 
+	city: None 
+	country: Mauritius 
+	region: None 
+	favicon: False 
+	expires: 2025-07-29 19:00:00 
+	registered: 1996-02-19 13:00:00 
+	update: 2022-11-30 19:08:09.790000 
+	active: 9792 days, 1:03:22.226955 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 9792 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://albel.intnet.mu/File/file_doc.php?l=_JeHFUq_VJOXJoGYDw_OXK0K0QWHtoGYDw_Product-UserID 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: albel 
+	domain: intnet 
+	topDomain: mu 
+	dir: /File/ 
+	file: file_doc.php 
+	path: /File/file_doc.php 
+	fragment: None 
+	ip: 202.123.2.7 
+	city: None 
+	country: Mauritius 
+	region: None 
+	favicon: False 
+	expires: 2025-07-29 19:00:00 
+	registered: 1996-02-19 13:00:00 
+	update: 2022-11-30 19:08:09.790000 
+	active: 9792 days, 1:03:37.115029 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 9792 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://albel.intnet.mu/File/file_doc.php?l=_JeHFUq_VJOXJoGYDw_OXK0K0QWHtoGYDw_Product-UserID&userid_JeHJOXK0IDw_JOXK0IDD&userid= 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: albel 
+	domain: intnet 
+	topDomain: mu 
+	dir: /File/ 
+	file: file_doc.php 
+	path: /File/file_doc.php 
+	fragment: None 
+	ip: 202.123.2.7 
+	city: None 
+	country: Mauritius 
+	region: None 
+	favicon: False 
+	expires: 2025-07-29 19:00:00 
+	registered: 1996-02-19 13:00:00 
+	update: 2022-11-30 19:08:09.790000 
+	active: 9792 days, 1:03:51.906642 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 9792 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alignedpeople.com.au/connectnow/Ourtime/ourtime.php?616c69676e656470656f706c652e636f6d2e6175 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alignedpeople 
+	topDomain: com.au 
+	dir: /connectnow/Ourtime/ 
+	file: ourtime.php 
+	path: /connectnow/Ourtime/ourtime.php 
+	fragment: None 
+	ip: 202.124.241.178 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: 2022-05-31 06:27:19 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alldadeair.com/.well-known/Review/account_support/customer_center/customer-IDPP00C114/myaccount/signin 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alldadeair 
+	topDomain: com 
+	dir: /.well-known/Review/account_support/customer_center/customer-IDPP00C114/myaccount/ 
+	file: signin 
+	path: /.well-known/Review/account_support/customer_center/customer-IDPP00C114/myaccount/signin 
+	fragment: None 
+	ip: 3.94.41.167 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2024-07-24 11:59:59 
+	registered: 2005-01-30 22:47:41 
+	update: 2022-08-27 14:53:24 
+	active: 6523 days, 15:16:40.600379 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 6523 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://allegrl.pl 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: allegrl 
+	topDomain: pl 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 185.53.178.10 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: False 
+	expires: 2023-11-29 20:29:25 
+	registered: 2020-11-29 20:29:25 
+	update: 2022-10-28 15:01:04 
+	active: 741 days, 17:35:16.648565 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 741 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alnaamia.com/Portal/recuperacion 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger than a year
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alnaamia 
+	topDomain: com 
+	dir: /Portal/ 
+	file: recuperacion 
+	path: /Portal/recuperacion 
+	fragment: None 
+	ip: 173.208.96.46 
+	city: Chicago 
+	country: United States 
+	region: Illinois 
+	favicon: False 
+	expires: 2023-06-11 18:20:56 
+	registered: 2022-06-11 18:20:56 
+	update: 2022-10-21 09:34:38 
+	active: 182 days, 19:43:49.291302 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 182 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://alshfa.com/http:/www-service/orange/remboursement/dossier1203994 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alshfa 
+	topDomain: com 
+	dir: /http:/www-service/orange/remboursement/ 
+	file: dossier1203994 
+	path: /http:/www-service/orange/remboursement/dossier1203994 
+	fragment: None 
+	ip: 3.140.13.188 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2024-12-01 18:51:07 
+	registered: 2010-12-01 18:51:07 
+	update: 2022-08-26 08:24:12 
+	active: 4392 days, 19:13:42.958789 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4392 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alutechglass.com/query/error/baalhabib/accDetails.php?r=2EE7C64B-C228-F24A-F1B8-D5D35F5A4D43 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alutechglass 
+	topDomain: com 
+	dir: /query/error/baalhabib/ 
+	file: accDetails.php 
+	path: /query/error/baalhabib/accDetails.php 
+	fragment: None 
+	ip: 198.23.156.170 
+	city: Buffalo 
+	country: United States 
+	region: New York 
+	favicon: False 
+	expires: 2023-10-18 18:23:04 
+	registered: 2013-10-18 18:23:04 
+	update: 2022-10-10 16:55:39 
+	active: 3340 days, 19:42:06.766956 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 3340 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://amedicaltourism.com/bbb/gs_gen/gs67c6cce38d489c23707b9bd6bafebdf3/?dispatch=D8u07F8c4tlg0VQfiFpMoqSkWi1phRHVZcW6R4iWyEczz2OSHe 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amedicaltourism 
+	topDomain: com 
+	dir: /bbb/gs_gen/gs67c6cce38d489c23707b9bd6bafebdf3/ 
+	file: None 
+	path: /bbb/gs_gen/gs67c6cce38d489c23707b9bd6bafebdf3/ 
+	fragment: None 
+	ip: 3.140.13.188 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2024-10-04 06:28:17 
+	registered: 2016-10-04 06:28:17 
+	update: 2022-08-25 08:02:31 
+	active: 2259 days, 7:36:58.385343 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2259 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://ameydocumentsharingplatform.indiatoursntravels.com/hedsonrail/office.php 
+Points: 180 
+
+The website generated the following report:
+		The URL had a phishy length with 48 letters
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: ameydocumentsharingplatform 
+	domain: indiatoursntravels 
+	topDomain: com 
+	dir: /hedsonrail/ 
+	file: office.php 
+	path: /hedsonrail/office.php 
+	fragment: None 
+	ip: 204.11.56.37 
+	city: None 
+	country: British Virgin Islands 
+	region: None 
+	favicon: False 
+	expires: 2023-11-13 19:09:43 
+	registered: 2020-11-13 19:09:43 
+	update: 2022-11-16 08:46:31 
+	active: 757 days, 18:55:57.013104 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 757 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://anorris.co.uk/boainfo/be0cfb981379ba57b380e00a3d1ecd09 
+Points: 190 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger than a year
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: anorris 
+	topDomain: co.uk 
+	dir: /boainfo/ 
+	file: be0cfb981379ba57b380e00a3d1ecd09 
+	path: /boainfo/be0cfb981379ba57b380e00a3d1ecd09 
+	fragment: None 
+	ip: 212.32.237.90 
+	city: Hoofddorp 
+	country: Netherlands 
+	region: North Holland 
+	favicon: False 
+	expires: 2023-04-29 00:00:00 
+	registered: 2022-04-29 00:00:00 
+	update: 2022-08-14 00:00:00 
+	active: 226 days, 14:05:43.644537 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 226 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://aolmailz.com 
+Points: 150 
+
+The website generated the following report:
+		This domain is younger than a year
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: aolmailz 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 34.98.99.30 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2023-11-04 19:10:36 
+	registered: 2022-11-04 19:10:36 
+	update: 2022-11-09 04:49:23 
+	active: 36 days, 18:55:09.346955 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 36 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://app.form2pay.com/publish/publish_form/205054 
+Points: 180 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:2
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: app 
+	domain: form2pay 
+	topDomain: com 
+	dir: /publish/publish_form/ 
+	file: 205054 
+	path: /publish/publish_form/205054 
+	fragment: None 
+	ip: 23.254.202.215 
+	city: Seattle 
+	country: United States 
+	region: Washington 
+	favicon: False 
+	expires: 2023-08-12 13:11:29 
+	registered: 2013-08-12 13:11:29 
+	update: 2022-07-28 17:01:43 
+	active: 3408 days, 0:54:40.240901 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 3408 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://annemclellan.com/bbb/login.php?cmd=login_submit&id=2e324b9f8d4835b939033b97dff4260f2e324b9f8d4835b939033b97dff4260f&session=2e324b9f8d4835b939033b97dff4260f2e324b9f8d4835b939033b97dff4260f 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: annemclellan 
+	topDomain: com 
+	dir: /bbb/ 
+	file: login.php 
+	path: /bbb/login.php 
+	fragment: None 
+	ip: 23.111.71.200 
+	city: Toronto 
+	country: Canada 
+	region: Ontario 
+	favicon: False 
+	expires: 2023-04-29 17:51:59 
+	registered: 2002-04-29 17:51:59 
+	update: 2022-03-31 04:27:57 
+	active: 7530 days, 20:14:15.422892 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 7530 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://annemclellan.com/bbb/surf2.php 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: annemclellan 
+	topDomain: com 
+	dir: /bbb/ 
+	file: surf2.php 
+	path: /bbb/surf2.php 
+	fragment: None 
+	ip: 23.111.71.200 
+	city: Toronto 
+	country: Canada 
+	region: Ontario 
+	favicon: False 
+	expires: 2023-04-29 17:51:59 
+	registered: 2002-04-29 17:51:59 
+	update: 2022-03-31 04:27:57 
+	active: 7530 days, 20:14:19.823138 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 7530 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://60019.it/18535/convenzione-tra-regione-marche-e-poste-italiane 
+Points: 110 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:6, 0, 0, 1, 9
+		The URL contained >3 numbers in the subdomain.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 60019 
+	topDomain: it 
+	dir: /18535/ 
+	file: convenzione-tra-regione-marche-e-poste-italiane 
+	path: /18535/convenzione-tra-regione-marche-e-poste-italiane 
+	fragment: None 
+	ip: 62.149.225.66 
+	city: Arezzo 
+	country: Italy 
+	region: Province of Arezzo 
+	favicon: True 
+	expires: 2023-06-18 00:00:00 
+	registered: 2002-04-03 00:00:00 
+	update: 2022-07-04 00:47:03 
+	active: 7557 days, 14:06:26.432381 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 7557 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://100like.org 
+Points: 140 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:1, 0, 0
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 100like 
+	topDomain: org 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 34.98.99.30 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2023-11-13 07:19:48 
+	registered: 2017-11-13 07:19:48 
+	update: 2022-11-26 02:14:15 
+	active: 1854 days, 6:46:44.804515 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 1854 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://102312.getiphonexhere.com 
+Points: 250 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:1, 0, 2, 3, 1, 2
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: 102312 
+	domain: getiphonexhere 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 50.28.59.161 
+	city: Lansing 
+	country: United States 
+	region: Michigan 
+	favicon: False 
+	expires: 2023-02-18 19:40:47 
+	registered: 2018-02-18 19:40:47 
+	update: 2022-11-15 17:38:20 
+	active: 1756 days, 18:25:48.226184 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1756 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://153284594738391.statictab.com/2506080? 
+Points: 240 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:1, 5, 3, 2, 8, 4, 5, 9, 4, 7, 3, 8, 3, 9, 1
+		The URL contained >3 numbers in the subdomain.
+		The URL had a phishy length with 27 letters
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: 153284594738391 
+	domain: statictab 
+	topDomain: com 
+	dir: None 
+	file: 2506080 
+	path: /2506080 
+	fragment: None 
+	ip: 3.222.143.197 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2023-04-25 18:42:28 
+	registered: 2011-04-25 18:42:28 
+	update: 2021-10-27 00:49:07 
+	active: 4247 days, 19:24:11.140962 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 4247 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://153284594738391.statictab.com/2506080?signed_request=vLSGIn9-mAPLo6LyP7j3KlFSRK21rVpIY43KPlBTDWI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTQxNjU0NDIzNywicGFnZSI6eyJpZCI6IjQ2MDk4ODc5NzI3ODA2NyIsImFkbWluIjpmYWxzZSwibGlrZWQiOnRydWV9LCJ1c 
+Points: 240 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:1, 5, 3, 2, 8, 4, 5, 9, 4, 7, 3, 8, 3, 9, 1
+		The URL contained >3 numbers in the subdomain.
+		The URL had a phishy length with 27 letters
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: 153284594738391 
+	domain: statictab 
+	topDomain: com 
+	dir: None 
+	file: 2506080 
+	path: /2506080 
+	fragment: None 
+	ip: 3.222.143.197 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2023-04-25 18:42:28 
+	registered: 2011-04-25 18:42:28 
+	update: 2021-10-27 00:49:07 
+	active: 4247 days, 19:24:14.881780 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 4247 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://247sunbet.com 
+Points: 140 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:2, 4, 7
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 247sunbet 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 23.19.164.130 
+	city: Phoenix 
+	country: United States 
+	region: Arizona 
+	favicon: True 
+	expires: 2023-12-14 17:38:41 
+	registered: 2014-12-14 17:38:41 
+	update: 2022-10-24 04:25:39 
+	active: 2918 days, 20:28:09.915138 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2918 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://280333.com/bbs/bbs27.htm 
+Points: 210 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:2, 8, 0, 3, 3, 3
+		The URL contained >3 numbers in the subdomain.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 280333 
+	topDomain: com 
+	dir: /bbs/ 
+	file: bbs27.htm 
+	path: /bbs/bbs27.htm 
+	fragment: None 
+	ip: 194.124.245.204 
+	city: None 
+	country: Switzerland 
+	region: None 
+	favicon: True 
+	expires: 2024-06-30 04:48:12 
+	registered: 2011-06-30 04:48:12 
+	update: 2021-10-25 12:48:12 
+	active: 4182 days, 9:18:56.498544 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4182 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?amp 
+Points: 250 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1, 2
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: 2007-04-25 03:53:43 
+	update: 2022-04-11 02:54:03 
+	active: 5709 days, 10:13:39.210934 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5709 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=1976cb6f0d9ccf78f5fb8ab5278cc2791976cb6f0d9ccf78f5fb8ab5278cc279&amp;session=1976cb6f0d9ccf78f5fb8ab5278cc2791976cb6f0d9ccf78f5fb8ab5278cc279 
+Points: 250 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1, 2
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: 2007-04-25 03:53:43 
+	update: 2022-04-11 02:54:03 
+	active: 5709 days, 10:13:48.148160 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5709 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=4c7ceee16436a463f48625b81372aa8f4c7ceee16436a463f48625b81372aa8f&amp;session=4c7ceee16436a463f48625b81372aa8f4c7ceee16436a463f48625b81372aa8f 
+Points: 250 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1, 2
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: 2007-04-25 03:53:43 
+	update: 2022-04-11 02:54:03 
+	active: 5709 days, 10:14:00.725803 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5709 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=75560504970db7e8c69bf16419216a3075560504970db7e8c69bf16419216a30&amp;session=75560504970db7e8c69bf16419216a3075560504970db7e8c69bf16419216a30 
+Points: 250 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1, 2
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: 2007-04-25 03:53:43 
+	update: 2022-04-11 02:54:03 
+	active: 5709 days, 10:14:08.084163 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5709 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=bc4ce1f4d682271d4b98ead7226faa82bc4ce1f4d682271d4b98ead7226faa82&amp;session=bc4ce1f4d682271d4b98ead7226faa82bc4ce1f4d682271d4b98ead7226faa82 
+Points: 250 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1, 2
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: 2007-04-25 03:53:43 
+	update: 2022-04-11 02:54:03 
+	active: 5709 days, 10:14:15.963137 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5709 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/login.php?cmd=login_submit&amp;id=cde216e99a08498914d999825331ba9bcde216e99a08498914d999825331ba9b&amp;session=cde216e99a08498914d999825331ba9bcde216e99a08498914d999825331ba9b 
+Points: 250 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1, 2
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: login.php 
+	path: /wordpress/wp-content/plugins/wp-tech/login.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: 2007-04-25 03:53:43 
+	update: 2022-04-11 02:54:03 
+	active: 5709 days, 10:14:23.301088 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5709 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://316d15001.b-reflex2.com/wordpress/wp-content/plugins/wp-tech/step3.php?cmd=*&amp;id=*&amp;session=* 
+Points: 250 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:3, 1, 6, 1, 5, 0, 0, 1, 2
+		The URL contained >3 numbers in the subdomain.
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: 316d15001 
+	domain: b-reflex2 
+	topDomain: com 
+	dir: /wordpress/wp-content/plugins/wp-tech/ 
+	file: step3.php 
+	path: /wordpress/wp-content/plugins/wp-tech/step3.php 
+	fragment: None 
+	ip: 74.220.199.8 
+	city: Provo 
+	country: United States 
+	region: Utah 
+	favicon: False 
+	expires: 2023-04-25 03:53:43 
+	registered: 2007-04-25 03:53:43 
+	update: 2022-04-11 02:54:03 
+	active: 5709 days, 10:14:30.560310 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 5709 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://c7.gg/f6BvB 
+Points: 130 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:7
+		The website lacks favicon.
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: c7 
+	topDomain: gg 
+	dir: None 
+	file: f6BvB 
+	path: /f6BvB 
+	fragment: None 
+	ip: 103.224.182.253 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://dibaaj.com/Confirmation/Acc/atb/detail.htm 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: dibaaj 
+	topDomain: com 
+	dir: /Confirmation/Acc/atb/ 
+	file: detail.htm 
+	path: /Confirmation/Acc/atb/detail.htm 
+	fragment: None 
+	ip: 52.86.6.113 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2023-05-22 21:09:26 
+	registered: 2013-05-22 21:09:26 
+	update: 2022-05-23 07:37:14 
+	active: 3489 days, 16:59:15.667439 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 3489 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://digaaja.fi/wp-content/themes/digaaja/includes/sidebar/chase/login 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: digaaja 
+	topDomain: fi 
+	dir: /wp-content/themes/digaaja/includes/sidebar/chase/ 
+	file: login 
+	path: /wp-content/themes/digaaja/includes/sidebar/chase/login 
+	fragment: None 
+	ip: 84.34.147.58 
+	city: None 
+	country: Finland 
+	region: None 
+	favicon: False 
+	expires: 2023-05-05 00:00:00 
+	registered: 2017-05-05 00:00:00 
+	update: 2018-05-13 00:00:00 
+	active: 2046 days, 14:09:01.859514 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2046 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://edugl2394846.sitebuilder.name.com 
+Points: 200 
+
+The website generated the following report:
+		The URL contained the following numbers in the subdomain:2, 3, 9, 4, 8, 4, 6
+		The URL contained >3 numbers in the subdomain.
+		The URL had a phishy length with 31 letters
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: edugl2394846.sitebuilder 
+	domain: name 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 107.162.140.96 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2032-11-04 13:56:30 
+	registered: 1995-01-03 05:00:00 
+	update: 2022-11-07 18:19:31 
+	active: 10204 days, 9:09:17.345648 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 10204 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://hausbau.rs/modules/mod_error/Secure 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hausbau 
+	topDomain: rs 
+	dir: /modules/mod_error/ 
+	file: Secure 
+	path: /modules/mod_error/Secure 
+	fragment: None 
+	ip: 77.105.36.85 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: 2024-05-02 15:27:03 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://kmh.com.au/confirm/home/signin 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: kmh 
+	topDomain: com.au 
+	dir: /confirm/home/ 
+	file: signin 
+	path: /confirm/home/signin 
+	fragment: None 
+	ip: 199.59.243.222 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: 2022-10-02 04:03:31 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://kmopublishing.com/Support-account/customer_center/customer-IDPP00C348/myaccount/signin 
+Points: 240 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger then 20 days
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: kmopublishing 
+	topDomain: com 
+	dir: /Support-account/customer_center/customer-IDPP00C348/myaccount/ 
+	file: signin 
+	path: /Support-account/customer_center/customer-IDPP00C348/myaccount/signin 
+	fragment: None 
+	ip: 199.59.243.222 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2023-12-07 20:47:25 
+	registered: 2022-12-07 20:47:25 
+	update: 2022-12-07 20:47:25 
+	active: 3 days, 17:22:12.856647 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 3 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://paypalforex.co.ke/clogin.php 
+Points: 120 
+
+The website generated the following report:
+		The URL contained the following bad keywords:paypal
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: paypalforex 
+	topDomain: co.ke 
+	dir: None 
+	file: clogin.php 
+	path: /clogin.php 
+	fragment: None 
+	ip: 197.248.5.23 
+	city: None 
+	country: Kenya 
+	region: None 
+	favicon: False 
+	expires: 2023-03-11 17:16:45.589000 
+	registered: 2016-03-11 17:16:45.310000 
+	update: 2022-01-26 05:04:49.638000 
+	active: 2465 days, 20:52:57.331230 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 2465 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://readingcreditunion.co.uk/wp-includes/web/5a47aab7a3b9b976bb63853cb4b5ae44/verification.php 
+Points: 140 
+
+The website generated the following report:
+		The website lacks favicon.
+		This domain is younger than a year
+		The website uses a depricated SSL/TSL version (less than TSLv1.3)
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: readingcreditunion 
+	topDomain: co.uk 
+	dir: /wp-includes/web/5a47aab7a3b9b976bb63853cb4b5ae44/ 
+	file: verification.php 
+	path: /wp-includes/web/5a47aab7a3b9b976bb63853cb4b5ae44/verification.php 
+	fragment: None 
+	ip: 96.126.123.244 
+	city: Dallas 
+	country: United States 
+	region: Texas 
+	favicon: False 
+	expires: 2023-11-09 00:00:00 
+	registered: 2022-11-09 00:00:00 
+	update: 2022-12-10 00:00:00 
+	active: 32 days, 14:09:47.861957 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 32 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://acia.net.au/Safe/ok/index.php 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: acia 
+	topDomain: net.au 
+	dir: /Safe/ok/ 
+	file: index.php 
+	path: /Safe/ok/index.php 
+	fragment: None 
+	ip: 5.22.145.180 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: 2022-07-14 05:44:20 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://adamvaubel.com/v5/validation/7316c78b1c46d441857952cfd1e128b3 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: adamvaubel 
+	topDomain: com 
+	dir: /v5/validation/ 
+	file: 7316c78b1c46d441857952cfd1e128b3 
+	path: /v5/validation/7316c78b1c46d441857952cfd1e128b3 
+	fragment: None 
+	ip: 34.98.99.30 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2023-11-22 21:54:08 
+	registered: 2011-11-22 21:54:08 
+	update: 2022-12-04 22:53:28 
+	active: 4036 days, 16:15:59.123175 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 4036 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://advocatura.org/media/com_akeeba/icons/badboy/769a4d8bcab05f431d3d0be2b7a27656/login.php 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: advocatura 
+	topDomain: org 
+	dir: /media/com_akeeba/icons/badboy/769a4d8bcab05f431d3d0be2b7a27656/ 
+	file: login.php 
+	path: /media/com_akeeba/icons/badboy/769a4d8bcab05f431d3d0be2b7a27656/login.php 
+	fragment: None 
+	ip: 91.225.197.7 
+	city: Chernihiv 
+	country: Ukraine 
+	region: Chernihiv 
+	favicon: True 
+	expires: 2023-02-01 15:01:17 
+	registered: 2010-02-01 15:01:17 
+	update: 2022-02-09 12:41:04 
+	active: 4695 days, 23:08:56.730173 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4695 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://am-t.by/library/2016/cache/aze/index/?.r= 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: am-t 
+	topDomain: by 
+	dir: /library/2016/cache/aze/index/ 
+	file: None 
+	path: /library/2016/cache/aze/index/ 
+	fragment: None 
+	ip: 93.125.99.81 
+	city: None 
+	country: Belarus 
+	region: None 
+	favicon: True 
+	expires: 2023-11-14 00:00:00 
+	registered: 2014-11-14 00:00:00 
+	update: None 
+	active: 2949 days, 14:10:23.179675 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2949 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://am-t.by/library/2016/cache/aze/index/?.rand=13inboxlight.as 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: am-t 
+	topDomain: by 
+	dir: /library/2016/cache/aze/index/ 
+	file: None 
+	path: /library/2016/cache/aze/index/ 
+	fragment: None 
+	ip: 93.125.99.81 
+	city: None 
+	country: Belarus 
+	region: None 
+	favicon: True 
+	expires: 2023-11-14 00:00:00 
+	registered: 2014-11-14 00:00:00 
+	update: None 
+	active: 2949 days, 14:10:25.387560 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2949 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://am-t.by/library/2016/cache/aze/index/?.rand=13inboxlight.aspx?n=1774256418&amp;email=abc@exampl 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: am-t 
+	topDomain: by 
+	dir: /library/2016/cache/aze/index/ 
+	file: None 
+	path: /library/2016/cache/aze/index/ 
+	fragment: None 
+	ip: 93.125.99.81 
+	city: None 
+	country: Belarus 
+	region: None 
+	favicon: True 
+	expires: 2023-11-14 00:00:00 
+	registered: 2014-11-14 00:00:00 
+	update: None 
+	active: 2949 days, 14:10:27.529222 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2949 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://annatsir.web.id/wp-includes/css/cc/login.php?cmd=login_submit&id=8599daaae417f753b1e61bc85a10e3c78599daaae417f753b1e61bc85a10e3c7&session=8599daaae417f753b1e61bc85a10e3c78599daaae417f753b1e61bc85a10e3c7 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: annatsir 
+	topDomain: web.id 
+	dir: /wp-includes/css/cc/ 
+	file: login.php 
+	path: /wp-includes/css/cc/login.php 
+	fragment: None 
+	ip: 103.229.73.190 
+	city: None 
+	country: Indonesia 
+	region: None 
+	favicon: True 
+	expires: 2025-11-01 00:09:11 
+	registered: 2011-10-28 13:09:10 
+	update: 2022-11-05 09:09:11 
+	active: 4062 days, 1:01:22.682298 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4062 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://annatsir.web.id/wp-includes/css/cc/login.php?cmd=login_submit&id=9d6dea3bff6f9ee213af122f031f79069d6dea3bff6f9ee213af122f031f7906&session=9d6dea3bff6f9ee213af122f031f79069d6dea3bff6f9ee213af122f031f7906 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: annatsir 
+	topDomain: web.id 
+	dir: /wp-includes/css/cc/ 
+	file: login.php 
+	path: /wp-includes/css/cc/login.php 
+	fragment: None 
+	ip: 103.229.73.190 
+	city: None 
+	country: Indonesia 
+	region: None 
+	favicon: True 
+	expires: 2025-11-01 00:09:11 
+	registered: 2011-10-28 13:09:10 
+	update: 2022-11-05 09:09:11 
+	active: 4062 days, 1:01:29.930178 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4062 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://api.bdisl.com/redirect?s=2837594&amp;at=4&amp;rt=api&amp;o=96362761 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: api 
+	domain: bdisl 
+	topDomain: com 
+	dir: None 
+	file: redirect 
+	path: /redirect 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://edutech.com.vn/wp-includes/SimplePie/xn/Work/main.html?accessToFile=valid&amp;fileAccess=14046&amp;encryptedCookie=71918882f825b27fd93bb85c278a1b88&amp;u=637a0a775014d92497d5207e6870edc4&amp;connecting=35517f62de6364437474ea6ed88d36a1&amp;phaseAccess=44830550522a8ef5954bfec3064d5dbf&amp;p=c21edc855387ea56c093164d0006919e 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: edutech 
+	topDomain: com.vn 
+	dir: /wp-includes/SimplePie/xn/Work/ 
+	file: main.html 
+	path: /wp-includes/SimplePie/xn/Work/main.html 
+	fragment: None 
+	ip: 5.189.133.82 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://hastagmedia.com/.p/godaddy.securee.rdfrgferggvgfergferfrf_rferfgrgfer_Rgferferfe.php 
+Points: 100 
+
+The website generated the following report:
+		The website lacks TSL/SSL ensurance
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hastagmedia 
+	topDomain: com 
+	dir: /.p/ 
+	file: godaddy.securee.rdfrgferggvgfergferfrf_rferfgrgfer_Rgferferfe.php 
+	path: /.p/godaddy.securee.rdfrgferggvgfergferfrf_rferfgrgfer_Rgferferfe.php 
+	fragment: None 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2026-04-20 17:09:57 
+	registered: 2016-04-20 17:09:57 
+	update: 2022-09-21 19:35:55 
+	active: 2425 days, 21:01:48.899333 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 2425 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
