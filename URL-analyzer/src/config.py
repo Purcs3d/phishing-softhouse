@@ -16,11 +16,11 @@ DB_PORT = '5432'
 """ Checklist constants """
 #Add bad domain keywords to this list:
 BAD_KEYWORDS = ["admin", "login", "free", "update", "security", "billing", "check", "notify", "google", "manager", "parcel",
-                "collect", "signin", "facebook", "linkedin", "connect", "tor", "node", "apple"]
+                "collect", "signin", "facebook", "linkedin", "connect", "tor", "node", "apple", "paypal"]
 
 #Add bad subdomain keywords to this list:
 BAD_SUBDOMAINS = ["softhouse", "google", "facebook", "linkedin", "instagram", "update", "information", "storage", "service",
-                  "safe", "reporting", "publish", "parcel", "postnord", "logistics", "collect", "free", "robux", "connect", "node"]
+                  "safe", "reporting", "publish", "parcel", "postnord", "logistics", "collect", "free", "robux", "connect", "node", "apple", "paypal"]
 
 # This dict generates decides the bad permutations from badKeywords:
 REPLACEMENT_CHARACTERS = {"e": "3", "o": "0", "i": "1", "a": "@", "l": "1"}

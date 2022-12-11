@@ -66,7 +66,7 @@ class SSLCL:
 
 
     def check_version(self): #* auhtor: Totte Hansen *#
-        outdated_ver_points = 50
+        outdated_ver_points = 60
         outdated_report_tls = "The website uses a depricated SSL/TSL version (less than TSLv1.3)"
         outdated_report = "The website uses a depricated SSL/TSL version (less than version 3)"
 
@@ -87,6 +87,9 @@ class SSLCL:
         if self.URLinfo.TLSversion in conf.BAD_CERT_VERSIONS:
             self.points += outdated_ver_points
             self.report.append(outdated_report_tls)
+
+        if self.URLinfo.TLSversion == None:
+            self.report.append("NO TLSversion was found")
         return True
 
 
@@ -96,10 +99,6 @@ class SSLCL:
         """
         self_license_points = 25
         self_license_report = "The certificate is self issued"
-
-        # error med URL STORAGE.GOOGLEAPIS.COM
-        #whois.parser.PywhoisError: No match for "STORAGE.GOOGLEAPIS.COM".
-        #>>> Last update of whois database: 2022-12-05T13:01:02Z <<<
 
         try:
             # fetch site registered owner
@@ -163,10 +162,11 @@ class SSLCL:
         """
         Check country of origin of the certificate. #TODO check untrusted cert countries
         """
-        issuer = self.cert.cert["issuer"][0][0][1] #countryName
-        if issuer in conf.BAD_CERT_COUNTRYCODES:
+        countrycode = self.cert.cert["issuer"][0][0][1] #countryName
+        if countrycode in conf.BAD_CERT_COUNTRYCODES:
             self.points += 30
-            self.report.append(f"SSL Certificate created in the country with countrycode: {issuer}")
+            self.report.append(f"SSL Certificate created in the country with countrycode: {countrycode}")
+
 
 
     def check_time_valid(self):

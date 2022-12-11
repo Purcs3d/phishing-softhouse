@@ -43,6 +43,7 @@ apkpure.com
 app.any.run
 app.box.com
 app.duel.network
+apple.com
 appleid.apple.com
 appleid.apple.com.akadns.net
 archive.org
@@ -239,6 +240,7 @@ ouimontessori.com
 overdrive.com
 pardot.com
 pay-today.cc
+paypal.com
 pearlofmyheart.com
 phishtank.com
 photoartstavrinos.com

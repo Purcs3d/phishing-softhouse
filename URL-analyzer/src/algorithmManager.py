@@ -39,8 +39,6 @@ class algorithmManager:
             self.websiteOnline = True
         else:
             self.websiteOnline = False
-            self.points += 100
-        return self.points
 
     def run(self):
         """
@@ -50,12 +48,12 @@ class algorithmManager:
             input: self, output: boolean
         """
         # check if in DB
-        if self.websiteOnline == False:
-            return True
         if self.URLinWhitelist == True:
             return False #if in whitelist it is not fishy
         if self.URLinPreviousSearches == True:
             return self.DBhandlerObj.fetchPreviousSearchPhishiness() # previous phisiness result
+        if self.websiteOnline == False:
+            return True
 
         # otherwise do regular run
         self.runEvaluations() # collect total points and gather reports
