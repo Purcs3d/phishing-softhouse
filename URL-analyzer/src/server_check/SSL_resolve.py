@@ -42,14 +42,14 @@ class ssl_parser:
         context = ssl.create_default_context()
         try:
             # open socket using https port 443
-            with socket.create_connection((hostname, 443), timeout=8) as sock:
+            with socket.create_connection((hostname, 443), timeout=5) as sock:
                 # fetch sock version
                 with context.wrap_socket(sock, server_hostname=hostname) as ssock:
                     try:
                         self.URLinfo.TLSversion = ssock.version()
                         return ssock.getpeercert()
 
-                    except Exception as err:
+                    except Exception:
                         self.URLinfo.errors.append("Error during SSL resolving, Couldnt get cert info")
                         return None
 

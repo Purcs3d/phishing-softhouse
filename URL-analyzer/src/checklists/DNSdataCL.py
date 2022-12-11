@@ -43,6 +43,6 @@ class DNSdataCL():
             self.points += 50
             return
         elif(int(self.URLinfo.daysActive) < 730):
-            self.report.append("This domain is younger than 2 years old")
+            self.report.append("This domain is younger than 2 years")
             self.points += 20
             return
