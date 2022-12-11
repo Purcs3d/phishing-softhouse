@@ -28,8 +28,11 @@
                 {% endfor %}
             {% endfor %}
         </div>
-        {% else %}
-        <p> {{ouput}} </p>
+        {% elif output is string %}
+        <div id="report">
+            <h2> Report: </h2>
+            <p> {{ output }} </p>
+        </div>
         {% endif %}
         </form>
 </body>

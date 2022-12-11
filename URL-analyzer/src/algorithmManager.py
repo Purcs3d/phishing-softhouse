@@ -111,8 +111,7 @@ class algorithmManager:
 
     def createOutputString(self):
         if self.websiteOnline == False:
-            return "Website is not online"
-
+            return f" This Website ({self.url}) is not online"
 
         if self.URLinWhitelist == True:
             reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}

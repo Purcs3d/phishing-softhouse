@@ -36,7 +36,7 @@ def CheckURL():
 
         # format algomanager output
         outputDict = AMObj.createOutputString()
-
+        PendingDeprecationWarning
     except Exception as e:
         # return error string
         flash(f"Error: {e}")
