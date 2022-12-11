@@ -7,9 +7,12 @@
 4ange.me
 google.com
 linkedin.com
+linkedin.de
 tiptotoenails.com
 twitter.com
 youtube.com
+youtube.se
+youtube.de
 falix.gg
 us.archive.org
 academia.edu
@@ -28,6 +31,7 @@ alwaysb-u.com
 amazon.sa
 amazon.com
 amazon.se
+amazon.de
 andknuckles.frankerfacez.com
 androidauthority.com
 anthony-smithlaw.com
@@ -39,6 +43,7 @@ apkpure.com
 app.any.run
 app.box.com
 app.duel.network
+apple.com
 appleid.apple.com
 appleid.apple.com.akadns.net
 archive.org
@@ -146,6 +151,7 @@ google.fr
 google.ie
 google.ml
 google.se
+google.de
 gowc.us
 grabify.link
 gstatic.com
@@ -234,6 +240,7 @@ ouimontessori.com
 overdrive.com
 pardot.com
 pay-today.cc
+paypal.com
 pearlofmyheart.com
 phishtank.com
 photoartstavrinos.com

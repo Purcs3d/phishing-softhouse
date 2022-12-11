@@ -5,7 +5,7 @@ Checklist and tests associated with SSL/TSL attributes
 """
 
 from src.server_check import SSL_resolve
-import config as conf
+import src.config as conf
 import ssl
 import whois
 from datetime import datetime, timezone
@@ -21,7 +21,6 @@ class SSLCL:
         """
         Run through all tests sequentially using function calls
         """
-
         if not self.check_version():
             return self.points
 
@@ -35,6 +34,7 @@ class SSLCL:
         self.check_cert_age()
         self.check_cert_match()
         self.check_time_valid()
+        self.check_cert_origin()
 
         return self.points
 
@@ -66,7 +66,8 @@ class SSLCL:
 
 
     def check_version(self): #* auhtor: Totte Hansen *#
-        outdated_ver_points = 50
+        outdated_ver_points = 60
+        outdated_ver_points_tls = 60
         outdated_report_tls = "The website uses a depricated SSL/TSL version (less than TSLv1.3)"
         outdated_report = "The website uses a depricated SSL/TSL version (less than version 3)"
 
@@ -83,10 +84,15 @@ class SSLCL:
         if version <= conf.MIN_CERT_VER:
             self.points += outdated_ver_points
             self.report.append(outdated_report)
+            return True
 
         if self.URLinfo.TLSversion in conf.BAD_CERT_VERSIONS:
-            self.points += outdated_ver_points
+            self.points += outdated_ver_points_tls
             self.report.append(outdated_report_tls)
+            return True
+
+        if self.URLinfo.TLSversion == None:
+            self.report.append("NO TLSversion was found")
         return True
 
 
@@ -97,15 +103,11 @@ class SSLCL:
         self_license_points = 25
         self_license_report = "The certificate is self issued"
 
-        # error med URL STORAGE.GOOGLEAPIS.COM
-        #whois.parser.PywhoisError: No match for "STORAGE.GOOGLEAPIS.COM".
-        #>>> Last update of whois database: 2022-12-05T13:01:02Z <<<
-
         try:
             # fetch site registered owner
             site_org = whois.whois(self.cert.sane_url).org
             # fetch cert issuer corporation
-            issuer = self.cert.cert["issuer"][1][0][1]
+            issuer = self.cert.cert["issuer"][1][0][1] #organisationName
 
             if site_org == issuer:
                 self.points += self_license_points
@@ -163,7 +165,11 @@ class SSLCL:
         """
         Check country of origin of the certificate. #TODO check untrusted cert countries
         """
-        ...
+        countrycode = self.cert.cert["issuer"][0][0][1] #countryName
+        if countrycode in conf.BAD_CERT_COUNTRYCODES:
+            self.points += 30
+            self.report.append(f"SSL Certificate created in the country with countrycode: {countrycode}")
+
 
 
     def check_time_valid(self):

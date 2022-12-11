@@ -6,6 +6,7 @@ import src.checklists.DNSdataCL as DNSdataCL
 import src.DB.DBhandler as DBhandler
 import src.checklists.SSLCL as SSLCL
 from src.URLCheck import url_sanitize
+import json
 
 
 class algorithmManager:
@@ -22,8 +23,7 @@ class algorithmManager:
         self.URLinWhitelist = False
         self.URLinPreviousSearches = False
         self.fishy = False
-        self.check_websiteOnline()
-
+        self.pointPhishingLimit = 100
 
         try:
             self.checkDB() # check if in whitelist/previous searches
@@ -31,16 +31,15 @@ class algorithmManager:
             self.DBonline = False
             self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway.")
         if self.URLinWhitelist == False and self.URLinPreviousSearches == False:
-            self.URLinfoObj.collectInfo() #make object collect information about url
-        self.pointPhishingLimit = 100
+            self.check_websiteOnline()
+            if self.websiteOnline == True:
+                self.URLinfoObj.collectInfo() #make object collect information about url
 
     def check_websiteOnline(self):
         if url_sanitize.siteValid(self.url):
             self.websiteOnline = True
         else:
             self.websiteOnline = False
-            self.points += 100
-        return self.points
 
     def run(self):
         """
@@ -50,12 +49,12 @@ class algorithmManager:
             input: self, output: boolean
         """
         # check if in DB
-        if self.websiteOnline == False:
-            return True
         if self.URLinWhitelist == True:
             return False #if in whitelist it is not fishy
         if self.URLinPreviousSearches == True:
             return self.DBhandlerObj.fetchPreviousSearchPhishiness() # previous phisiness result
+        if self.websiteOnline == False:
+            return True
 
         # otherwise do regular run
         self.runEvaluations() # collect total points and gather reports
@@ -71,8 +70,9 @@ class algorithmManager:
         # send url to history of searches table
         if self.DBonline == True:
             reportStr = self.createOutputString()
-            self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
+            self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, json.dumps(reportStr), self.fishy)
         return self.fishy
+
 
     def runEvaluations(self):
         """
@@ -86,8 +86,8 @@ class algorithmManager:
         """
 
         # create checklists
-        URLstringCLobj          = URLstringCL.URLstringCL(self.URLinfoObj)
-        HTMLdataCLobj           = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
+        URLstringCLobj = URLstringCL.URLstringCL(self.URLinfoObj)
+        HTMLdataCLobj = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
         DNSChecklistObj = DNSdataCL.DNSdataCL(self.URLinfoObj)
         SSLCLObj              = SSLCL.SSLCL(self.url, self.URLinfoObj)
@@ -101,48 +101,76 @@ class algorithmManager:
         self.points += SSLCLObj.runEvaluation()
 
         #gather their seperate reports
-        self.report["URLstringCL"]          = URLstringCLobj.report
-        self.report["HTMLdataCL"]           = HTMLdataCLobj.report
-        self.report["DNSdataCL"]            = DNSChecklistObj.report
+        self.report["URLstringCL"] = URLstringCLobj.report
+        self.report["HTMLdataCL"] = HTMLdataCLobj.report
+        self.report["DNSdataCL"] = DNSChecklistObj.report
         self.report["DatabaseComparisonCL"] = DatabaseComparisonCLobj.report
         self.report["SSLCL"]                = SSLCLObj.report
 
 
     def createOutputString(self):
+        reportDict = {}
         if self.websiteOnline == False:
-            outputStr = "Website is not up or denied connection and cannot be classified."+ "<br>"
-            return outputStr
+            return f" This Website ({self.url}) is not online, or refused connection. "
+
         if self.URLinWhitelist == True:
-            outputStr = "URL in exist whitelist and is not phishy."+ "<br>"
-            return outputStr
+            reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
+            return reportDict
+
         if self.URLinPreviousSearches == True:
-            outputStr = "URL recently searched; fetched report:"+ "<br>"
-            outputStr += self.DBhandlerObj.fetchPreviousSearchReport()
-            return outputStr
-        outputStr = "fishy?:" + str(self.fishy)
-        outputStr +=  "<br> evaluation points:" + str(self.points) + "<br>"
-        for message in self.report["URLstringCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["HTMLdataCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["DNSdataCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["SSLCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["DatabaseComparisonCL"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["URLreport"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        for message in self.report["errors"]:
-            outputStr += message + "<br>"
-        outputStr += "<br>"
-        return outputStr
+            reportDict = self.DBhandlerObj.fetchPreviousSearchReport()
+            return reportDict
+
+        reportDict['Phishy'] = self.fishy
+        reportDict['points'] = self.points
+        if(self.report['URLstringCL'] != {}):
+            reportDict['URLstringCL'] = self.report['URLstringCL']
+
+
+        # init format dict
+        outputDict = {"Phishy":[], "Points":[]}
+        outputDict["Phishy"].append(self.fishy)
+        outputDict["Points"].append(self.points)
+
+        # init and add URLStringCL frontend parseable
+        if self.report["URLstringCL"]:
+            outputDict["URL string info"] = []
+            for message in self.report["URLstringCL"]:
+                outputDict["URL string info"].append(message)
+
+        # init and add HTMLdataCL frontend parseable
+        if self.report["HTMLdataCL"]:
+            outputDict["HTML data info"] = []
+            for message in self.report["HTMLdataCL"]:
+                outputDict["HTML data info"].append(message)
+
+        # init and add DNSdataCL frontend parseable
+        if self.report["DNSdataCL"]:
+            outputDict["DNS data info"] = []
+            for message in self.report["DNSdataCL"]:
+                outputDict["DNS data info"].append(message)
+
+        # init and add DatabaseComparisonCL frontend parseable
+        if self.report["DatabaseComparisonCL"]:
+            outputDict["Database comparsion info"] = []
+            for message in self.report["DatabaseComparisonCL"]:
+                outputDict["Database comparsion info"].append(message)
+
+        if self.report["SSLCL"]:
+            outputDict["SSL info"] = []
+            for message in self.report["SSLCL"]:
+                outputDict["SSL info"].append(message)
+        if(len(self.report["URLreport"]) > 0):
+            outputDict["URL info"] = []
+            for message in self.report["URLreport"]:
+                outputDict["URL info"].append(message)
+        if(len(self.report["errors"]) > 0):
+            outputDict["Errors"] = []
+            for message in self.report["errors"]:
+                outputDict["Errors"].append(message)
+
+        return outputDict
+
 
     def checkDB(self):
         """

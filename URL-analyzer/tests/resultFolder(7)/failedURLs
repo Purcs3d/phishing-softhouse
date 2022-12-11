@@ -1,0 +1,1407 @@
+These are all of the URLs that the algorithm wrongly classified as not phishingLinks 
+
+URL: http://acia.net.au/Safe/ok/index.php 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: acia 
+	topDomain: net.au 
+	dir: /Safe/ok/ 
+	file: index.php 
+	path: /Safe/ok/index.php 
+	fragment: None 
+	ip: 5.22.145.180 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: 2022-07-14 05:44:20 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://adamvaubel.com/v5/validation/7316c78b1c46d441857952cfd1e128b3 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: adamvaubel 
+	topDomain: com 
+	dir: /v5/validation/ 
+	file: 7316c78b1c46d441857952cfd1e128b3 
+	path: /v5/validation/7316c78b1c46d441857952cfd1e128b3 
+	fragment: None 
+	ip: 34.98.99.30 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2023-11-22 21:54:08 
+	registered: 2011-11-22 21:54:08 
+	update: 2022-12-04 22:53:28 
+	active: 4036 days, 13:17:54.084343 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 4036 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://advocatura.org/media/com_akeeba/icons/badboy/769a4d8bcab05f431d3d0be2b7a27656/login.php 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: advocatura 
+	topDomain: org 
+	dir: /media/com_akeeba/icons/badboy/769a4d8bcab05f431d3d0be2b7a27656/ 
+	file: login.php 
+	path: /media/com_akeeba/icons/badboy/769a4d8bcab05f431d3d0be2b7a27656/login.php 
+	fragment: None 
+	ip: 91.225.197.7 
+	city: Chernihiv 
+	country: Ukraine 
+	region: Chernihiv 
+	favicon: True 
+	expires: 2023-02-01 15:01:17 
+	registered: 2010-02-01 15:01:17 
+	update: 2022-02-09 12:41:04 
+	active: 4695 days, 20:11:44.043723 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4695 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/093fd754/challengevdl.php?cmd=_account-details&session=682e0f79d0c7eec182ffce8638377bf3&dispatch=9b2016f7554316099f744965a274ec5aa8b01e71 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/093fd754/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/093fd754/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:25:59.183448 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/37d79384/overviewshn.php?cmd=_account-details&session=6fb408f1aa3715c27dd4ed05db68f04b&dispatch=a80991616e2adaacbb7aaa8b7b072b68f08e5163 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/37d79384/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/37d79384/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:09.262135 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/40773c58/overviewshn.php?cmd=_account-details&session=7f2e0d2f76ce32948f70e5fb54fbbfe2&dispatch=e0ecb1dc6ccc7799a0ebab9da4af7e112b780cc5 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/40773c58/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/40773c58/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:11.955345 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/42e6c792/challengevdl.php?cmd=_account-details&session=38eaa8e27c0f0720e8aaa161c16e66fe&dispatch=b1c05747aa02d17717027868a393e705a4ea0169 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/42e6c792/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/42e6c792/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:14.384194 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/4552ab9c 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/ 
+	file: 4552ab9c 
+	path: /contents/service/bankofamerica/4552ab9c 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:16.927384 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/5da4aa12/challengevdl.php?cmd=_account-details&session=c3817f7a065ed6db3b5d3b424907553f&dispatch=e71c560d00c168446f68553069ee9b19046675a6 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/5da4aa12/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/5da4aa12/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:19.977085 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/618f475b/challengevdl.php?cmd=_account-details&session=6dea6f3365ef6ffdafd7a5eef43b579c&dispatch=7a2013ed0767b1ea5f9c99ad0078521dcf7ac328 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/618f475b/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/618f475b/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:22.574165 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/618f475b/overviewshn.php?cmd=_account-details&session=8e9e5485bc0ad38c9765707fa405420b&dispatch=166efdd344e1d8176de86a74a889d75b6edb1d3f 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/618f475b/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/618f475b/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:24.996978 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/ada6c78f/challengevdl.php?cmd=_account-details&session=a93c48ac0825e2896bfbd214fa421915&dispatch=6b7dc19f75defaf5b30a477e657349af9ecdae56 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/ada6c78f/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/ada6c78f/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:27.464218 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/b3c488c2/overviewshn.php?cmd=_account-details&session=0c2897d1c4371bccc8f443caa6b1dfd1&dispatch=7939ad780a93fe14155c0efda69dc7c5e85c9382 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/b3c488c2/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/b3c488c2/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:29.934903 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/ba77df37/challengevdl.php?cmd=_account-details&session=1e63856b1165e61fb368cab616f1ea1f&dispatch=f11812557a54a59c68c3f53abf822d8a28fcfd8e 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/ba77df37/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/ba77df37/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:32.298690 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/c6f7d741/challengevdl.php?cmd=_account-details&session=5eaa90d99c283637ab3efcb17de302db&dispatch=be5c7dcb5d0ebf74ee251f52bb675413e9601125 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/c6f7d741/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/c6f7d741/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:34.680657 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/c6f7d741/overviewshn.php?cmd=_account-details&session=7077937ab81e21ec8e07b96a330759af&dispatch=61930a8ba1d08e98518582effb0be5ad73a2e546 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/c6f7d741/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/c6f7d741/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:37.231873 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/c950762a/challengevdl.php?cmd=_account-details&session=426067ae35fb0eaf746c822afc37ae6a&dispatch=a1919eedd94c22a4a88b59eaa17629597a6c1067 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/c950762a/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/c950762a/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:39.550530 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/dc6e9f3d/overviewshn.php?cmd=_account-details&session=cb394e7558159d44a22fcbf3d48a62cc&dispatch=cbd25637b53e1d0e1964ec9de26607864cf99320 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/dc6e9f3d/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/dc6e9f3d/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:41.973892 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/e3963e5c/challengevdl.php?cmd=_account-details&session=18b9c9e792658ff1d0c6335dbef9e62b&dispatch=7bc921f95daa0f273912134766689bf41a2ce7f8 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/e3963e5c/ 
+	file: challengevdl.php 
+	path: /contents/service/bankofamerica/e3963e5c/challengevdl.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:44.315654 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/e3963e5c/overviewshn.php?cmd=_account-details&session=282caa45a202d1b46b582d97b11fd124&dispatch=b06d18b382995b61bc5e5e21fb1f68d33bf3e754 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/e3963e5c/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/e3963e5c/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:46.798519 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/e9d46475/overviewshn.php?cmd=_account-details&session=a176464dd08f50909c5d398792152550&dispatch=ee2572b1f7b914173f9ed40ec8acb404cfbeb45d 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/e9d46475/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/e9d46475/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:49.242525 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/f5841038 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/ 
+	file: f5841038 
+	path: /contents/service/bankofamerica/f5841038 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:51.626356 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://alphagympark.com/contents/service/bankofamerica/f5841038/overviewshn.php?cmd=_account-details&session=e02b39203a6025c6b41c5a73d162cc00&dispatch=5cba63dba2351e8c4dc90903a18637d989f24a0f 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alphagympark 
+	topDomain: com 
+	dir: /contents/service/bankofamerica/f5841038/ 
+	file: overviewshn.php 
+	path: /contents/service/bankofamerica/f5841038/overviewshn.php 
+	fragment: None 
+	ip: 212.107.17.172 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-07-11 13:49:52 
+	registered: 2019-07-11 13:49:52 
+	update: 2022-07-06 17:03:55 
+	active: 1248 days, 21:26:54.078178 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 1248 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://am-t.by/library/2016/cache/aze/index/?.r= 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: am-t 
+	topDomain: by 
+	dir: /library/2016/cache/aze/index/ 
+	file: None 
+	path: /library/2016/cache/aze/index/ 
+	fragment: None 
+	ip: 93.125.99.81 
+	city: None 
+	country: Belarus 
+	region: None 
+	favicon: True 
+	expires: 2023-11-14 00:00:00 
+	registered: 2014-11-14 00:00:00 
+	update: None 
+	active: 2949 days, 11:18:08.806910 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2949 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://am-t.by/library/2016/cache/aze/index/?.rand=13inboxlight.as 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: am-t 
+	topDomain: by 
+	dir: /library/2016/cache/aze/index/ 
+	file: None 
+	path: /library/2016/cache/aze/index/ 
+	fragment: None 
+	ip: 93.125.99.81 
+	city: None 
+	country: Belarus 
+	region: None 
+	favicon: True 
+	expires: 2023-11-14 00:00:00 
+	registered: 2014-11-14 00:00:00 
+	update: None 
+	active: 2949 days, 11:18:11.247702 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2949 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://am-t.by/library/2016/cache/aze/index/?.rand=13inboxlight.aspx?n=1774256418&amp;email=abc@exampl 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: am-t 
+	topDomain: by 
+	dir: /library/2016/cache/aze/index/ 
+	file: None 
+	path: /library/2016/cache/aze/index/ 
+	fragment: None 
+	ip: 93.125.99.81 
+	city: None 
+	country: Belarus 
+	region: None 
+	favicon: True 
+	expires: 2023-11-14 00:00:00 
+	registered: 2014-11-14 00:00:00 
+	update: None 
+	active: 2949 days, 11:18:13.755928 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 2949 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://annatsir.web.id/wp-includes/css/cc/login.php?cmd=login_submit&id=8599daaae417f753b1e61bc85a10e3c78599daaae417f753b1e61bc85a10e3c7&session=8599daaae417f753b1e61bc85a10e3c78599daaae417f753b1e61bc85a10e3c7 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: annatsir 
+	topDomain: web.id 
+	dir: /wp-includes/css/cc/ 
+	file: login.php 
+	path: /wp-includes/css/cc/login.php 
+	fragment: None 
+	ip: 103.229.73.190 
+	city: None 
+	country: Indonesia 
+	region: None 
+	favicon: True 
+	expires: 2025-11-01 00:09:11 
+	registered: 2011-10-28 13:09:10 
+	update: 2022-11-05 09:09:11 
+	active: 4061 days, 22:09:11.804285 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4061 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://annatsir.web.id/wp-includes/css/cc/login.php?cmd=login_submit&id=9d6dea3bff6f9ee213af122f031f79069d6dea3bff6f9ee213af122f031f7906&session=9d6dea3bff6f9ee213af122f031f79069d6dea3bff6f9ee213af122f031f7906 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: annatsir 
+	topDomain: web.id 
+	dir: /wp-includes/css/cc/ 
+	file: login.php 
+	path: /wp-includes/css/cc/login.php 
+	fragment: None 
+	ip: 103.229.73.190 
+	city: None 
+	country: Indonesia 
+	region: None 
+	favicon: True 
+	expires: 2025-11-01 00:09:11 
+	registered: 2011-10-28 13:09:10 
+	update: 2022-11-05 09:09:11 
+	active: 4061 days, 22:09:27.478744 
+	certIncomplete: False 
+	TLSversion: None 
+	daysActive: 4061 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://api.bdisl.com/redirect?s=2837594&amp;at=4&amp;rt=api&amp;o=96362761 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: api 
+	domain: bdisl 
+	topDomain: com 
+	dir: None 
+	file: redirect 
+	path: /redirect 
+	fragment: None 
+	ip: None 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving, connection failed
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://ahinsashoes.cz/css/xirisr/BOfA/BOfA/BOfA/Validation/login.php?cmd=login_submit&id=4cb0083f4ae8a9c5e14d7d184b798af04cb0083f4ae8a9c5e14d7d184b798af0&session=4cb0083f4ae8a9c5e14d7d184b798af04cb0083f4ae8a9c5e14d7d184b798af0 
+Points: 10 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ahinsashoes 
+	topDomain: cz 
+	dir: /css/xirisr/BOfA/BOfA/BOfA/Validation/ 
+	file: login.php 
+	path: /css/xirisr/BOfA/BOfA/BOfA/Validation/login.php 
+	fragment: None 
+	ip: 23.227.38.65 
+	city: None 
+	country: Canada 
+	region: None 
+	favicon: True 
+	expires: 2023-05-08 00:00:00 
+	registered: 2013-05-08 02:42:14 
+	update: 2017-07-25 09:00:19 
+	active: 3504 days, 8:37:24.402285 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 3504 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://aiv.it/baba 
+Points: 10 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: aiv 
+	topDomain: it 
+	dir: None 
+	file: baba 
+	path: /baba 
+	fragment: None 
+	ip: 46.252.152.251 
+	city: None 
+	country: Italy 
+	region: None 
+	favicon: True 
+	expires: 2023-11-15 00:00:00 
+	registered: 1996-11-21 00:00:00 
+	update: 2022-12-01 00:55:40 
+	active: 9516 days, 11:19:44.300752 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 9516 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://ajanish.com/cm3lfk2/directing/online.simplii.com/index.php 
+Points: 50 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: ajanish 
+	topDomain: com 
+	dir: /cm3lfk2/directing/online.simplii.com/ 
+	file: index.php 
+	path: /cm3lfk2/directing/online.simplii.com/index.php 
+	fragment: None 
+	ip: 104.21.61.186 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2023-11-12 04:22:20 
+	registered: 2011-11-12 04:22:20 
+	update: 2021-01-04 19:14:43 
+	active: 4047 days, 6:57:29.489572 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 4047 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://alfabit.org 
+Points: 10 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: alfabit 
+	topDomain: org 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 104.26.13.179 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2026-01-14 14:59:52 
+	registered: 2019-01-14 14:59:52 
+	update: 2020-11-25 16:12:05 
+	active: 1426 days, 20:20:04.155664 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1426 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://amidabuli.com 
+Points: 60 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: amidabuli 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 217.160.0.67 
+	city: None 
+	country: Germany 
+	region: None 
+	favicon: True 
+	expires: 2023-05-07 22:57:21 
+	registered: 2019-05-07 22:57:21 
+	update: 2022-05-08 07:42:42 
+	active: 1313 days, 12:22:43.548072 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 1313 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://andbank.me.ma 
+Points: 50 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: andbank 
+	domain: me 
+	topDomain: ma 
+	dir: None 
+	file: None 
+	path: None 
+	fragment: None 
+	ip: 104.21.26.127 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://antelope-ban.com/gallery/wp-content/uploads/bws_captcha_images/arabic_bt 
+Points: 50 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: antelope-ban 
+	topDomain: com 
+	dir: /gallery/wp-content/uploads/bws_captcha_images/ 
+	file: arabic_bt 
+	path: /gallery/wp-content/uploads/bws_captcha_images/arabic_bt 
+	fragment: None 
+	ip: 167.114.190.47 
+	city: Montreal 
+	country: Canada 
+	region: Quebec 
+	favicon: False 
+	expires: 2024-03-16 08:06:14 
+	registered: 2009-03-16 08:06:14 
+	update: 2022-02-11 02:33:09 
+	active: 5018 days, 3:14:24.994009 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 5018 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://apogeesphotostatic.com/pp/support/konflikt/cfa79fb9e38ab67/login.php 
+Points: 50 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: apogeesphotostatic 
+	topDomain: com 
+	dir: /pp/support/konflikt/cfa79fb9e38ab67/ 
+	file: login.php 
+	path: /pp/support/konflikt/cfa79fb9e38ab67/login.php 
+	fragment: None 
+	ip: 104.21.62.152 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2023-04-10 12:43:59 
+	registered: 2019-04-10 12:43:59 
+	update: 2022-04-11 07:14:18 
+	active: 1340 days, 22:36:42.986368 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1340 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://6.gp/nhRM 
+Points: 80 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+		The URL violated the following special characters:6
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: 6 
+	topDomain: gp 
+	dir: None 
+	file: nhRM 
+	path: /nhRM 
+	fragment: None 
+	ip: 136.243.19.234 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://aamiac.fr/css/-/pontossmiles/loginjspaapfIDHsimperfil2029847895989463181563932/regularizar.php 
+Points: 50 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: aamiac 
+	topDomain: fr 
+	dir: /css/-/pontossmiles/loginjspaapfIDHsimperfil2029847895989463181563932/ 
+	file: regularizar.php 
+	path: /css/-/pontossmiles/loginjspaapfIDHsimperfil2029847895989463181563932/regularizar.php 
+	fragment: None 
+	ip: 217.70.184.55 
+	city: None 
+	country: France 
+	region: None 
+	favicon: False 
+	expires: 2023-10-29 23:07:10 
+	registered: 2006-12-04 10:33:34 
+	update: 2022-09-07 18:05:43 
+	active: 5851 days, 0:47:50.683056 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 5851 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://edutech.com.vn/wp-includes/SimplePie/xn/Work/main.html?accessToFile=valid&amp;fileAccess=14046&amp;encryptedCookie=71918882f825b27fd93bb85c278a1b88&amp;u=637a0a775014d92497d5207e6870edc4&amp;connecting=35517f62de6364437474ea6ed88d36a1&amp;phaseAccess=44830550522a8ef5954bfec3064d5dbf&amp;p=c21edc855387ea56c093164d0006919e 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: edutech 
+	topDomain: com.vn 
+	dir: /wp-includes/SimplePie/xn/Work/ 
+	file: main.html 
+	path: /wp-includes/SimplePie/xn/Work/main.html 
+	fragment: None 
+	ip: 5.189.133.82 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: None 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://hastagmedia.com/.p/godaddy.securee.rdfrgferggvgfergferfrf_rferfgrgfer_Rgferferfe.php 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hastagmedia 
+	topDomain: com 
+	dir: /.p/ 
+	file: godaddy.securee.rdfrgferggvgfergferfrf_rferfgrgfer_Rgferferfe.php 
+	path: /.p/godaddy.securee.rdfrgferggvgfergferfrf_rferfgrgfer_Rgferferfe.php 
+	fragment: None 
+	ip: 34.102.136.180 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2026-04-20 17:09:57 
+	registered: 2016-04-20 17:09:57 
+	update: 2022-09-21 19:35:55 
+	active: 2425 days, 18:17:57.350342 
+	certIncomplete: True 
+	TLSversion: None 
+	daysActive: 2425 
+
+Database connection failed... evaluation run anyway.
+Error during SSL resolving, Socket connection timed out or was denied
+------------------------
+
+URL: http://idealdesigninterior.com/~devsite/dcvision.com.sg/wp-content/online/login.html 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+		The URL contained the following bad keywords:signin
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: idealdesigninterior 
+	topDomain: com 
+	dir: /~devsite/dcvision.com.sg/wp-content/online/ 
+	file: login.html 
+	path: /~devsite/dcvision.com.sg/wp-content/online/login.html 
+	fragment: None 
+	ip: 116.12.51.134 
+	city: None 
+	country: Singapore 
+	region: None 
+	favicon: True 
+	expires: 2024-01-12 02:45:03 
+	registered: 2010-01-12 02:45:03 
+	update: 2022-11-14 09:53:43 
+	active: 4716 days, 8:44:39.215631 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 4716 
+
+Database connection failed... evaluation run anyway.
+------------------------
+
+URL: http://kmlgroup.co.in/wp-admin/index/link/message.alibaba.com/message/external/sign%20in/Alibaba.com/Login.htm 
+Points: 10 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: kmlgroup 
+	topDomain: co.in 
+	dir: /wp-admin/index/link/message.alibaba.com/message/external/sign%20in/Alibaba.com/ 
+	file: Login.htm 
+	path: /wp-admin/index/link/message.alibaba.com/message/external/sign%20in/Alibaba.com/Login.htm 
+	fragment: None 
+	ip: 162.214.11.182 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: 2023-04-16 06:49:11 
+	registered: 2018-04-16 06:49:11 
+	update: 2022-04-03 06:12:12 
+	active: 1700 days, 4:41:30.553324 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1700 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: Failed request to domain-info server
+------------------------
+
+URL: http://paypal.github.io/PayPal-NET-SDK 
+Points: 90 
+
+The website generated the following report:
+		The URL:s protocol is HTTP
+		The URL contained the following bad keywords:paypal
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: paypal 
+	topDomain: github.io 
+	dir: None 
+	file: PayPal-NET-SDK 
+	path: /PayPal-NET-SDK 
+	fragment: None 
+	ip: 185.199.109.153 
+	city: None 
+	country: None 
+	region: None 
+	favicon: True 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+
+Database connection failed... evaluation run anyway.
+Error during DNS resolving: DNS creation info not found.
+------------------------
+

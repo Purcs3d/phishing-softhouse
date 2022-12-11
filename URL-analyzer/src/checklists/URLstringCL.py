@@ -21,12 +21,10 @@ class URLstringCL():
         """
             Run through all checks by calling on their functions
         """
-        self.protocolCheck()
         self.checkSpecialChar()
         self.checkSpecialKeywords()
         self.containUnicode()
         self.numbersInDomain()
-        self.numbersinSubdomain()
         self.containsPort()
         self.checkTopDomain()
         self.checkUrlLength()
@@ -34,11 +32,6 @@ class URLstringCL():
         self.checkBadSubdomains()
 
         return self.points
-
-    def protocolCheck(self):
-        if self.URLinfo.protocol == "http":
-            self.points += 20
-            self.report.append("The website is using HTTP")
 
     def checkSpecialChar(self):
         """
@@ -181,17 +174,18 @@ class URLstringCL():
         """
         The function checks if the domain contains numbers.
         """
-        domain = self.URLinfo.domain
-        numbersInDomain = False
+        if self.URLinfo.subDomain != None:
+            domain = self.URLinfo.subDomain + "." + self.URLinfo.domain
+        else:
+            domain = self.URLinfo.domain
         numbers = []
         for char in domain:
             if char.isdigit():
-                numbersInDomain = True
                 numbers.append(char)
 
-        if numbersInDomain and len(numbers) > 2: 
-            self.points += 40
-            self.report.append(f"The URL contained the following numbers in the domain:" + ", ".join(numbers))
+        if len(numbers) > 3:
+            self.points += 70
+            self.report.append(f"The URL contained >3 numbers in the domain.")
 
 
     def numbersinSubdomain(self):
@@ -213,5 +207,4 @@ class URLstringCL():
             self.report.append(f"The URL contained the following numbers in the subdomain:" + ", ".join(numbers))
         if len(numbers) > 3:
             self.points += 50
-            self.report.append(f"The URL contained >5 numbers in the subdomain.")
-            return
+            self.report.append(f"The URL contained >3 numbers in the subdomain.")
