@@ -18,7 +18,7 @@
         <input type="text" name="URL_input">
         <br>
         <input type="submit" value="Check" id="btn">
-        {% if output %}
+        {% if output is mapping %}
         <div id="report">
             <h2>Report:</h2>
             {% for entry in output %}
@@ -28,6 +28,8 @@
                 {% endfor %}
             {% endfor %}
         </div>
+        {% else %}
+        <p> {{ouput}} </p>
         {% endif %}
         </form>
 </body>
