@@ -67,6 +67,7 @@ class SSLCL:
 
     def check_version(self): #* auhtor: Totte Hansen *#
         outdated_ver_points = 60
+        outdated_ver_points_tls = 60
         outdated_report_tls = "The website uses a depricated SSL/TSL version (less than TSLv1.3)"
         outdated_report = "The website uses a depricated SSL/TSL version (less than version 3)"
 
@@ -83,10 +84,12 @@ class SSLCL:
         if version <= conf.MIN_CERT_VER:
             self.points += outdated_ver_points
             self.report.append(outdated_report)
+            return True
 
         if self.URLinfo.TLSversion in conf.BAD_CERT_VERSIONS:
-            self.points += outdated_ver_points
+            self.points += outdated_ver_points_tls
             self.report.append(outdated_report_tls)
+            return True
 
         if self.URLinfo.TLSversion == None:
             self.report.append("NO TLSversion was found")

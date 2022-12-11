@@ -1,6 +1,7 @@
 import pytest
 import src.DB.DBhandler as dbhandler
 import src.URLCheck.URLinfo as urlinfo
+import json
 
 """
     This is a testing file for all kinds of Database integration problems
@@ -74,7 +75,7 @@ def test_checkPreviousSearchesUpdate():
     URLinfoObj = urlinfo.URLinfo("https://www.hltv.org/")
     URLinfoObj.getURLstringInfo()
     DBhandlerObj = dbhandler.DBhandler(URLinfoObj)
-    report = "reportie"
+    report = json.dumps({ "customer": "John Doe"})
     fishy = False
     sql_str = f"INSERT INTO URLanalyzer.previousSearches (searchDate, URL, report, fishy) VALUES ('2022-11-02','{URLinfoObj.url}', '{report}', {fishy});"
     DBhandlerObj.cursor.execute(sql_str)

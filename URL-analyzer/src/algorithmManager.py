@@ -6,6 +6,7 @@ import src.checklists.DNSdataCL as DNSdataCL
 import src.DB.DBhandler as DBhandler
 import src.checklists.SSLCL as SSLCL
 from src.URLCheck import url_sanitize
+import json
 
 
 class algorithmManager:
@@ -69,7 +70,7 @@ class algorithmManager:
         # send url to history of searches table
         if self.DBonline == True:
             reportStr = self.createOutputString()
-            self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
+            self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, json.dumps(reportStr), self.fishy)
         return self.fishy
 
 
@@ -108,6 +109,7 @@ class algorithmManager:
 
 
     def createOutputString(self):
+        reportDict = {}
         if self.websiteOnline == False:
             return f" This Website ({self.url}) is not online, or refused connection. "
 
@@ -116,11 +118,9 @@ class algorithmManager:
             return reportDict
 
         if self.URLinPreviousSearches == True:
-            reportDict['recent'] = {"URL recently searched; fetched report:"}
-            reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
+            reportDict = self.DBhandlerObj.fetchPreviousSearchReport()
             return reportDict
 
-        reportDict = {}
         reportDict['Phishy'] = self.fishy
         reportDict['points'] = self.points
         if(self.report['URLstringCL'] != {}):
@@ -137,7 +137,7 @@ class algorithmManager:
             outputDict["URL string info"] = []
             for message in self.report["URLstringCL"]:
                 outputDict["URL string info"].append(message)
-        
+
         # init and add HTMLdataCL frontend parseable
         if self.report["HTMLdataCL"]:
             outputDict["HTML data info"] = []

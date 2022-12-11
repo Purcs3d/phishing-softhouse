@@ -29,7 +29,7 @@ class DBhandler():
         self.cursor.execute(sql_str)
         sql_str = "CREATE TABLE IF NOT EXISTS URLanalyzer.whitelist (ID 	SERIAL 	PRIMARY KEY, URL TEXT);"
         self.cursor.execute(sql_str)
-        sql_str = "CREATE TABLE IF NOT EXISTS URLanalyzer.previousSearches (ID 	SERIAL 	PRIMARY KEY,searchDate DATE DEFAULT CURRENT_DATE,URL TEXT,report TEXT,fishy BOOLEAN);"
+        sql_str = "CREATE TABLE IF NOT EXISTS URLanalyzer.previousSearches (ID 	SERIAL 	PRIMARY KEY,searchDate DATE DEFAULT CURRENT_DATE,URL TEXT,report json,fishy BOOLEAN);"
         self.cursor.execute(sql_str)
         sql_str = """CREATE OR REPLACE FUNCTION oldSearchesFunc()
           RETURNS TRIGGER
