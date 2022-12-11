@@ -1,5 +1,5 @@
 """
-Configurations of global- easy to change- variables 
+Configurations of global- easy to change- variables
 """
 
 """ Web configurations """
@@ -26,7 +26,7 @@ BAD_SUBDOMAINS = ["softhouse", "google", "facebook", "linkedin", "instagram", "u
 REPLACEMENT_CHARACTERS = {"e": "3", "o": "0", "i": "1", "a": "@", "l": "1"}
 
 #Add badCharacters to this list:
-BAD_CHARACTERS = [ "$", "#", "£", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "_", "=", "!", "@" ]
+BAD_CHARACTERS = [ "$", "#", "£", "_", "=", "!", "@" ]
 
 # bad topdomains!
 # bl.a. hämtat från:

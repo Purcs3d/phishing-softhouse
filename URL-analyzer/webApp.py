@@ -1,13 +1,13 @@
 import src.algorithmManager as am
 from flask import Flask, flash, render_template, request
 
-app = Flask(__name__)   
-app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'  
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'HakunaMatataMasualaYoteYatatatuliwa'
 
 __author__ = "Totte Hansen, Rasmus Andersen, Mohammad"
 
 #home page
-@app.route("/") 
+@app.route("/")
 def index() -> None:
     """
     Renders the fontpage according to index without parameters
@@ -16,7 +16,7 @@ def index() -> None:
 
 # page after URL input
 @app.route("/check", methods=['GET', 'POST'])
-def CheckURL(): 
+def CheckURL():
     """
     Runs algoritm manager and formats the terun value to be rendered on index
     """
@@ -28,11 +28,10 @@ def CheckURL():
             empty_url_str = "No URL was given"
             print(empty_url_str)
             return render_template("index.html", output = empty_url_str)
-            
+
         # check URL against algomanager
-        AMObj = am.algorithmManager(URLinput) 
+        AMObj = am.algorithmManager(URLinput)
         AMObj.run()
-        AMObj.runEvaluations()
 
         # format algomanager output
         outputDict = AMObj.createOutputString()
