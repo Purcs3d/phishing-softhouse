@@ -1,3 +1,0 @@
-
-
-front.frontend()

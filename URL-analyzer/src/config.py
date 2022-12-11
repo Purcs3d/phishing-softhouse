@@ -1,3 +1,7 @@
+"""
+Configurations of global- easy to change- variables 
+"""
+
 """ Web configurations """
 HOST = '127.0.0.0' # aka localhost
 PORT = '5000' # aka localhost:5000
