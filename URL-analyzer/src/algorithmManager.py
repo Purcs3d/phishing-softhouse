@@ -27,9 +27,9 @@ class algorithmManager:
 
         try:
             self.checkDB() # check if in whitelist/previous searches
-        except Exception:
+        except Exception as e:
             self.DBonline = False
-            self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway.")
+            self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway. {e}")
         if self.URLinWhitelist == False and self.URLinPreviousSearches == False:
             self.check_websiteOnline()
             if self.websiteOnline == True:
@@ -137,7 +137,7 @@ class algorithmManager:
             outputDict["URL string info"] = []
             for message in self.report["URLstringCL"]:
                 outputDict["URL string info"].append(message)
-        
+
         # init and add HTMLdataCL frontend parseable
         if self.report["HTMLdataCL"]:
             outputDict["HTML data info"] = []

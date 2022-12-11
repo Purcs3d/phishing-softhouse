@@ -13,7 +13,7 @@ def main():
         app.run()
         # Process(target=app.run()).start()
 
-    # run as terminal UI 
+    # run as terminal UI
     elif len(argv) > 0 and argv[1] == "terminal":
         URL = ""
 
@@ -25,12 +25,13 @@ def main():
 
                 algorithmEngine = am.algorithmManager(URL) #algorithm object
 
-                output  = "\nFishy?:" + str(algorithmEngine.run()) #fishy or not fishy boolean
-                output += "\nEvaluation points:" + str(algorithmEngine.points)
+                fishy = algorithmEngine.run()#fishy or not fishy boolean
                 outputDict = algorithmEngine.createOutputString()
-                
-                for i in outputDict:
-                    print(i, outputDict[i])
+                if type(outputDict) == str:
+                    print(outputDict)
+                else:
+                    for i in outputDict:
+                        print(i, outputDict[i])
 
             except Exception as e:
                 print(f"Error: {e}")
