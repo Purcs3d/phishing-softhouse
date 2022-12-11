@@ -168,6 +168,7 @@ class SSLCL:
             self.report.append(f"SSL Certificate created in the country with countrycode: {countrycode}")
 
 
+
     def check_time_valid(self):
         """
         Check if the cert is valid between the "NOT before" and "NOT after" dates,
