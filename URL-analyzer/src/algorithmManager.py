@@ -74,6 +74,7 @@ class algorithmManager:
             self.DBhandlerObj.insertIntopreviousSearches(self.URLinfoObj.url, reportStr, self.fishy)
         return self.fishy
 
+
     def runEvaluations(self):
         """
             This function sends in the URLinfo to all checklists which runs evaluations on the different
@@ -86,8 +87,8 @@ class algorithmManager:
         """
 
         # create checklists
-        URLstringCLobj          = URLstringCL.URLstringCL(self.URLinfoObj)
-        HTMLdataCLobj           = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
+        URLstringCLobj = URLstringCL.URLstringCL(self.URLinfoObj)
+        HTMLdataCLobj = HTMLdataCL.HTMLdataCL(self.URLinfoObj)
         DatabaseComparisonCLobj = DatabaseComparisonCL.DatabaseComparisonCL(self.URLinfoObj)
         DNSChecklistObj = DNSdataCL.DNSdataCL(self.URLinfoObj)
         SSLCLObj              = SSLCL.SSLCL(self.url, self.URLinfoObj)
@@ -101,51 +102,60 @@ class algorithmManager:
         self.points += SSLCLObj.runEvaluation()
 
         #gather their seperate reports
-        self.report["URLstringCL"]          = URLstringCLobj.report
-        self.report["HTMLdataCL"]           = HTMLdataCLobj.report
-        self.report["DNSdataCL"]            = DNSChecklistObj.report
+        self.report["URLstringCL"] = URLstringCLobj.report
+        self.report["HTMLdataCL"] = HTMLdataCLobj.report
+        self.report["DNSdataCL"] = DNSChecklistObj.report
         self.report["DatabaseComparisonCL"] = DatabaseComparisonCLobj.report
         self.report["SSLCL"]                = SSLCLObj.report
 
 
     def createOutputString(self):
-        # if self.URLinWhitelist == True:
-        #     reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
-        #     return reportDict
+        if self.URLinWhitelist == True:
+            reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
+            return reportDict
 
-        # if self.URLinPreviousSearches == True:
-        #     reportDict['recent'] = {"URL recently searched; fetched report:"}
-        #     reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
-        #     return reportDict
+        if self.URLinPreviousSearches == True:
+            reportDict['recent'] = {"URL recently searched; fetched report:"}
+            reportDict['recent'] = {self.DBhandlerObj.fetchPreviousSearchReport()}
+            return reportDict
 
-        # reportDict = {}
-        # reportDict['Phishy'] = self.fishy
-        # reportDict['points'] = self.points
-        # if(self.report['URLstringCL'] != {}):
-        #     reportDict['URLstringCL'] = self.report['URLstringCL']
+        reportDict = {}
+        reportDict['Phishy'] = self.fishy
+        reportDict['points'] = self.points
+        if(self.report['URLstringCL'] != {}):
+            reportDict['URLstringCL'] = self.report['URLstringCL']
 
-        from pprint import pprint
-        pprint(self.report)
+
+        # init format dict
         outputDict = {"Phishy":[], "Points":[]}
         outputDict["Phishy"].append(self.fishy)
         outputDict["Points"].append(self.points)
-        if(len(self.report["URLstringCL"]) > 0):
+
+        # init and add URLStringCL frontend parseable
+        if self.report["URLstringCL"]:
             outputDict["URL string info"] = []
             for message in self.report["URLstringCL"]:
                 outputDict["URL string info"].append(message)
-        if(len(self.report["HTMLdataCL"]) > 0):
+        
+        # init and add HTMLdataCL frontend parseable
+        if self.report["HTMLdataCL"]:
             outputDict["HTML data info"] = []
-            for message in self.report["HTML data info"]:
-                outputDict["HTMLdataCL"].append(message)
-        if(len(self.report["DNSdataCL"]) > 0):
+            for message in self.report["HTMLdataCL"]:
+                outputDict["HTML data info"].append(message)
+
+        # init and add DNSdataCL frontend parseable
+        if self.report["DNSdataCL"]:
             outputDict["DNS data info"] = []
             for message in self.report["DNSdataCL"]:
                 outputDict["DNS data info"].append(message)
-        if(len(self.report["DatabaseComparisonCL"]) > 0):
+
+        # init and add DatabaseComparisonCL frontend parseable
+        if self.report["DatabaseComparisonCL"]:
             outputDict["Database comparsion info"] = []
             for message in self.report["DatabaseComparisonCL"]:
                 outputDict["Database comparsion info"].append(message)
-        if(len(self.report["SSLCL"]) > 0):
+
+        if self.report["SSLCL"]:
             outputDict["SSL info"] = []
             for message in self.report["SSLCL"]:
                 outputDict["SSL info"].append(message)
@@ -158,10 +168,8 @@ class algorithmManager:
             for message in self.report["errors"]:
                 outputDict["Errors"].append(message)
 
-
         return outputDict
 
-        return outputDict
 
     def checkDB(self):
         """
