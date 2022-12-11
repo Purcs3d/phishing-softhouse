@@ -166,7 +166,7 @@ class SSLCL:
         issuer = self.cert.cert["issuer"][0][0][1] #countryName
         if issuer in conf.BAD_CERT_COUNTRYCODES:
             self.points += 30
-            self.report.append(f"SSL Certificate created in the country with countrycode: {issue}")
+            self.report.append(f"SSL Certificate created in the country with countrycode: {issuer}")
 
 
     def check_time_valid(self):
