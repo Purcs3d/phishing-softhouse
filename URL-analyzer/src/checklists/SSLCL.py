@@ -5,7 +5,7 @@ Checklist and tests associated with SSL/TSL attributes
 """
 
 from src.server_check import SSL_resolve
-import config as conf
+import src.config as conf
 import ssl
 import whois
 from datetime import datetime, timezone
@@ -21,7 +21,6 @@ class SSLCL:
         """
         Run through all tests sequentially using function calls
         """
-
         if not self.check_version():
             return self.points
 
@@ -35,6 +34,7 @@ class SSLCL:
         self.check_cert_age()
         self.check_cert_match()
         self.check_time_valid()
+        self.check_cert_origin()
 
         return self.points
 
@@ -105,7 +105,7 @@ class SSLCL:
             # fetch site registered owner
             site_org = whois.whois(self.cert.sane_url).org
             # fetch cert issuer corporation
-            issuer = self.cert.cert["issuer"][1][0][1]
+            issuer = self.cert.cert["issuer"][1][0][1] #organisationName
 
             if site_org == issuer:
                 self.points += self_license_points
@@ -163,7 +163,10 @@ class SSLCL:
         """
         Check country of origin of the certificate. #TODO check untrusted cert countries
         """
-        ...
+        issuer = self.cert.cert["issuer"][0][0][1] #countryName
+        if issuer in conf.BAD_CERT_COUNTRYCODES:
+            self.points += 30
+            self.report.append(f"SSL Certificate created in the country with countrycode: {issue}")
 
 
     def check_time_valid(self):
