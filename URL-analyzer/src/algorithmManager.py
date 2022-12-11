@@ -114,7 +114,7 @@ class algorithmManager:
             return f" This Website ({self.url}) is not online, or refused connection. "
 
         if self.URLinWhitelist == True:
-            reportDict['whiteList'] ={"URL in exist whitelist and is not phishy."}
+            reportDict['whiteList'] ={"URL exist whitelist and is not phishy."}
             return reportDict
 
         if self.URLinPreviousSearches == True:
