@@ -124,7 +124,8 @@ class algorithmManager:
         # if(self.report['URLstringCL'] != {}):
         #     reportDict['URLstringCL'] = self.report['URLstringCL']
 
-
+        from pprint import pprint
+        pprint(self.report)
         outputDict = {"Phishy":[], "Points":[]}
         outputDict["Phishy"].append(self.fishy)
         outputDict["Points"].append(self.points)
@@ -148,9 +149,16 @@ class algorithmManager:
             outputDict["SSL info"] = []
             for message in self.report["SSLCL"]:
                 outputDict["SSL info"].append(message)
+        if(len(self.report["URLreport"]) > 0):
+            outputDict["URL info"] = []
+            for message in self.report["URLreport"]:
+                outputDict["URL info"].append(message)
+        if(len(self.report["errors"]) > 0):
+            outputDict["Errors"] = []
+            for message in self.report["errors"]:
+                outputDict["Errors"].append(message)
 
-        from pprint import pprint
-        pprint(outputDict)
+
         return outputDict
 
         return outputDict

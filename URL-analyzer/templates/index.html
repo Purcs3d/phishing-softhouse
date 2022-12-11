@@ -22,7 +22,7 @@
         <input type="submit" value="Check" id="btn">
         {% if outputDict %}
         <div id="report">
-            <h2>Report</h2>
+            <h2>Report:</h2>
             {% for entry in outputDict %}
                 <h3>{{ entry }}</h3>
                 {% for index in outputDict[entry] %}
