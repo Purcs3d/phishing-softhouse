@@ -36,7 +36,8 @@ class HTMLparser():
 
     def fetchFaviconInfo(self, responseInfo):
         """
-            Collects info about websites favicon, to my knowledge, favicon info exist in in html tags: link and meta
+            Collects info about websites favicon, to my knowledge, 
+            favicon info exist in in html tags: link and meta
 
             input: response info from HTML request, output:
         """

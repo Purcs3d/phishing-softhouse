@@ -50,6 +50,7 @@ class DBhandler():
         self.conn.commit()
         self.init_createWhitelist() #if it doesnt exist, checked in function
 
+
     def init_createWhitelist(self):
         sql_str = "select count(*) from URLanalyzer.whitelist;"
         self.cursor.execute(sql_str)
@@ -63,6 +64,7 @@ class DBhandler():
                     sql_str = f"INSERT INTO URLanalyzer.whitelist (URL) VALUES ('{line.rstrip()}');"
                     self.cursor.execute(sql_str)
                 self.conn.commit()
+
 
     def checkURLinWhitelist(self):
         """
@@ -101,6 +103,8 @@ class DBhandler():
             if date.days > 3: # if previous search is older than 3 days -> return false anyways.
                 return False
             return True
+
+
     def fetchPreviousSearchReport(self):
         """
             Fetches report from a url found in previousSearches table.
