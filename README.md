@@ -1,5 +1,44 @@
 # Welcome to phishing-softhouse #
 
+This program was developed in the course DV1512
+
+The program analyzes URL:s to classify them as phishy/not phishy
+
+## Setup ##
+* Download the program by cloning the repository into your chosen directory of your local device
+```shell
+git clone https://github.com/Purcs3d/phishing-softhouse.git 
+```
+* Or download the zip file and extract into your chosen directory
+* Then navigate to the directory where the program is located and the map "URL-analyzer" and then 
+* To setup or reset database:
+  * Go to the directory "URL-analyzer/tests" and then run:
+  *  On Windows:
+  ```shell
+  python -m pytest test_database.py
+  ```
+  * On Linux:
+  ```shell
+  python3 -m pytest test_database.py
+  ```
+* Run the program:
+  * On Windows:
+  ```shell
+  python main.py server       # to run it on a web browser
+  #or
+  python main.py terminal     # to run the program in your terminal
+  ```
+  * On Linux:
+  ```shell
+  python3 main.py server       # to run it on a web browser
+  #or
+  python3 main.py terminal     # to run the program in your terminal
+  ```
+* If you have any problem with running the program or setting up the database you might want to:
+  * Update the settings in the config.py file located in the map "URL-analyzer/src". 
+  * Update your python version
+  * Update or install all modules in the "URL-analyzer/requirements.txt" file
+
 ## Requirements ##
 
 - Python3.10+
@@ -14,12 +53,6 @@
 
 ***
 
-## Our Git Conventions ##
-
-### Issues ###
-
-- Avoid having the *first character* in an issue be a number (0-9). This interferes with issue-ID fast tabbing when checking out a branch connected to the issue
-
 ### Import and export requirements.txt
 
 ```shell
@@ -30,41 +63,8 @@ pip install -r requirements.txt           # import requirements.txt
 
 ***
 
-## Code Standards ##
+## Software bill of materials
+* All libraries are found in the "URL-analyzer/requirements.txt" file
+* The whitelist in the database are from here: https://github.com/mitchellkrogza/Phishing.Database (accessed 2022-11)
+* The active phising links we used for testing was also found here: https://github.com/mitchellkrogza/Phishing.Database (accessed 2022-12)
 
-### Docstrings and Code Hints ###
-
-Following is a code example of so called "python code hints" and docstring formatting
-
-```py
-def func(param1: type, param2: (int)) -> str: # author name goes here
-"""
-Description: [followed by two spaces]  
-  [Indentation] This should be a short summary of what the function does and how to use it.
-  Do **NOT** describe how it works.
-  Lines should generally not go above 79 chars in length. If a description is too long, 
-  split it to new rows and match the indentation of the previous line
-
-[One blank row is important between sections. It improves readability and allows interpreters
-to format docstrings (e.g. pylance)]
-Intput: (followed by two spaces)  
-  - param1 (type): description
-  - param2 (int): used to do stuff
-  - [inputs are written in list format, using "*", "+", or "-". followed by the type (e.g.
-    "int", "string", etc) within paranthesis]
-
- Return: (Same line without indentation). This will be a short description of what is being
-         returned. Do not specify type unless it is neccessary.
-         If a line gets too long (generally ~85 chars) use the next line and indent it to
-         match the start of the previous paragraph.
-         In this example the function will already has a "hint" ("-> str") in the function
-         call (standardized in Python3), and therefore is not needed in the "return" docstring
-"""
-
-  [...]
-  print("docstring example")
-```
-
-### Misc ###
-
-- CamelCase will be used in functions and classes (e.g. `ThisIsAFunction`)
