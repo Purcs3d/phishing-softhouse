@@ -1,39 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">  
-    <title>URL phishyness checker</title>   
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">    
-    <div id="right-corner"> 
-        Made by 
-        <br>
-        <span style="font-style: normal;"> BDE </span>      
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Analysis Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <h1 class="Title"> URL phishyness checker </h1>
-    <form action="check" method="post">        
-        <h2>Enter The URL:</h2>
-        <br>
-        <input type="text" name="URL_input">
-        <br>
-        <input type="submit" value="Check" id="btn">
-        {% if output is mapping %}
-        <div id="report">
-            <h2>Report:</h2>
-            {% for entry in output %}
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    
+     <!-- Navigation bar -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{url_for('index')}}">
+                URL Analysis Tool
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page" href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{{url_for('about')}}">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div  class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll">            
+        <video autoplay muted loop id="tm-video">
+            <source src="{{url_for('static', filename='video/hero.mp4')}}" type="video/mp4">
+        </video>  
+        <form class="d-flex position-absolute tm-search-form"  action="check" method="post">        
+            <input class="form-control tm-search-input" type="text" placeholder="Enter The URL Here" name="URL_input">
+            <input class="btn btn-outline-success tm-search-btn" type="submit" value="Check" id="btn">
+            <!-- <div id="loader" style="display:none;background:green;padding:150px">This is a loader</div> -->
+        </form>
+    </div>
+    
+    <div  id="report">
+
+        {% if outputDict %}
+            <h2>Report</h2>
+            {% for entry in outputDict %}
                 <h3>{{ entry }}</h3>
-                {% for index in output[entry] %}
-                    <p>{{ index }}</p>
+                {% for index in outputDict[entry] %}
+                <p>{{ index }}</p>
                 {% endfor %}
             {% endfor %}
-        </div>
-        {% elif output is string %}
-        <div id="report">
-            <h2> Report: </h2>
-            <p> {{ output }} </p>
-        </div>
         {% endif %}
-        </form>
+
+    </div>
+    
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+
+
+            <div class="row">
+                <div class="col-lg-8 col-md-5 col-12 px-5 mb-3">
+                    Designed by Team BDE. Copyright © 2022. All Rights Reserved.
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://www.linkedin.com/school/blekinge-institute-of-technology/?originalSubdomain=se/"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="mb-2"><a href="https://twitter.com/bthinformation?lang=en"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href="https://www.instagram.com/bth_blekingetekniskahogskola"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script>
+        $(window).on("load", function() 
+        {
+            $('body').addClass('loaded');
+        });
+    </script>
+    <script>
+
+        $(document).ready(function(){
+            var myVar;
+            $( "#btn" ).click(function() {
+                myFunction(this);
+        });
+
+            function myFunction(div) {
+            $("#loader").toggle();
+            $(div).toggle();
+
+            }
+
+        });
+    </script>
 </body>
 </html>

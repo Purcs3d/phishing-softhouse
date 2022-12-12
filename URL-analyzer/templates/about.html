@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Analysis Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    
+     <!-- Navigation bar -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{url_for('index')}}">
+                URL Analysis Tool
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page" href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{{url_for('about')}}">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="{{url_for('static', filename='img/aa.gif')}}"></div>
+
+    <div class="container-fluid tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="navbar-brand">About the project:</h2>
+        </div>
+        <div class="row tm-mb-74 tm-row-1640">            
+            <div class="col-lg-5 col-md-6 col-12 mb-3">
+                <img src="{{url_for('static', filename='img/phishing-7100899.png')}}" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-7 col-md-6 col-12">
+                <div class="tm-about-img-text">
+                    <p class="mb-4">
+                        <b>Phishing attacks</b> commonly begin with an email and can be used in various attacks. URL phishing attacks take phishing a step further to create a malicious website. The link to the site is embedded within a phishing email, and the attacker uses social engineering to try to trick the user into clicking on the link and visiting the malicious site.
+                    </p>
+                    <p>                        
+                        <b>How Does It Work?</b> URL phishing attacks can use various means to trick a user into clicking on the malicious link. For example, a phishing email may claim to be from a legitimate company asking the user to reset their password due to a potential security incident. Alternatively, the malicious email that the user needs to verify their identity for some reason by clicking on the malicious link.
+                    <p>
+                        Once the link has been clicked, the user is directed to the malicious phishing page. This page may be designed to harvest a user’s credentials or other sensitive information under the guise of updating a password or verifying a user’s identity. Alternatively, the site may serve a “software update” for the user to download and execute that is actually malware.
+                    </p>
+
+                    <p> 
+                        <b>Our tool</b> is designed to analyze suspicious URLs or phishing websites which some has  a domain similar in name and appearance to an official website.
+                    </p> 
+
+                </div>                
+            </div>
+        </div>
+
+
+
+
+
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+
+
+            <div class="row">
+                <div class="col-lg-8 col-md-5 col-12 px-5 mb-3">
+                    Designed by Team BDE. Copyright © 2022. All Rights Reserved.
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://www.linkedin.com/school/blekinge-institute-of-technology/?originalSubdomain=se/"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="mb-2"><a href="https://twitter.com/bthinformation?lang=en"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href="https://www.instagram.com/bth_blekingetekniskahogskola"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    
+    <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script>
+        $(window).on("load", function() 
+        {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>

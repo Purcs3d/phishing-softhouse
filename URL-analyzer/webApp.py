@@ -14,37 +14,32 @@ def index() -> None:
     """
     return render_template("index.html")
 
+@app.route("/about") 
+def about():    
+    return render_template("about.html")  
+
 # page after URL input
+
 @app.route("/check", methods=['GET', 'POST'])
-def CheckURL():
-    """
-    Runs algoritm manager and formats the terun value to be rendered on index
-    """
+def CheckURL(): 
     try:
         URLinput = str(request.form['URL_input'])
 
-        # return early if empty
         if URLinput.strip() == "":
             empty_url_str = "No URL was given"
             print(empty_url_str)
             return render_template("index.html", output = empty_url_str)
+            
 
-        # check URL against algomanager
-        AMObj = am.algorithmManager(URLinput)
+        AMObj = am.algorithmManager(URLinput) 
         AMObj.run()
+        AMObj.runEvaluations()
 
-        # format algomanager output
+        # format output so HTML parsable
         outputDict = AMObj.createOutputString()
-        PendingDeprecationWarning
-    except Exception as e:
-        # return error string
-        flash(f"Error: {e}")
+
+    except Exception as e:  #if error
+        flash(f"Error: {e}")    #flash error
         raise(e)
 
-    return render_template("index.html", output = outputDict) #render template
-
-def format_report(algo):
-    """
-    Format report dictionary into HTML table
-    """
-    ...
+    return render_template("index1.html", outputDict = outputDict) #render template
