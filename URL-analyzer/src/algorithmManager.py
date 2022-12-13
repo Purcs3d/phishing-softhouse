@@ -132,42 +132,48 @@ class algorithmManager:
         outputDict["Phishy"].append(self.fishy)
         outputDict["Points"].append(self.points)
 
+        # holds attribute categories. used in output as nested dict
+        attrDict = {}
+
         # init and add URLStringCL frontend parseable
         if self.report["URLstringCL"]:
-            outputDict["URL string info"] = []
+            attrDict["URL string info"] = []
             for message in self.report["URLstringCL"]:
-                outputDict["URL string info"].append(message)
+                attrDict["URL string info"].append(message)
 
         # init and add HTMLdataCL frontend parseable
         if self.report["HTMLdataCL"]:
-            outputDict["HTML data info"] = []
+            attrDict["HTML data info"] = []
             for message in self.report["HTMLdataCL"]:
-                outputDict["HTML data info"].append(message)
+                attrDict["HTML data info"].append(message)
 
         # init and add DNSdataCL frontend parseable
         if self.report["DNSdataCL"]:
-            outputDict["DNS data info"] = []
+            attrDict["DNS data info"] = []
             for message in self.report["DNSdataCL"]:
-                outputDict["DNS data info"].append(message)
+                attrDict["DNS data info"].append(message)
 
         # init and add DatabaseComparisonCL frontend parseable
         if self.report["DatabaseComparisonCL"]:
-            outputDict["Database comparsion info"] = []
+            attrDict["Database comparsion info"] = []
             for message in self.report["DatabaseComparisonCL"]:
-                outputDict["Database comparsion info"].append(message)
+                attrDict["Database comparsion info"].append(message)
 
         if self.report["SSLCL"]:
-            outputDict["SSL info"] = []
+            attrDict["SSL info"] = []
             for message in self.report["SSLCL"]:
-                outputDict["SSL info"].append(message)
+                attrDict["SSL info"].append(message)
         if(len(self.report["URLreport"]) > 0):
-            outputDict["URL info"] = []
+            attrDict["URL info"] = []
             for message in self.report["URLreport"]:
-                outputDict["URL info"].append(message)
+                attrDict["URL info"].append(message)
         if(len(self.report["errors"]) > 0):
-            outputDict["Errors"] = []
+            attrDict["Errors"] = []
             for message in self.report["errors"]:
-                outputDict["Errors"].append(message)
+                attrDict["Errors"].append(message)
+
+        # append attributes to output
+        outputDict["attr"] = attrDict
 
         return outputDict
 

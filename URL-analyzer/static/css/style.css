@@ -29,7 +29,18 @@ body
     border-style: solid;
     margin: auto;
     border-radius: 5px;
+
+    align-items: center;
+    align-content: center;
 }
+#report table{
+    margin-left: auto;
+    margin-right: auto;
+}
+#report th{
+    border: solid red 2px;
+}
+
 p{
     color: #ffffff;
     font-family: 'Proxima Nova', sans-serif;

@@ -18,22 +18,33 @@
         <input type="text" name="URL_input">
         <br>
         <input type="submit" value="Check" id="btn">
-        {% if output is mapping %}
+        <!--  -->
+        {% if output %}
         <div id="report">
             <h2>Report:</h2>
-            {% for entry in output %}
-                <h3>{{ entry }}</h3>
-                {% for index in output[entry] %}
-                    <p>{{ index }}</p>
-                {% endfor %}
-            {% endfor %}
-        </div>
-        {% elif output is string %}
-        <div id="report">
-            <h2> Report: </h2>
+            <!-- format dict if returned -->
+            {% if output is mapping %}
+                <table>
+                    <tr>
+                        <th>Report</th>
+                        <th>Category</th>
+                    </tr>   
+                    {% for entry in output.attr %}
+                        {% for index in output.attr[entry] %}
+                            <tr>
+                                <td>{{ index }}</td>
+                                <td>{{ entry }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table> 
+
+                <!-- if output is a string -->
+            {% elif output is string %}
             <p> {{ output }} </p>
-        </div>
+            {% endif %}
         {% endif %}
+        </div>
         </form>
 </body>
 </html>
