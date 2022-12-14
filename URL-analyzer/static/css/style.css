@@ -9,15 +9,17 @@ body
 }
 
 #right-corner{
-    position:absolute; 
-    top: 0; 
-    right: 0; 
-    width: 100px; 
-    text-align:left; 
+    background: #63d297;
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: 0;
+    text-align: left;
+
     font-family: 'Proxima Nova', sans-serif;
     font-style: italic;
+
     padding-left: 4px;
-    background: #63d297;
 }
 #report{
     color: #ffffff;
@@ -36,9 +38,10 @@ body
 #report table{
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
 }
 #report th{
-    border: solid red 2px;
+    border: solid #63d297 2px;
 }
 
 p{

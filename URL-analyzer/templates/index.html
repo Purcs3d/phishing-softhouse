@@ -24,11 +24,23 @@
             <h2>Report:</h2>
             <!-- format dict if returned -->
             {% if output is mapping %}
+            <!-- output phishiniess and points -->
+            <section class="split-box">
+                <div class="left-split">
+                    {% if output.points >= 100 %}
+                    <h3>Points</h3>
+                    {% endif %}
+                </div>
+                <div class="right-split">
+                    <h3></h3>
+                </div>
+            </section>
+            <!-- output attributes -->
                 <table>
                     <tr>
                         <th>Report</th>
                         <th>Category</th>
-                    </tr>   
+                    </tr>
                     {% for entry in output.attr %}
                         {% for index in output.attr[entry] %}
                             <tr>
