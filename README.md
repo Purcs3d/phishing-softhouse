@@ -4,13 +4,33 @@ This program was developed in the course DV1512
 
 The program analyzes URL:s to classify them as phishy/not phishy
 
+## Requirements ##
+
+- Python3.10+
+- PIP 22.3.1
+- Flask 2.2.2
+- Pytest 7.2.0
+- URL-parser 3.0.3
+- validators 0.20.0
+- python-whois 0.9.18
+- psycopg2 2.9.5
+- beautifulsoup4 4.11.1
+
+***
+
 ## Setup ##
 * Download the program by cloning the repository into your chosen directory of your local device
 ```shell
 git clone https://github.com/Purcs3d/phishing-softhouse.git 
 ```
 * Or download the zip file and extract into your chosen directory
-* Then navigate to the directory where the program is located and the map "URL-analyzer" and then 
+* Install requirements 
+* ```shell
+pip install pipreqs                       # install pipreqs
+python -m  pipreqs.pipreqs .              # export requirements.txt
+pip install -r requirements.txt           # import requirements.txt
+```
+* Then navigate to the directory where the program is located and the map "URL-analyzer" and then
 * To setup or reset database:
   * Go to the directory "URL-analyzer/tests" and then run:
   *  On Windows:
@@ -39,27 +59,10 @@ git clone https://github.com/Purcs3d/phishing-softhouse.git
   * Update your python version
   * Update or install all modules in the "URL-analyzer/requirements.txt" file
 
-## Requirements ##
 
-- Python3.10+
-- PIP 22.3.1
-- Flask 2.2.2
-- Pytest 7.2.0
-- URL-parser 3.0.3
-- validators 0.20.0
-- python-whois 0.9.18
-- psycopg2 2.9.5
-- beautifulsoup4 4.11.1
 
-***
 
-### Import and export requirements.txt
 
-```shell
-pip install pipreqs                       # install pipreqs
-python -m  pipreqs.pipreqs .              # export requirements.txt
-pip install -r requirements.txt           # import requirements.txt
-```
 
 ***
 
