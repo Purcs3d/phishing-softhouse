@@ -121,9 +121,9 @@ class DBhandler():
         return self.cursor.fetchone()[0]
     def fetchPreviousSearchDate(self):
         """
-            Fetches datetime that holds if a URL is fishy/not fishy from a url found in previousSearches table.
+            Fetches datetime from url found in previousSearches table.
             ! Used in combination with the function checkURLinpreviousSearches !
-            input: URL, output: bool
+            input: URL, output: datetime
         """
         sql_str = f"Select searchDate from urlanalyzer.previoussearches where url = '{self.URLinfo.url}';"
         self.cursor.execute(sql_str)
