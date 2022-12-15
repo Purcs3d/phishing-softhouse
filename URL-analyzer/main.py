@@ -25,7 +25,6 @@ def main():
 
                 algorithmEngine = am.algorithmManager(URL) #algorithm object
 
-                fishy = algorithmEngine.run()#fishy or not fishy boolean
                 outputDict = algorithmEngine.createOutputString()
                 if type(outputDict) == str:
                     print(outputDict)

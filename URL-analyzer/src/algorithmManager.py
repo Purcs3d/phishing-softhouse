@@ -126,11 +126,10 @@ class algorithmManager:
         if(self.report['URLstringCL'] != {}):
             reportDict['URLstringCL'] = self.report['URLstringCL']
 
-
         # init format dict
         outputDict = {}
-        outputDict["Phishy"] = self.fishy
-        outputDict["Points"] = self.points
+        outputDict["phishy"] = self.fishy
+        outputDict["points"] = self.points
 
         # holds attribute categories. used in output as nested dict
         attrDict = {}
