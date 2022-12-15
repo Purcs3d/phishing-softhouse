@@ -128,9 +128,9 @@ class algorithmManager:
 
 
         # init format dict
-        outputDict = {"Phishy":[], "Points":[]}
-        outputDict["Phishy"].append(self.fishy)
-        outputDict["Points"].append(self.points)
+        outputDict = {}
+        outputDict["Phishy"] = self.fishy
+        outputDict["Points"] = self.points
 
         # holds attribute categories. used in output as nested dict
         attrDict = {}

@@ -30,14 +30,16 @@ body
     border: #63d297;
     border-style: solid;
     margin: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
     border-radius: 5px;
 
     align-items: center;
     align-content: center;
 }
 #report table{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:2vw;
+    margin-right: 2vw;
     text-align: left;
 }
 #report th{
@@ -99,4 +101,11 @@ input:focus
 #btn:hover
 {
     background-color: #34b470;
+}
+
+.phishy {
+    color: red;
+}
+.not-phishy {
+    color: green;
 }
