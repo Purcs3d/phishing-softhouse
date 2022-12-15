@@ -25,9 +25,8 @@ git clone https://github.com/Purcs3d/phishing-softhouse.git
 ```
 * Or download the zip file and extract into your chosen directory
 * Install requirements 
-* ```shell
+```shell
 pip install pipreqs                       # install pipreqs
-python -m  pipreqs.pipreqs .              # export requirements.txt
 pip install -r requirements.txt           # import requirements.txt
 ```
 * Then navigate to the directory where the program is located and the map "URL-analyzer" and then
