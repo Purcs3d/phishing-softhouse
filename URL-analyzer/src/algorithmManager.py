@@ -24,6 +24,7 @@ class algorithmManager:
         self.URLinPreviousSearches = False
         self.fishy = False
         self.pointPhishingLimit = 100
+        self.timestamp = None
 
         try:
             self.checkDB() # check if in whitelist/previous searches
@@ -118,6 +119,7 @@ class algorithmManager:
             return reportDict
 
         if self.URLinPreviousSearches == True:
+            self.timestamp = self.DBhandlerObj.fetchPreviousSearchDate()
             reportDict = self.DBhandlerObj.fetchPreviousSearchReport()
             return reportDict
 
