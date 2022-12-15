@@ -57,7 +57,7 @@ git clone https://github.com/Purcs3d/phishing-softhouse.git
 
 ```shell
 pip install pipreqs                       # install pipreqs
-python -m  pipreqs.pipreqs . --force      # export requirements.txt
+python -m  pipreqs.pipreqs .              # export requirements.txt
 pip install -r requirements.txt           # import requirements.txt
 ```
 
