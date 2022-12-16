@@ -17,7 +17,7 @@ body
     background: #63d297;
 
     position: sticky;
-    width: 100px;
+    width: 6vw;
     top: 1.5rem;
     right: 0rem;
     float: right;
@@ -34,9 +34,10 @@ body
 input
 {
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 
     height: 2.5rem;
+    min-height: 2.5rem;
 
     border: none;
     border-radius: 10px;
@@ -45,6 +46,8 @@ input
     font-size: 1.3em;
     font-family: "Montserrat", sans-serif;
     text-align: center;
+
+    transition: 70ms ease-in;
 }
 .in-bar {
     background-color: #e1edff;
@@ -58,7 +61,6 @@ input
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     
-    transition: 70ms ease-in;
     text-align: left;
 }
 .in-bar:focus
@@ -68,14 +70,16 @@ input
 }
 .btn
 {
+    margin-left: 0;
     background-color: #63d297;
     
-    width:  10vw;
+    width:  30vw;
     padding-left: 0;
 
-    font-weight: bold;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
+    font-weight: bold;
 
     color: white;
 }
@@ -83,6 +87,7 @@ input
 .btn:hover
 {
     background-color: #34b470;
+    transition: 70ms ease-in;
 }
 
 .phishy {
@@ -149,6 +154,10 @@ p{
 
 h1.Title
 {
+    padding-left: 6vw;
+    align-self: center;
+    text-align: center;
+
     font-weight: bold;
     color: #63d297;
 }

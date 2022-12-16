@@ -8,18 +8,21 @@
 </head>
 
 <body>
+    
     <div id="right-corner"> 
-        Made by 
+            Made by 
         </br>
         <span style="font-style: normal;"> BDE </span>      
     </div>
 
-    <h1 class="Title"> URL phishyness checker </h1>
-    <h2>Enter The URL: </h2>
+    <h1 class="Title">URL phishyness checker</h1>
 
     <form action="check" method="post">        
-        <input class="in-bar" type="text" name="URL_input" placeholder="Input URL">
-        <input class="btn" type="submit" value="Check" id="check-btn">
+        <!-- get URL -->
+        <div class="input-grp">
+            <input class="in-bar" type="text" name="URL_input" placeholder="Input URL" autofocus><input class="btn" type="submit" value="Check" id="check-btn">
+        </div>
+        
         {% if output %}
         <!-- URL - Points - Phishyness (colorized block) -->
         {% if output.points >= 100 %}
