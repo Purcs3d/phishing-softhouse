@@ -12,6 +12,25 @@ body
     font-family: 'Montserrat', sans-serif;
 }
 
+h1.Title
+{
+    padding-left: 6vw;
+    align-self: center;
+    text-align: center;
+
+    font-weight: bold;
+    color: #63d297;
+}
+
+h2{
+    font-weight: bold;
+    color: #63d297;
+}
+h3{
+    font-weight: bold;
+    color: #63d297;
+}
+
 
 #right-corner{
     background: #63d297;
@@ -31,27 +50,29 @@ body
     padding-left: 4px;
 }
 
-input
-{
-    margin: 0;
-    margin-bottom: 1.5rem;
+/* shit don work, man. i just want a sticky searchbar, but it aint working */
+.input-grp {
+    /* top: 2rem;
+    position: sticky;
+    float: center; */
 
+    padding-bottom: 2rem;
+}
+input
+{   
+    display: inline-block;
     height: 2.5rem;
-    min-height: 2.5rem;
 
     border: none;
     border-radius: 10px;
 
-    font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: "Montserrat", sans-serif;
-    text-align: center;
-
+    
     transition: 70ms ease-in;
 }
 .in-bar {
     background-color: #e1edff;
-    font-size: 1.5em;
     width: 50vw;
     
     padding-left: 1rem;
@@ -66,26 +87,29 @@ input
 .in-bar:focus
 {
     outline: none;
-    background-color: #c4d0df;
+    background-color: #c4d0df;  
 }
 .btn
 {
-    margin-left: 0;
+    color: #0f131a;
     background-color: #63d297;
     
-    width:  30vw;
+    width:  20vw;
+    margin-left: 0;
     padding-left: 0;
-
+    
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 
     font-weight: bold;
-
-    color: white;
+    height: 2.6rem;
 }
-
 .btn:hover
 {
+    background-color: #34b470;
+    transition: 70ms ease-in;
+}
+.btn:focus {
     background-color: #34b470;
     transition: 70ms ease-in;
 }
@@ -97,7 +121,7 @@ input
     color: green;
 }
 .report-box {
-    margin: 1rem 20vw;
+    margin: 2rem 15vw;
 
     border-radius: 2px;
     border-style: solid;
@@ -125,6 +149,8 @@ input
     align-content: center;
 }
 #report table{
+    border-spacing: 0   ;
+
     margin-left:2vw;
     margin-right: 2vw;
     margin: auto;
@@ -135,14 +161,29 @@ input
 
     text-align: left;
 }
+#report tr{
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#report tr:first-child{
+    padding-top: .5rem;
+}
 #report th{
-    border: solid #63d297 2px;
+    border-bottom: solid #bbbbbb50;
 
     margin-bottom: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+    
     padding-right: 1em;
     padding-left: 1em;
+    padding-bottom: .5rem;
 }
 #report td {
+    margin-right: 0;
+    margin-left: 0;
     padding-right: 1em;
     padding-left: 1em;
 }
@@ -150,25 +191,6 @@ input
 p{
     color: #ffffff;
     font-family: 'Proxima Nova', sans-serif;
-}
-
-h1.Title
-{
-    padding-left: 6vw;
-    align-self: center;
-    text-align: center;
-
-    font-weight: bold;
-    color: #63d297;
-}
-
-h2{
-    font-weight: bold;
-    color: #63d297;
-}
-h3{
-    font-weight: bold;
-    color: #63d297;
 }
 
 
