@@ -186,7 +186,7 @@ class URLstringCL():
 
         if len(numbers) > 0:
             self.points += 40
-            self.report.append(f"The URL contained the following numbers in the subdomain:" + ", ".join(numbers))
+            self.report.append(f"The URL contained the following numbers in the domain/subdomain:" + ", ".join(numbers))
         if len(numbers) > 3:
             self.points += 70
-            self.report.append(f"The URL contained >3 numbers in the subdomain.")
+            self.report.append(f"The URL contained >3 numbers in the domain/subdomain.")

@@ -24,7 +24,7 @@ def main():
                              \nEnter your URL: ')
 
                 algorithmEngine = am.algorithmManager(URL) #algorithm object
-
+                fishy = algorithmEngine.run() # kör man i python main.py terminal skall denna köras här.
                 outputDict = algorithmEngine.createOutputString()
                 if type(outputDict) == str:
                     print(outputDict)
