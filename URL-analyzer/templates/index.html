@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">  
     <title>URL phishyness checker</title>   
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">    
+</head>
+
+<body>
+    
     <div id="right-corner"> 
-        Made by 
-        <br>
+            Made by 
+        </br>
         <span style="font-style: normal;"> BDE </span>      
     </div>
-</head>
-<body>
-    <h1 class="Title"> URL phishyness checker </h1>
+
+    <h1 class="Title">URL phishyness checker</h1>
+
     <form action="check" method="post">        
-        <h2>Enter The URL:</h2>
-        <br>
-        <input type="text" name="URL_input">
-        <br>
-        <input type="submit" value="Check" id="btn">
-        {% if output is mapping %}
-        <div id="report">
-            <h2>Report:</h2>
-            {% for entry in output %}
-                <h3>{{ entry }}</h3>
-                {% for index in output[entry] %}
-                    <p>{{ index }}</p>
-                {% endfor %}
-            {% endfor %}
+        <!-- get URL -->
+        <div class="input-grp">
+            <input class="in-bar" type="text" name="URL_input" placeholder="Input URL" autofocus><input class="btn" type="submit" value="Check" id="check-btn">
         </div>
-        {% elif output is string %}
-        <div id="report">
-            <h2> Report: </h2>
-            <p> {{ output }} </p>
-        </div>
+        
+        {% if output %}
+            <!-- URL - Points - Phishyness (colorized block) -->
+            <!-- red/phishy report -->
+            {% if output is mapping and output.phishy == True %}
+            <section class="report-box phishy">
+                <h2 class="url">{{output.url}}</h2>
+
+                <div class="di-split">
+                    <div class="phish-indicate">
+                        <h3>Site phishyness</h3>
+                        <p><span>Phishy</span></p>
+                    </div>
+                    <div class="points">
+                        <h3>Points</h3>
+                        <p><span class="point-span">{{ output.points }}</span> / 100</p>
+                    </div>
+                </div>
+            <!-- green/OK report -->
+            {% elif  output is mapping and output.phishy == False %}
+            <section class="report-box not-phishy">
+                <h2 class="url">{{output.url}}</h2>
+                
+                <div class="di-split">
+                    <div class="phish-indicate">
+                        <h3>Site phishyness</h3>
+                        <p><span>NOT</span> phishy</p>
+                    </div>
+                    <div class="points">
+                        <h3>Points</h3>
+                        <p><span class="point-span">{{ output.points }}</span>/100</p>
+                    </div>
+                </div>
+            {% else %}
+            <section class="report-box">
         {% endif %}
+
+            <div id="report">
+                <h2>Report:</h2>
+                <!-- format dict if returned -->
+                {% if output is mapping %}
+                <!-- output phishiniess and points -->
+                <!-- output attributes -->
+                    <table>
+                        <tr>
+                            <th>Report</th>
+                            <th>Category</th>
+                        </tr>
+                        {% for entry in output.attr %}
+                            {% for index in output.attr[entry] %}
+                                <tr>
+                                    <td class="attr">{{ index }}</td>
+                                    <td class="">{{ entry }}</td>
+                                </tr>
+                            {% endfor %}
+                        {% endfor %}
+                    </table> 
+
+                    <!-- if output is a string -->
+                {% elif output is string %}
+                <p> {{ output }} </p>
+                {% endif %}
+            {% endif %}
+            </div>
+        </section>
         </form>
 </body>
 </html>

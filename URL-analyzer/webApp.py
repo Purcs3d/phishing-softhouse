@@ -41,6 +41,9 @@ def CheckURL():
         flash(f"Error: {e}")
         raise(e)
 
+    from pprint import pprint
+    pprint(outputDict)
+
     return render_template("index.html", output = outputDict) #render template
 
 def format_report(algo):
