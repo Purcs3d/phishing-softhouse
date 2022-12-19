@@ -115,12 +115,13 @@ class algorithmManager:
             return f" This Website ({self.url}) is not online, or refused connection. "
 
         if self.URLinWhitelist == True:
-            reportDict['whiteList'] ={"URL exist in whitelist and is not phishy."}
+            reportDict = "URL exist in whitelist and is not phishy."
             return reportDict
-
+        print(self.URLinPreviousSearches)
         if self.URLinPreviousSearches == True:
             self.timestamp = self.DBhandlerObj.fetchPreviousSearchDate()
             reportDict = self.DBhandlerObj.fetchPreviousSearchReport()
+        
             return reportDict
 
         reportDict['Phishy'] = self.fishy
