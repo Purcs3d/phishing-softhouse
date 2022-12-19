@@ -24,13 +24,40 @@
         </div>
         
         {% if output %}
-        <!-- URL - Points - Phishyness (colorized block) -->
-        {% if output.points >= 100 %}
-        <section class="report-box phishy">
-        {% else %}
-        <section class="report-box not-phishy">
+            <!-- URL - Points - Phishyness (colorized block) -->
+            <!-- red/phishy report -->
+            {% if output is mapping and output.phishy == True %}
+            <section class="report-box phishy">
+                <h2 class="url">{{output.url}}</h2>
+
+                <div class="di-split">
+                    <div class="phish-indicate">
+                        <h3>Site phishyness</h3>
+                        <p><span>Phishy</span></p>
+                    </div>
+                    <div class="points">
+                        <h3>Points</h3>
+                        <p><span class="point-span">{{ output.points }}</span> / 100</p>
+                    </div>
+                </div>
+            <!-- green/OK report -->
+            {% elif  output is mapping and output.phishy == False %}
+            <section class="report-box not-phishy">
+                <h2 class="url">{{output.url}}</h2>
+                
+                <div class="di-split">
+                    <div class="phish-indicate">
+                        <h3>Site phishyness</h3>
+                        <p><span>NOT</span> phishy</p>
+                    </div>
+                    <div class="points">
+                        <h3>Points</h3>
+                        <p><span class="point-span">{{ output.points }}</span>/100</p>
+                    </div>
+                </div>
+            {% else %}
+            <section class="report-box">
         {% endif %}
-            <p>{{ output.points }}</p>
 
             <div id="report">
                 <h2>Report:</h2>
@@ -46,8 +73,8 @@
                         {% for entry in output.attr %}
                             {% for index in output.attr[entry] %}
                                 <tr>
-                                    <td>{{ index }}</td>
-                                    <td>{{ entry }}</td>
+                                    <td class="attr">{{ index }}</td>
+                                    <td class="">{{ entry }}</td>
                                 </tr>
                             {% endfor %}
                         {% endfor %}

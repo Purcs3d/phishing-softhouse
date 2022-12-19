@@ -6,7 +6,7 @@ body
     padding: 0;
     margin: 0;
     background:#0f131a;
-    color: #ffffff;
+    color: #e1edff;
 
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +19,7 @@ h1.Title
     text-align: center;
 
     font-weight: bold;
-    color: #63d297;
+    color: #63d297 !important;
 }
 
 h2{
@@ -36,18 +36,23 @@ h3{
     background: #63d297;
 
     position: sticky;
+    padding-left: 4px;
+
     width: 6vw;
+
     top: 1.5rem;
     right: 0rem;
     float: right;
+
     overflow: none;
+
+    border-radius: 1px 0 0 1px;
     
     color: #0F131A;
     text-align: left;
     font-family: 'Proxima Nova', sans-serif;
     font-style: italic;
 
-    padding-left: 4px;
 }
 
 /* shit don work, man. i just want a sticky searchbar, but it aint working */
@@ -115,28 +120,75 @@ input
 }
 
 .phishy {
-    color: red;
+}
+.phishy h2 {
+    color: #ff4249;
+}
+.phishy h3 {
+    color: #ff4249;
 }
 .not-phishy {
-    color: green;
 }
+.not-phishy h2 {
+    color: #63d297;
+}
+.not-phishy h3 {
+    color: #63d297;
+}
+
+.url {
+    font-size: 2em;
+}
+.points > * {
+    font-size: 1.2em;
+}
+.phish-indicate > * {
+    font-size: 1.2em;
+}
+
+.di-split {
+    width: 40%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+.di-split span {
+    font-size: 1.5em;
+    color: #e1edff;
+    font-style: italic;
+}
+.phishy .di-split span {
+    color: #ff4248;
+}
+.not-phishy .di-split span {
+    color: #63d297;
+}
+.di-split > * {
+    width: 20%;
+    flex: auto;
+
+    border-bottom: #bbbbbb50 solid 3px;
+}
+
 .report-box {
     margin: 2rem 15vw;
 
-    border-radius: 2px;
+    border-radius: 10px;
     border-style: solid;
-    border-color: #ffffff;
-    box-shadow: 0 0 2px #999999;
+    border-color: #ffffff3c;
+    box-shadow: 0 0 2px #9999997c;
 }
-.report-box.phishy { 
+/* .report-box.phishy { 
     border-color: #d26367;
     box-shadow: 0 0 2px #85262a;
 }
 .report-box.not-phishy { 
     border-color: #63d297;
     box-shadow: 0 0 2px #2b945c;
-}
-
+} */
 #report{
     font-family: 'Proxima Nova', sans-serif;
     font-style: italic;
@@ -148,15 +200,31 @@ input
     align-items: center;
     align-content: center;
 }
+#report h2 {
+    margin: 1rem auto;
+
+    width: 85%;
+    margin-bottom: 1rem;
+
+    text-align: left;
+}
+#report h2 {
+    text-align: center;
+}
+.phishy #report h2 {
+    text-align: left;
+}
+.not-phishy #report h2 {
+    text-align: left;
+}
+
 #report table{
-    border-spacing: 0   ;
+    border-spacing: 0;
 
-    margin-left:2vw;
-    margin-right: 2vw;
+    width: 80%;
+
     margin: auto;
-    max-width: 80%;
-
-    padding-top: 2rem;
+    margin-top: 1rem;
     padding-bottom: 2rem;
 
     text-align: left;
@@ -167,13 +235,13 @@ input
     padding-left: 0;
     padding-right: 0;
 }
-#report tr:first-child{
-    padding-top: .5rem;
-}
+#report tr:nth-child(even){
+    background: #e1edff0b;
+}   
+
 #report th{
     border-bottom: solid #bbbbbb50;
-
-    margin-bottom: 5rem;
+    
     margin-left: 0;
     margin-right: 0;
     
@@ -181,16 +249,28 @@ input
     padding-left: 1em;
     padding-bottom: .5rem;
 }
+.phishy #report th {
+    color: #ff4249;
+    border-bottom: solid #ff3d4396 3px;
+}
+.not-phishy #report th {
+    color: #63d297;
+    border-bottom: solid #63d29796 3px;
+}
+
 #report td {
     margin-right: 0;
     margin-left: 0;
     padding-right: 1em;
     padding-left: 1em;
+
+    color: #777;
+}
+#report td.attr {
+    color: #e1edff;
 }
 
 p{
     color: #ffffff;
     font-family: 'Proxima Nova', sans-serif;
 }
-
-

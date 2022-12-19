@@ -128,6 +128,7 @@ class algorithmManager:
 
         # init format dict
         outputDict = {}
+        outputDict["url"]    = self.url
         outputDict["phishy"] = self.fishy
         outputDict["points"] = self.points
 
