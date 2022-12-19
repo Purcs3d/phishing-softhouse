@@ -30,7 +30,7 @@ def CheckURL():
             return render_template("index.html", output = empty_url_str)
 
         # check URL against algomanager
-        AMObj = am.algorithmManager(URLinput)
+        AMObj = am.algorithmManager(URLinput.lower())
         AMObj.run()
 
         # format algomanager output
