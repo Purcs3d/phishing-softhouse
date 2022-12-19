@@ -4,6 +4,8 @@ This program was developed in the course DV1512
 
 The program analyzes URL:s to classify them as phishy/not phishy
 
+![](phishy_pic.png)
+
 ## Requirements ##
 
 - Python3.10+
