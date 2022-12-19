@@ -32,7 +32,7 @@ pip install pipreqs                       # install pipreqs
 pip install -r requirements.txt           # import requirements.txt
 ```
 * Then navigate to the directory where the program is located and the map "URL-analyzer" and then
-* To setup or reset database:
+* To setup or reset PostgreSQL database:
   * Go to the directory "URL-analyzer/tests" and then run:
   *  On Windows:
   ```shell
