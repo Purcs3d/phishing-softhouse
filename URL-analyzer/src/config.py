@@ -39,7 +39,7 @@ BAD_URL_LENGTH = 25 #length does not regard pathlength. only subdomain+domain+to
 
 """ SSL/TSL """
 
-BAD_CERT_VERSIONS = ["SSL1.0", "SSL2.0", "SSL3.0", "TLSv1.0", "TLSv1.1", "TLSv1.2"]
+BAD_CERT_VERSIONS = ["SSLv1.0", "SSLv2.0", "SSLv3.0", "TLSv1.0", "TLSv1.1", "TLSv1.2"]
 # list of whitelisted SSL/TSL license versions
 MIN_CERT_VER = 2 #? TLSv1.2 is permitted some bigger sites still use it
 # whitelisted "safe" hashing algorithms used on the cert

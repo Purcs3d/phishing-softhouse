@@ -153,7 +153,7 @@ CREATE TABLE IF NOT EXISTS URLanalyzer.previousSearches (
 	ID 	SERIAL 	PRIMARY KEY,
 	searchDate DATE DEFAULT CURRENT_DATE,
 	URL TEXT,
-	report TEXT,
+	report json,
     fishy BOOLEAN
 );
 

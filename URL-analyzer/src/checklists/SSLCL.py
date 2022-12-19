@@ -120,6 +120,9 @@ class SSLCL:
     def check_cert_age(self): #TODO
         """
         Check if the license is extemrely young (old certs are seen as more likely legitimate)
+
+        TODO: Cannot be done scalable? To use API DigiCert wants username, phonenumber etc
+        https://dev.digicert.com/en/certcentral-apis/services-api.html
         """
         one_day_points = 75
         one_day_report = "The license age is less than a day"

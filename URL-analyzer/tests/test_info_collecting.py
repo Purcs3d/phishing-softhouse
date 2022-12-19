@@ -43,7 +43,7 @@ def test_stringParser(URLstringParser):
     assert URLinfoObj.file == "file.html"
 
 def test_DNSresolver(urlDNSresolver, URLstringParser):
-    print("\nTesting DNS resolving info on gp.se")
+    print("\nTesting DNS resolving info on gp.se 2022-12")
     URLstringParser.URLinfo.url = "gp.se"
     URLinfoObj = URLstringParser.UrlResolver()
     URLinfoObj = urlDNSresolver.resolve()
@@ -55,7 +55,7 @@ def test_DNSresolver(urlDNSresolver, URLstringParser):
 
 def test_HTMLparser(urlHTMLparser, URLstringParser):
     print("\nTesting Favicon info on some websites, done (2022-12)")
-    URLstringParser.URLinfo.url = "svt.se" 
+    URLstringParser.URLinfo.url = "svt.se"
     URLinfoObj = URLstringParser.UrlResolver()
     URLinfoObj = urlHTMLparser.parse()
     assert URLinfoObj.favicon == True
@@ -78,7 +78,7 @@ def test_HTMLparser(urlHTMLparser, URLstringParser):
 
 #integration test
 def test_URLinfoCollecting(URLinfoObj, urlDNSresolver, urlHTMLparser, URLstringParser):
-    print("\nTesting integration test with URL: http://scanme.nmap.org/")
+    print("\nTesting integration test with URL: http://scanme.nmap.org/ 2022-12")
     URLinfoObj = URLstringParser.UrlResolver()
     URLinfoObj = urlDNSresolver.resolve()
     URLinfoObj = urlHTMLparser.parse()
