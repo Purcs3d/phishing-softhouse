@@ -268,7 +268,6 @@ s3.eu-west-1.amazonaws.com
 s3.us-east-1.amazonaws.com
 s3.us-east-1.wasabisys.com
 s3.us-east-2.amazonaws.com
-safraempresas.000webhostapp.com
 safrainternet-br.com
 sakthivel.com
 sammichscripts.com
