@@ -26,7 +26,6 @@ def CheckURL():
         # return early if empty
         if URLinput.strip() == "":
             empty_url_str = "No URL was given"
-            print(empty_url_str)
             return render_template("index.html", output = empty_url_str)
 
         # check URL against algomanager
@@ -41,8 +40,6 @@ def CheckURL():
         flash(f"Error: {e}")
         raise(e)
 
-    from pprint import pprint
-    pprint(outputDict)
 
     return render_template("index.html", output = outputDict) #render template
 

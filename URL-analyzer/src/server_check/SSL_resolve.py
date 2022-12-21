@@ -67,6 +67,6 @@ class ssl_parser:
     def __init__(self, url : str, URLinfo) -> None: #* @auth: Totte Hansen
         self.original_url = url
         self.URLinfo = URLinfo
-        self.sane_url = self.ssl_sanetize(url)
-        # self.sane_url = self.URLinfo.domain + "." + self.URLinfo.topDomain
+        # self.sane_url = self.ssl_sanetize(url)
+        self.sane_url = url
         self.cert = self.fetch_ssl()

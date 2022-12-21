@@ -25,27 +25,20 @@ class algorithmManager:
         self.fishy = False
         self.pointPhishingLimit = 100
         self.timestamp = None
+        self.check_websiteOnline()
 
         try:
-            self.checkDB() # check if in whitelist/previous searches
+            if self.websiteOnline == True:
+                self.checkDB() # check if in whitelist/previous searches
         except Exception:
             self.DBonline = False
             self.URLinfoObj.errors.append(f"Database connection failed... evaluation run anyway.")
-        if self.URLinWhitelist == False and self.URLinPreviousSearches == False:
-            self.check_websiteOnline()
-            if self.websiteOnline == True:
-                self.URLinfoObj.collectInfo() #make object collect information about url
+        if self.websiteOnline == True:
+            if self.URLinWhitelist == False and self.URLinPreviousSearches == False:
+                self.URLinfoObj.collectInfo() #make object collect information about url if not in DB
 
     def check_websiteOnline(self):
-        try:
-            siteOnline, self.URLinfoObj.url = url_sanitize.siteValid(self.url, returnUrl = True)
-            print(siteOnline)
-            if siteOnline == True:
-                self.websiteOnline = True
-            else:
-                self.websiteOnline = False
-        except Exception:
-            self.websiteOnline = False
+        self.websiteOnline, self.URLinfoObj.url = url_sanitize.siteValid(self.url, returnUrl = True)
 
     def run(self):
         """
@@ -117,7 +110,7 @@ class algorithmManager:
     def createOutputString(self):
         reportDict = {}
         if self.websiteOnline == False:
-            return f" This Website ({self.url}) is not online, or refused connection. "
+            return f" This Website ({self.URLinfoObj.url}) is not online, or refused connection. "
 
         if self.URLinWhitelist == True:
             reportDict = "URL exist in whitelist and is not phishy."
@@ -126,7 +119,7 @@ class algorithmManager:
         if self.URLinPreviousSearches == True:
             self.timestamp = self.DBhandlerObj.fetchPreviousSearchDate()
             reportDict = self.DBhandlerObj.fetchPreviousSearchReport()
-
+            reportDict["url"] += " previously searched: " + str(self.timestamp)
             return reportDict
 
         reportDict['Phishy'] = self.fishy

@@ -71,11 +71,6 @@ class DBhandler():
         """
         url = self.URLinfo.domain +"."+ self.URLinfo.topDomain
         if self.URLinfo.subDomain != None and self.URLinfo.subDomain != "www.":
-            # sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{self.URLinfo.domain}%' AND '%{self.URLinfo.topDomain}';"
-            # above str buggy for many links like:
-            # https://answers.microsoft.com/en-us/windows/forum/all/whois-command-not-working-for-windows-10/3a77075e-606c-41be-9f6b-2cde13c2fe95
-            # blog.facebook.com
-            # and doesnt pick up links as "blog.google.se" as whitelist
             sql_str = f"select * from URLanalyzer.whitelist where url LIKE '%{url}';"
         else:
             sql_str = f"select * from URLanalyzer.whitelist where url = '{url}';"

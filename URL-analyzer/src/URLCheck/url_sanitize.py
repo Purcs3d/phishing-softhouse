@@ -18,24 +18,22 @@ def siteValid(url:str, redir:bool = True, returnUrl = False) -> bool:
     url = addScheme(url, redir)
 
     site_code = 0
+    site_ok = False
     try:
         site_code = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 3).status_code
-
-        if returnUrl == True:
-            if 200 <= site_code <= 299:
-                return (True, str(url))
-            else:
-                return (False, str(url))
+        # check if site response is within OK range
+        if 200 <= site_code <= 299:
+            site_ok = True
         else:
-            # check if site response is within OK range
-            if 200 <= site_code <= 299:
-                return True
-            else:
-                return False
-
+            site_ok = False
+        if returnUrl == True:
+                return site_ok, url
+        return site_ok
     except Exception as err:
         # Check if server or client error occured (raise error in case of client error)
-        return False
+        if returnUrl == True:
+                return site_ok, url
+        return site_ok
 
 
 def addScheme(url:str, fetch:bool = True) -> str:
