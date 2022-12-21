@@ -1,0 +1,359 @@
+These are all of the URLs that the algorithm wrongly classified as not phishingLinks 
+
+URL: http://allebro.pl 
+Points: 90 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: allebro 
+	topDomain: pl 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	ip: 185.253.212.22 
+	city: None 
+	country: Poland 
+	region: None 
+	favicon: False 
+	expires: 2023-05-09 20:45:00 
+	registered: 2008-05-09 20:45:00 
+	update: 2022-03-11 11:50:52 
+	active: 5338 days, 10:46:03.642140 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 5338 
+
+------------------------
+
+URL: http://aouelcadi.newsletter.com.au/system/public/view_newsletter/?newsletter_queue_id=NjIwMjcw&amp;contact_id=165782534&amp;contact_email=eimaste@stinpriza.org 
+Points: 90 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: aouelcadi 
+	domain: newsletter 
+	topDomain: com.au 
+	dir: /system/public/view_newsletter/ 
+	file: None 
+	path: /system/public/view_newsletter/ 
+	fragment: None 
+	ip: 203.170.85.169 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: 2022-05-24 01:15:33 
+	active: None 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://e.dtscout.com/e 
+Points: 90 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: e 
+	domain: dtscout 
+	topDomain: com 
+	dir: /e/ 
+	file: None 
+	path: /e/ 
+	fragment: None 
+	ip: 159.203.89.129 
+	city: Clifton 
+	country: United States 
+	region: New Jersey 
+	favicon: False 
+	expires: 2023-11-01 21:34:32 
+	registered: 2013-11-01 21:34:32 
+	update: 2022-09-15 05:02:32 
+	active: 3336 days, 9:57:33.607818 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 3336 
+
+------------------------
+
+URL: http://hasmob.com/other/alibaba.com/Login.htm 
+Points: 90 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: hasmob 
+	topDomain: com 
+	dir: /other/alibaba.com/ 
+	file: Login.htm 
+	path: /other/alibaba.com/Login.htm 
+	fragment: None 
+	ip: 31.186.11.125 
+	city: None 
+	country: Turkey 
+	region: None 
+	favicon: False 
+	expires: 2024-01-28 08:21:50 
+	registered: 2005-01-28 08:21:50 
+	update: 2017-07-17 15:59:30 
+	active: 6535 days, 23:10:22.562022 
+	certIncomplete: False 
+	TLSversion: TLSv1.2 
+	daysActive: 6535 
+
+------------------------
+
+URL: http://ahinsashoes.cz/css/xirisr/BOfA/BOfA/BOfA/Validation/login.php?cmd=login_submit&id=4cb0083f4ae8a9c5e14d7d184b798af04cb0083f4ae8a9c5e14d7d184b798af0&session=4cb0083f4ae8a9c5e14d7d184b798af04cb0083f4ae8a9c5e14d7d184b798af0 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: ahinsashoes 
+	topDomain: cz 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	ip: 23.227.38.65 
+	city: None 
+	country: Canada 
+	region: None 
+	favicon: True 
+	expires: 2023-05-08 00:00:00 
+	registered: 2013-05-08 02:42:14 
+	update: 2017-07-25 09:00:19 
+	active: 3514 days, 4:50:05.466423 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 3514 
+
+------------------------
+
+URL: http://ajanish.com/cm3lfk2/directing/online.simplii.com/index.php 
+Points: 40 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: ajanish 
+	topDomain: com 
+	dir: /cm3lfk2/directing/online.simplii.com/ 
+	file: index.php 
+	path: /cm3lfk2/directing/online.simplii.com/index.php 
+	fragment: None 
+	ip: 104.21.61.186 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2023-11-12 04:22:20 
+	registered: 2011-11-12 04:22:20 
+	update: 2021-01-04 19:14:43 
+	active: 4057 days, 3:10:03.098259 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 4057 
+
+------------------------
+
+URL: http://alfabit.org 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: alfabit 
+	topDomain: org 
+	dir: None 
+	file: ru 
+	path: /ru 
+	fragment: None 
+	ip: 104.26.12.179 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2026-01-14 14:59:52 
+	registered: 2019-01-14 14:59:52 
+	update: 2020-11-25 16:12:05 
+	active: 1436 days, 16:32:37.258341 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1436 
+
+------------------------
+
+URL: http://andbank.me.ma 
+Points: 40 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: https 
+	subDomain: andbank 
+	domain: me 
+	topDomain: ma 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	ip: 172.67.136.68 
+	city: None 
+	country: None 
+	region: None 
+	favicon: False 
+	expires: None 
+	registered: None 
+	update: None 
+	active: None 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+
+Error during DNS resolving: DNS creation info not found.
+------------------------
+
+URL: http://apogeesphotostatic.com/pp/support/konflikt/cfa79fb9e38ab67/login.php 
+Points: 40 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: None 
+	protocol: http 
+	subDomain: None 
+	domain: apogeesphotostatic 
+	topDomain: com 
+	dir: /pp/support/konflikt/cfa79fb9e38ab67/ 
+	file: login.php 
+	path: /pp/support/konflikt/cfa79fb9e38ab67/login.php 
+	fragment: None 
+	ip: 172.67.136.184 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: False 
+	expires: 2023-04-10 12:43:59 
+	registered: 2019-04-10 12:43:59 
+	update: 2022-04-11 07:14:18 
+	active: 1350 days, 18:50:07.842409 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1350 
+
+------------------------
+
+URL: https://ziffdavisb2b.com 
+Points: 0 
+
+The website generated the following report:
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: swzd 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	ip: 45.60.11.212 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2028-03-10 18:37:01 
+	registered: 2010-03-10 19:37:01 
+	update: 2022-08-17 12:11:35 
+	active: 4668 days, 11:59:31.088606 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 4668 
+
+------------------------
+
+URL: https://www.suesses-online.com/Obrigatorio/acessando/Inter/acessar.php 
+Points: 80 
+
+The website generated the following report:
+		The URL contained the following bad keywords:tor
+
+	www: None 
+	protocol: https 
+	subDomain: None 
+	domain: schwarzwaldkonditorei 
+	topDomain: com 
+	dir: None 
+	file: None 
+	path: / 
+	fragment: None 
+	ip: 192.200.160.248 
+	city: None 
+	country: United States 
+	region: None 
+	favicon: True 
+	expires: 2023-03-24 10:10:11 
+	registered: 2020-03-24 10:10:11 
+	update: 2022-07-04 12:49:55 
+	active: 1001 days, 21:26:31.093363 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 1001 
+
+------------------------
+
+URL: https://www.surveygizmo.com/s3/4820396/Yahoo 
+Points: 40 
+
+The website generated the following report:
+		The website lacks favicon.
+
+	www: www 
+	protocol: https 
+	subDomain: www. 
+	domain: surveygizmo 
+	topDomain: com 
+	dir: /s3/4820396/ 
+	file: Yahoo 
+	path: /s3/4820396/Yahoo 
+	fragment: None 
+	ip: 174.129.73.65 
+	city: Ashburn 
+	country: United States 
+	region: Virginia 
+	favicon: False 
+	expires: 2027-04-19 16:04:43 
+	registered: 2005-04-19 16:04:43 
+	update: 2022-03-20 07:20:08 
+	active: 6454 days, 15:32:05.752880 
+	certIncomplete: False 
+	TLSversion: TLSv1.3 
+	daysActive: 6454 
+
+------------------------
+

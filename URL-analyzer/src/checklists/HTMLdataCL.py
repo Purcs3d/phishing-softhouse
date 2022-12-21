@@ -26,5 +26,5 @@ class HTMLdataCL():
             Checks whether Favicon exist on website or not
         """
         if self.URLinfo.favicon == False:
-            self.points += 40
+            self.points += 50
             self.report.append("The website lacks favicon.")

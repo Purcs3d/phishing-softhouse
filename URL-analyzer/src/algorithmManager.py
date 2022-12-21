@@ -37,9 +37,14 @@ class algorithmManager:
                 self.URLinfoObj.collectInfo() #make object collect information about url
 
     def check_websiteOnline(self):
-        if url_sanitize.siteValid(self.url):
-            self.websiteOnline = True
-        else:
+        try:
+            siteOnline, self.URLinfoObj.url = url_sanitize.siteValid(self.url, returnUrl = True)
+            print(siteOnline)
+            if siteOnline == True:
+                self.websiteOnline = True
+            else:
+                self.websiteOnline = False
+        except Exception:
             self.websiteOnline = False
 
     def run(self):
@@ -117,11 +122,11 @@ class algorithmManager:
         if self.URLinWhitelist == True:
             reportDict = "URL exist in whitelist and is not phishy."
             return reportDict
-        print(self.URLinPreviousSearches)
+
         if self.URLinPreviousSearches == True:
             self.timestamp = self.DBhandlerObj.fetchPreviousSearchDate()
             reportDict = self.DBhandlerObj.fetchPreviousSearchReport()
-        
+
             return reportDict
 
         reportDict['Phishy'] = self.fishy

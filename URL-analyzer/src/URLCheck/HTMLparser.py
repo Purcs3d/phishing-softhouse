@@ -23,9 +23,6 @@ class HTMLparser():
                 response = requests.get("https://" + self.URLinfo.url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 3)
             else:
                 response = requests.get(self.URLinfo.url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 3)
-            if response.history:
-                for webPage in response.history:
-                    self.fetchFaviconInfo(webPage.text)
             while response.next:
                 self.fetchFaviconInfo(response.next.text)
             self.fetchFaviconInfo(response.text)

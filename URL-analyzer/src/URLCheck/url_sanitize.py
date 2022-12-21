@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 
 __author__ = 'Totte Hansen, DVADS20h'
 
-def siteValid(url:str, redir:bool = True) -> bool:
+def siteValid(url:str, redir:bool = True, returnUrl = False) -> bool:
     """
     Checks if a site exists and is reachable
     Requires supplied schema
@@ -21,11 +21,17 @@ def siteValid(url:str, redir:bool = True) -> bool:
     try:
         site_code = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, allow_redirects = True, timeout = 3).status_code
 
-        # check if site response is within OK range
-        if 200 <= site_code <= 299:
-            return True
+        if returnUrl == True:
+            if 200 <= site_code <= 299:
+                return (True, str(url))
+            else:
+                return (False, str(url))
         else:
-            return False
+            # check if site response is within OK range
+            if 200 <= site_code <= 299:
+                return True
+            else:
+                return False
 
     except Exception as err:
         # Check if server or client error occured (raise error in case of client error)
