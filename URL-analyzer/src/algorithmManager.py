@@ -39,6 +39,7 @@ class algorithmManager:
 
     def check_websiteOnline(self):
         self.websiteOnline, self.URLinfoObj.url = url_sanitize.siteValid(self.url, returnUrl = True)
+        self.url = self.URLinfoObj.url
 
     def run(self):
         """
