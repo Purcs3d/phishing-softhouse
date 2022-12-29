@@ -26,9 +26,15 @@ class DNSdataCL():
              • if its less than 365 days old -> probably phishy
         """
         if self.URLinfo.active == None: # if domain age request failed
+            self.report.append("Domain age request failed or not found")
+            self.points +=  100
             return
         timestr = str(self.URLinfo.active)
         self.URLinfo.daysActive = ""
+        if "day" not in timestr:
+            self.report.append("This domain is younger then a day")
+            self.points +=  100
+            return
         for i in timestr:
             if(i == ' '):
                 break
